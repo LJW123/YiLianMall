@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/inclyde_title"
+        layout="@layout/v3_title"
+        android:layout_alignParentTop="true"
+        tools:ignore="IncludeLayoutParam" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/filtrate_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inclyde_title"
+        android:background="@color/white"
+        app:tabBackground="@android:color/transparent"
+        app:tabIndicatorColor="@color/cFF4289FF"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/cFF4289FF"
+        app:tabTextAppearance="@style/TabStyle" />
+
+    <com.yilian.mall.ctrip.widget.MyNestedScrollView
+        android:id="@+id/myscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_facility_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/filtrate_tablayout"
+                android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/layout_facility_foot" />
+
+        </LinearLayout>
+
+
+    </com.yilian.mall.ctrip.widget.MyNestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_discount_login_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/merchant_size15"
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/icon_home_page_vip" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="益联会员"
+                android:textColor="@color/color_333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="免费注册会员，消费满100元，即可升级为VIP会员，享推荐奖励"
+                android:textColor="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_discount_login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/commit_order_jiantou"
+            android:gravity="center"
+            android:text="未登录"
+            android:textColor="@color/color_red"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_discount_enter_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/merchant_size15"
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/icon_home_page_merchant" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="益联平台商家"
+                android:textColor="@color/color_333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="入驻益联平台，跨界促销、提升知名度，还可享受消费奖券"
+                android:textColor="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_discount_enter_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/commit_order_jiantou"
+            android:gravity="center"
+            android:text="未入驻"
+            android:textColor="@color/color_red"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_agency_enter_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/merchant_size15">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/icon_home_page_agency" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="益联服务中心"
+                android:textColor="@color/color_333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="成为平台区域服务中心，享受区域业绩分成"
+                android:textColor="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_agency_enter_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/commit_order_jiantou"
+            android:gravity="center"
+            android:text="去申请"
+            android:textColor="@color/color_red"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height40">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin15"
+            android:clickable="true"
+            android:src="@mipmap/v3back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="图文详情"
+            android:textColor="@color/color_h1"
+            android:textSize="@dimen/size18" />
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin15"
+            android:clickable="true"
+            android:text="送券说明"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size15"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/height15bg" />
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></WebView>
+
+
+    <!--套餐详情的头布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_combo_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin15"
+            android:text=""
+            android:textColor="@color/color_red"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_zeng"
+                style="@style/jpMoneyQuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin15"
+                android:padding="2dp"
+                android:text="赠"
+                android:textSize="@dimen/size12" />
+
+            <TextView
+                android:id="@+id/tv_xianjinquan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抵扣券"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/size13" />
+
+            <TextView
+                style="@style/jpMoneyFen"
+                android:text="赠" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零购券"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/size13" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_promptly_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/btn_bg_srote_consumer"
+            android:paddingLeft="@dimen/padding15"
+            android:paddingRight="@dimen/padding15"
+            android:text="立即抢购"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size18" />
+    </LinearLayout>
+</LinearLayout>

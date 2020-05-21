@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_flash_sale_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.FlashSaleDetailsActivity">
+
+
+    <com.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/btn_height"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include layout="@layout/details_viewpager_base_top" />
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding15">
+
+                    <TextView
+                        android:id="@+id/tv_cost_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/color_red"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:background="@color/myinfo_red_bg"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:text="零购券"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size12" />
+
+
+                    <TextView
+                        android:id="@+id/tv_market_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/padding5"
+                        android:paddingRight="@dimen/padding5"
+                        android:text=""
+                        android:textColor="@color/color_999"
+                        android:textSize="@dimen/size12" />
+
+
+                    <TextView
+                        android:id="@+id/tv_now_buy"
+                        android:layout_width="95dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="@dimen/margin15"
+                        android:background="@drawable/bg_btn_style_red"
+                        android:gravity="center"
+                        android:text="立即抢购"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size18" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/v3greencheck"
+                    android:drawablePadding="@dimen/padding10"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/padding20"
+                    android:text=""
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size12" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/outerLineStyle"
+                android:layout_marginLeft="@dimen/margin15" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingRight="@dimen/padding15"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_content_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin10"
+                        android:drawableLeft="@mipmap/merchant_dingwei"
+                        android:drawablePadding="@dimen/padding10"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/size13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin15"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="@color/color_666"
+                            android:textSize="@dimen/size12" />
+
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/main_icon_drawable_padding"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="@dimen/main_icon_drawable_padding"
+                            android:background="@color/separate_line" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="CallTel"
+                            android:paddingBottom="@dimen/padding10"
+                            android:paddingLeft="@dimen/padding20"
+                            android:paddingRight="@dimen/padding15"
+                            android:paddingTop="@dimen/padding10"
+                            android:src="@mipmap/merchant_tel"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_select_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/padding10"
+                        android:paddingLeft="@dimen/padding20"
+                        android:paddingRight="30dp"
+                        android:paddingTop="@dimen/padding10"
+                        android:src="@mipmap/merchant_tel" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <View style="@style/height15bg" />
+
+            <include layout="@layout/mt_merchan_desp" />
+
+            <LinearLayout
+                android:id="@+id/ll_photo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.pulltorefresh.library.PullToRefreshScrollView>
+
+    <ImageView
+        android:id="@+id/iv_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/nothing"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/ll_updata_error"
+        layout="@layout/item_updata_error"
+        android:visibility="gone" />
+
+    <include layout="@layout/v3_title" />
+</RelativeLayout>

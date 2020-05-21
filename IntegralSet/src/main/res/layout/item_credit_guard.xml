@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <View android:id="@+id/view_horizontal_v" style="@style/line_horizontal" android:layout_marginLeft="80dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/credit_guard_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_dingdan_shouhu"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            >
+            <TextView
+                android:id="@+id/credit_guard_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单评论"
+                android:textColor="@color/main_black_text"
+                android:textSize="@dimen/textSize_17sp"
+                />
+            <TextView
+                android:id="@+id/credit_guard_introduce_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="及时评论宝贝 守护您的信用"
+                android:textSize="14sp"
+                android:textColor="@color/notice_text_color"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:src="@mipmap/arrows_right_gray"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/merchant_bg_btn_white_radious3"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp">
+
+    <include
+        android:id="@+id/include_time_name"
+        layout="@layout/merchant_layout_text_value" />
+
+    <include
+        android:id="@+id/include_cost_integral"
+        layout="@layout/merchant_layout_text_value" />
+
+    <include
+        android:id="@+id/include_get_integral"
+        layout="@layout/merchant_layout_text_value"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/include_total_integral"
+        layout="@layout/merchant_layout_text_value"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,329 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/left_sanjiao"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:onClick="onBack"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/tab_title_text_color"
+            android:textSize="@dimen/title_text_size_first" />
+
+        <ImageView
+            android:id="@+id/guaguaka_share_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:clickable="true"
+            android:onClick="shares"
+            android:visibility="gone"
+            android:background="@mipmap/guaguaka_grayshare" />
+    </RelativeLayout>
+
+    <com.yilian.mall.utils.ScrollViewExtend
+        android:id="@+id/guaguaka_item_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/scra_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/scrathcard_tuan" />
+
+                <ImageView
+                    android:id="@+id/guaguaka_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34.7dp"
+                    android:background="@mipmap/scrathcard_guaguaka" />
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/guaguaka_text"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40.6dp"
+                    android:layout_marginRight="40.6dp"
+                    android:layout_marginTop="53.7dp"
+                    android:background="@mipmap/scratchcard_whitebg" >
+
+                    <LinearLayout
+                        android:id="@+id/guagua_bac_iv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@mipmap/scatchcard_gray"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:background="@mipmap/font" />
+
+                        <TextView
+                            android:id="@+id/sure_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/btn"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="sure"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="5dp"
+                            android:text="开始刮奖"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <com.yilian.mall.utils.GuaGuaKa
+                        android:id="@+id/guaguaka_tuceng"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="11dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/getwinning_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="恭喜您  !"
+                            android:textColor="#f35915"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/prize_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginTop="10dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/zgyc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_dis_bgss"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:onClick="again"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:text="再刮一次"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dp"
+                                android:layout_toRightOf="@+id/zgyc"
+                                android:background="@drawable/btn_dis_bgsss"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:onClick="convert"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:text="立即兑换"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/defeated_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="22dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:background="@mipmap/scatchcard_ren" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="很抱歉  !"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="啥也没抽到，继续瞅瞅看！"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="18dp"
+                                android:background="#ffffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:background="@drawable/btn_dis_bgss"
+                                android:clickable="true"
+                                android:onClick="againone"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:text="再刮一次"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/expend_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="14.7dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="12dp"
+                android:background="@mipmap/scatchcard_first" />
+
+            <com.yilian.mall.widgets.NoScrollListView
+                android:id="@+id/guaguaka_list_prize_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" >
+            </com.yilian.mall.widgets.NoScrollListView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@mipmap/scatchcard_second" />
+
+            <TextView
+                android:id="@+id/guaguaka_zy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36.3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="14dp"
+                android:lineSpacingExtra="8dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/guaguaka_infor_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="36.3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:lineSpacingExtra="8dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.yilian.mall.utils.ScrollViewExtend>
+
+</LinearLayout>

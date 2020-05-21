@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.AfterSaleActivity">
+
+    <include layout="@layout/activity_title">
+
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/ic_after_sale_search"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="find"
+        android:text="商品名称,售后编号"
+        android:textColor="#afafaf" />
+
+    <com.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#eeeeee"
+        android:dividerHeight="15dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

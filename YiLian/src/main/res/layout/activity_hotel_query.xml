@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/view_search_hotel"/>
+
+    <RelativeLayout
+        android:id="@+id/vary_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.yilian.mall.ctrip.widget.dropdownmenu.DropDownMenu
+            android:id="@+id/dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dddividerColor="#00000000"
+            app:ddmaskColor="@color/mask_color"
+            app:ddmenuSelectedIcon="@mipmap/arrow_up_filtrate"
+            app:ddmenuTextSize="13sp"
+            app:ddmenuUnselectedIcon="@mipmap/arrow_down_filtrate"
+            app:ddtextSelectedColor="@color/theme_color"
+            app:ddtextUnselectedColor="@color/drop_down_unselected"
+            app:ddunderlineColor="#dbdcdc"
+            app:paddingStart="5dp"
+            app:paddingEnd="5dp"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

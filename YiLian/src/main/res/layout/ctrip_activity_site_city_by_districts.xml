@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/home_page_title"
+        layout="@layout/ctrip_title_home_page" />
+
+    <LinearLayout
+        android:id="@+id/vary_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_14dp"
+            tools:text="城市" />
+
+        <View style="@style/line_horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp" />
+    </LinearLayout>
+</LinearLayout>

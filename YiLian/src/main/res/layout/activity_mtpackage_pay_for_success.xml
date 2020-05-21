@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mtpackage_pay_for_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:scrollbars="none"
+    tools:context="com.yilian.mall.ui.MTPackagePayForSuccess">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/jp_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="@dimen/margin20"
+                        android:drawableLeft="@mipmap/pay_ok_icon"
+                        android:drawablePadding="@dimen/padding15"
+                        android:gravity="center"
+                        android:text="@string/buy_success"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/size18" />
+
+                    <TextView
+                        android:id="@+id/tv_mt_package_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:ellipsize="end"
+                        android:padding="@dimen/padding15"
+                        android:text="@string/placeholder_text"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/size15" />
+
+                    <View style="@style/innerLineStyle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/award1"
+                            android:textColor="@color/color_h1" />
+
+                        <TextView
+                            android:id="@+id/tv_integral"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/placeholder_text"
+                            android:textColor="@color/color_green"
+                            android:textSize="@dimen/size15" />
+                    </LinearLayout>
+
+                    <View style="@style/innerLineStyle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ending_time"
+                            android:textColor="@color/color_h1" />
+
+                        <TextView
+                            android:id="@+id/tv_ending_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/placeholder_text"
+                            android:textColor="@color/color_h1"
+                            android:textSize="@dimen/size15" />
+                    </LinearLayout>
+
+                    <View style="@style/innerLineStyle" />
+
+                    <com.yilian.mall.widgets.NoScrollListView
+                        android:id="@+id/nslv_package_sub_qr_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="1px"
+                        android:listSelector="@color/transparent">
+
+                    </com.yilian.mall.widgets.NoScrollListView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_qr_code"
+                    android:layout_width="360dp"
+                    android:layout_height="258dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@mipmap/qr_shadow">
+
+                    <ImageView
+                        android:id="@+id/iv_total_qr_code"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/transparent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_total_qr_code"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margin20"
+                        android:lines="1"
+                        android:text="@string/show_total_qr_code"
+                        android:textColor="@color/color_999"
+                        android:textSize="@dimen/size16" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_order_detail"
+                    style="@style/btnCircleStyle"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:layout_marginBottom="@dimen/margin20"
+                    android:text="@string/show_order_detail" />
+
+                <Button
+                    android:id="@+id/share_get_prize"
+                    style="@style/btnStyle"
+                    android:layout_marginBottom="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@drawable/jp_bg_btn_red_lines_all_radius1"
+                    android:text="@string/share_get_prize"
+                    android:textColor="@color/color_red"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

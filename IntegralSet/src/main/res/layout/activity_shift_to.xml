@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common_color"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <include layout="@layout/ylyj_defaut_toolbar_right_layout" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--转出奖券-->
+        <LinearLayout
+            android:id="@+id/integral_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="奖券账户"
+                    android:textColor="@color/main_black_text"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/integral_total_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总数量"
+                        android:textColor="@color/main_black_text"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                    <TextView
+                        android:id="@+id/limit_total_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="总额度"
+                        android:textColor="@color/notice_text_color"
+                        android:textSize="@dimen/textSize_16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转入数量"
+                    android:textColor="@color/main_black_text"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <EditText
+                    android:id="@+id/integral_num_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:hint="转入奖券"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/default_text_color"
+                    android:textColorHint="@color/notice_text_color"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/textSize_20sp" />
+
+                <View style="@style/line_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp">
+
+                    <TextView
+                        android:id="@+id/balance_integral_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余奖券0"
+                        android:textColor="@color/notice_text_color"
+                        android:textSize="@dimen/textSize_13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="，"
+                        android:textColor="@color/notice_text_color"
+                        android:textSize="@dimen/textSize_13sp" />
+
+                    <TextView
+                        android:id="@+id/integral_all_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部转入"
+                        android:textColor="#344C7F"
+                        android:textSize="@dimen/textSize_13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--转出余额-->
+        <LinearLayout
+            android:id="@+id/balance_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#e7e7e7"
+                android:padding="@dimen/padding_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到我的钱包  金额总数1800"
+                    android:textSize="@dimen/textSize_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:paddingTop="@dimen/padding_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转账金额"
+                    android:textColor="@color/main_black_text"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <EditText
+                    android:id="@+id/balance_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="填写需要转出的余额数量"
+                    android:inputType="number"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_10dp"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="@dimen/textSize_20sp" />
+
+                <View style="@style/line_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="额外扣除10%手续费，"
+                        android:textColor="@color/notice_text_color"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <TextView
+                        android:id="@+id/balance_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取消"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/textSize_12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_15dp">
+
+            <Button
+                android:id="@+id/submit_bt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_4dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:background="@drawable/button_integral"
+                android:text="立即转入"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18sp" />
+
+            <TextView
+                android:id="@+id/expect_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:text="预计兑换时间 （09-26）"
+                android:textColor="#969696"
+                android:textSize="@dimen/textSize_12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

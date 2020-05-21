@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mtpackage_comment_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yilian.mall.ui.MTPackageCommentListActivity"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/jp_title"/>
+
+    <com.yilian.mall.widgets.SlidingTabLayout
+        android:id="@+id/tl_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inner_tab_height"
+        android:background="@color/white"
+        tl:tl_indicator_color="@color/color_red"
+        tl:tl_textAllCaps="true"
+        tl:tl_textBold="SELECT"
+        tl:tl_divider_color="@color/color_lines"
+        tl:tl_divider_width="1dp"
+        tl:tl_textSelectColor="@color/color_red"
+        tl:tl_textUnselectColor="@color/color_333"
+        tl:tl_underline_color="@color/color_lines"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_space_equal="true"
+        tl:tl_underline_height="1px" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

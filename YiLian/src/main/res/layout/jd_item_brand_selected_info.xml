@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_5dp"
+    android:layout_marginRight="@dimen/margin_5dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size18"
+    android:paddingTop="@dimen/margin_25dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/jd_iv_goods"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#80F10215">
+
+            <TextView
+                android:id="@+id/tv_has_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin5"
+                android:drawablePadding="@dimen/margin5"
+                android:drawableRight="@mipmap/icon_white_ledou"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/margin5"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size12"
+                tools:text="预计 900" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/jd_goods_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:singleLine="true"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/textSize_13dp"
+        tools:text="柔软凉爽蚕丝基督教肯德基看见" />
+
+    <TextView
+        android:id="@+id/jd_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:textColor="#fff10215"
+        android:textSize="13dp"
+        tools:text="¥300" />
+
+
+</LinearLayout>

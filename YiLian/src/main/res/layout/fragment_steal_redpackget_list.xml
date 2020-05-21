@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="19.5dp"
+        android:layout_marginBottom="19.5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_steal_redpacage_strategy"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="偷奖励攻略"
+        android:textColor="@color/steal_red_strategy"
+        android:textSize="@dimen/time_textsize" />
+
+    <com.yilian.mall.widgets.MySwipeRefreshLayout
+        android:layout_above="@id/tv_steal_redpacage_strategy"
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pull_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/color_bg"
+            android:dividerHeight="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </com.yilian.mall.widgets.MySwipeRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/nothing"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

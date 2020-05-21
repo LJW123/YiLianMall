@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rc_spacingtop">5dp</dimen>
+    <dimen name="rc_spacing">5dp</dimen>
+    <dimen name="filtrate_list_height">300dp</dimen>
+    <dimen name="search_view_height">44dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="key_height">60dip</dimen>
+    <dimen name="key_width">125dip</dimen>
+
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="padding_left">16dp</dimen>
+
+    <dimen name="default_margin">10dp</dimen>
+
+    <!-- 下拉刷新字体 -->
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">3dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+
+    <!-- 奖券记录 -->
+    <dimen name="jifenrecord_item1_height">24dp</dimen>
+    <dimen name="jifenrecord_item1_marginleft">15dp</dimen>
+    <dimen name="jifenrecord_item1_marginleft2">14dp</dimen>
+
+    <dimen name="jifenrecord_textsize1">13sp</dimen>
+    <dimen name="jifenrecord_textsize2">12sp</dimen>
+
+
+    <dimen name="text_size_first">11sp</dimen>
+    <dimen name="text_size_four">14sp</dimen>
+    <dimen name="paypassword_success_hint">12sp</dimen>
+    <dimen name="area_city_gridview_text_size">14sp</dimen>
+    <dimen name="txt_exchang_status_text_size">12sp</dimen>
+    <dimen name="nickname_text_size">14sp</dimen>
+    <dimen name="title_text_size_first">16sp</dimen>
+    <dimen name="time_title_textsize">13sp</dimen>
+    <dimen name="time_textsize">12sp</dimen>
+    <dimen name="find_city_text_size">15sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+
+
+    <dimen name="txt_prize_name_text_size">16dp</dimen>
+    <dimen name="duihuanpingzheng_linear_padding_right">17dp</dimen>
+    <dimen name="time_title_height">30dp</dimen>
+
+    <dimen name="user_infor_line">0.5dp</dimen>
+    <dimen name="user_infor_marginleft">18dp</dimen>
+
+    <dimen name="zuijin_textview_width">98dp</dimen>
+    <dimen name="zuijin_textview_height">38dp</dimen>
+    <dimen name="zuijin_textview_marginLeft">9dp</dimen>
+
+    <dimen name="tab_title_height">48dp</dimen>
+    <dimen name="main_icon_drawable_padding">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="title_margin">15dp</dimen>
+
+    <!--头部字号,一般只用于头部-->
+    <dimen name="size18">18dp</dimen>
+    <dimen name="size17">17dp</dimen>
+    <!--商品详情标题字号 商品标题-->
+    <dimen name="size15">15dp</dimen>
+    <!--分类标题 标头-->
+    <dimen name="size14">14dp</dimen>
+    <!--列表标题 页面主要字号-->
+    <dimen name="size13">13dp</dimen>
+    <!--辅助字体 辅助型字号-->
+    <dimen name="size12">12dp</dimen>
+    <!--标签字体 标签提示字号-->
+    <dimen name="size10">10dp</dimen>
+
+    <!--上下间距-->
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="padding8">8dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+
+    <!--左右内间距 列表-->
+    <dimen name="padding18">18dp</dimen>
+    <!--左右外间距 列表-->
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin7">7dp</dimen>
+    <dimen name="margin18">18dp</dimen>
+
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding30">30dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+
+    <!--内部tab的高度-->
+    <dimen name="inner_tab_height">40dp</dimen>
+
+    <!--按钮高度-->
+    <dimen name="btn_height">45dp</dimen>
+
+    <!--list的上下左右内部间距-->
+    <dimen name="list_divider_height">4dp</dimen>
+
+    <!--行高-->
+    <dimen name="row_height50">50dp</dimen>
+    <dimen name="row_height40">40dp</dimen>
+
+    <!--二级分类界面图标-->
+    <dimen name="icon50">50dp</dimen>
+    <!--首页图标 一排4个的图标-->
+    <dimen name="icon44">44dp</dimen>
+    <!--功能图标 比较复杂的图标-->
+    <dimen name="icon25">25dp</dimen>
+    <!--头部图标 一般的图标尺寸-->
+    <dimen name="icon20">20dp</dimen>
+    <!--提示性图标宽高-->
+    <dimen name="icon15">15dp</dimen>
+    <!--最小号图标  最小图标尺寸-->
+    <dimen name="icon10">10dp</dimen>
+
+    <!--头部图标距离屏幕左右边距-->
+    <dimen name="head_icon_padding">15dp</dimen>
+    <!--按钮圆角-->
+    <dimen name="radius">3dp</dimen>
+
+    <dimen name="linesdp">0.5dp</dimen>
+    <dimen name="icon75">75dp</dimen>
+    <dimen name="size20">20dp</dimen>
+    <dimen name="size30">30dp</dimen>
+    <dimen name="btn_width">290dp</dimen>
+    <dimen name="size16">16dp</dimen>
+    <dimen name="xlistview_header_progressbar_width">80dp</dimen>
+    <dimen name="xlistview_header_progressbar_height">50dp</dimen>
+    <dimen name="xlistview_header_content_height">50dp</dimen>
+    <dimen name="size19">19dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="size11">11dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="space_1x">8dp</dimen>
+    <dimen name="space_2x">16dp</dimen>
+    <dimen name="space_3x">24dp</dimen>
+    <dimen name="space_4x">32dp</dimen>
+    <dimen name="space_5x">40dp</dimen>
+    <dimen name="space_6x">48dp</dimen>
+    <dimen name="space_7x">56dp</dimen>
+    <dimen name="space_8x">64dp</dimen>
+
+    <dimen name="day_of_week_padding_vertical">@dimen/space_1x</dimen>
+    <dimen name="day_padding_vertical">@dimen/space_1x</dimen>
+    <dimen name="month_name_padding">@dimen/space_1x</dimen>
+
+    <!--        FONTS DIMEN           -->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_big">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+
+    <dimen name="day_text_size">14sp</dimen>
+    <dimen name="day_text_padding">8dp</dimen>
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_white_shap"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="选择性别"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#548adf" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/boy"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:button="@null"
+            android:drawableRight="@drawable/sex_selector"
+            android:onClick="man"
+            android:text="男"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#d8d8d8" />
+
+        <RadioButton
+            android:id="@+id/girl"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:button="@null"
+            android:drawableRight="@drawable/sex_selector"
+            android:onClick="woman"
+            android:text="女"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <!--
+         <Button
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:drawablePadding="208dp"
+        android:drawableRight="@drawable/sex_selector"
+        android:onClick="man"
+        android:text="男" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#f5f5f5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:drawablePadding="208dp"
+        android:drawableRight="@drawable/sex_selector"
+        android:onClick="woman"
+        android:text="女" />
+    -->
+
+</LinearLayout>

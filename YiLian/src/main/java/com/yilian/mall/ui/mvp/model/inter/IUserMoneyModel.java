@@ -1,0 +1,17 @@
+package com.yilian.mall.ui.mvp.model.inter;
+
+import android.content.Context;
+
+import com.yilian.mall.ui.mvp.model.IBaseModel;
+
+import rx.Observable;
+
+/**
+ * @author xiaofo on 2018/7/8.
+ */
+
+public interface IUserMoneyModel extends IBaseModel {
+
+    Observable getUserMoney(Context context);
+
+}

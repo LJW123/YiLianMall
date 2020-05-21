@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_content"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_newest_discount"
+        style="@style/merchant_discount_change_record_item"
+        android:text="aaa" />
+
+    <TextView
+        android:id="@+id/tv_change_time"
+        style="@style/merchant_discount_change_record_item"
+        android:text="aaa" />
+
+    <TextView
+        android:id="@+id/tv_change_ip"
+        style="@style/merchant_discount_change_record_item"
+        android:text="aaa" />
+</LinearLayout>

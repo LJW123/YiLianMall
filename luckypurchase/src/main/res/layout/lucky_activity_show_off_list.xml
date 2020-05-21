@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/library_module_color_bg">
+
+    <include layout="@layout/lucky_v3_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/library_module_color_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="@dimen/library_module_padding15"
+                android:padding="@dimen/lucky_padding10"
+                android:gravity="left"
+                android:background="@drawable/library_module_bg_style_gray_empty_5"
+                android:textSize="@dimen/library_module_size13"
+                android:textColorHint="@color/library_module_color_999"
+                android:textColor="@color/library_module_color_333"
+                android:hint="采访您一下，中奖的心情怎么样啊"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/library_module_padding15">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/library_module_color_red"
+        android:textSize="@dimen/library_module_size18"
+        android:textColor="@color/aliwx_bg_color_white"
+        android:text="提交"/>
+
+</LinearLayout>

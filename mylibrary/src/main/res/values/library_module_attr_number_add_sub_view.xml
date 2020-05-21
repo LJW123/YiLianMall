@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="library_module_value" format="integer|reference"/>
+    <attr name="library_module_minValue" format="integer|reference"/>
+    <attr name="library_module_maxValue" format="integer|reference"/>
+    <attr name="library_module_lefenlayout" format="reference"/>
+    <attr name="library_module_editBackground" format="reference"/>
+    <attr name="library_module_buttonAddBackgroud" format="reference"/>
+    <attr name="library_module_buttonSubBackgroud" format="reference"/>
+
+    
+    <declare-styleable name="library_module_NumberAddSubView">
+
+        <attr name="library_module_lefenlayout"/>
+        <attr name="library_module_value"/>
+        <attr name="library_module_minValue"/>
+        <attr name="library_module_maxValue"/>
+        <attr name="library_module_editBackground"/>
+        <attr name="library_module_buttonAddBackgroud"/>
+        <attr name="library_module_buttonSubBackgroud"/>
+
+    </declare-styleable>
+
+</resources>

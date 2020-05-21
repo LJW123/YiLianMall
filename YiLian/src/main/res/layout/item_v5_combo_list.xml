@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_layout"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding15"
+    android:paddingRight="@dimen/padding15"
+    android:paddingTop="@dimen/padding15">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:src="@mipmap/login_module_default_jp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginRight="@dimen/margin5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin15">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size14"
+            android:textColor="@color/color_333"
+            android:text=""
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/size12"
+                android:textColor="@color/color_999"
+                android:text="周一至周日 无需预约"/>
+
+            <TextView
+                android:id="@+id/tv_sale_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/size12"
+                android:textColor="@color/color_999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/size15"
+                android:textColor="@color/color_red"
+                android:text=""
+                android:textStyle="bold"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/size10"
+                android:textColor="@color/color_green"
+                android:text=""
+                android:layout_marginLeft="7.5dp"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/tv_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btnCircleStyleNoMargin"
+                android:layout_gravity="bottom"
+                android:text="购买"
+                android:textSize="@dimen/size13"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:paddingTop="@dimen/padding5"
+                android:paddingBottom="@dimen/padding5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

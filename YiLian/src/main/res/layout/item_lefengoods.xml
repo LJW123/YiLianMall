@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_goods_icon"
+        android:layout_width="186dp"
+        android:layout_height="186dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_goods_icon"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="13dp"
+        android:text="本土千层饼"
+        android:textColor="@color/color_h1"
+        android:textSize="@dimen/size13" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goods_name"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/size13"
+        android:text="¥"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/size12" />
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goods_name"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_toRightOf="@id/money"
+        android:text="59"
+        android:textColor="@color/color_red"
+        android:textSize="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goods_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/tv_price"
+        android:background="@drawable/bg_quan_photo"
+        android:padding="1dp"
+        android:text="分"
+        android:textColor="#FFF1EC"
+        android:textSize="@dimen/size12" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goods_name"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:text="销量：2432"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/size12" />
+
+</RelativeLayout>

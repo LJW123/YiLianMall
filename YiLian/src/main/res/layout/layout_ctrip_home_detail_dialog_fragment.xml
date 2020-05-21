@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View style="@style/line_horizontal" />
+
+        <TextView
+            android:id="@+id/tv_price_one_night_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:text="1 晚总价：" />
+
+        <TextView
+            android:id="@+id/tv_price_one_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_price_one_night_title"
+            tools:text="111" />
+
+        <TextView
+            android:id="@+id/tv_return_bean_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price_one_night"
+            android:paddingLeft="15dp"
+            android:text="赠送益豆:" />
+
+        <TextView
+            android:id="@+id/tv_return_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price_one_night"
+            android:layout_toRightOf="@id/tv_return_bean_title"
+            android:paddingBottom="10dp"
+            android:textColor="#FF3C00"
+            tools:text="1111" />
+
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tv_return_bean"
+            android:layout_alignParentRight="true"
+            android:background="#FF6913"
+            android:text="预定"
+            android:textColor="@color/color_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_commit">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_area_and_people_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="13dp">
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_ctrip_home_detail_room_area"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/color_999"
+                    tools:text="面积 25m2" />
+
+                <TextView
+                    android:id="@+id/tv_people_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_ctrip_home_detail_people_count"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/color_999"
+                    tools:text="可住 2人" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_floor_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_area_and_people_count"
+                android:drawableLeft="@mipmap/icon_ctrip_home_detail_floor_num"
+                android:drawablePadding="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13dp"
+                android:textColor="@color/color_999"
+                tools:text="楼层 10-21层" />
+
+            <TextView
+                android:id="@+id/tv_bed_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_floor_num"
+                android:drawableLeft="@mipmap/icon_ctrip_home_detail_bed_width"
+                android:drawablePadding="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13dp"
+                android:textColor="@color/color_999"
+                tools:text="床宽 双人床1.8米" />
+
+            <TextView
+                android:id="@+id/tv_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bed_width"
+                android:drawableLeft="@mipmap/icon_ctrip_home_detail_wifi"
+                android:drawablePadding="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13dp"
+                android:textColor="@color/color_999"
+                tools:text="宽带 全部房间Wi-Fi、有线宽带" />
+
+            <View
+                android:id="@+id/view_line"
+                style="@style/innerLineStyle"
+                android:layout_below="@id/tv_wifi"
+                android:layout_marginRight="15dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_home_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_line"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_facilities"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_room_facilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_ctrip_room_detail_blue_arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="房屋设施"
+                    android:textColor="@color/color_4289FF" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_height_10"
+                style="@style/outerLineStyle"
+                android:layout_height="10dp"
+                android:layout_below="@id/ll_home_facilities" />
+
+            <TextView
+                android:id="@+id/tv_book_room_note_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_height_10"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="预订须知"
+                android:textColor="@color/color_333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_book_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_book_room_note_title"
+                android:padding="15dp" />
+
+            <View
+                android:id="@+id/view_bottom"
+                style="@style/outerLineStyle"
+                android:layout_below="@id/tv_book_note" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_room_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44000000"
+        android:drawableRight="@mipmap/ctrip_icon_close_room_dialog"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        tools:text="唯美行政标准间" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_service_facility"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_commit"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#EFEFEF">
+
+            <ImageView
+                android:id="@+id/iv_service_facility_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_10dp"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="服务设施"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_15dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="13dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_ctrip_home_detail_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="便利设施"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_14dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_ctrip_home_detail_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="浴室"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_14dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_ctrip_home_detail_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="食品饮品"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_14dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_ctrip_home_detail_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="食品饮品"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_14dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_ctrip_home_detail_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="其他"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_14dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

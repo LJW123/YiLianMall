@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantComboManageActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <com.yilian.mylibrary.widget.SlidingTabLayout
+        android:id="@+id/sliding_tab"
+        android:layout_width="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        tl:library_module_tl_indicator_color="@color/library_module_color_red"
+        tl:library_module_tl_textAllCaps="false"
+        tl:library_module_tl_textBold="SELECT"
+        tl:library_module_tl_textSelectColor="@color/library_module_color_red"
+        tl:library_module_tl_textUnselectColor="@color/library_module_color_333"
+        tl:library_module_tl_underline_color="@color/library_module_color_lines"
+        tl:library_module_tl_tab_space_equal="true"
+        tl:library_module_tl_underline_height="1px" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

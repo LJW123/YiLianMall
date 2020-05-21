@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_common_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--首页搜索-->
+        <include
+            android:id="@+id/include_sn_search"
+            layout="@layout/sn_layout_search_goods" />
+        <!--首页banner-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_gravity="center" />
+
+            <include
+                android:id="@+id/include_sn_inner_notice"
+                layout="@layout/activity_home_page_notice"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/head_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--首页广告位-->
+        <ImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background_common_color" />
+
+        <include layout="@layout/sn_item_home_page_goods_title" />
+    </LinearLayout>
+
+</FrameLayout>

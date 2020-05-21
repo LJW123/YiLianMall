@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lucky_white">#ffffff</color>
+
+    <!--线条颜色-->
+    <color name="lucky_color_lines">#e7e7e7</color>
+    <!--背景色-->
+    <color name="lucky_color_bg">#f7f7f7</color>
+    <!--主色调-->
+    <color name="lucky_color_red">#fe5062</color>
+    <color name="lucky_color_red_2">#f72d42</color>
+
+    <color name="lucky_holo_gray_light">#ff6c6c6c</color>
+    <color name="lucky_result_view">#b0000000</color>
+    <color name="lucky_viewfinder_mask">#60000000</color>
+    <color name="lucky_possible_result_points">#c0ffff00</color>
+    <color name="lucky_b3b3b3">#b3b3b3</color>
+    <color name="lucky_c333333">#333333</color>
+    <color name="lucky_black">#000000</color>
+    <color name="lucky_white_alpha">#88ffffff</color>
+    <color name="lucky_v3_title_bg">#FCFDFD</color>
+    <color name="lucky_near_background_radio">#fcfcfc</color>
+    <color name="lucky_near_area_lv_background_two">#f8f8f8</color>
+    <color name="lucky_view_line">#bbe4e2e0</color>
+    <color name="lucky_color_red_50">#88FE5062</color>
+    <!--警示辅助色-->
+    <color name="lucky_color_orange">#ff7701</color>
+    <color name="lucky_myinfo_red_bg">#F35951</color>
+    <color name="lucky_color_white">#ffffff</color>
+    <!--重要字体-->
+    <color name="lucky_color_333">#333333</color>
+    <!--次要字体-->
+    <color name="lucky_color_666">#666666</color>
+    <color name="lucky_color_555">#5a5a5a</color>
+    <!--辅助字体-->
+    <color name="lucky_color_999">#999999</color>
+    <color name="lucky_color_888">#888888</color>
+    <color name="lucky_color_a8">#A8A8AA</color>
+    <color name="lucky_bac_color">#f5f5f5</color>
+    <!--一级标题-->
+    <color name="lucky_color_h1">#4a4a4a</color>
+    <color name="lucky_tab_title_bg_color">#fcfdfd</color>
+
+
+    <!--按钮点击时的颜色-->
+    <color name="lucky_btn_clicking">#d84d47</color>
+
+    <!--按钮不可点击时的颜色  #bbbbbb-->
+    <color name="lucky_btn_unclick">#bbbbbb</color>
+    <!--按钮不可点击时的颜色  #bbbbbb-->
+    <color name="lucky_invite_friend_bg">#fe4256</color>
+
+
+    <color name="lucky_color_register">#5EAC8E</color>
+    <color name="lucky_regist_code">#6DCBA7</color>
+    <color name="lucky_color_login_bg">#F75A53</color>
+    <color name="lucky_color_shorcut_login">#FF9E9A</color>
+    <color name="lucky_login_pwd">#FF9E9A</color>
+    <color name="lucky_swipeLoadstart">#FF8C87</color>
+    <color name="lucky_swipeLoadend">#ff3232</color>
+    <color name="lucky_color_forget_pwd_bg">#4F83CB</color>
+    <color name="lucky_forget_pwd_code">#79A5E2</color>
+    <color name="lucky_text_icon">#E5BF86</color>
+    <color name="lucky_wx_login">#31D94C</color>
+    <color name="lucky_wx_login_click">#9931D94C</color>
+    <color name="lucky_fen_bg">#F5586A</color>
+    <color name="lucky_colorPrimary">#1CAF9A</color>
+    <color name="lucky_colorPrimaryDark">#1CAF9A</color>
+    <color name="lucky_colorAccent">#FF4081</color>
+    <color name="lucky_color_downTimebg">#404040</color>
+    <color name="lucky_color_residue">#F19149</color>
+    <color name="lucky_color_now_get">#FFC155</color>
+    <color name="lucky_color_lose_efficacy">#7E91A4</color>
+    <color name="lucky_color_fff8c9">#fff8c9</color>
+    <color name="lucky_color_243352">#243352</color>
+    <color name="lucky_color_my_bule">#50A2FE</color>
+    <color name="lucky_color_66ffffff">#66000000</color>
+    <color name="lucky_color_yellow_bg">#fff5e7</color>
+    <color name="lucky_color_yellow">#feb44d</color>
+    <color name="lucky_color_yellow_50">#88feb44d</color>
+    <color name="lucky_color_ccc">#cccccc</color>
+
+    <color name="lucky_color_goods_normal">#188AED</color>
+    <color name="lucky_color_goods_normal_bg">#E5F6FF</color>
+    <color name="lucky_color_goods_yhs">#14C99C</color>
+    <color name="lucky_color_goods_yhs_bg">#E4FFF8</color>
+    <color name="lucky_color_goods_jfg">#FF801A</color>
+    <color name="lucky_color_goods_jfg_bg">#FFEFE2</color>
+    <color name="lucky_transparent">#00ffffff</color>
+    <color name="lucky_color_status_redpackget">#ffde554d</color>
+
+</resources>

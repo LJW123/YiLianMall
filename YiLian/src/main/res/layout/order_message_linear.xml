@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingRight="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="订  单  号 :"
+            android:textColor="@color/a5a5a5"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/order_id_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="1213446789"
+            android:textColor="@color/c999999"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/order_zhuizong_text_bg"
+            android:text="订单追踪"
+            android:gravity="center"
+            android:textColor="@color/c686868"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:onClick="orderTrace"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="商品总额 :"
+            android:textColor="@color/a5a5a5"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/butiequan_goods_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:drawableRight="@mipmap/ic_mall_shopping"
+            android:gravity="center_vertical"
+            android:textColor="@color/c999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/daijinquan_goods_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_mall_vouchers"
+            android:gravity="center_vertical"
+            android:textColor="@color/c999999"
+            android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="订单运费 :"
+            android:textColor="@color/a5a5a5"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/daijinquan_express_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:drawableRight="@mipmap/ic_mall_vouchers"
+            android:gravity="center_vertical"
+            android:textColor="@color/c999999"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="订单总价 :"
+            android:textColor="@color/a5a5a5"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/total_butiequan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_mall_shopping"
+            android:gravity="center_vertical"
+            android:textColor="@color/c999999"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/total_daijinquan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_mall_vouchers"
+            android:gravity="center_vertical"
+            android:textColor="@color/c999999"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

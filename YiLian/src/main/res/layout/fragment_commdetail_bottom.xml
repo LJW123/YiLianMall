@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/separate_line" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingBottom="0dp"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding10">
+
+                <RadioButton
+                    android:id="@+id/rb_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@drawable/selector_commodity_detail_radio_drawable_red"
+                    android:drawablePadding="@dimen/padding10"
+                    android:gravity="center"
+                    android:text="商品信息"
+                    android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                    android:textSize="@dimen/size13" />
+
+                <RadioButton
+                    android:id="@+id/rb_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableBottom="@drawable/selector_commodity_detail_radio_drawable_red"
+                    android:drawablePadding="@dimen/padding10"
+                    android:gravity="center"
+                    android:text="售后保障"
+                    android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                    android:textSize="@dimen/size13" />
+
+                <RadioButton
+                    android:id="@+id/rb_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableBottom="@drawable/selector_commodity_detail_radio_drawable_red"
+                    android:drawablePadding="@dimen/padding10"
+                    android:gravity="center"
+                    android:text="买家评价"
+                    android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                    android:textSize="@dimen/size13" />
+
+                <RadioButton
+                    android:id="@+id/rb_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableBottom="@drawable/selector_commodity_detail_radio_drawable_red"
+                    android:drawablePadding="@dimen/padding10"
+                    android:gravity="center"
+                    android:text="咨询问答"
+                    android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                    android:textSize="@dimen/size13" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/separate_line" />
+
+            <ProgressBar
+                android:id="@+id/sender_list_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:indeterminateOnly="false"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bg"
+                android:visibility="gone"/>
+
+            <com.yilian.mall.widgets.CustWebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.yilian.mall.widgets.CustWebView
+                android:id="@+id/webView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.yilian.mall.widgets.CustListView
+                android:id="@+id/listViewEvaluate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <com.yilian.mall.widgets.CustListView
+                android:id="@+id/listViewQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/nothing"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_go_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin15"
+            android:src="@mipmap/fanhuidb"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

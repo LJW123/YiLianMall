@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/express_com_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.yilian.mall.widgets.JHCircleView
+            android:id="@+id/express_icon_iv"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="13dp"
+            />
+
+        <TextView
+            android:id="@+id/express_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#505a64"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/express_com_selected_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="13dp"
+            android:src="@mipmap/express_com_selected_icon"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/iv_suo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/merchant_iv_suo"
+        android:layout_gravity="right"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="@dimen/library_module_padding10"
+        android:paddingBottom="@dimen/library_module_padding10">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/merchant_default_jp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全年免订单服务"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_666"
+            android:layout_marginTop="@dimen/library_module_margin10"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赠送运费险"
+            android:textSize="@dimen/library_module_size11"
+            android:textColor="@color/library_module_color_999"
+            android:layout_marginTop="@dimen/library_module_merchant_margin5"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/return_layout"></include>
+
+        <TextView
+            android:id="@+id/search_equip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="信用互查"
+            android:textColor="#333333"
+            android:textSize="@dimen/textSize_18sp" />
+    </RelativeLayout>
+
+    <View style="@style/line_horizontal"></View>
+
+</LinearLayout>

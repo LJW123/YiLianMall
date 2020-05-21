@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:drawable="@drawable/merchant_commodity_property_item_select_bg_jp" android:state_checked="true"/>
+    <item  android:drawable="@drawable/merchant_commodity_property_item_select_bg_jp2" android:state_checkable="false"/>
+
+</selector>

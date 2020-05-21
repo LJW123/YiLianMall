@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/margin15"
+        android:src="@mipmap/back" />
+
+    <ImageView
+        android:id="@+id/sn_iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sn_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/textSize_18dp"
+        android:visibility="gone"
+        tools:text="苏宁订单" />
+
+    <TextView
+        android:id="@+id/tv_sn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:paddingRight="@dimen/padding_20dp"
+        android:textColor="@color/c333333"
+        android:textSize="@dimen/textSize_13dp"
+        android:visibility="gone"
+        tools:text="编辑" />
+</FrameLayout>

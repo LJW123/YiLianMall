@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <TextView
+        android:id="@+id/tv_cert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingTop="28dp"
+        android:text="拍照示例" />
+
+    <ImageView
+        android:id="@+id/iv_cert_photo"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:src="@color/merchant_color_999" />
+
+    <TextView
+        android:id="@+id/tv_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        android:text="请上传"
+        android:textColor="@color/merchant_color_999"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/btn_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/merchant_insert_photo"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CEA76E"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</LinearLayout>

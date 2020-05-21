@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_margin="@dimen/margin_15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/button_reminder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ctrip_order_detail_header_button_bg_solid"
+            android:gravity="center"
+            android:text="催确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_15dp" />
+
+        <TextView
+            android:id="@+id/button_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ctrip_order_detail_header_button_bg_solid"
+            android:gravity="center"
+            android:text="继续提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_15dp" />
+
+        <TextView
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ctrip_order_detail_header_button_bg_hollow"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textColor="#4289FF"
+            android:textSize="@dimen/textSize_15dp" />
+
+        <TextView
+            android:id="@+id/button_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ctrip_order_detail_header_button_bg_hollow"
+            android:gravity="center"
+            android:text="删除订单"
+            android:textColor="#4289FF"
+            android:textSize="@dimen/textSize_15dp" />
+
+        <TextView
+            android:id="@+id/button_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ctrip_order_detail_header_button_bg_hollow"
+            android:gravity="center"
+            android:text="再次预订"
+            android:textColor="#4289FF"
+            android:textSize="@dimen/textSize_15dp" />
+    </LinearLayout>
+
+    <View style="@style/line_horizontal" />
+</LinearLayout>

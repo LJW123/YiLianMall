@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="@dimen/padding10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_merchant_icon"
+            android:src="@mipmap/login_module_default_jp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_width="78dp"
+            android:layout_height="56dp" />
+
+        <TextView
+            android:id="@+id/tv_merchant_name"
+            android:text=""
+            android:ellipsize="end"
+            android:textSize="@dimen/size13"
+            android:lines="1"
+            android:textColor="@color/color_h1"
+            android:layout_toRightOf="@id/iv_merchant_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding10"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin15"
+            android:layout_toRightOf="@id/iv_merchant_icon"
+            android:layout_below="@id/tv_merchant_name"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/tv_merchant_price"
+            android:textSize="@dimen/size18"
+            android:text=""
+            android:textColor="@color/color_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/integralBtn"
+                android:text=""
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+
+        <TextView
+            android:id="@+id/tv_sell_count"
+            android:text=""
+            android:textSize="@dimen/size12"
+            android:textColor="@color/color_999"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:drawableRight="@mipmap/jiantou2"
+            android:drawablePadding="@dimen/margin5"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

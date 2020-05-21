@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9a000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="38dp"
+    android:paddingRight="38dp"
+    tools:context="com.yilian.mall.ui.ActBetTopicActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableRight="@mipmap/login_module_icon_close"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="确认押注"
+            android:textColor="@color/color_333"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:id="@+id/tv_side"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/color_red"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_decrease"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/white"
+                android:text="—"
+                android:textColor="#CCCCCC"
+                android:textSize="16dp" />
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/et_number"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border_btn_bg_2"
+                android:gravity="center"
+                android:inputType="number"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="1"
+                android:textColor="@color/color_333"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_increase"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/white"
+                android:text="+"
+                android:textColor="#CCCCCC"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_lines" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="需奖券(个)"
+                android:textColor="@color/color_333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:gravity="right|center_vertical"
+                android:inputType="numberDecimal|number"
+                android:id="@+id/tv_total_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="获取数据中…"
+                android:textColor="@color/color_333" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_lines" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:inputType="number|numberDecimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的奖券(个)"
+                android:textColor="@color/color_333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_user_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_notice_stake_num"
+            android:layout_marginTop="@dimen/size13"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每一方最多押注3注"
+            android:textColor="#fffd5161"
+            android:textSize="@dimen/size13"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_notice_stake_integral"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="奖券余额不足，请减少押注量"
+            android:textColor="#fffd5161"
+            android:textSize="@dimen/size13"
+            />
+
+
+
+        <Button
+            android:background="@color/ccccccc"
+            android:layout_marginTop="@dimen/size13"
+            android:id="@+id/btn_bet"
+            style="@style/btnStyleNoRadius"
+            android:layout_marginBottom="30dp"
+            android:text="果断押注" />
+    </LinearLayout>
+</LinearLayout>

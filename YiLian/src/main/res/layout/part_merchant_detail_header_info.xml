@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/margin10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/size14"
+            android:textColor="@color/color_333"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="@dimen/padding15"/>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:background="@color/color_lines"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/merchant_tel"
+            android:paddingLeft="@dimen/padding20"
+            android:paddingRight="@dimen/padding20"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"
+        android:layout_marginLeft="@dimen/margin15"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

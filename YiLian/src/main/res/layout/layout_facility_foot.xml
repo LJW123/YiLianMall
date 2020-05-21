@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_map_cantent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="100dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/cfff8f8f8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:text="住客点评"
+        android:textColor="#ff333333"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_user_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:background="@drawable/view_circle_blue"
+            android:gravity="center"
+            android:text="4.6"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_user_ratingsdec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:text="好"
+            android:textColor="#ff4289ff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_user_ratingdec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:text="“性价比高，卫生干净”"
+            android:textColor="#ffff6913"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_hotel_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cfff5f5f5"
+        android:padding="@dimen/padding_10dp">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_hotel_location"
+            android:background="#ffe9e9ea"></View>
+
+        <TextView
+            android:id="@+id/tv_hotel_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:drawableLeft="@mipmap/iv_facility"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="center"
+            android:text="酒店定位"
+            android:textColor="#ff999999"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_hotel_location"
+            android:background="#ffe9e9ea"></View>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mapview_facility_location"
+        android:name="com.yilian.mall.ctrip.fragment.hoteldetail.CtripHotelMapViewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#fff5f5f5"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15dp"
+        android:text="地址:"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+</LinearLayout>

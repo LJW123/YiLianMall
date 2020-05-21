@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8F8F8"
+    android:orientation="vertical">
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_marginTop="@dimen/margin_10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_15dp"
+                tools:text="喜鹊愉家旅馆(郑州东明路旗舰店)" />
+
+            <TextView
+                android:id="@+id/tv_hotel_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="酒店详情"
+                android:textColor="#4289FF"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="地址"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_hotel_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp"
+                tools:text="东明路商城路交叉口往北20米路东" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hotel_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="邮箱"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_hotel_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4289FF"
+                android:textSize="@dimen/textSize_13dp"
+                tools:text="53282898@qq.com" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#F5F5F5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_hotel_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="地图"
+            android:textColor="#4289FF"
+            android:textSize="@dimen/textSize_15dp" />
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/tv_hotel_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="酒店电话"
+            android:textColor="#4289FF"
+            android:textSize="@dimen/textSize_15dp" />
+    </LinearLayout>
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_house_type_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_15dp"
+                tools:text="唯美钟行政标准间(钟点房)(8:00到18:00， 连住5小时)" />
+
+            <TextView
+                android:id="@+id/tv_house_type_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房型详情"
+                android:textColor="#4289FF"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_house_type_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_13dp"
+            tools:text="6月27日-6月28日 | 共一晚 | 一间 | 双床
+ 06-28 无早餐" />
+    </LinearLayout>
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="入住人"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_check_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tools:text="夏某某，张某某"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="联系人"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_linkman"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tools:text="张某某"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="联系电话"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tools:text="132****3146"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="特殊要求"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="请联系酒店"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="发票信息"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="如需发票请联系益联益家客服"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="订单编号"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_order_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tools:text="6625235725"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="预定日期"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_reserve_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tools:text="2018-06-27 14:51:15"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="最晚到店时间"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <TextView
+                android:id="@+id/tv_latest_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tools:text="2018-06-27 15:00:00"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

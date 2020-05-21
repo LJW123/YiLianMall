@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/merchant_color_bg">
+
+    <ScrollView
+        android:id="@+id/layout_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/merchant_iv_center_bg">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/merchant_padding15"
+                    android:paddingRight="@dimen/merchant_padding15"
+                    android:paddingTop="40dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_login_photo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal">
+                        <ImageView
+                            android:id="@+id/iv_user_photo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="2dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/merchant_margin15">
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/merchant_size14"
+                            android:textColor="@color/merchant_color_white"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_user_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/merchant_size10"
+                            android:textColor="@color/merchant_color_white"
+                            android:drawableRight="@mipmap/merchant_iv_mine_right_sanjiao"
+                            android:drawablePadding="@dimen/merchant_padding5"
+                            android:layout_marginTop="@dimen/merchant_margin10"
+                            android:background="@drawable/merchant_bg_level_mine"
+                            android:paddingLeft="@dimen/merchant_padding10"
+                            android:paddingRight="@dimen/merchant_padding10"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/view_to_merchant"
+                    android:layout_width="100dp"
+                    android:layout_height="98dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@mipmap/merchant_iv_center_to_user"
+                    android:layout_marginBottom="-10dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_top_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/library_module_iv_mine_top_bg_bot"
+                    android:layout_gravity="bottom"/>
+
+                <com.yilian.mylibrary.widget.WaveViewBySinCosMine
+                    android:id="@+id/view_wave_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="25dp"
+                    app:library_module_waveType="sin"
+                    app:library_module_waveSpeed="2"
+                    app:library_module_waveStart="true"/>
+
+                <com.yilian.mylibrary.widget.WaveViewBySinCosMine
+                    android:id="@+id/view_wave_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="25dp"
+                    app:library_module_waveType="cos"
+                    app:library_module_waveSpeed="4"
+                    app:library_module_waveStart="true"/>
+            </FrameLayout>
+
+            <com.yilianmall.merchant.widget.NoScrollGridView
+                android:id="@+id/grid_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:scrollbars="none"
+                android:background="@color/white"/>
+
+            <com.yilianmall.merchant.widget.NoScrollGridView
+                android:id="@+id/grid_view_bot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/merchant_margin10"/>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/merchant_margin10"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_net_error"
+        layout="@layout/library_module_load_error"
+        android:visibility="gone" />
+
+</LinearLayout>

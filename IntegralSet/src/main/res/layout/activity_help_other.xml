@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/comm_back">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/layout_net_error"
+        android:layout_toEndOf="@+id/layout_net_error">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/library_module_default_jp"/>
+
+                <TextView
+                    android:id="@+id/tv_join_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:gravity="right|bottom"
+                    android:background="#22000000"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/library_module_margin10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/comm_letters"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/textSize_11sp"
+                        android:textColor="#999999" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/padding_15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:text=""
+                        android:textColor="#0081DD" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="被保人为本人"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:padding="@dimen/library_module_padding15"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="@dimen/library_module_padding15">
+
+                    <com.zcw.togglebutton.ToggleButton
+                        android:id="@+id/toggle_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:tbOffBorderColor="@color/color_line"
+                        app:tbSpotColor="@color/white"
+                        app:tbOffColor="@color/white"
+                        app:tbOnColor="@color/color_red"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/not_yourself_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="@dimen/textSize_14sp"
+                        android:text="被保人姓名"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+                    <com.yilian.mylibrary.widget.ClearEditText
+                        android:id="@+id/et_from_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:textSize="@dimen/library_module_size14"
+                        android:drawablePadding="@dimen/padding_10dp"
+                        android:textColor="@color/library_module_color_333"
+                        android:padding="15dp"
+                        android:hint="请输入被保人姓名"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="为谁互助"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_children"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/help_each"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:text="子女"
+                            android:textColor="@drawable/help_each_text_selector" />
+
+                        <RadioButton
+                            android:id="@+id/rb_lover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/help_each"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:text="配偶"
+                            android:textColor="@drawable/help_each_text_selector" />
+
+                        <RadioButton
+                            android:id="@+id/rb_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/help_each"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:text="父母"
+                            android:textColor="@drawable/help_each_text_selector" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="@dimen/textSize_14sp"
+                        android:text="互助人姓名"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+                    <com.yilian.mylibrary.widget.ClearEditText
+                        android:id="@+id/et_to_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text=""
+                        android:gravity="right"
+                        android:textSize="@dimen/library_module_size14"
+                        android:drawablePadding="@dimen/padding_10dp"
+                        android:textColor="@color/library_module_color_333"
+                        android:padding="@dimen/library_module_padding15"
+                        android:singleLine="true"
+                        android:hint="请输入互助人姓名"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="@dimen/textSize_14sp"
+                        android:text="身份证号"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+                    <com.yilian.mylibrary.widget.ClearEditText
+                        android:id="@+id/et_id_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:textColor="@color/library_module_color_333"
+                        android:textSize="@dimen/textSize_14sp"
+                        android:drawablePadding="@dimen/padding_10dp"
+                        android:padding="@dimen/library_module_padding15"
+                        android:gravity="right"
+                        android:text=""
+                        android:digits="0123456789xX"
+                        android:maxLength="18"
+                        android:hint="请输入互助人身份证"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"/>
+
+                <LinearLayout
+                    android:id="@+id/birthday_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="@dimen/textSize_14sp"
+                        android:text="生日"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/birthday_tv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/comm_letters"
+                            android:textSize="@dimen/textSize_14sp"
+                            android:text=""
+                            android:gravity="right"
+                            android:padding="15dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:text="互助期限"
+                    android:textColor="@color/comm_letters" />
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:text=""
+                    android:textColor="@color/comm_letters" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_lines"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生效日期"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:textColor="@color/comm_letters" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/textSize_14sp"
+                    android:textColor="@color/comm_letters" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="了解互助"
+                android:textSize="@dimen/library_module_size16"
+                android:textColor="@color/library_module_color_333"
+                android:padding="@dimen/padding_15dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@color/white"/>
+
+            <com.leshan.ylyj.customview.CustWebView
+                android:id="@+id/web_view_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/library_module_padding15"
+                android:paddingRight="@dimen/library_module_padding15"
+                android:paddingBottom="@dimen/library_module_padding5"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="互助规则"
+                android:textColor="@color/comm_letters"
+                android:background="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/layout_one_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加入条件"
+                        android:textSize="@dimen/library_module_size14"
+                        android:textColor="@color/color_333"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+                    <TextView
+                        android:id="@+id/tv_one_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="@dimen/library_module_size14"
+                        android:textColor="@color/library_module_color_999"
+                        android:singleLine="true"
+                        android:padding="@dimen/library_module_padding15"/>
+
+                    <ImageView
+                        android:id="@+id/iv_right_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/library_module_merchant_margin15"
+                        android:src="@mipmap/arrows_down_gray" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_reply_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="-1dp"
+                    android:src="@mipmap/ic_merchant_reply"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_one_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tv_one_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="11sp"
+                        android:text=""
+                        android:padding="@dimen/library_module_padding5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/layout_two_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="保障范围"
+                        android:textSize="@dimen/library_module_size14"
+                        android:textColor="@color/color_333"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+                    <TextView
+                        android:id="@+id/tv_two_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="@dimen/library_module_size14"
+                        android:singleLine="true"
+                        android:textColor="@color/library_module_color_999"
+                        android:padding="@dimen/library_module_padding15"/>
+
+                    <ImageView
+                        android:id="@+id/iv_right_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/arrows_down_gray"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+                <ImageView
+                    android:id="@+id/iv_reply_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="-1dp"
+                    android:src="@mipmap/ic_merchant_reply"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_two_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tv_two_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="11sp"
+                        android:text=""
+                        android:padding="@dimen/library_module_padding5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/layout_three_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最高额度"
+                        android:textSize="@dimen/library_module_size14"
+                        android:textColor="@color/color_333"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+                    <TextView
+                        android:id="@+id/tv_three_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="@dimen/library_module_size16"
+                        android:singleLine="true"
+                        android:textColor="#FFA81F"
+                        android:padding="@dimen/library_module_padding15"/>
+
+                    <ImageView
+                        android:id="@+id/iv_right_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/arrows_down_gray"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+                <ImageView
+                    android:id="@+id/iv_reply_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="-1dp"
+                    android:src="@mipmap/ic_merchant_reply"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <com.leshan.ylyj.customview.CustWebView
+                        android:id="@+id/web_view_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/library_module_padding5"/>
+
+                    <TextView
+                        android:id="@+id/tv_three_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="11sp"
+                        android:text=""
+                        android:padding="@dimen/library_module_padding5"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="80dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/layout_four_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="等待期    "
+                        android:textSize="@dimen/library_module_size14"
+                        android:textColor="@color/color_333"
+                        android:paddingLeft="@dimen/library_module_padding15"/>
+
+                    <TextView
+                        android:id="@+id/tv_four_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="@dimen/library_module_size14"
+                        android:singleLine="true"
+                        android:textColor="@color/library_module_color_999"
+                        android:padding="@dimen/library_module_padding15"/>
+
+                    <ImageView
+                        android:id="@+id/iv_right_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/arrows_down_gray"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/library_module_color_lines"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+                <ImageView
+                    android:id="@+id/iv_reply_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="-1dp"
+                    android:src="@mipmap/ic_merchant_reply"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_four_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F6F6"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                    android:layout_marginRight="@dimen/library_module_merchant_margin15"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_four_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/comm_letters"
+                        android:textSize="11sp"
+                        android:text=""
+                        android:padding="@dimen/library_module_padding5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/transparent_color"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:src="@mipmap/address_come_back" />
+
+        <ImageView
+            android:id="@+id/iv_back_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:src="@mipmap/iv_back_black"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/share_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/act_share_black"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/iv_share_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/iv_share_black"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_net_error"
+        layout="@layout/library_module_load_error"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/health_btn_bg"
+            android:text="立即参与"
+            android:textSize="@dimen/textSize_17sp"
+            android:paddingBottom="@dimen/library_module_padding5"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_common_color"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_10dp"
+    android:paddingTop="@dimen/margin_2dp">
+
+    <View
+        android:id="@+id/left_line"
+        android:layout_width="@dimen/margin_10dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size12">
+
+        <ImageView
+            android:id="@+id/iv_brand_goods"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_goods_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:gravity="center"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:singleLine="true"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_13dp"
+            tools:text="柔软凉爽蚕丝填..." />
+
+        <TextView
+            android:id="@+id/tv_le_dou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_red_line"
+            android:drawablePadding="@dimen/margin_4dp"
+            android:drawableRight="@mipmap/icon_ledou"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_2dp"
+            android:paddingLeft="@dimen/margin_4dp"
+            android:paddingRight="@dimen/margin_4dp"
+            android:paddingTop="@dimen/margin_2dp"
+            android:singleLine="true"
+            android:textColor="@color/red1"
+            android:textSize="@dimen/textSize_11dp"
+            tools:text="预计 200.00" />
+
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_13dp"
+            tools:text="¥ 1899" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/right_line"
+        android:layout_width="@dimen/margin_10dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

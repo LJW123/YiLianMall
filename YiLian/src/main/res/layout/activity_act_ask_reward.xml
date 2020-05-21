@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9a000000"
+    android:gravity="center"
+    android:paddingLeft="60dp"
+    android:paddingRight="50dp"
+    tools:context="com.yilian.mall.ui.ActAskRewardDialogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_user"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@mipmap/merchant_close" />
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/library_module_team_pic" />
+
+        <TextView
+            android:id="@+id/tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_ask_reward_refresh"
+            android:textColor="@color/color_333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="财主,家里没有余粮啦!"
+            android:textColor="@color/color_333"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btn_ask_reward"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:background="@mipmap/icon_ask_reward" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="求赏不超过1奖券"
+            android:textColor="@color/color_999"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_common_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--苏宁购物车列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sn_car_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_car_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_common_color"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="149dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:src="@mipmap/sn_list_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="购物车还是空的，快来挑选好货吧"
+            android:textColor="@color/main_black_text"
+            android:textSize="@dimen/textSize_14dp" />
+
+        <TextView
+            android:id="@+id/tv_go_shopping"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:background="@drawable/sn_order_bt_bg_orange_solid"
+            android:gravity="center"
+            android:text="去逛逛"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sn_icon_recomentd" />
+    </LinearLayout>
+</LinearLayout>

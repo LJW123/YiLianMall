@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_module_default_jp" />
+
+    <TextView
+        android:id="@+id/tv_one_buy_recommend_goods_details1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:text="这里是详情"
+        android:textColor="#2a2c2e"
+        android:textSize="14dp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_one_buy_recommend_goods_details2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="128G颜色随机"/>-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="68dp"
+        android:layout_height="5dp"
+        android:progressDrawable="@drawable/progress_horizontal" />
+
+</LinearLayout>

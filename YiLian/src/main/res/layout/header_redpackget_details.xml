@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin30"
+    android:paddingBottom="@dimen/margin30">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/redpackage_user_icon"
+        android:src="@mipmap/library_module_default_jp"
+        android:layout_width="@dimen/icon50"
+        android:layout_height="@dimen/icon50" />
+
+    <TextView
+        android:text="暂无昵称"
+        android:layout_marginTop="14.5dp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff666666"
+        android:textSize="@dimen/text_size_first" />
+</LinearLayout>

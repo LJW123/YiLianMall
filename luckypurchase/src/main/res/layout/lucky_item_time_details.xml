@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/library_module_inner_tab_height"
+    android:orientation="vertical"
+    android:background="@color/lucky_white">
+
+    <View style="@style/lucky_outerLineStyle1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:paddingRight="@dimen/library_module_padding15"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/library_module_padding5"
+            android:drawableRight="@mipmap/library_module_icon_right_arrow"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_999"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_red"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_999"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>

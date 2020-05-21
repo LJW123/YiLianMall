@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cf7f7f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_20dp"
+        android:paddingTop="@dimen/padding_20dp">
+
+        <ImageView
+            android:id="@+id/iv_null_hint"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:src="@mipmap/iv_null" />
+
+        <TextView
+            android:id="@+id/tv_null_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_null_hint"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/hotel_null"
+            android:textColor="@color/color_666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

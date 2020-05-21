@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--评价成功界面 推荐的尚未评价得订单列表Item-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding15"
+    android:paddingLeft="@dimen/padding15"
+    android:paddingRight="@dimen/padding15">
+
+    <View style="@style/innerLineStyle"/>
+
+    <ImageView
+        android:id="@+id/iv_package_icon"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:scaleType="centerCrop"/>
+
+    <com.yilian.mylibrary.SlantedTextView
+        android:id="@+id/tv_tag"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:library_module_slantedLength="17dp"
+        android:layout_marginTop="@dimen/margin10"
+        app:library_module_slantedMode="left_triangle"
+        app:library_module_slantedTextColor="#6A4F10"
+        app:library_module_slantedTextSize="@dimen/size10"
+        app:library_module_slantedText="外卖"
+        app:library_module_slantedBackgroundColor="#FFDE23" />
+
+    <TextView
+        android:id="@+id/tv_mt_package_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_toRightOf="@id/iv_package_icon"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/placeholder_text"
+        android:textColor="@color/c333333"
+        android:textSize="@dimen/size15"
+        />
+
+    <TextView
+        android:id="@+id/tv_mt_package_used_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mt_package_price"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_toRightOf="@id/iv_package_icon"
+        android:lines="1"
+        android:text="@string/placeholder_text"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/size13"
+        />
+
+    <TextView
+        android:id="@+id/tv_evaluate_get_award"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_package_icon"
+        android:layout_gravity="left"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/iv_package_icon"
+        android:text="@string/evaluate_get_award"
+        android:textColor="@color/color_666"
+        android:textSize="@dimen/size13"
+        />
+
+
+    <Button
+        android:id="@+id/btn_go_to_evaluate"
+        style="@style/btnLittle"
+        android:focusable="false"
+        android:layout_alignBottom="@id/tv_evaluate_get_award"
+        android:layout_alignParentRight="true"
+        android:text="@string/go_to_evaluate"
+        />
+
+
+</RelativeLayout>

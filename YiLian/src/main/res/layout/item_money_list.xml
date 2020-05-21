@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="18dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_toRightOf="@id/iv_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/color_333"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text=""
+        android:textColor="@color/color_999"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_detail"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_toRightOf="@id/tv_detail"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/color_333"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_amount"
+        android:textColor="#F25024" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_status"
+        android:layout_marginTop="@dimen/margin15"
+        android:background="@color/color_lines"
+        android:paddingLeft="@dimen/padding15" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.ActClockInChallengeSuccessActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_clock_challenge_success_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="26dp"
+        android:text="支付成功 记得明早打卡哦"
+        android:textColor="@color/color_h1"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_clock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="明日5:00-8:00记得打卡" />
+
+    <Button
+        android:id="@+id/btn_share"
+        style="@style/btnStyle"
+        android:background="#FE8019"
+        android:text="邀请好友加入挑战" />
+
+    <Button
+        android:id="@+id/btn_close"
+        style="@style/btnStyle"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/library_module_bg_orange_line"
+        android:text="完成"
+        android:textColor="#fe8019" />
+
+</LinearLayout>

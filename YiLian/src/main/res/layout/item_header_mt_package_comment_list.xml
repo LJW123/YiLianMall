@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding15"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_comment"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size15"
+            />
+
+        <RatingBar
+            android:id="@+id/rb_package_total_score"
+            style="@style/near_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.1"/>
+
+        <TextView
+            android:id="@+id/tv_package_total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/innerLineStyle"
+        />
+
+    <com.yilian.mall.widgets.FlowLayout
+        android:id="@+id/fl_comment_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.yilian.mall.widgets.FlowLayout>
+
+    <View
+        style="@style/innerLineStyle"
+        />
+</LinearLayout>

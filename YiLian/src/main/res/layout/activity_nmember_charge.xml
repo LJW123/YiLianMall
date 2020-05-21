@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/merchant_padding10"
+                android:paddingRight="@dimen/merchant_padding10"
+                android:src="@mipmap/merchant_v3back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="在线充值"
+                android:textColor="@color/merchant_color_333"
+                android:textSize="@dimen/merchant_size18"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/margin15" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="大额充值"
+                android:textColor="@color/merchant_color_333"
+                android:textSize="@dimen/merchant_size18"
+                android:layout_marginLeft="@dimen/margin15" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/merchant_padding10"
+                android:paddingRight="@dimen/merchant_padding10"
+                android:src="@mipmap/icon_charge_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/color_red"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/rg_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_one"
+                        style="@style/chargeRadioButton"
+                        android:checked="true"
+                        android:drawableBottom="@drawable/line_red2dp"
+                        android:drawablePadding="17dp"
+                        android:text="乐分币充值" />
+
+                    <RadioButton
+                        android:id="@+id/rb_two"
+                        style="@style/chargeRadioButton"
+                        android:drawableBottom="@drawable/line_white2dpa"
+                        android:drawablePadding="17dp"
+                        android:text="奖励直充" />
+                    <!--<RadioButton-->
+                    <!--android:id="@+id/rb_three"-->
+                    <!--style="@style/chargeRadioButton"-->
+                    <!--android:drawableBottom="@drawable/line_white2dpa"-->
+                    <!--android:drawablePadding="17dp"-->
+                    <!--android:text="抵扣券充值" -->
+                    <!--/>-->
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e0e0e0" />
+
+            <com.yilian.mall.widgets.CustomViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bac_color">
+
+            </com.yilian.mall.widgets.CustomViewPager>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

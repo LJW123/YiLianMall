@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/v3_title" />
+
+    <com.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="197dp"
+                    android:background="#f7f7f7" />
+
+                <LinearLayout
+                    android:id="@+id/ll_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginRight="0dp"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+
+            <include layout="@layout/home_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_dianzhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding15"
+                    android:paddingBottom="@dimen/padding15"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="店长推荐"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/size18"
+                        android:layout_marginRight="@dimen/margin10"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GROOM"
+                        android:textSize="@dimen/size18"
+                        android:textColor="@color/text_icon"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:background="@color/color_bg" />
+
+                <com.yilian.mall.widgets.NoScrollGridView
+                    android:id="@+id/girdView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/color_bg"
+                    android:dividerHeight="0.2dp"
+                    android:horizontalSpacing="8px"
+                    android:numColumns="2"
+                    android:verticalSpacing="8px" />
+
+                <Button
+                    android:id="@+id/btn_nothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_margin="@dimen/margin10"
+                    android:background="#BBBBBD"
+                    android:gravity="center"
+                    android:text="没有合适的？去本地旗舰店看看"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size14"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

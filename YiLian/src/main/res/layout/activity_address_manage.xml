@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/address_manage_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="newAddress">
+
+            <TextView
+                android:id="@+id/tv_add_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/address_manage_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center"
+                android:text="使用新的收货地址"
+                android:textColor="#4e4b4b"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="#939393"
+        android:textSize="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.yilian.mall.widgets.NoScrollListView
+            android:id="@+id/address_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.yilian.mall.widgets.NoScrollListView>
+    </ScrollView>
+
+
+</LinearLayout>

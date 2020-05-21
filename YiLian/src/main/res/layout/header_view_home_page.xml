@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <!--运营广告图 轮播-->
+    <include
+        android:id="@+id/include_banner"
+        layout="@layout/include_banner_icon_lefen" />
+
+    <!--运营广告图 单张上-->
+    <include
+        android:id="@+id/include_img_top"
+        layout="@layout/include_img_top_icon_lefen" />
+
+    <!--图标列表-->
+    <include
+        android:id="@+id/include_icons"
+        layout="@layout/include_icon_list_lefen" />
+
+    <!--运营广告图 单张下-->
+    <include
+        android:id="@+id/include_img_bot"
+        layout="@layout/include_img_bot_icon_lefen" />
+
+    <!--乐分快报-->
+    <include
+        android:id="@+id/include_news"
+        layout="@layout/include_notice_view_lefen2" />
+    <!--专区一/精选专区 Title1-->
+    <include
+        android:id="@+id/include_area_title_one"
+        layout="@layout/include_home_page_area_title"
+        android:visibility="gone" />
+    <!--专区一/精选专区 Content1_1-->
+    <LinearLayout
+        android:id="@+id/ll_area_content_1_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/include_content_one_1"
+            layout="@layout/include_home_page_area1_content_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/include_content_one_2"
+            layout="@layout/include_home_page_area1_content_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <!--专区一/精选专区 Content1_2-->
+    <LinearLayout
+        android:id="@+id/ll_area_content_1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/include_content_one_3"
+            layout="@layout/include_home_page_area1_content_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/include_content_one_4"
+            layout="@layout/include_home_page_area1_content_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/include_content_one_5"
+            layout="@layout/include_home_page_area1_content_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/include_content_one_6"
+            layout="@layout/include_home_page_area1_content_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!--专区一/精选专区 Title2-->
+    <include
+        android:id="@+id/include_area_title_two"
+        layout="@layout/include_home_page_area_title"
+        android:visibility="gone" />
+    <!--品牌专区 Content-->
+    <LinearLayout
+        android:id="@+id/ll_area_content_2_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include
+
+            android:id="@+id/include_content_two_1"
+            layout="@layout/include_home_page_area2_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/include_content_two_2"
+            layout="@layout/include_home_page_area2_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_area_content_2_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/include_content_two_3"
+            layout="@layout/include_home_page_area2_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/include_content_two_4"
+            layout="@layout/include_home_page_area2_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!--轮播2-->
+    <include
+        android:id="@+id/include_banner_2"
+        layout="@layout/include_banner_icon_lefen"
+        android:visibility="gone" />
+    <!--专区一/淘宝专区 Title3-->
+    <include
+        android:id="@+id/include_area_title_taobao"
+        layout="@layout/include_home_page_area_title"
+        android:visibility="gone" />
+    <!--专区一/淘宝专区 Content-->
+    <include
+        android:id="@+id/include_tao_bao_area"
+        layout="@layout/include_home_page_taobao_content"
+        android:visibility="gone" />
+    <!--专区一/京东专区 Title4-->
+    <include
+        android:id="@+id/include_area_title_jd"
+        layout="@layout/include_home_page_area_title"
+        android:visibility="gone" />
+    <!--专区一/京东专区 Content-->
+    <include
+        android:id="@+id/include_jd_area"
+        layout="@layout/include_home_page_taobao_content"
+        android:visibility="gone" />
+    <!--专区一/苏宁专区 Title5-->
+    <include
+        android:id="@+id/include_area_title_sn"
+        layout="@layout/include_home_page_area_title"
+        android:visibility="gone" />
+    <!--专区一/苏宁专区 Content-->
+    <include
+        android:id="@+id/include_sn_area"
+        layout="@layout/include_home_page_taobao_content"
+        android:visibility="gone" />
+    <!--商家列表头部-->
+    <RelativeLayout
+        android:id="@+id/rl_more_shops"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/list_title" />
+
+        <View
+            style="@style/outerLineStyle"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

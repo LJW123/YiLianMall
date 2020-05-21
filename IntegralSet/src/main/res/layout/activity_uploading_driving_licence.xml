@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/background_common_color">
+
+    <include layout="@layout/ylyj_defaut_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6.5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_anquan"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息安全保障中，未经你授权不对外提供"
+            android:textColor="@color/credit_gray"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="143dp"
+        android:layout_height="160dp"
+        android:background="@mipmap/icon_zhengjian"
+        android:layout_marginTop="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="将进入益联益家证件夹完成信息上传、保存和管理"
+        android:textColor="@color/credit_gray"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/uploading_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:text="上传"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:background="@drawable/red_button_back"
+        android:gravity="center" />
+
+</LinearLayout>

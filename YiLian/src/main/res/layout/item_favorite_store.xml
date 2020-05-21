@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin10"
+        android:background="@color/color_bg">
+
+    </View>
+
+    <FrameLayout
+        android:id="@+id/fl_image_content"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_store_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/banner_moren" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/iv_white_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="88dp"
+            android:layout_marginTop="45dp"
+            android:alpha="0.5"
+            android:background="@drawable/bg_empty_white"
+            android:visibility="visible" />
+
+
+        <View
+            android:id="@+id/bg_llcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="39dp"
+            android:layout_marginLeft="94dp"
+            android:layout_marginRight="87dp"
+            android:layout_marginTop="46dp"
+            android:alpha="0.1"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:visibility="visible"></View>
+
+
+        <TextView
+            android:id="@+id/tv_tagsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin5"
+            android:text="全场低至¥9.9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size15" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height40"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cost_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_store_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_weight="1"
+            android:text="新世家族旗舰店"
+            android:textColor="@color/color_h1"
+            android:textSize="@dimen/size15" />
+
+        <TextView
+            android:id="@+id/un_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/btn_bg_cornersc"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="取消收藏"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12" />
+
+
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:background="@null"
+            android:button="@drawable/btn_small_select"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding15"
+            android:paddingRight="5dp"
+            android:paddingTop="@dimen/padding10"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

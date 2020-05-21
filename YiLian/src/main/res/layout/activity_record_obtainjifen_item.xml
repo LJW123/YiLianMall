@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/time_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/time_title_height"
+        android:background="#f7f7f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="0dp"
+        android:text="2015-08-31"
+        android:textColor="@color/jifenrecord_textcolor2"
+        android:textSize="@dimen/time_title_textsize"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/merchant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="21dp"
+                android:textColor="@color/jifenrecord_textcolor1"
+                android:textSize="@dimen/jifenrecord_textsize1"
+                android:text="你好你好"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="21dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/merchant_goods"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingBottom="1.5dp"
+                    android:textColor="@color/jifenrecord_textcolor2"
+                    android:textSize="11sp"
+                    android:text="你好你好"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="11dp"
+                        android:paddingRight="0dp"
+                        android:text="获得 :"
+                        android:textColor="@color/jifenrecord_textcolor2"
+                        android:textSize="11sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/lefen_icon_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@mipmap/gerencenter_lefen"
+                            android:paddingTop="1.5dp"
+                            android:layout_marginLeft="9dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/merchant_give_integral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingBottom="1dp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="0dp"
+                            android:textColor="@color/jifenrecord_textcolor3"
+                            android:textSize="16sp"
+                            android:text="22"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lefen_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="0dp"
+                        android:text="/乐分币"
+                        android:textColor="@color/jifenrecord_textcolor4"
+                        android:textSize="11sp" />
+                    <TextView
+                        android:id="@+id/lequan_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="券"
+                        android:gravity="center"
+                        android:background="@mipmap/quan_bg_too_small"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="21dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/time1" />
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="0dp"
+                    android:textColor="@color/jifenrecord_textcolor2"
+                    android:textSize="@dimen/time_textsize"
+                    android:text="09:02:30"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/jifenrecord_textcolor4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@mipmap/lefenhuode_wenlibg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|right"
+            android:text="实际消费"
+            android:textColor="@color/jifenrecord_textcolor2"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="( 现金："
+                android:textColor="@color/jifenrecord_textcolor2"
+                android:textSize="@dimen/jifenrecord_textsize2" />
+
+            <TextView
+                android:id="@+id/merchant_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/jifenrecord_textcolor2"
+                android:textSize="@dimen/jifenrecord_textsize2"
+                android:text="30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元  )"
+                android:textColor="@color/jifenrecord_textcolor2"
+                android:textSize="@dimen/jifenrecord_textsize2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/return_layout"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="驾驶证"
+            android:textColor="@color/comm_letters"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/check_driving_licence_edit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="编辑"
+            android:textColor="@color/comm_letters"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="姓名"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/check_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/notice_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="证号"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/check_car_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/notice_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="准驾车型"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/check_cartype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/notice_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="生效日期"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/check_effective_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/notice_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="失效日期"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/check_expiry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/notice_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="档案编号"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/check_file_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/notice_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal"></View>
+
+            <LinearLayout
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="证件照片"
+                    android:textColor="@color/comm_letters"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingBottom="@dimen/margin_30dp"
+                android:background="@color/white"
+                android:paddingLeft="17.5dp"
+                android:paddingRight="17.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:padding="@dimen/margin_5dp"
+                    android:background="@drawable/frame_dash_gap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/check_positive_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="215dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        tools:src="@mipmap/icon_fan_zhengjian" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape_bottom_grey3"
+                        android:gravity="center"
+                        android:text="主页"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:padding="@dimen/margin_5dp"
+                    android:background="@drawable/frame_dash_gap"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp">
+
+                    <ImageView
+
+                        android:id="@+id/check_back_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        tools:src="@mipmap/icon_fan_zhengjian" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape_bottom_grey3"
+                        android:gravity="center"
+                        android:text="副页"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+
+
+

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantOffLineDealActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <include
+                android:id="@+id/include_merchant_detail"
+                layout="@layout/merchant_layout_merchant1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+
+            <include
+                android:id="@+id/include_phone"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_contact"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_consume_money"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_consume_profit"
+                layout="@layout/merchant_layout_text_value" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_bg" />
+
+            <include
+                android:id="@+id/include_consume_remark"
+                layout="@layout/merchant_layout_text_value"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp" />
+
+            <include
+                android:id="@+id/include_consume_payment"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_consume_score"
+                layout="@layout/merchant_layout_text_value" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/library_module_color_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/library_module_margin10"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/library_module_padding15"
+                android:paddingRight="@dimen/library_module_padding15">
+
+                <TextView
+                    android:id="@+id/tv_usable_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="奖励可支付："
+                    android:textColor="@color/library_module_color_666"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_whether_use_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/library_module_cash_desk_on" />
+            </LinearLayout>
+            <View
+                android:layout_marginRight="15dp"
+                style="@style/library_module_innerLineStyle"/>
+
+            <LinearLayout
+                android:id="@+id/ll_cost_income"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_cost_income"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="营收额支付:"
+                    android:textColor="@color/library_module_color_666"
+                    tools:text="营收额支付：$12.34" />
+
+                <ImageView
+                    android:id="@+id/btn_whether_use_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/library_module_cash_desk_on" />
+            </LinearLayout>
+            <com.yilianmall.merchant.widget.NoScrollListView
+                android:id="@+id/lv_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:divider="@color/library_module_color_lines"
+                android:dividerHeight="@dimen/library_module_linesdp"
+                android:paddingLeft="@dimen/library_module_padding10">
+
+            </com.yilianmall.merchant.widget.NoScrollListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@style/merchant_btnStyle_v1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="请输入消费金额" />
+    </LinearLayout>
+
+</LinearLayout>

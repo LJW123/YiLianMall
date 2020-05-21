@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_combo_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding15"
+        android:text="套餐信息"
+        android:textSize="@dimen/size14"
+        android:textColor="@color/color_999"
+        android:background="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"
+        android:layout_marginLeft="@dimen/margin15"/>
+
+    <com.yilian.mall.widgets.NoScrollListView
+        android:id="@+id/listView_combo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:dividerHeight="1px"
+        android:divider="@color/color_lines" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"
+        android:layout_marginLeft="@dimen/margin15"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_go_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding15"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查看图文详情"
+            android:textSize="@dimen/size12"
+            android:textColor="@color/color_666"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/commit_order_jiantou"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yilian.loginmodule">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".LeFenPhoneLoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".LeFenSmsCodeLoginActivity" />
+        <activity android:name=".LeFenResetPasswordActivity" />
+        <activity android:name=".LeFenForgotPasswordActivity" />
+        <activity
+            android:name=".V2_LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".V2_RegisterActivity" />
+
+    </application>
+
+</manifest>

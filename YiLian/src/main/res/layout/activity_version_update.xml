@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:src="@mipmap/yilianlogo" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="19dp"
+        android:text="当前版本:"
+        android:textColor="#686868"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:drawableRight="@mipmap/right_sanjiao"
+        android:gravity="center_vertical"
+        android:onClick="jumpAgreement"
+        android:paddingLeft="17dp"
+        android:paddingRight="16dp"
+        android:text="使用协议"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="14dp"
+        android:background="@mipmap/about_button"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="callPhone"
+        android:paddingTop="10dp"
+        android:text="拨打客服电话 :400-152-5159"
+        android:textColor="#e6573d" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--<ImageView -->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@mipmap/about_us_font"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_marginBottom="24dp"/>-->
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:text=""
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12" />
+    </RelativeLayout>
+</LinearLayout>

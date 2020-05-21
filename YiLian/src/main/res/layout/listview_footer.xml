@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin15"
+        android:background="@drawable/bg_empty_red_circle"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingRight="@dimen/padding10"
+        android:paddingTop="5dp"
+        android:text="查看全部评价"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/size14"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_no_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="没有更多数据"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/size12"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin15"/>
+
+</LinearLayout>

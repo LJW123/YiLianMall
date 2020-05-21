@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_5dp"
+    android:paddingLeft="@dimen/padding_15dp"
+    android:paddingRight="@dimen/padding_15dp"
+    android:paddingTop="@dimen/padding_5dp">
+
+    <ImageView
+        android:id="@+id/jd_iv_classify"
+        android:layout_width="23dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/jd_icon_home_page_classify" />
+
+    <FrameLayout
+        android:id="@+id/jd_fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp">
+
+        <include layout="@layout/jd_layout_search_goods" />
+    </FrameLayout>
+
+</LinearLayout>

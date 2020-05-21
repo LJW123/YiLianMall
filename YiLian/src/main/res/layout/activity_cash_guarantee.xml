@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评论保证金说明"
+        android:textSize="@dimen/size18"
+        android:textColor="@color/color_333"
+        android:layout_marginTop="@dimen/margin30"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="碰运气和猜价格是益联益家为提升用户购物乐趣，让利用户的一种促销方式。用户参与并中奖后，需要支付商品价格同等的奖券数量作为评论保证金，当用户完成收货且按要求积极完成评论，审核通过后系统将自动返还本次支付的奖券押金。"
+        android:textSize="@dimen/size14"
+        android:textColor="@color/color_333"/>
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/btnCircleStyle6"
+        android:text="我知道啦"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size16"
+        android:layout_marginLeft="@dimen/margin30"
+        android:layout_margin="@dimen/margin30"
+        android:layout_marginBottom="@dimen/dp_40"/>
+
+</LinearLayout>

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--外部线条的style-->
+    <style name="merchant_outerLineStyle">
+        <item name="android:background">@color/merchant_color_lines</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="merchant_outerLineStyle10">
+        <item name="android:background">@color/merchant_color_bg</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--默认按钮是不可点击的-->
+    <style name="merchant_btnStyle_v1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/merchant_bg_btn_red_radious</item>
+        <item name="android:elevation">3dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <!--通屏按钮  -->
+    <style name="merchant_btnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/merchant_bg_btn_red_radious</item>
+    </style>
+
+    <style name="merchant_dialog_activity" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="merchant_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="merchant_GiftDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="merchant_GridPasswordView" />
+
+    <style name="merchant_GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="merchant_GridPasswordView.EditText" parent="merchant_GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="merchant_GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+
+    </style>
+
+    <style name="merchant_AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/library_module_in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/library_module_out_righttoleft</item>
+    </style>
+
+    <style name="merchant_anim_vertical">
+        <!-- PopupWindow垂直弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/merchant_score_exponent_in</item>
+        <item name="android:windowExitAnimation">@anim/merchant_score_exponent_out</item>
+    </style>
+
+    <style name="merchant_pop_anim_alpha">
+
+        <!-- PopupWindow渐变动画 -->
+        <item name="android:windowEnterAnimation">@anim/library_module_anim_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/library_module_anim_alpha_out</item>
+    </style>
+
+    <style name="merchant_money_record_inner0">
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <!--<item name="android:paddingTop">15dp</item>-->
+        <!--<item name="android:paddingBottom">15dp</item>-->
+        <!--<item name="android:paddingRight">15dp</item>-->
+    </style>
+
+    <style name="merchant_money_record_inner1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/merchant_color_666</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="merchant_money_record_inner2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/merchant_color_333</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="merchant_center_money_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="merchant_discount_change_record_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/merchant_color_999</item>
+        <item name="android:lines">1</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="merchant_myTransparent">
+        <item name="android:windowBackground">@color/merchant_color_66ffffff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/merchant_score_exponent_in</item>
+    </style>
+
+    <style name="merchant_score_exponent_in" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/merchant_score_exponent_in</item>
+    </style>
+
+    <style name="merchant_choose_agent_area">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableRight">@mipmap/library_module_icon_show_account_history</item>
+        <item name="android:drawableBottom">@drawable/merchant_line</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="merchant_ViewSell">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/merchant_margin5</item>
+        <item name="android:text">销</item>
+        <item name="android:textSize">@dimen/library_module_size13</item>
+        <item name="android:textColor">@color/library_module_ff6471</item>
+        <item name="android:background">@drawable/library_module_bg_solid_pink_3</item>
+
+    </style>
+
+    <style name="merchant_ViewConsume">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/merchant_margin5</item>
+        <item name="android:text">消</item>
+        <item name="android:textSize">@dimen/library_module_size13</item>
+        <item name="android:textColor">@color/library_module_ffa82e</item>
+        <item name="android:background">@drawable/library_module_bg_solid_yellow_3</item>
+    </style>
+
+    <style name="merchant_btnCircleStyle">
+        <item name="android:background">@drawable/library_module_bg_style_red_45</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/merchant_padding15</item>
+        <item name="android:layout_marginRight">@dimen/merchant_padding15</item>
+        <item name="android:textSize">@dimen/merchant_size18</item>
+        <item name="android:textColor">@color/merchant_color_white</item>
+    </style>
+
+    <style name="merchant_btnCircleStyleYellow">
+        <item name="android:background">@drawable/library_module_bg_style_yellow_45</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/merchant_padding15</item>
+        <item name="android:layout_marginRight">@dimen/merchant_padding15</item>
+        <item name="android:textSize">@dimen/merchant_size18</item>
+        <item name="android:textColor">@color/merchant_color_white</item>
+    </style>
+
+    <style name="merchant_btnCircleStyleWhite">
+        <item name="android:background">@drawable/library_module_bg_style_white_45</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/merchant_padding15</item>
+        <item name="android:layout_marginRight">@dimen/merchant_padding15</item>
+        <item name="android:textSize">@dimen/merchant_size18</item>
+        <item name="android:textColor">@color/merchant_color_333</item>
+    </style>
+
+
+    <!--外部线条的style-->
+    <style name="merchant_outerLineStyle15">
+        <item name="android:background">@color/merchant_color_lines</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/merchant_margin15</item>
+    </style>
+
+    <style name="merchant_goods_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/merchant_margin15</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:text">商</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/merchant_size12</item>
+        <item name="android:textColor">@color/merchant_color_goods_normal</item>
+        <item name="android:background">@drawable/merchant_btn_goods_normal</item>
+    </style>
+
+    <style name="merchant_goods_yhs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/merchant_margin15</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:text">易</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/merchant_size12</item>
+        <item name="android:textColor">@color/merchant_color_goods_yhs</item>
+        <item name="android:background">@drawable/merchant_btn_goods_yhs</item>
+    </style>
+
+    <style name="merchant_goods_jfg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/merchant_margin15</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:text">积</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/merchant_size12</item>
+        <item name="android:textColor">@color/merchant_color_goods_jfg</item>
+        <item name="android:background">@drawable/merchant_btn_goods_jfg</item>
+    </style>
+
+    <style name="merchant_exchangeGoods">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginRight">@dimen/merchant_margin10</item>
+        <item name="android:text">换货</item>
+        <item name="android:textSize">@dimen/merchant_size11</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/library_module_color_white</item>
+        <item name="android:background">@drawable/library_module_bg_style_red_3_0</item>
+    </style>
+
+    <style name="merchant_refundGoods">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginRight">@dimen/merchant_margin10</item>
+        <item name="android:text">退货</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/merchant_size11</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/library_module_color_white</item>
+        <item name="android:background">@drawable/library_module_bg_style_green_3_0</item>
+    </style>
+
+    <style name="merchant_Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/merchant_color_99000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#99000000</item>
+    </style>
+
+
+    <!--*************** flycotablayout 所需 开始******************************************************-->
+    <declare-styleable name="SlidingTabLayout" tools:ignore="ResourceName">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_width_equal_title" />
+
+        <!-- underline -->
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CommonTabLayout" tools:ignore="ResourceName">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_anim_enable" />
+        <attr name="tl_indicator_anim_duration" />
+        <attr name="tl_indicator_bounce_enable" />
+
+        <!-- underline -->
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+
+        <!-- icon -->
+        <!-- 设置icon宽度 -->
+        <attr name="tl_iconWidth" format="dimension" />
+        <!-- 设置icon高度 -->
+        <attr name="tl_iconHeight" format="dimension" />
+        <!-- 设置icon是否可见 -->
+        <attr name="tl_iconVisible" format="boolean" />
+        <!-- 设置icon显示位置,对应Gravity中常量值 -->
+        <attr name="tl_iconGravity" format="enum">
+            <enum name="LEFT" value="3" />
+            <enum name="TOP" value="48" />
+            <enum name="RIGHT" value="5" />
+            <enum name="BOTTOM" value="80" />
+        </attr>
+        <!-- 设置icon与文字间距 -->
+        <attr name="tl_iconMargin" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SegmentTabLayout" tools:ignore="ResourceName">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_anim_enable" />
+        <attr name="tl_indicator_anim_duration" />
+        <attr name="tl_indicator_bounce_enable" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+
+        <attr name="tl_bar_color" format="color" />
+        <attr name="tl_bar_stroke_color" format="color" />
+        <attr name="tl_bar_stroke_width" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="MsgView" tools:ignore="ResourceName">
+        <!-- 圆角矩形背景色 -->
+        <attr name="mv_backgroundColor" format="color" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_cornerRadius" format="dimension" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_strokeWidth" format="dimension" />
+        <!-- 圆角边框颜色-->
+        <attr name="mv_strokeColor" format="color" />
+        <!-- 圆角弧度是高度一半-->
+        <attr name="mv_isRadiusHalfHeight" format="boolean" />
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="mv_isWidthHeightEqual" format="boolean" />
+    </declare-styleable>
+    <!--*************** flycotablayout 所需 结束******************************************************-->
+    <!--Dialog 通用样式-->
+    <style name="merchant_ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="merchant_popmenu_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/merchant_popumenu_animation_show</item>
+        <item name="android:windowExitAnimation">@anim/merchant_popumenu_animation_hide</item>
+    </style>
+
+    <style name="merchant_MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#D7AE5C</item>
+        <item name="colorControlActivated">#D7AE5C</item>
+    </style>
+    <!--提取营收页面editTextView下划线样式-->
+    <style name="merchant_extract_revenue" parent="Theme.AppCompat.Light">
+    <item name="colorControlNormal">@color/merchant_color_bg</item>
+    <item name="colorControlActivated">@color/merchant_color_bg</item>
+    </style>
+
+</resources>

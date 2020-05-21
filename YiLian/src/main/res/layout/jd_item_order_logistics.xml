@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <!--末尾显示样式-->
+    <RelativeLayout
+        android:id="@+id/rl_end"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <View
+            style="@style/line_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25dp" />
+        <View
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@mipmap/jd_order_logistics_end" />
+    </RelativeLayout>
+    <!--中间显示样式-->
+    <RelativeLayout
+        android:id="@+id/rl_middle"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+        <View
+            style="@style/line_vertical"
+            android:layout_centerInParent="true" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/jd_order_logistics_middle" />
+    </RelativeLayout>
+    <!--头部显示样式-->
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <View
+            style="@style/line_vertical"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@mipmap/jd_order_logistics_head" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:text="您的订单已进入第三方卖家库房，准备出货"
+            android:textColor="#333333"
+            android:textSize="@dimen/textSize_14dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="2018-05-11 11：09:36"
+            android:textColor="#999999"
+            android:textSize="@dimen/textSize_14dp" />
+
+        <View style="@style/line_horizontal" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:hint="输入搜索的商品名字"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_le_dou"
+            android:drawableLeft="@mipmap/v3search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="搜索"
+
+            />
+    </LinearLayout>
+    <!--运营广告图 轮播-->
+    <include
+        android:id="@+id/include_banner"
+        layout="@layout/include_banner_icon_lefen" />
+    <!--图标列表-->
+    <include
+        android:id="@+id/include_icons"
+        layout="@layout/library_module__icon_list" />
+    <!--为你推荐-->
+    <ImageView
+        android:id="@+id/iv_list_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/margin_10dp"
+        android:src="@mipmap/ledou_list_header" />
+</LinearLayout>

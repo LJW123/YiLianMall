@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/library_module_padding15"
+        android:orientation="vertical"
+        android:background="@color/library_module_color_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/library_module_padding10"
+            android:orientation="vertical"
+            android:background="@drawable/library_module_bg_style_red_radious_5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/library_module_size15"
+                android:textColor="@color/aliwx_bg_color_white"
+                android:text="计算公式"/>
+
+            <TextView
+                android:id="@+id/tv_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:textSize="@dimen/library_module_size13"
+                android:textColor="@color/lucky_color_white"
+                android:text="[(数值A)÷商品所需人次]取余数+"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/library_module_padding15"
+        android:orientation="vertical"
+        android:background="@color/library_module_color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/library_module_size15"
+            android:textColor="@color/library_module_color_333"
+            android:text="数值A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/library_module_margin10"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_999"
+            android:text="= 截止该商品最后夺宝时间最后50条全站参与记录"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/library_module_margin10"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/lucky_size13"
+                android:textColor="@color/lucky_color_666"
+                android:text="= "/>
+
+            <TextView
+                android:id="@+id/tv_number_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/library_module_size13"
+                android:textColor="@color/library_module_color_red"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/lucky_outerLineStyle10"
+        android:layout_height="@dimen/library_module_merchant_margin15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/library_module_btn_height"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:paddingRight="@dimen/library_module_padding15"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/library_module_color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/library_module_size15"
+            android:textColor="@color/library_module_color_333"
+            android:text="夺宝时间"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/library_module_size15"
+            android:textColor="@color/library_module_color_333"
+            android:text="用户昵称"/>
+
+    </LinearLayout>
+
+</LinearLayout>

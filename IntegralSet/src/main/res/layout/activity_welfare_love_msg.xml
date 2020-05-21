@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/welfare_title_layout" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_top_photo"
+                android:layout_width="147dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_donation" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="19dp"
+                android:text="感谢捐助"
+                android:textColor="@color/library_module_color_999"
+                android:textSize="@dimen/textSize_12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="爱心包裹"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/textSize_16dp" />
+
+            <TextView
+                android:id="@+id/tv_leave_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/textSize_22dp"
+                android:background="@drawable/shap_orange_gradient"
+                android:gravity="center_horizontal"
+                android:onClick="onClickAction"
+                android:padding="12dp"
+                android:text="留言"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_14dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_love_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClickAction"
+                    android:text="我的爱心历程"
+                    android:textColor="@color/color_ffff6d02"
+                    android:textSize="@dimen/textSize_13dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_15dp"
+                    android:layout_height="@dimen/margin_10dp"
+                    android:layout_marginLeft="@dimen/margin_6dp"
+                    android:src="@mipmap/icon_love_course" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_6dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="30dp"
+                android:text="大家都在捐"
+                android:textColor="@color/library_module_color_999"
+                android:textSize="@dimen/textSize_13dp" />
+
+            <FrameLayout
+                android:id="@+id/fl_welfare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/padding_20dp"
+                android:paddingTop="@dimen/padding_20dp">
+                <android.support.v7.widget.CardView
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/iv_welfare_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/library_module_default_jp" />
+                </android.support.v7.widget.CardView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="125dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_welfare_plain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/textSize_18dp"
+                        tools:text="脑瘫儿童滋养计划" />
+
+                    <TextView
+                        android:id="@+id/tv_action_welfare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textSize_12dp"
+                        android:lineSpacingExtra="@dimen/padding_5dp"
+                        android:textColor="#ff999999"
+                        android:textSize="@dimen/textSize_13dp"
+                        tools:text="帮助贫困脑瘫儿童进行康复训练共 2752791 爱心（份）" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:drawableLeft="@mipmap/icon_to_welfare"
+            android:drawablePadding="@dimen/margin_2dp"
+            android:gravity="center"
+            android:text="爱心捐赠"
+            android:textColor="@color/library_module_color_999"
+            android:textSize="@dimen/textSize_13dp" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

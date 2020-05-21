@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_vertical"
+    android:background="#9a000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="38dp"
+    android:paddingRight="38dp"
+    tools:context="com.yilian.mall.ui.ActBetTopicSuccessActivity"
+    >
+    <LinearLayout
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="29dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:src="@mipmap/act_bet_success"/>
+        <TextView
+          android:textStyle="bold"
+            android:layout_marginBottom="@dimen/size30"
+            android:layout_marginTop="@dimen/size20"
+            android:id="@+id/tv_stake_notice"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="成功押注蓝方1注！"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size16"/>
+
+
+        <TextView
+            android:id="@+id/tv_kai_time_notice"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            tools:text="本期开奖时间：12:00，开奖后会通过站内信告知您本期押注结果，祝您好运！"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/size14"
+            android:layout_marginBottom="28dp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_lines"/>
+        <TextView
+            android:id="@+id/tv_together_play"
+            android:layout_marginBottom="@dimen/size17"
+            android:layout_marginTop="@dimen/size17"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="邀请好友一起玩"
+            android:textColor="#ff5380fd"
+            android:textSize="@dimen/size18"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_lines"/>
+
+
+        <TextView
+            android:id="@+id/tv_i_known"
+            android:textSize="@dimen/size18"
+            android:layout_marginBottom="@dimen/size17"
+            android:layout_marginTop="@dimen/size17"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我知道了"
+            android:textColor="#ff333333"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--顶部轮播 广告-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/color_333"
+            app:image_scale_type="fit_xy"/>
+
+        <LinearLayout
+            android:id="@+id/cu_pointer"
+            android:layout_width="match_parent"
+            android:layout_marginTop="55dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_icon"
+            android:layout_below="@id/cu_pointer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+           android:layout_marginTop="@dimen/margin_10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_icon_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon_1"
+                        android:layout_width="38dp"
+                        android:layout_height="41dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/card_home_choice" />
+
+                    <TextView
+                        android:id="@+id/tv_icon_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="品牌精选"
+                        android:textColor="@color/color_666"
+                        android:textSize="@dimen/textSize_12dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line_1"
+                    style="@style/line_vertical"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="17dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_icon_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon_2"
+                        android:layout_width="38dp"
+                        android:layout_height="41dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/card_home_recommend" />
+
+                    <TextView
+                        android:id="@+id/tv_icon_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="好货推荐"
+                        android:textColor="@color/color_666"
+                        android:textSize="@dimen/textSize_12dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line_2"
+                    style="@style/line_vertical"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="17dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_icon_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon_3"
+                        android:layout_width="38dp"
+                        android:layout_height="41dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/card_home_list" />
+
+                    <TextView
+                        android:id="@+id/tv_icon_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="每日榜单"
+                        android:textColor="@color/color_666"
+                        android:textSize="@dimen/textSize_12dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line_3"
+                    style="@style/line_vertical"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="17dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_icon_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon_4"
+                        android:layout_width="38dp"
+                        android:layout_height="41dp"
+                        android:src="@mipmap/card_home_course" />
+
+                    <TextView
+                        android:id="@+id/tv_icon_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="新手教程"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/color_666"
+                        android:textSize="@dimen/textSize_12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_adv"
+            android:layout_below="@id/cv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/zhanwei" />
+    </RelativeLayout>
+</LinearLayout>

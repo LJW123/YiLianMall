@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/lucky_margin10"
+    android:layout_marginRight="@dimen/lucky_margin10"
+    android:layout_marginTop="@dimen/lucky_margin15"
+    android:layout_marginBottom="@dimen/lucky_margin5"
+    android:orientation="vertical"
+    android:background="@drawable/library_module_bg_shadow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/lucky_padding10"
+        android:orientation="horizontal"
+        android:background="@color/lucky_color_red">
+        <TextView
+            android:id="@+id/tv_issue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/lucky_size12"
+            android:textColor="@color/lucky_color_white"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lucky_size12"
+            android:textColor="@color/lucky_color_white"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/lucky_padding10"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/lucky_margin5">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/lucky_margin5"
+                android:layout_marginTop="@dimen/lucky_margin5"
+                android:src="@mipmap/lucky_default_head_icon"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/library_module_icon_crown"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lucky_margin10"
+            android:padding="@dimen/lucky_padding5"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/lucky_size14"
+                android:singleLine="true"
+                android:textColor="@color/lucky_color_333"
+                android:text=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/lucky_padding5"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_prize_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/lucky_size12"
+                    android:textColor="@color/lucky_color_999"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/lucky_margin5"
+                    android:textSize="@dimen/lucky_size12"
+                    android:textColor="@color/lucky_color_999"
+                    android:text="参与人次"/>
+
+                <TextView
+                    android:id="@+id/tv_people_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lucky_margin5"
+                    android:textSize="@dimen/lucky_size13"
+                    android:textColor="@color/lucky_color_red"
+                    android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

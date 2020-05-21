@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jifenrecord_background_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_title" />
+
+    <ImageView
+        android:id="@+id/no_jifenobtain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="130dp"
+        android:src="@mipmap/wuhdjl"
+        android:visibility="gone" />
+
+    <com.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_jifenrecord_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+    </com.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_marginTop="-1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/merchant_bg_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/merchant_head_image"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            tools:src="@mipmap/library_module_aaaa"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/merchant_head_name"
+            android:layout_marginTop="17dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="高规格"
+            android:textColor="#ff303030"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="18dp"
+            android:paddingLeft="24dp"
+            android:background="@color/merchant_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/merchant_head_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="共领5个奖励"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/merchant_size13" />
+
+            <TextView
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="解锁 "
+                android:textColor="#ff666666"
+                android:textSize="@dimen/merchant_size13" />
+
+            <TextView
+                android:id="@+id/merchant_head_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="300奖券"
+                android:textColor="#DE554D"
+                android:textSize="@dimen/merchant_size13" />
+        </LinearLayout>
+
+        <View
+            android:paddingLeft="14dp"
+            android:paddingRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/merchant_color_bg" />
+    </LinearLayout>
+</RelativeLayout>

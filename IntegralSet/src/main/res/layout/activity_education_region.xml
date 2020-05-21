@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/return_layout"></include>
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="学历学籍"
+                android:textColor="#333333"
+                android:textSize="@dimen/textSize_18sp" />
+        </RelativeLayout>
+
+        <View style="@style/line_horizontal"></View>
+
+        <RelativeLayout
+            android:id="@+id/dingwei_biaotou"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <com.leshan.ylyj.utils.ClearEditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:drawableLeft="@mipmap/ic_search"
+                android:drawableRight="@drawable/edittext_selector"
+                android:drawablePadding="10dp"
+                android:hint="搜索"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/notice_text_color"
+                android:textColorHint="@color/notice_text_color"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dingwei_biaotou"
+            android:background="@android:color/white">
+
+            <com.leshan.ylyj.utils.PinnedSectionListView
+                android:id="@+id/phone_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+
+            <com.leshan.ylyj.utils.LetterIndexView
+                android:id="@+id/phone_LetterIndexView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/phone_txt_center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="#30000000"
+        android:gravity="center"
+        android:textColor="#ff7c7c7c"
+        android:visibility="gone" />
+</RelativeLayout>

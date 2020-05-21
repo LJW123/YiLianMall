@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_title_layout"
+        android:paddingBottom="@dimen/size13"
+        android:paddingTop="@dimen/size14"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/sub_title_pic_left"
+            android:layout_width="32dp"
+            android:layout_height="21dp"
+            tools:src="@mipmap/act_seek_reward_passed" />
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size11"
+            android:layout_marginRight="@dimen/size11"
+            android:gravity="bottom"
+            tools:text="活动专区"
+            tools:textColor="@color/red"
+            android:textSize="@dimen/size18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sub_title_pic_right"
+            android:layout_width="32dp"
+            android:layout_height="21dp"
+            tools:src="@mipmap/act_seek_reward_passed" />
+    </LinearLayout>
+    <!---头部轮播图-->
+    <com.youth.banner.Banner
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/size15"
+        android:id="@+id/recommend_banner"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+</LinearLayout>
+

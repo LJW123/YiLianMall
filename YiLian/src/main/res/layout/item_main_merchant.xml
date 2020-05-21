@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="8dp">
+
+
+    <com.yilian.mall.widgets.CircleImageView1
+        android:id="@+id/merchant_iv_prize"
+        android:layout_width="107dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="14dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_module_default_jp" />
+
+    <TextView
+        android:id="@+id/merchant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="益联益家"
+        android:textColor="#454444"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/merchant_ratingBar"
+            style="@style/near_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/tv_graded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_presence_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:drawableLeft="@mipmap/main_bendi_mall"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="被赞次"
+        android:textColor="#888888"
+        android:textSize="11sp" />
+</LinearLayout>

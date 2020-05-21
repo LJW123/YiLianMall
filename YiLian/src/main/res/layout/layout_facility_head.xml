@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line_horizontal" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_hotel_feature_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10dp">
+
+                <View
+                    android:id="@+id/circle1"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/padding_3dp"
+                    android:layout_toLeftOf="@+id/tv_hotel_feature"
+                    android:background="@drawable/view_circle_gray" />
+
+                <View
+                    android:id="@+id/view_line_gray_left"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/circle1"
+                    android:background="#ffe9e9ea"></View>
+
+                <TextView
+                    android:id="@+id/tv_hotel_feature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="酒店特色"
+                    android:textColor="#ff333333"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/circle2"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/padding_3dp"
+                    android:layout_toRightOf="@+id/tv_hotel_feature"
+                    android:background="@drawable/view_circle_gray" />
+
+                <View
+                    android:id="@+id/view_line_gray_right"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/circle2"
+                    android:background="#ffe9e9ea"></View>
+            </RelativeLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_hotel_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"></android.support.v7.widget.RecyclerView>
+
+            <View style="@style/line_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/rl_fility_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cfff5f5f5"
+                android:padding="@dimen/padding_10dp">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tv_sheshi"
+                    android:background="#ffe9e9ea"></View>
+
+                <TextView
+                    android:id="@+id/tv_sheshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:drawableLeft="@mipmap/iv_facility"
+                    android:drawablePadding="@dimen/padding5"
+                    android:gravity="center"
+                    android:text="设施政策"
+                    android:textColor="#ff999999"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/tv_sheshi"
+                    android:background="#ffe9e9ea"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:text="设施服务"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+
+                ></android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/rl_expanded_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding5"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_expanded_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/yuanjiao_blue_radiu10"
+                    android:paddingBottom="@dimen/padding_8dp"
+                    android:paddingLeft="@dimen/padding_30dp"
+                    android:paddingRight="@dimen/padding_30dp"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:text="查看更多"
+                    android:textColor="#ff4289ff"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_10dp"
+                android:background="#fff8f8f8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:text="酒店政策"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_book_room_note_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:text=""
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_10dp"
+                android:background="#fff8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin10"
+                android:drawableRight="@mipmap/iv_phone"
+                android:padding="@dimen/padding_10dp"
+                android:text="联系电话："
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_tuwen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cfff5f5f5"
+                android:padding="@dimen/padding_10dp">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tv_tuwen"
+                    android:background="#ffe9e9ea"></View>
+
+                <TextView
+                    android:id="@+id/tv_tuwen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:drawableLeft="@mipmap/iv_facility"
+                    android:drawablePadding="@dimen/padding5"
+                    android:gravity="center"
+                    android:text="图文详情"
+                    android:textColor="#ff999999"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/tv_tuwen"
+                    android:background="#ffe9e9ea"></View>
+            </RelativeLayout>
+
+</LinearLayout>

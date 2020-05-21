@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商家分类popup左侧item点击的背景颜色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:drawable="@color/near_store_class_popup_store_classs_on"></item>
+    <item android:state_selected="true" android:drawable="@color/near_store_class_popup_store_classs_on"></item>
+    <item android:state_pressed="true" android:drawable="@color/near_store_class_popup_store_classs_on"></item>
+    <item android:drawable="@color/near_store_class_popup_store_classs_off"></item>
+
+</selector>

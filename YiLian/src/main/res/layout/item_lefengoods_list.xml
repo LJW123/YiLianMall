@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout_jp_goods_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <!--新版商城 商品展示条目-->
+
+    <ImageView
+        android:id="@+id/iv_goods2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+            android:id="@+id/iv_goods1"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+                android:background="@mipmap/login_module_default_jp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_sold_out"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/status_goods_sold_out"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_jp_lefengoods_title" />
+    </LinearLayout>
+</FrameLayout>

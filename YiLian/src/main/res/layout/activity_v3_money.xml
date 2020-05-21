@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:fitsSystemWindows="false"
+    tools:context="com.yilian.mall.ui.V3MoneyActivity">
+
+    <com.yilian.mall.widgets.pulllayout.DropZoomScrollView
+        android:id="@+id/drop_zoom_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg_money_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-200dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text=""
+                    android:textColor="#CFEFFF"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:id="@+id/tv_wait_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/bg_shape_gray_money"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_total_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textColor="@color/color_999"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textColor="@color/color_999"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/menu_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp" />
+<!--提现/-->
+                <include
+                    android:id="@+id/include_yi_dou_bao"
+                    layout="@layout/item_money" />
+<!--奖励明细/奖券转赠/提取到交易平台-->
+                <include
+                    android:id="@+id/include_transfer"
+                    layout="@layout/item_money" />
+<!--提取到乐淘天使-->
+                <include
+                    android:id="@+id/include_extractLeTaoAngle"
+                    layout="@layout/item_money"
+                    android:visibility="gone" />
+<!--充值/奖券明细/区块益豆明细-->
+                <include
+                    android:id="@+id/include_detail"
+                    layout="@layout/item_money" />
+<!--每日领奖励/益豆转赠-->
+                <include
+                    android:id="@+id/include_stress_donation"
+                    layout="@layout/item_money"
+                    android:visibility="gone" />
+
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:visibility="gone"
+                    app:image_scale_type="center_crop"
+                    app:indicator_drawable_selected="@mipmap/lucky_icon_indicator_select"
+                    app:indicator_drawable_unselected="@mipmap/lucky_icon_indicator_unselect"
+                    app:indicator_height="8dp"
+                    app:indicator_margin="5dp"
+                    app:indicator_width="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.yilian.mall.widgets.pulllayout.DropZoomScrollView>
+
+    <include layout="@layout/merchant_v3_title_no_underline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_recommend1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:text="奖券说明"
+            android:textColor="#F25024"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="3dp"
+            android:background="#F25024" />
+
+        <TextView
+            android:id="@+id/tv_recommend2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:text="常见问题"
+            android:textColor="#F25024"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>

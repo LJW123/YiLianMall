@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="27.5dp"
+    android:layout_marginLeft="47.5dp"
+    android:layout_marginRight="47.5dp"
+    android:paddingLeft="10.2dp"
+    android:paddingRight="10.2dp"
+    android:background="@drawable/merchant_bg_white_6_radius">
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投放奖励"
+            android:textColor="#ff4a4a4a"
+            android:textSize="@dimen/merchant_size18" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/merchant_iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/library_module_login_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="16.5dp"
+        android:layout_below="@id/merchant_iv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffe7e7e7" />
+
+
+    <TextView
+        android:drawablePadding="5dp"
+        android:drawableLeft="@mipmap/merchant_icon_jifen"
+        android:layout_marginTop="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="奖券"
+        android:textColor="@color/merchant_color_666"
+        android:textSize="@dimen/merchant_size16" />
+
+
+    <TextView
+        android:id="@+id/merchant_tv_amounts"
+        android:layout_marginTop="19dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff4a4a4a"
+        android:textSize="35dp" />
+
+    <View
+        android:layout_marginTop="16.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffe7e7e7" />
+
+    <Button
+        android:id="@+id/merchant_bt_send"
+        android:layout_marginTop="27dp"
+        android:textSize="@dimen/merchant_size18"
+        android:textColor="@color/merchant_white"
+        android:text="确认投放"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/merchant_bg_red_solid_corner3" />
+
+</LinearLayout>

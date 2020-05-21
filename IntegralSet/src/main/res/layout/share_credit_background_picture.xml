@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/share_credit_background_rl"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/share_credit_img"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/member_card" />
+
+        <TextView
+            android:id="@+id/share_credit_style_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="诗人"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/share_credit_selected_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#993F51B5"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/icon_duihao_xinyong"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

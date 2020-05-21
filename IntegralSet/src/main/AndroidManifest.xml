@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leshan.ylyj.testfor">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <!-- autolayout标准尺寸 -->
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity android:name="com.leshan.ylyj.MainActivity" />
+
+        <!-- 奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券奖券 -->
+
+
+        <!-- 我的奖券 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.MyIntegrationActivity" />
+
+        <!-- 奖券明细 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.IntegrationRecordActivity" />
+
+        <!-- 集分宝 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.IntegralTreasureActivity" />
+
+        <!-- 设置保留奖券 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.SetRetainedIntegraActivity" />
+
+        <!-- 自动转入详情 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.SetIntegraNumActivity" />
+
+        <!-- 兑换明细 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.IntegralRecordActivity" />
+
+        <!-- 转出 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.TurnOutIntegralActivity" />
+
+        <!-- 转出奖券状态 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.TurnOutIntegralStateActivity" />
+
+        <!-- 转入 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.ShiftToActivity" />
+
+        <!-- 转入奖券状态 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.ShiftToStateActivity" />
+
+        <!-- 赚取佣金 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.MakeMoneyActivity" />
+
+        <!-- 兑换指数 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.ExchangeIndexActivity" />
+
+        <!-- 兑换指数记录 -->
+        <activity android:name="com.leshan.ylyj.view.activity.Integraltreasuremodel.ExchangeIndexRecordActivity" />
+
+        <!-- 我的信用值 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.MyCreditActivity" />
+
+        <!-- 我的白条 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.MyBlankNoteActivity" />
+
+        <!-- 信用管理 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CreditManagementActivity" />
+
+        <!-- 信用个人信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.MyPersonalInforActivity" />
+
+        <!-- 学历 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.RecordActivity" />
+
+        <!-- 学历地址 -->
+        <activity
+            android:name="com.leshan.ylyj.view.activity.creditmodel.EducationRegionActivity"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+
+        <!-- 院校名称 -->
+        <activity
+            android:name="com.leshan.ylyj.view.activity.creditmodel.SchoolNameActivity"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+
+        <!-- 提交学历信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.SubmitEducationActivity" />
+
+        <!-- 我的email -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.MyEmailActivity" />
+
+        <!-- 邮箱提交成功 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.MyEmailSuccessActivity" />
+
+        <!-- 驾照 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.MyCarLicenseActivity" />
+
+        <!-- 上传驾驶证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.UploadingDrivingLicenceActivity" />
+
+        <!-- 自动识别驾驶证信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.AutoRecognizeCarLicenseActivity" />
+
+        <!-- 编辑驾照信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.EditCarLicenseActivity" />
+
+        <!-- 核对驾照信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CheckCarLicenseActivity" />
+
+        <!-- 添加驾驶证（提交成功） -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.SubmitDrivingLicenceActivity" />
+
+        <!-- 驾驶证核对无误 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CheckCorrectCarLicenseActivity" />
+
+        <!-- 已有驾驶证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.HaveDrivingLicenceActivity" />
+
+        <!-- 查看已有驾驶证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CheckHaveDrivingLicenceActivity" />
+
+        <!-- 行驶证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.DrivingLicenseActivity" />
+
+        <!-- 核对行驶证信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CheckDrivingLicenseActivity" />
+
+        <!-- 核对行车证无误 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CheckCorrectDrivingLicenseActivity" />
+
+        <!-- 编辑行驶证信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.EdutDrivingLicenseActivity" />
+
+        <!-- 已有行驶证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.HaveVehicleLicenceDiscActivity" />
+
+        <!-- 查看已有行驶证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CheckHaveDrivingLicenseActivity" />
+
+        <!-- 身份证信息验证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.IDInformationVerificationActivity" />
+
+        <!-- 确认并提交身份证信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.ConfirmIdentityInformationActivity" />
+
+        <!-- 编辑身份证信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.IdEditActivity" />
+
+        <!-- 已有身份证信息 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.ExistingIDCardActivity" />
+
+        <!-- 查看身份证 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CheckTheIdentityCardActivity" />
+
+        <!-- 信用守护 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.MyCreditGuardActivity" />
+
+        <!-- 信用足迹 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CreditFootmarkActivity" />
+
+        <!-- 信用互查 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.CreditCheckEachOtherActivity" />
+
+        <!-- 了解信用 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.KnowMoreCreditActivity" />
+
+        <!-- 分享信用 -->
+        <activity android:name="com.leshan.ylyj.view.activity.creditmodel.ShareCreditActivity" />
+
+        <!-- 我的健康 -->
+
+        <activity android:name="com.leshan.ylyj.view.activity.healthmodel.MyHealthActivity" />
+        <activity
+            android:name="com.leshan.ylyj.view.activity.healthmodel.HealthHomeActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 我的健康果 -->
+        <activity android:name="com.leshan.ylyj.view.activity.healthmodel.HealthFruitActivity" />
+
+        <!-- 我的健康果列表 -->
+        <activity android:name="com.leshan.ylyj.view.activity.healthmodel.HealthFruitListActivity" />
+
+        <!-- 选择好友 -->
+        <activity android:name="com.leshan.ylyj.view.activity.healthmodel.ChoseFriendsActivity" />
+
+        <!-- 抢好友果 -->
+        <activity android:name="com.leshan.ylyj.view.activity.healthmodel.HealthFriendRobActivity" />
+
+        <!-- 互助 -->
+        <activity
+            android:name="com.leshan.ylyj.view.activity.healthmodel.HelpOtherActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 家人健康 -->
+        <activity
+            android:name="com.leshan.ylyj.view.activity.healthmodel.MyFamilyHealthActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 我的钱包 -->
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.MyPurseActivity" />
+
+        <!-- 交易记录 -->
+        <activity android:name="com.leshan.ylyj.view.activity.mypursemodel.TransactionRecordActivity" />
+
+        <!-- 我的银行卡 -->
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.MyBankCardsActivity" />
+        <!-- 提现银行卡 -->
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.SetUpCashCardsActivity" />
+        <!-- 添加银行卡 -->
+
+
+        <!-- 银行卡详情 -->
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.CardPrivateDetaiInfolActivity" />
+
+        <!-- 添加银行卡-对公 -->
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.BindPublicBindCardActivity" />
+
+        <!-- 公益模块页面 -->
+
+
+        <!-- 爱心捐赠 -->
+        <activity android:name="com.leshan.ylyj.view.activity.welfaremodel.WelfarePersonInfoActivity" />
+        <!-- 爱心捐赠列表 -->
+        <activity
+            android:name="com.leshan.ylyj.view.activity.welfaremodel.WelfareDonationListActivity"
+            android:launchMode="singleTask" />
+        <!-- 爱心捐赠列表 -->
+
+
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.TwoTypeCardActivity" />
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.CardPublicDetailsActivity" />
+        <activity android:name="com.leshan.ylyj.view.activity.welfaremodel.WelfareLoveMsgActivity" />
+        <!-- 如何获取爱心捐赠的经验值 -->
+        <activity android:name="com.leshan.ylyj.view.activity.welfaremodel.WelfareGetOperationActivity" />
+        <!-- 公益提交留言界面 -->
+        <activity android:name="com.leshan.ylyj.view.activity.welfaremodel.WelfareSubMsgActivity" />
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.BindPersonBankCardActivity"></activity>
+        <!--编辑银行卡页面-->
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.EditPublicCardActivity" />
+        <!--重新提交银行卡信息页面-->
+        <activity android:name="com.leshan.ylyj.view.activity.bankmodel.ReCommitBankInfoActivity" />
+    </application>
+
+</manifest>

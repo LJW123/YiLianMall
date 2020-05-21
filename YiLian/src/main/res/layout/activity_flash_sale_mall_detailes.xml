@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_all"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.yilian.mall.widgets.DragLayout
+            android:id="@+id/draglayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/view_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:id="@+id/view_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.yilian.mall.widgets.DragLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding10"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/v3_back_top" />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/v3_more_top"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/v3_title_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_back_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:padding="@dimen/padding10"
+                android:src="@mipmap/v3_back_bottom" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="商品详情"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size18" />
+
+            <ImageView
+                android:id="@+id/iv_share_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding20"
+                android:paddingTop="@dimen/padding10"
+                android:src="@mipmap/share"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/viewfinder_mask"
+            android:visibility="gone" />
+
+        <!--显示请求数据失败的View-->
+        <include
+            android:id="@+id/llUpdataError"
+            layout="@layout/item_updata_error"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

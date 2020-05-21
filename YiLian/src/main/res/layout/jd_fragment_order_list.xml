@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.yilian.mylibrary.widget.SlidingTabLayout
+        android:id="@+id/tl_2"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        tl:library_module_tl_indicator_color="#F10215"
+        tl:library_module_tl_indicator_height="2dp"
+        tl:library_module_tl_indicator_width="48dp"
+        tl:library_module_tl_tab_padding="20dp"
+        tl:library_module_tl_textSelectColor="#F10215"
+        tl:library_module_tl_textUnselectColor="#333333"
+        tl:library_module_tl_textsize="@dimen/textSize_14dp" />
+
+    <View style="@style/line_horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+

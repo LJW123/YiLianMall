@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.yilian.mall.ui.MTRefundSucceedActivity">
+
+    <include layout="@layout/jp_title" />
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/icon_jp_pay_success"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10"
+            android:src="@mipmap/icon_jp_pay_success" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_thanks_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/mt_thanks_comment"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/size20"
+        android:layout_marginBottom="@dimen/margin30"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/color_bg"/>
+
+    <ListView
+        android:id="@+id/nslv_no_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/listview_line1"
+        android:dividerHeight="1px"
+        android:scrollbars="none"/>
+</LinearLayout>

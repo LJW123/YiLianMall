@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/merchant_v4_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/icon_jp_pay_success"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding10"
+                        android:src="@mipmap/icon_jp_pay_success" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="9dp"
+                    android:text="支付成功"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/size20" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50dp"
+                    android:textColor="@color/color_333"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="获得奖券"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_red"/>
+
+                <TextView
+                    android:id="@+id/tv_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_red"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_lines"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="支付详情"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_999"/>
+
+                <TextView
+                    android:id="@+id/tv_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="收款方"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_red"/>
+
+                <TextView
+                    android:id="@+id/tv_merchant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_red"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/icon50"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:background="@color/color_lines"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="亲，快来评价吧"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_999"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:background="@color/color_lines"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:paddingTop="@dimen/padding30"
+                android:paddingBottom="40dp">
+                <TextView
+                    android:id="@+id/tv_eva_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="不满"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/color_333"
+                    android:gravity="center_horizontal"
+                    android:drawableBottom="@drawable/v5_eva_state_1"
+                    android:drawablePadding="@dimen/padding10"/>
+
+                <TextView
+                    android:id="@+id/tv_eva_state_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/v5_eva_state_2"
+                    android:drawablePadding="@dimen/padding10"
+                    android:text="一般"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/color_333"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_eva_state_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/v5_eva_state_3"
+                    android:drawablePadding="@dimen/padding10"
+                    android:text="满意"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/color_333"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_eva_state_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/v5_eva_state_4"
+                    android:drawablePadding="@dimen/padding10"
+                    android:text="超赞"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/color_333"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/color_bg"/>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

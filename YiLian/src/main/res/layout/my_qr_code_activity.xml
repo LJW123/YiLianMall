@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222737"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_title" />
+    
+    <TextView
+        style="@style/merchantDetailedText"
+        android:text="@string/qr_code_prompt"
+        android:layout_marginRight="@dimen/title_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_qrCode"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="220dp"
+        android:layout_width="220dp"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

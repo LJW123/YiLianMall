@@ -1,0 +1,13 @@
+<resources>
+    <string name="login_module_app_name">LeFenLoginModule</string>
+    <string name="login_module_send_verification_code">发送验证码</string>
+    <string name="login_module_send_phone_number_not_legal">手机格式不正确,请重新输入</string>
+    <string name="login_module_net_work_not_available">网络连接失败,请检查网络</string>
+    <string name="login_module_img_from_number">*验证码为纯数字</string>
+    <string name="login_module_img_code_error">*验证码输入错误或已过期</string>
+    <string name="login_module_service_exception">服务器繁忙,请稍后再试</string>
+    <string name="login_module_password_format">密码应是6-18位数字加字母组合</string>
+    <string name="login_module_password_set_format">设置6-18位数字+字母组合密码</string>
+    <string name="login_module_phone_not_register">手机号未注册</string>
+    <string name="login_module_sms_space">30秒内只能发送一次验证码哦，请稍后重试！</string>
+</resources>

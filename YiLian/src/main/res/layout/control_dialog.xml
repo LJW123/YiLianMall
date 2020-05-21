@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/yaoyiyao_bg"
+        android:orientation="vertical" >
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="温馨提示"
+            android:textColor="#282e42"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/hengxian"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/dialog_title"
+            android:background="#bfc3d0" />
+        <!-- 内容 -->
+
+        <TextView
+            android:id="@+id/dialog_msgs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hengxian"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#48bbf1"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/holdon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_msgs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/tanchuang_ren"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hengxian"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="请输入您要猜的数字"
+            android:textColor="#4e4e4e"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lebi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_msg"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textColor="#ff8f3c"
+            android:textSize="12sp" />
+        
+         
+
+        <EditText
+            android:id="@+id/dialog_edit"
+            android:layout_width="172dp"
+            android:layout_height="36.7dp"
+            android:layout_below="@+id/lebi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/tanchuang_gray"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#8588a5"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/getlebi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@mipmap/tanchuang_font" />
+
+        <ImageView
+            android:id="@+id/hengxiantwo"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/getlebi"
+            android:layout_marginTop="15dp"
+            android:background="#bfc3d0" />
+
+        <Button
+            android:id="@+id/dialog_button_long"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/hengxiantwo"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/guess_sure_btn_gray"
+            android:clickable="false"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/again_share_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/holdon"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/imgBtn_get_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/allguess_play" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_get_shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@mipmap/yaoyiyao_share" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/tanchuang_yuancha" />
+
+</RelativeLayout>

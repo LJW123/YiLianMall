@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="270"
+
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:endColor="#43CBFF"
+        android:startColor="#9708CC"
+        android:type="linear" />
+
+    <!--<corners android:radius="5dip" />-->
+
+    <!-- 中间颜色 -->
+    <!--android:centerColor="#77333333"-->
+
+</shape>

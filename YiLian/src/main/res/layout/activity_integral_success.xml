@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+
+    <ImageView
+        android:src="@mipmap/icon_right"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转赠成功"
+        android:textColor="#F72D42"
+        android:textSize="@dimen/size18" />
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_nick_name"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="这是一个昵称 已收到你的转赠"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/size12" />
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="11.00"
+        android:textColor="@color/color_333"
+        android:textSize="45dp" />
+
+    <com.youth.banner.Banner
+        android:layout_marginTop="50dp"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tl:indicator_height="5dp"
+        tl:indicator_width="5dp"
+        tl:indicator_drawable_selected="@drawable/library_module_bg_style_red_circle" />
+
+
+</LinearLayout>

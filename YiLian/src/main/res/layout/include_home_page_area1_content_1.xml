@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="1dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dp">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1px"
+            android:background="@color/color_333" />
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_333"
+            android:layout_marginRight="5dp"
+            android:lines="1"
+            android:text="女神范"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1px"
+            android:background="@color/color_333" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingBottom="6dp"
+        android:text="女神出行必备"
+        android:textColor="#3565E1"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginRight="13dp" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="63dp"
+            android:layout_height="63dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/v3_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/color_bg"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_surePay"
+            style="@style/btnCircleStyle"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin20"
+            android:text="立即支付" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_pay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding15"
+                android:paddingTop="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:text="应付金额:"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size18" />
+
+                <TextView
+                    android:id="@+id/tv_buy_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <View style="@style/outerLineStyle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding15"
+                android:text="注:请在24小时之内完成支付"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/size12"
+                android:visibility="visible" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/color_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15">
+
+                <TextView
+                    android:id="@+id/tv_usable_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="奖励支付："
+                    android:textColor="@color/color_666" />
+
+                <ImageView
+                    android:id="@+id/btn_whether_use_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/library_module_cash_desk_on" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding15"
+                android:text="选择充值方式" />
+
+            <View style="@style/outerLineStyle15" />
+
+            <com.yilian.mall.widgets.NoScrollListView
+                android:id="@+id/lv_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/color_lines"
+                android:dividerHeight="@dimen/linesdp"
+                android:paddingLeft="@dimen/padding10">
+
+            </com.yilian.mall.widgets.NoScrollListView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

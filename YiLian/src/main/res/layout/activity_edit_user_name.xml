@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.mvp.view.EditUserNameViewImplActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_15dp" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="请输入您的昵称"
+        android:maxLength="12"
+        android:padding="@dimen/margin_14dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/textSize_18dp" />
+
+    <EditText
+        android:id="@+id/et_user_state_of_mind"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@android:color/white"
+        android:hint="记录你此刻的心情！"
+        android:maxLength="40"
+        android:visibility="visible"
+        android:padding="@dimen/margin_14dp"
+        android:text=""
+        android:gravity="top"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/textSize_18dp" />
+</LinearLayout>

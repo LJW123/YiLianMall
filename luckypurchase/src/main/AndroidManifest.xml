@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yilian.luckypurchase">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".activity.LuckyMainActivity"/>
+        <activity android:name=".activity.LuckyMyRecordActivity"/>
+        <activity android:name=".activity.LuckyAllPrizeListActivity"/>
+        <activity android:name=".activity.LuckyLocalListActivity"/>
+        <activity
+            android:name=".activity.LuckyActivityDetailActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".activity.LuckySubmitOrderActivity"/>
+        <activity android:name=".activity.LuckyPayResultActivity"/>
+        <activity android:name=".activity.LuckyReviewActivity"/>
+        <activity
+            android:name=".activity.LuckyShowOffListActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activity.LuckyPrizeDetailsActivity"/>
+        <activity android:name=".activity.LuckyTimeDetailsActivity"/>
+        <activity android:name=".activity.LuckyNumberRecordActivity"/>
+        <activity android:name=".activity.LuckyUnboxingActivity"/>
+        <activity android:name=".activity.LuckyCountDetailActivity"/>
+        <activity android:name=".activity.LuckyGraphicDetailActivity"/>
+        <activity android:name=".activity.LuckyAllCommentListActivity"/>
+        <activity android:name=".activity.LuckyWinningListActivity"/>
+        <activity android:name=".activity.LuckyRecordActivity"/>
+        <activity
+            android:name=".activity.LuckyWinPopWindowActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/lucky_NoTitleTranslucentThemeV7"/>
+        <activity android:name=".activity.LuckyNewsListActivity"/>
+    </application>
+
+</manifest>

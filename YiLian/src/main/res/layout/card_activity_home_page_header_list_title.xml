@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!--列表 标题-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="1dp"
+        android:background="@color/color_333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15dp"
+        android:text="精品推荐"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/textSize_15dp" />
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="1dp"
+        android:background="@color/color_333" />
+</LinearLayout>

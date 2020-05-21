@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mtrefund_succeed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.MTRefundSucceedActivity">
+
+    <include layout="@layout/v3_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/pay_ok_icon"
+            android:drawablePadding="@dimen/padding10"
+            android:gravity="center"
+            android:text="@string/mt_refund_succeed"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size18" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginTop="44dp"
+            android:text="@string/mt_refund_time"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_mt_back_order"
+        style="@style/btnCircleStyle"
+        android:layout_marginTop="@dimen/margin30"
+        android:text="@string/mt_back_order" />
+
+</LinearLayout>

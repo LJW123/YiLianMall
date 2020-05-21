@@ -1,0 +1,13 @@
+<resources>
+    <string name="library_module_app_name">My Library</string>
+    <string name="library_module_img_from_number">*验证码为纯数字</string>
+    <string name="library_module_xiaofeijiffen">奖券</string>
+    <string name="library_module_score">可得奖券</string>
+    <string name="library_module_getting_data">获取数据中…</string>
+    <string name="library_module_member_center">我的</string>
+    <string name="library_module_navi">导航功能正在优化中...</string>
+    <!--App平台赠送业务名称-->
+    <string name="library_module_platform_donate_name">益豆</string>
+    <string name="library_module_share_default_content">新消费,新生活,让消费更具价值!</string>
+
+</resources>

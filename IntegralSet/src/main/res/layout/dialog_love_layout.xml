@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/margin_30dp"
+    android:paddingRight="@dimen/margin_30dp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_cancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:src="@mipmap/x_round" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingLeft="@dimen/padding_15dp"
+        app:contentPaddingRight="@dimen/padding_14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@color/transparent_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="当前等级"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/textSize_17dp" />
+
+                <TextView
+                    android:textSize="@dimen/textSize_17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|right"
+                    android:text="爱心经验" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_10dp"
+                android:paddingTop="@dimen/margin_10dp">
+
+                <TextView
+                    android:id="@+id/tv_leve_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_333333"
+                    android:textSize="@dimen/textSize_17dp"
+                    tools:text="Lv.6爱心见习" />
+
+                <TextView
+                    android:id="@+id/tv_expnum_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/black_333333"
+                    android:textSize="@dimen/textSize_17dp"
+                    android:textStyle="bold"
+                    tools:text="0/300" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_love_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_8dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/shap_progressbar_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Lv.6"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="@dimen/textSize_17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_curlevel_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="爱心见习"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="@dimen/textSize_12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_next_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Lv.6"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="@dimen/textSize_17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_next_level_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="爱心见习"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="@dimen/textSize_12dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/padding_13dp"
+                android:background="#efefef" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding_13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="成长体系"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/textSize_14dp" />
+
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp">
+
+                <com.leshan.ylyj.customview.LoveLevelView
+                    android:id="@+id/love_level_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您可以通过更多公益行为来获得爱心经验"
+                android:textColor="@color/grayback"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_get_experice"
+                android:layout_marginBottom="@dimen/margin_25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="1dp"
+                android:text="查看爱心经验获得的方法>>"
+                android:textColor="@color/orange_color_1"
+                android:textSize="@dimen/textSize_14dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

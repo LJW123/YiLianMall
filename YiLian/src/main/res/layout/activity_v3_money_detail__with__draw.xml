@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.V3MoneyDetailActivity_With_Draw">
+
+    <include layout="@layout/merchant_v3_title_no_underline" />
+
+    <View style="@style/line_horizontal" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_v3_money_detail_1" />
+
+            <include
+                android:id="@+id/include_1"
+                layout="@layout/item_v3_money_detail" />
+
+            <include
+                android:id="@+id/include_2"
+                layout="@layout/item_v3_money_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_remit_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/color_999"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--失败原因-->
+            <include
+                android:id="@+id/include_6"
+                layout="@layout/item_v3_money_detail"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/include_3"
+                layout="@layout/item_v3_money_detail" />
+
+            <View style="@style/innerLineStyle" />
+
+            <include
+                android:id="@+id/include_4"
+                layout="@layout/item_v3_money_detail" />
+
+            <include
+                android:id="@+id/include_5"
+                layout="@layout/item_v3_money_detail" />
+            <!--重新提交银行卡信息-->
+            <include
+                android:id="@+id/include_commit_bank_info"
+                layout="@layout/item_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

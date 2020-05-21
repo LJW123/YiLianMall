@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#4289FF"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_15dp"
+    android:paddingTop="@dimen/padding_20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已确认"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="预订已成功，您可安心入住"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_13dp" />
+
+        <TextView
+            android:id="@+id/confirmed_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:drawableRight="@mipmap/right_img"
+            android:paddingRight="20dp"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:background="@mipmap/ctrip_activity_order_detail_header_confirmed_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_15dp"
+            android:paddingLeft="@dimen/padding_15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/confirmed_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_15dp"
+                tools:text="房间将保留整晚，请尽快入住"/>
+            <LinearLayout
+                android:id="@+id/confirmed_ll_cancel_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_10dp">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/ctrip_activity_order_detail_header_confirmed_exclamation"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_13dp"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:textColor="#4289FF"
+                    android:text="取消政策："/>
+                <TextView
+                    android:id="@+id/confirmed_cancel_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_13dp"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:textColor="@color/color_333"
+                    tools:text="北京时间2018-08-02 16:00前可免费取消"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirmed_voucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="13dp"
+                android:src="@mipmap/ctrip_activity_order_detail_header_confirmed_voucher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:text="入住凭证"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="14dp"
+                android:background="@color/color_333" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_weight="1"
+                android:text="向前台出示，快速办理入住"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_13dp" />
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="11dp"
+                android:src="@mipmap/jiantou_order"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

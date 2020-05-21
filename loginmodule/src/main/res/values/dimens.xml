@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="login_module_key_height">60dip</dimen>
+    <dimen name="login_module_key_width">125dip</dimen>
+
+    <dimen name="login_module_default_padding">10dp</dimen>
+    <dimen name="login_module_padding_left">16dp</dimen>
+
+    <dimen name="login_module_default_margin">10dp</dimen>
+
+    <!-- 下拉刷新字体 -->
+    <dimen name="login_module_picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="login_module_picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="login_module_picture_pull_to_refresh_last_update_time_top_margin">3dp</dimen>
+    <dimen name="login_module_picture_pull_to_refresh_footer_height">40dp</dimen>
+
+    <!-- 奖券记录 -->
+    <dimen name="login_module_jifenrecord_item1_height">24dp</dimen>
+    <dimen name="login_module_jifenrecord_item1_marginleft">15dp</dimen>
+    <dimen name="login_module_jifenrecord_item1_marginleft2">14dp</dimen>
+
+    <dimen name="login_module_jifenrecord_textsize1">13sp</dimen>
+    <dimen name="login_module_jifenrecord_textsize2">12sp</dimen>
+
+
+    <dimen name="login_module_text_size_first">11sp</dimen>
+    <dimen name="login_module_text_size_four">14sp</dimen>
+    <dimen name="login_module_paypassword_success_hint">12sp</dimen>
+    <dimen name="login_module_area_city_gridview_text_size">14sp</dimen>
+    <dimen name="login_module_txt_exchang_status_text_size">12sp</dimen>
+    <dimen name="login_module_nickname_text_size">14sp</dimen>
+    <dimen name="login_module_title_text_size_first">16sp</dimen>
+    <dimen name="login_module_time_title_textsize">13sp</dimen>
+    <dimen name="login_module_time_textsize">12sp</dimen>
+    <dimen name="login_module_find_city_text_size">15sp</dimen>
+
+
+    <dimen name="login_module_txt_prize_name_text_size">16dp</dimen>
+    <dimen name="login_module_duihuanpingzheng_linear_padding_right">17dp</dimen>
+    <dimen name="login_module_time_title_height">30dp</dimen>
+
+    <dimen name="login_module_user_infor_line">0.5dp</dimen>
+    <dimen name="login_module_user_infor_marginleft">18dp</dimen>
+
+    <dimen name="login_module_zuijin_textview_width">98dp</dimen>
+    <dimen name="login_module_zuijin_textview_height">38dp</dimen>
+    <dimen name="login_module_zuijin_textview_marginLeft">9dp</dimen>
+
+    <dimen name="login_module_tab_title_height">48dp</dimen>
+    <dimen name="login_module_main_icon_drawable_padding">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="login_module_activity_horizontal_margin">16dp</dimen>
+    <dimen name="login_module_activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="login_module_title_margin">15dp</dimen>
+
+    <!--头部字号,一般只用于头部-->
+    <dimen name="login_module_size18">18dp</dimen>
+    <!--商品详情标题字号 商品标题-->
+    <dimen name="login_module_size15">15dp</dimen>
+    <!--分类标题 标头-->
+    <dimen name="login_module_size14">14dp</dimen>
+    <!--列表标题 页面主要字号-->
+    <dimen name="login_module_size13">13dp</dimen>
+    <!--辅助字体 辅助型字号-->
+    <dimen name="login_module_size12">12dp</dimen>
+    <!--标签字体 标签提示字号-->
+    <dimen name="login_module_size10">10dp</dimen>
+
+    <!--上下间距-->
+    <dimen name="login_module_padding10">10dp</dimen>
+    <dimen name="login_module_margin10">10dp</dimen>
+    <dimen name="login_module_padding15">15dp</dimen>
+    <dimen name="login_module_padding5">5dp</dimen>
+    <dimen name="login_module_margin15">15dp</dimen>
+
+    <!--左右内间距 列表-->
+    <dimen name="login_module_padding18">18dp</dimen>
+    <!--左右外间距 列表-->
+    <dimen name="login_module_margin5">5dp</dimen>
+    <dimen name="login_module_margin18">18dp</dimen>
+
+    <dimen name="login_module_padding20">20dp</dimen>
+    <dimen name="login_module_margin20">20dp</dimen>
+    <dimen name="login_module_margin30">30dp</dimen>
+
+    <!--内部tab的高度-->
+    <dimen name="login_module_inner_tab_height">40dp</dimen>
+
+    <!--按钮高度-->
+    <dimen name="login_module_btn_height">45dp</dimen>
+
+    <!--list的上下左右内部间距-->
+    <dimen name="login_module_list_divider_height">4dp</dimen>
+
+    <!--行高-->
+    <dimen name="login_module_row_height50">50dp</dimen>
+    <dimen name="login_module_row_height40">40dp</dimen>
+
+    <!--二级分类界面图标-->
+    <dimen name="login_module_icon50">50dp</dimen>
+    <!--首页图标 一排4个的图标-->
+    <dimen name="login_module_icon44">44dp</dimen>
+    <!--功能图标 比较复杂的图标-->
+    <dimen name="login_module_icon25">25dp</dimen>
+    <!--头部图标 一般的图标尺寸-->
+    <dimen name="login_module_icon20">20dp</dimen>
+    <!--提示性图标宽高-->
+    <dimen name="login_module_icon15">15dp</dimen>
+    <!--最小号图标  最小图标尺寸-->
+    <dimen name="login_module_icon10">10dp</dimen>
+
+    <!--头部图标距离屏幕左右边距-->
+    <dimen name="login_module_head_icon_padding">15dp</dimen>
+    <!--按钮圆角-->
+    <dimen name="login_module_radius">3dp</dimen>
+
+    <dimen name="login_module_linesdp">0.5dp</dimen>
+    <dimen name="login_module_icon75">75dp</dimen>
+    <dimen name="login_module_size20">20dp</dimen>
+    <dimen name="login_module_btn_width">290dp</dimen>
+    <dimen name="login_module_size16">16dp</dimen>
+    <dimen name="login_module_xlistview_header_progressbar_width">80dp</dimen>
+    <dimen name="login_module_xlistview_header_progressbar_height">50dp</dimen>
+    <dimen name="login_module_xlistview_header_content_height">50dp</dimen>
+    <dimen name="login_module_size19">19dp</dimen>
+    <dimen name="login_module_margin8">8dp</dimen>
+
+</resources>

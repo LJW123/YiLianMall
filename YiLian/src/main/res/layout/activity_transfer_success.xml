@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.transfer.TransferSuccessActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ImageView
+        android:id="@+id/iv_success_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/take_cash_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="转赠成功"
+        android:textColor="@color/color_red" />
+
+    <TextView
+        android:id="@+id/tv_transfer_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_999"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_transfer_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/color_333"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        style="@style/btnStyle"
+        android:text="完成" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.InitialPayActivity">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.5dp"
+        android:drawablePadding="16dp"
+        android:drawableTop="@mipmap/pay_phone"
+        android:text="仅用于手机的6位数字密码"
+        android:textColor="#272627" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="（不影响其他密码的使用）"
+        android:textColor="#979797" />
+
+    <Button
+        style="@style/btnCircleStyle"
+        android:layout_marginLeft="@dimen/margin30"
+        android:layout_marginRight="@dimen/margin30"
+        android:layout_marginTop="58dp"
+        android:onClick="OK"
+        android:text="我已了解" />
+
+</LinearLayout>

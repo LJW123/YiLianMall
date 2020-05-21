@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+   >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/fab_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="79dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_stealman_pohto"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                tools:text="zyh"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/title_text_size_first" />
+
+            <LinearLayout
+                android:layout_marginTop="6.5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    tools:text="2017-11-03 12:30"
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/time_textsize" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="@dimen/fab_margin"
+            android:gravity="right|center"
+            android:id="@+id/rl_counts"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                tools:text="200.00"
+                android:id="@+id/redpackgers_counts"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E05449"
+                android:textSize="@dimen/size12" />
+
+            <ImageView
+                android:id="@+id/icon_redpackgers_cuout"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_red_packges" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="@color/color_bg" />
+
+
+</LinearLayout>

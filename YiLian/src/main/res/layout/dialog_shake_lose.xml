@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/yaoyiyao_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="很抱歉您没有中奖！"
+            android:textColor="#6c6c6c"
+            android:textSize="22sp"
+            android:layout_marginTop="27dp"
+            />
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再来一次说不定会有好运气哦！"
+            android:textColor="#ff9a39"
+            android:layout_marginTop="17dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/yaoyiyao_ren" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_shake_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/yaoyiyao_zailaiyici" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_see_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/yaoyiyao_chakan" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView_close_lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="9dp"
+        android:src="@mipmap/yaoyiyao_yuan" />
+
+</FrameLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/merchant_bg_btn_white_radious3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="温馨提示"
+        android:textSize="@dimen/merchant_size14"
+        android:textColor="@color/merchant_color_333"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="@dimen/merchant_padding20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/merchant_color_bg"
+        android:layout_marginLeft="@dimen/merchant_padding15"
+        android:layout_marginRight="@dimen/merchant_padding15">
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入本次消费的用户手机号"
+            android:textColorHint="@color/merchant_color_999"
+            android:textSize="@dimen/merchant_size13"
+            android:background="@null"
+            android:maxLength="11"
+            android:inputType="number"
+            android:textColor="@color/merchant_color_333"
+            android:paddingTop="@dimen/merchant_padding15"
+            android:paddingBottom="@dimen/merchant_padding15"
+            android:paddingLeft="@dimen/merchant_padding5"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/merchant_shop_ok"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:paddingRight="@dimen/merchant_padding5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_img_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/merchant_padding15"
+        android:layout_marginRight="@dimen/merchant_padding15"
+        android:layout_marginTop="@dimen/merchant_margin15"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/merchant_color_bg"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_img_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入图形验证码"
+                android:textColorHint="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size13"
+                android:background="@null"
+                android:maxLength="4"
+                android:inputType="number"
+                android:textColor="@color/merchant_color_333"
+                android:paddingTop="@dimen/merchant_padding15"
+                android:paddingBottom="@dimen/merchant_padding15"
+                android:paddingLeft="@dimen/merchant_padding5"/>
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/merchant_shop_ok"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:paddingRight="@dimen/merchant_padding5"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/library_module_size15"
+            android:layout_height="match_parent"
+            android:background="@color/merchant_white"/>
+
+        <ImageView
+            android:id="@+id/iv_img_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sms_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/merchant_padding15"
+        android:layout_marginRight="@dimen/merchant_padding15"
+        android:layout_marginTop="@dimen/merchant_margin15"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/et_sms_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入短信验证码"
+            android:textColorHint="@color/merchant_color_999"
+            android:textSize="@dimen/merchant_size13"
+            android:background="@color/merchant_color_bg"
+            android:maxLength="6"
+            android:inputType="number"
+            android:textColor="@color/merchant_color_333"
+            android:paddingTop="@dimen/merchant_padding15"
+            android:paddingBottom="@dimen/merchant_padding15"
+            android:paddingLeft="@dimen/merchant_padding5">
+            <requestFocus/>
+        </EditText>
+
+        <View
+            android:layout_width="@dimen/library_module_size15"
+            android:layout_height="match_parent"
+            android:background="@color/merchant_white"/>
+
+        <Button
+            android:id="@+id/tv_sms_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="获取验证码"
+            android:gravity="center"
+            android:textSize="@dimen/merchant_size13"
+            android:textColor="@color/merchant_white"
+            android:background="@drawable/merchant_bg_btn_gray_3"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/merchant_padding15"
+        android:paddingLeft="@dimen/merchant_padding15"
+        android:paddingRight="@dimen/merchant_padding15"
+        android:textSize="@dimen/merchant_size12"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/merchant_color_bg"
+        android:layout_marginTop="@dimen/merchant_margin20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取  消"
+            android:textColor="@color/merchant_color_333"
+            android:textSize="@dimen/merchant_size15"
+            android:gravity="center"
+            android:paddingTop="@dimen/merchant_padding15"
+            android:paddingBottom="@dimen/merchant_padding15"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/merchant_color_bg"/>
+
+        <TextView
+            android:id="@+id/tv_next_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下一步"
+            android:textColor="@color/merchant_color_red"
+            android:textSize="@dimen/merchant_size15"
+            android:gravity="center"
+            android:paddingTop="@dimen/merchant_padding15"
+            android:paddingBottom="@dimen/merchant_padding15"/>
+    </LinearLayout>
+
+</LinearLayout>

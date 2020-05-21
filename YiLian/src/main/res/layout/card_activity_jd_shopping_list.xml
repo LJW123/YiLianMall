@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--头部Title-->
+    <include layout="@layout/jd_title_common" />
+
+    <FrameLayout
+        android:id="@+id/vary_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_shopping_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include layout="@layout/jd_header_shopping_car" />
+                    <!--京东购物车列表-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/jd_car_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <!--京东购物车选择配置-->
+                    <include
+                        layout="@layout/layout_jd_option_shopping_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="bottom" />
+                </LinearLayout>
+                <!--京东推荐列表-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/jd_recommend_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

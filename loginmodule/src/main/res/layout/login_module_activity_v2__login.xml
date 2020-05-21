@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.loginmodule.V2_LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:src="@mipmap/login_module_icon_close" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/login_module_icon_login_top" />
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/login_module_layout_phone_get_sms_code" />
+
+    <include layout="@layout/login_module_layout_sms_code" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/login_module_LoginButton"
+        android:text="快捷登录" />
+
+    <Button
+        android:id="@+id/btn_login_by_password"
+        style="@style/login_module_LoginButton"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/login_module_bg_btn_transparent_radious"
+        android:text="密码登录"
+        android:textColor="@color/library_module_color_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+
+            android:id="@+id/tv_register_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="一一还没有个人账号?快速注册——"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/login_module_img_login_bottom" />
+    </RelativeLayout>
+
+</LinearLayout>

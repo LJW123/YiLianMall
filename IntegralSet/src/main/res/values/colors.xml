@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cff4289ff">#ff4289ff</color>
+    <color name="cFF6913">#FF6913</color>
+    <color name="comm_back">#f7f7f7</color>
+    <color name="comm_line">#e7e7e7</color>
+
+    <!--背景颜色-->
+    <color name="background_common_color">#f7f7f7</color>
+    <color name="wathet_back_color">#C6E7E9</color>
+
+    <!--辅助色-->
+    <color name="support_yellow">#f9a340</color>
+
+    <!--分割线-->
+    <color name="splitline_color">#dddddd</color>
+
+    <!--商品分类 筛选-->
+
+    <!--文字-->
+    <color name="notice_text_color">#999999</color>
+    <color name="default_text_color">#666666</color>
+    <color name="main_black_text">#333333</color>
+    <color name="protocol_text">#3C68FE</color>
+
+    <!--图标-->
+
+    <!--CycleViewPager-->
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+
+    <color name="bg_gray">#f1f1f1</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ec0f38</color>
+    <color name="blue">#0000FF</color>
+    <color name="gray">#7f7f7f</color>
+    <color name="orange">#ff7f66</color>
+
+    <color name="yellow">#ffff33</color>
+    <color name="color_orange_red">#FF532A</color>
+
+    <color name="color_333">#333333</color>
+    <color name="color_bg">#f7f7f7</color>
+    <!--次要字体-->
+    <color name="color_666">#666666</color>
+    <!--辅助字体-->
+    <color name="color_999">#999999</color>
+    <color name="color_888">#888888</color>
+
+
+    <color name="price">#F22424</color>
+
+    <!--信用相关字体颜色 -->
+    <color name="credit_orange">#FF5704</color>
+    <color name="credit_gray">#969696</color>
+    <color name="blue_grade">#1AB5E2</color>
+    <color name="credit_text_gray">#636363</color>
+    <color name="credit_text_blace">#282828</color>
+    <color name="grayback">#CCCCCC</color>
+    <color name="light_black">#474C60</color>
+    <color name="french_grey">#8A8D9B</color>
+    <color name="unify_red">#f22424</color>
+    <color name="bt_back_xl">#EEEEEE</color>
+    <color name="color_red">#F72D42</color>
+    <color name="comm_letters">#333333</color>
+    <color name="orange_back">#FFB8A7</color>
+    <color name="white_lucency">#99ffffff</color>
+    <color name="white_lucency_back">#33ffffff</color>
+
+    <color name="credit_title">#029DEA</color>
+    <color name="credit_know_more">#9708CC</color>
+
+    <color name="orange_border_color">#FA5C16</color>
+
+    <color name="mycareblue">#1CA3F1</color>
+    <color name="coupon_grey">#C7C7C7</color>
+
+    <color name="wave_color">#5bb404</color>
+
+    <color name="text_ff6900">#ff6900</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_ff4558">#ff4558</color>
+    <color name="swipe_icon_color">#F72D42</color>
+    <color name="shap_progress_color">#FA5C16</color>
+    <color name="level_titile_color">#FF4D24</color>
+    <color name="orange_color_1">#FA5E19</color>
+
+
+    <color name="color_act_green">#0CE68C</color>
+    <color name="color_act_green2">#00D980</color>
+    <color name="color_act_orange">#fdc84f</color>
+    <color name="color_line">#ECECEC</color>
+    <color name="color_FF6F02">#FF6F02</color>
+    <color name="color_FA6003">#FA6003</color>
+    <color name="color_DF1A00">#DF1A00</color>
+    <color name="color_ffff6d02">#ffff6d02</color>
+    <color name="color_FFF9F9">#FFF9F9</color>
+    <color name="color_cccccc">#CCCCCC</color>
+
+
+    <color name="color_main_suning">#FF5000</color>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantEditInformationActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/library_module_color_bg"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/merchant_layout_merchant2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:horizontalSpacing="10dp"
+                android:padding="10dp"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/include_contact"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_phone"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_open_time"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_close_time"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_industry"
+                layout="@layout/merchant_layout_text_value" />
+
+            <include
+                android:id="@+id/include_keyword"
+                layout="@layout/merchant_layout_text_value" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="15dp"
+                android:text="门店简介:"
+                android:textColor="@color/merchant_color_666"
+                android:textSize="@dimen/merchant_size14" />
+
+            <EditText
+                android:id="@+id/et_merchant_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:hint="请输入门店简介信息"
+                android:padding="15dp"
+                android:textSize="@dimen/merchant_size16" />
+
+            <Button
+                android:id="@+id/btn_next_step"
+                style="@style/merchant_btnStyle_v1"
+                android:layout_marginBottom="@dimen/library_module_margin20"
+                android:layout_marginTop="@dimen/library_module_margin20"
+                android:gravity="center"
+                android:text="下一步" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="220dp">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份特征"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="23dp"
+        android:textSize="18dp"
+        android:textColor="@color/credit_text_blace" />
+
+    <TextView
+        android:id="@+id/information_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:text="泰国春武里府邦拉蒙县金三角水果园发生大象踩踏中国游客造成1死2伤事故，事件发生后"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:textColor="@color/credit_text_gray" />
+
+    <TextView
+        android:id="@+id/titlethree_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="如何提升“身份特征”评估值"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textColor="@color/credit_text_blace" />
+
+    <TextView
+        android:id="@+id/informationthree_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="泰国春武里府邦拉蒙县金三角水果园发生大象踩踏中国游客造成1死2伤事故，事件发生后"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:textColor="@color/credit_text_gray" />
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/merchant_white">
+
+    <View style="@style/merchant_outerLineStyle10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/merchant_inner_tab_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-10dp"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:paddingRight="@dimen/library_module_padding15">
+
+        <TextView
+            android:id="@+id/tv_exchangeGoods"
+            style="@style/merchant_exchangeGoods" />
+
+        <TextView
+            android:id="@+id/tv_refundGoods"
+            style="@style/merchant_refundGoods"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="编号：2017082155222111"
+            android:textColor="@color/library_module_color_666"
+            android:textSize="@dimen/merchant_size13" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待审核"
+            android:textColor="@color/merchant_color_red"
+            android:textSize="@dimen/merchant_size14" />
+
+    </LinearLayout>
+
+    <include layout="@layout/merchant_include_item_after_sale_goods" />
+
+</LinearLayout>

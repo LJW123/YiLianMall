@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon44">
+
+        <TextView
+        android:layout_width="match_parent"
+            android:layout_height="@dimen/icon44"
+            android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="参与人次"
+            android:textColor="@color/color_h1" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin10"
+            android:clickable="true"
+            android:src="@mipmap/tanchuang_yuancha" />
+    </RelativeLayout>
+    <com.yilian.mall.widgets.NumberAddSubView
+        android:id="@+id/number_add_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:lefenlayout="@layout/widet_num_add_sub_one_buy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_5or10"
+            style="@style/Round_afafaf"
+            android:text="5" />
+
+        <View
+            android:layout_width="23dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_20"
+            style="@style/Round_afafaf"
+            android:text="20" />
+
+        <View
+            android:layout_width="23dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_50"
+            style="@style/Round_afafaf"
+            android:text="50" />
+
+        <View
+            android:layout_width="23dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_100"
+            style="@style/Round_afafaf"
+            android:text="100" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:background="#c4c4c4" />
+
+    <TextView
+        android:id="@+id/txt_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="共 ¥1"
+        android:textColor="#999999"
+        />
+
+    <Button
+        android:id="@+id/participation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/merchant_bg_btn_style_red"
+        android:text="立即参加"
+        android:textColor="#eeeeee"
+        />
+
+</LinearLayout>

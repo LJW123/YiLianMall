@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout_jp_goods_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <!--新版商城 商品展示条目-->
+
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_goods1"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@mipmap/login_module_default_jp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding5"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_sold_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/status_goods_sold_out"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!--线上商城的展示-->
+        <include
+            android:id="@+id/item_mall"
+            layout="@layout/jp_goods_price_show2" />
+        <!--易划算专区的展示-->
+        <include
+            android:id="@+id/item_yhs"
+            layout="@layout/yhs_goods_price_show" />
+        <!--奖券购专区的展示-->
+        <include
+            android:id="@+id/item_jfg"
+            layout="@layout/jfg_goods_price_show" />
+        <!--奖券购专区的展示-->
+        <include
+            android:id="@+id/item_le_dou"
+            layout="@layout/ledou_goods_price_show" />
+    </LinearLayout>
+    <!--Recyclerview添加Header 导致竖直分割线无法显示，此处为Item添加个view 作为分割线，在adapter里根据Item的position来控制显示隐藏，达到分割线效果-->
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:visibility="gone" />
+</LinearLayout>

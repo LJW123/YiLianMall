@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/merchant_margin10"
+        android:src="@mipmap/merchant_barcode_nothing"
+        android:layout_marginTop="@dimen/margin30"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您尚未参与此次竞猜"
+        android:textColor="@color/library_module_color_999"
+        android:textSize="@dimen/library_module_size15"
+        android:layout_marginBottom="@dimen/margin30"/>
+
+</LinearLayout>

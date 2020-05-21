@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.yilian.loginmodule.V2_RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:src="@mipmap/login_module_icon_close" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="60dp"
+            android:text="用户注册"
+            android:textColor="@color/library_module_color_333"
+            android:textSize="18dp" />
+
+        <include
+            android:id="@+id/include_phone"
+            layout="@layout/login_module_layout_phone_get_sms_code" />
+
+        <include
+            android:id="@+id/include_verify"
+            layout="@layout/login_module_layout_sms_code" />
+
+        <include
+            android:id="@+id/include_password"
+            layout="@layout/login_module_layout_sms_code" />
+
+        <include
+            android:id="@+id/include_password2"
+            layout="@layout/login_module_layout_sms_code" />
+
+        <include
+            android:id="@+id/include_referrer"
+            layout="@layout/login_module_layout_sms_code" />
+
+        <LinearLayout
+            android:id="@+id/ll_referrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="75dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <com.yilian.mylibrary.widget.JHCircleView
+                android:id="@+id/iv_referrer_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/login_module_default_jp" />
+
+            <TextView
+                android:id="@+id/tv_referrer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="暂无昵称"
+                android:textColor="@color/login_module_c333333"
+                android:textSize="@dimen/login_module_size12" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@style/login_module_LoginButton"
+            android:text="提 交" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="——   已有个人账号?我要登录   ——"
+            android:textColor="@color/login_module_color_999"
+            android:textSize="@dimen/login_module_size12" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/login_module_checkbox_selector"
+                android:checked="true"
+                android:padding="@dimen/library_module_padding10" />
+
+            <TextView
+                android:id="@+id/tv_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:text="我已阅读并接受益联益家用户协议"
+                android:textSize="@dimen/login_module_size12" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/login_module_img_login_bottom" />
+
+    </LinearLayout>
+</ScrollView>

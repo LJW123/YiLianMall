@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview_city_county_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_title" />
+
+    <TextView
+        android:id="@+id/city_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/find_white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:hint="@string/please_input_city_name"
+         android:textColorHint="@color/find_city_text_color_hint"
+        android:onClick="findcity"
+        android:textColor="@color/find_city_text_color_hint"
+        android:textSize="@dimen/find_city_text_size" />
+
+    <ListView
+        android:id="@+id/lv_city_county"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/listview_city_county_bg_color" >
+    </ListView>
+
+</LinearLayout>

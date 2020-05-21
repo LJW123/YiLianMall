@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:id="@+id/layout_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:src="@mipmap/zhongjiangpingzheng_wushuju" />
+
+        <ImageView
+            android:id="@+id/imgView_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:clickable="true"
+            android:src="@mipmap/zhongjiangpingzheng_wukankan" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_vouchers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/whitesmoke"
+        android:listSelector="@color/transparent"
+        android:visibility="visible" >
+    </ListView>
+
+</LinearLayout>

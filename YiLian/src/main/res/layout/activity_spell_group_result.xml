@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_spell_group_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_updata_error" />
+
+    <com.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_spell_progress_content" />
+
+            <include layout="@layout/item_spell_group_gridview_info" />
+
+            <include layout="@layout/item_spell_group_head_icon_content" />
+
+            <include layout="@layout/item_spell_group_open_group_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.yilian.mall.widgets.NoScrollGridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:horizontalSpacing="8dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="8dp"
+                    android:visibility="gone">
+
+                </com.yilian.mall.widgets.NoScrollGridView>
+
+                <LinearLayout
+                    android:id="@+id/ll_spell_tital"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐拼团"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/size18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPELL"
+                        android:textColor="@color/color_red"
+                        android:textSize="@dimen/size18"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <com.yilian.mall.widgets.NoScrollRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.pulltorefresh.library.PullToRefreshScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/fl_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@android:color/black">
+
+        </View>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/v3_title" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/nothing" />
+
+</RelativeLayout>

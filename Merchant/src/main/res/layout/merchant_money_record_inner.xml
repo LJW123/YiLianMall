@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/merchant_money_record_inner0">
+
+        <TextView
+            style="@style/merchant_money_record_inner1"
+            android:text="付款人昵称：" />
+
+        <TextView
+            android:id="@+id/tv_nick"
+            style="@style/merchant_money_record_inner2"
+            android:text="aaa" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/merchant_money_record_inner0">
+
+        <TextView
+            style="@style/merchant_money_record_inner1"
+            android:text="付款人电话:" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/merchant_money_record_inner2"
+            android:text="aaa" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/merchant_money_record_inner0">
+
+        <TextView
+            style="@style/merchant_money_record_inner1"
+            android:text="付款人奖券：" />
+
+        <TextView
+            android:id="@+id/tv_payer_score"
+            style="@style/merchant_money_record_inner2"
+            android:text="aaa" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/merchant_money_record_inner0">
+
+        <TextView
+            style="@style/merchant_money_record_inner1"
+            android:text="销售奖券：" />
+
+        <TextView
+            android:id="@+id/tv_sell_score"
+            style="@style/merchant_money_record_inner2"
+            android:text="aaa" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/merchant_money_record_inner0">
+
+        <TextView
+            style="@style/merchant_money_record_inner1"
+            android:text="让利金额：" />
+
+        <TextView
+            android:id="@+id/tv_coupon"
+            style="@style/merchant_money_record_inner2"
+            android:text="aaa" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/merchant_money_record_inner0">
+
+        <TextView
+            style="@style/merchant_money_record_inner1"
+            android:text="实际领奖励：" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            style="@style/merchant_money_record_inner2"
+            android:text="aaa" />
+    </LinearLayout>
+
+
+</LinearLayout>

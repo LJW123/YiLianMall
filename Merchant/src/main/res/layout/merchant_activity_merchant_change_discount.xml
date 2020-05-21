@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantChangeDiscountActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/merchant_bg_change_discount_head"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="35dp">
+
+        <TextView
+            android:id="@+id/tv_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/merchant_size15"
+            android:lines="1"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_current_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/merchant_icon_change_discount_head"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="当前折扣:"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/merchant_size15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="20dp"
+            android:text="手动设置折扣" />
+
+        <EditText
+            android:id="@+id/et_input_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/merchant_bg_btn_gray_radious"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/merchant_color_333"
+            android:textSize="@dimen/merchant_size15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="折"
+            android:textColor="@color/merchant_color_333" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_discount_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/merchant_bg_change_discount_text"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textColor="@color/library_module_color_333"
+            android:textSize="@dimen/merchant_size15"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:focusable="true"
+            android:paddingTop="0dp"
+            android:progressDrawable="@drawable/merchant_po_seekbar"
+            android:splitTrack="false"
+            android:thumb="@mipmap/merchant_icon_change_discount" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_min_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/merchant_color_999"
+            android:textSize="@dimen/merchant_size12" />
+
+        <TextView
+            android:id="@+id/tv_max_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/merchant_color_999"
+            android:textSize="@dimen/merchant_size12" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="折扣说明"
+        android:textColor="@color/merchant_color_666"
+        android:textSize="@dimen/merchant_size14" />
+
+    <TextView
+        android:id="@+id/tv_discount_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/merchant_text_scan_qr_code"
+        android:textColor="@color/merchant_color_999"
+        android:textSize="@dimen/merchant_size14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/merchant_btnStyle_v1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="确定修改折扣" />
+
+    </RelativeLayout>
+</LinearLayout>

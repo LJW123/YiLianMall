@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_wheel_of_fortune_award_list"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/margin20"
+    android:layout_marginLeft="@dimen/margin20"
+    android:background="#fc3658"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_winner_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:text="用户名"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_winner_good"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:text="奖品"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_winner_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="中奖时间"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

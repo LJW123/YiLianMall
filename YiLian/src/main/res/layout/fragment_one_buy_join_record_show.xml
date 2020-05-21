@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <com.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_one_buy_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#e8e8e9"
+        android:dividerHeight="0.5dp">
+    </com.pulltorefresh.library.PullToRefreshListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_mall_return"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll_one_buy_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_no_record_or_no_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="9dp"
+                android:drawableTop="@mipmap/one_buy_no_record"
+                android:gravity="center"
+                android:text="抱歉,您还没有相关记录"
+                android:textColor="#cccccc"/>
+        </RelativeLayout>
+        <!--android:layout_below="@id/rl_one_buy_recommend_no_data"-->
+        <LinearLayout
+
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2px"
+                android:background="#e4e4e4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="推荐夺宝"
+                android:textColor="#535353"
+                android:textSize="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2px"
+                android:background="#e4e4e4"/>
+
+            <com.yilian.mall.widgets.HorizontalListView
+                android:id="@+id/hlv_one_buy_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.yilian.mall.widgets.HorizontalListView>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

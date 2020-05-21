@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ctrip_bg_warn_common"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ctrip_order_pop_title_bg"
+            android:padding="@dimen/padding_15dp"
+            android:text="入住人填写说明"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_15dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="预订国内酒店，必须填写入住人的姓名需与入住时所持身份证一致。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333"
+                android:layout_marginTop="@dimen/padding_15dp"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="中文姓名填写方法:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:layout_marginTop="@dimen/padding_15dp"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="· 姓名中有生僻字,须全名拼音代替。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="   例如:“王膚军”填写为Wang/ Yanjun'。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="· 姓名中有特殊符号，可省略输入。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="   例如:“汉祖然买买提”填写为“汉祖然买买提”。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333"
+                android:layout_marginTop="@dimen/padding_15dp"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="英文姓名填写方法:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:layout_marginTop="@dimen/padding_15dp"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="· 姓在前，姓和名之间用“/”隔开，如有中间名则空一格紧随名之后。格式: last/firstmiddle" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_15dp"
+                android:text="   例如: Green /Jim Stephanie" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

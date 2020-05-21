@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common_color"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <include layout="@layout/ylyj_defaut_toolbar_right_layout" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保留奖券数量"
+            android:textColor="@color/main_black_text"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <EditText
+            android:id="@+id/integral_num_et"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请设置保留奖券数"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:paddingBottom="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_20dp"
+            android:textColor="@color/default_text_color"
+            android:textColorHint="@color/notice_text_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/textSize_20sp" />
+
+        <View style="@style/line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_10dp">
+
+            <TextView
+                android:id="@+id/hint_front_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计发奖励时间:次日06:00之前（节假日顺延）"
+                android:textColor="@color/main_black_text"
+                android:textSize="@dimen/textSize_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/limit_integral_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_10dp"
+        android:singleLine="true"
+        android:text="总额度"
+        android:textColor="@color/notice_text_color"
+        android:textSize="@dimen/textSize_13sp" />
+
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:background="@drawable/button_integral"
+        android:text="确 定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="集分宝暂不支持消费，请合理设置"
+        android:textColor="@color/notice_text_color"
+        android:textSize="@dimen/textSize_13sp" />
+</com.zhy.autolayout.AutoLinearLayout>

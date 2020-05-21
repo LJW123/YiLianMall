@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="lucky_value" format="integer|reference"/>
+    <attr name="lucky_minValue" format="integer|reference"/>
+    <attr name="lucky_maxValue" format="integer|reference"/>
+    <attr name="lucky_lefenlayout" format="reference"/>
+    <attr name="lucky_editBackground" format="reference"/>
+    <attr name="lucky_buttonAddBackgroud" format="reference"/>
+    <attr name="lucky_buttonSubBackgroud" format="reference"/>
+
+    
+    <declare-styleable name="Lucky_NumberAddSubView">
+
+        <attr name="lucky_lefenlayout"/>
+        <attr name="lucky_value"/>
+        <attr name="lucky_minValue"/>
+        <attr name="lucky_maxValue"/>
+        <attr name="lucky_editBackground"/>
+        <attr name="lucky_buttonAddBackgroud"/>
+        <attr name="lucky_buttonSubBackgroud"/>
+
+    </declare-styleable>
+
+</resources>

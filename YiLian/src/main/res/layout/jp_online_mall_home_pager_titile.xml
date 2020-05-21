@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/none_color"
+    android:orientation="horizontal"
+    android:paddingBottom="6.5dp"
+    android:paddingTop="6.5dp">
+    <ImageView
+        android:layout_marginLeft="@dimen/icon15"
+        android:id="@+id/iv_classify"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/icon15"
+        android:id="@+id/tv_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="11dp"
+        android:background="@drawable/searchview_line_white"
+        android:drawableLeft="@mipmap/iv_search_home_title_black"
+        android:gravity="center_vertical"
+        android:hint="推荐搜索关键词"
+        android:paddingLeft="@dimen/padding10"
+        android:singleLine="true"
+        android:textColorHint="@color/color_999" />
+
+    <ImageView
+        android:id="@+id/iv_qrCode_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin15"
+        android:paddingRight="10dp"
+        android:src="@mipmap/iv_qr_home_title_white"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="@dimen/padding15">
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/iv_message_home_title_white"/>
+
+        <ImageView
+            android:id="@+id/iv_message_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_circle_solid_red"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

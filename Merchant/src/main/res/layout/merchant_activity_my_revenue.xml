@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merchant_color_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.yilian.mylibrary.widget.DropZoomScrollView
+            android:id="@+id/drop_zoom_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/merchant_bg_revenue_header" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-200dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:textColor="#CFEFFF"
+                        android:textSize="16dp"
+                        tools:text="预存余额" />
+
+                    <TextView
+                        android:id="@+id/tv_balance_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="50dp"
+                        tools:text="￥20.00" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_add_up_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:textColor="@color/merchant_color_999"
+                            android:textSize="12dp"
+                            tools:text="" />
+
+                        <TextView
+                            android:id="@+id/tv_use_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:textColor="@color/merchant_color_999"
+                            android:textSize="12dp"
+                            tools:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/merchant_margin10"
+                        android:orientation="vertical">
+                        <!--提取营收-->
+                        <include
+                            android:id="@+id/include_extract_revenue"
+                            layout="@layout/merchant_item_revenue"
+                            android:visibility="visible" />
+                        <!--明细-->
+                        <include
+                            android:id="@+id/include_details"
+                            layout="@layout/merchant_item_revenue"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.yilian.mylibrary.widget.DropZoomScrollView>
+
+        <View style="@style/merchant_outerLineStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:textColor="#F25024"
+            android:textSize="12dp"
+            tools:text="营收说明" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="3dp"
+            android:background="#F25024" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:textColor="#F25024"
+            android:textSize="12dp"
+            tools:text="常见问题" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/titile"
+        layout="@layout/merchant_title_transparent_layout" />
+</FrameLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_white_performance"
+        android:orientation="vertical"
+        android:paddingBottom="23dp"
+        android:paddingLeft="@dimen/padding_20dp"
+        android:paddingRight="@dimen/padding_20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:src="@mipmap/icon_risk_notice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dp"
+            android:text="风险提示"
+            android:textColor="@color/red1"
+            android:textSize="@dimen/textSize_15dp" />
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/color_333"
+            tools:text="请确保您填写的益豆钱包地址：HRQuBkqqxga9xa7ciWvKA4pTUHfJX35FC6是正确的的钱包地址。若填写错误，将导致您的益豆丢失，请认真核对。" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_write_again"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8dp"
+                android:layout_weight="1"
+                android:background="@drawable/jd_order_bt_bg_red"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="重新填写"
+                android:textColor="@color/red1"
+                android:textSize="@dimen/textSize_15dp" />
+
+            <TextView
+                android:id="@+id/tv_no_wrong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_new_solid_red"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="核对无误"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

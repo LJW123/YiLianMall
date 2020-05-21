@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        tools:background="@color/red" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_goods"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/iv_goods"
+        android:ellipsize="end"
+        android:lines="1"
+        tools:text="商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_goods"
+        android:layout_toRightOf="@id/iv_goods"
+        android:lines="1"
+        android:textColor="@color/color_main_suning"
+        tools:text="$23.23" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_goods_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@id/iv_goods"
+        android:layout_alignParentRight="true"
+        tools:text="*1" />
+
+    <View
+        style="@style/innerLineStyle"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_goods_price"
+        />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/v3_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/take_cash_success"
+            android:layout_marginTop="@dimen/margin30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜！添加成功"
+            android:textSize="@dimen/size13"
+            android:textColor="@color/color_666"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完 成"
+        android:textSize="@dimen/size20"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/margin20"
+        android:background="@drawable/bg_solid_red_90"/>
+
+</LinearLayout>

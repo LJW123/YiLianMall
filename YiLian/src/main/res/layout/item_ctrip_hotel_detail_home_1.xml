@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_room_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ll_price"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_room_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:maxWidth="170dp"
+                android:textColor="#ff333333"
+                android:textSize="@dimen/textSize_14sp"
+                tools:text="欢乐时光" />
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:drawableRight="@mipmap/arrows_right_gray"
+                android:textColor="#4289FF"
+                android:textSize="@dimen/textSize_12dp"
+                android:text="详情" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_room_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_room_category"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text=""
+            tools:text="双份早餐 大床"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/textSize_12dp" />
+
+        <TextView
+            android:id="@+id/tv_whether_can_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_room_label"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:textColor="#2EB000"
+            android:textSize="@dimen/textSize_12dp"
+            tools:text="18点前可以取消" />
+
+        <TextView
+            android:id="@+id/tv_whether_confirm_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_whether_can_cancel"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:drawableLeft="@mipmap/iv_flash"
+            android:textColor="#2EB000"
+            android:textSize="@dimen/textSize_12dp"
+            tools:text="立即确认" />
+
+        <TextView
+            android:id="@+id/tv_return_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_whether_confirm_now"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/sn_order_bt_bg_orange_solid"
+            android:drawablePadding="@dimen/padding_3dp"
+            android:drawableRight="@mipmap/icon_white_ledou"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_10dp"
+            tools:text="预计10:00" />
+
+
+        <ImageView
+            android:id="@+id/iv_book_up"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_ctrip_room_book_up_pay_on_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_book_up">
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffff3c00"
+                android:textSize="11sp"
+                tools:text="¥" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:text=""
+                tools:text="176"
+                android:textColor="#ffff3c00"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_room_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_book_up"
+            android:layout_marginTop="@dimen/padding5"
+            android:textColor="@color/ctrip_orange"
+            android:textSize="12sp"
+            tools:text="仅剩1间" />
+    </RelativeLayout>
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_marginLeft="@dimen/margin_15dp" />
+
+</LinearLayout>

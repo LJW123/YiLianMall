@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merchant_color_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/merchant_title_transparent_layout" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_pub_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/merchant_margin15"
+        android:layout_marginTop="@dimen/merchant_margin15"
+        android:background="@drawable/merchant_bg_add_public_card"
+        android:elevation="1dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon_add"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:elevation="@dimen/merchant_margin10"
+            android:scaleType="fitXY"
+            android:src="@mipmap/merchant_icon_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/merchant_icon20"
+            android:text="添加对公卡"
+            android:textColor="@color/white"
+            android:textSize="@dimen/merchant_size15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/merchant_icon25"
+            android:layout_marginTop="@dimen/library_module_size11"
+            android:text="一键绑定对公卡，享受最快捷的服务"
+            android:textColor="@color/white"
+            android:textSize="@dimen/merchant_size12" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

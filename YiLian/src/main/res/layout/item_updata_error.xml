@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_error_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <!--显示请求数据失败的View-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/network_error" />
+
+    <TextView
+        android:id="@+id/tv_update_error"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@drawable/bg_empty_red"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/padding10"
+        android:text="刷新"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/size13" />
+
+
+</LinearLayout>

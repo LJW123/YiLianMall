@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../IMCore-2.0.2/IMCore-2.0.2.iml" filepath="$PROJECT_DIR$/../IMCore-2.0.2/IMCore-2.0.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IMKit-2.0.2/IMKit-2.0.2.iml" filepath="$PROJECT_DIR$/../IMKit-2.0.2/IMKit-2.0.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IntegralSet/IntegralSet.iml" filepath="$PROJECT_DIR$/../IntegralSet/IntegralSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Merchant/Merchant.iml" filepath="$PROJECT_DIR$/../Merchant/Merchant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PullToRefreshListview/PullToRefreshListview.iml" filepath="$PROJECT_DIR$/../PullToRefreshListview/PullToRefreshListview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YiLian.iml" filepath="$PROJECT_DIR$/YiLian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../YiLianMall.iml" filepath="$PROJECT_DIR$/../YiLianMall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../compressor/compressor.iml" filepath="$PROJECT_DIR$/../compressor/compressor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../loginmodule/loginmodule.iml" filepath="$PROJECT_DIR$/../loginmodule/loginmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../luckypurchase/luckypurchase.iml" filepath="$PROJECT_DIR$/../luckypurchase/luckypurchase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/../mylibrary/mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../networkingmodule/networkingmodule.iml" filepath="$PROJECT_DIR$/../networkingmodule/networkingmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rxfamily/rxfamily.iml" filepath="$PROJECT_DIR$/../rxfamily/rxfamily.iml" />
+    </modules>
+  </component>
+</project>

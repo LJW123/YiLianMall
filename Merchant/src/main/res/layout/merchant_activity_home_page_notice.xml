@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#99000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/merchant_padding15">
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/merchant_icon_jd_notice"
+        android:drawablePadding="10dp"
+        android:textColor="#ffffffff"
+        android:textSize="13dp"
+        tools:text="测试测测试测试测试测测试测试测试测测试" />
+
+    <LinearLayout
+        android:id="@+id/ll_notice_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/merchant_close_white" />
+    </LinearLayout>
+
+</LinearLayout>

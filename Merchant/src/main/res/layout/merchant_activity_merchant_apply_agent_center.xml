@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantApplyAgentCenterActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="申请区域"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_province"
+            style="@style/merchant_choose_agent_area"
+            android:hint="请选择省份" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/library_module_color_lines" />
+
+        <TextView
+
+            android:id="@+id/tv_city"
+            style="@style/merchant_choose_agent_area"
+            android:hint="请选择市" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/library_module_color_lines" />
+
+        <TextView
+            android:id="@+id/tv_county"
+            style="@style/merchant_choose_agent_area"
+            android:hint="请选择区县" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/library_module_color_lines" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="37dp"
+            android:text="申请意愿"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/merchant_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:background="@drawable/merchant_bg_btn_bglines_no_radious"
+                android:gravity="left"
+                android:hint="简单描述一下您的申请意愿吧~"
+                android:maxLength="80"
+                android:padding="10dp"
+                android:textColorHint="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/merchant_edittext"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:text="(0-50字以内)"
+                android:textColor="@color/library_module_color_red"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_apply"
+            style="@style/merchant_btnStyle_v1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="0dp"
+            android:text="确定申请" />
+    </LinearLayout>
+
+</LinearLayout>

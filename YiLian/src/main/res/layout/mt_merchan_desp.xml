@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_merchant_desp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家简介"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size15" />
+
+        <View
+            style="@style/ViewDividerDefault"
+            android:layout_marginTop="@dimen/margin15" />
+
+        <TextView
+            android:id="@+id/tv_shop_desp_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:scrollbars="vertical"
+            android:textColor="#656565"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

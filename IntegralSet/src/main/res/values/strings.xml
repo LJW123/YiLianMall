@@ -1,0 +1,428 @@
+<resources>
+    <string name="app_name">益联益家</string>
+
+    <!-- DatePicker -->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+
+    <string name="login"><u>登录</u></string>
+
+    <!--//益联益家有关-->
+    <string name="please_complete_info_first">请先完善信息</string>
+    <string name="please_write_number">请输入领奖励金额</string>
+    <string name="cash_not_enough">领奖励金额不足</string>
+    <string name="cash_not_100">领奖励金额不是100的倍数</string>
+    <string name="try_again">系统异常,请稍后再试</string>
+    <string name="please_write_right_num">请输入正确的卡号</string>
+    <string name="twice_write_num_no_same">两次输入的卡号不同，请保持一致</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="no_phone">亲,这家太懒了,没留电话哦!</string>
+    <string name="net_work_busy">网络繁忙</string>
+    <string name="net_work_not_available">网络连接失败,请检查网络</string>
+    <string name="net_work_not_available_zan">点赞失败,请检查网络</string>
+
+    <string name="cities1">[{
+        "Name": "上海",
+        "Grade": "3",
+        "IsMunicipality": "1"
+      },
+      {
+        "Name": "北京",
+        "Grade": "3",
+        "IsMunicipality": "1"
+      },
+      {
+        "Name": "北京(郊区)",
+        "Grade": "3",
+        "IsMunicipality": "1"
+      },
+      {
+        "Name": "天津",
+        "Grade": "3",
+        "IsMunicipality": "1"
+      },
+      {
+        "Name": "浙江",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "江苏",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "广东",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "湖北",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "安徽",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "福建",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "甘肃",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "广西",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "贵州",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "海南",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "河北",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "河南",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "黑龙江",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "湖南",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "吉林",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "江西",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "辽宁",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "内蒙古",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "宁夏",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "青海",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "山东",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "山西",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "陕西",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "上海(郊区)",
+        "Grade": "3",
+        "IsMunicipality": "1"
+      },
+      {
+        "Name": "四川",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "西藏",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "新疆",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "云南",
+        "Grade": "3",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "重庆",
+        "Grade": "3",
+        "IsMunicipality": "1"
+      }]</string>
+    <string name="cities2">[{
+        "Name": "慈溪市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "奉化市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "海宁市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "杭州市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "湖州市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "嘉兴市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "金华市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "丽水市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "宁波市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "衢州市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "上虞市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "绍兴市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "嵊州市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "台州市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "桐乡市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "温州市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "义乌市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "余姚市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "舟山市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "诸暨市",
+        "Grade": "4",
+        "IsMunicipality": "0"
+      }]</string>
+    <string name="cities3">[{
+        "Name": "滨江区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "淳安县",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "富阳市",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "拱墅区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "建德市",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "江干区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "临安市",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "上城区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "桐庐县",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "西湖区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "下城区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "萧山区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "余杭区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      }]</string>
+    <string name="cities4">[{
+        "Name": "滨江区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "淳安县",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "富阳市",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "拱墅区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "建德市",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "江干区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "临安市",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "上城区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "桐庐县",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "西湖区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "下城区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "萧山区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      },
+      {
+        "Name": "余杭区",
+        "Grade": "5",
+        "IsMunicipality": "0"
+      }]</string>
+
+</resources>

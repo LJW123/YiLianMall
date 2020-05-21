@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cffffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_v3title"
+        layout="@layout/v3_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_card_contentview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_v3title">
+
+        <include
+            android:id="@+id/include_card_isoppen"
+            layout="@layout/activity_card_mycard_isoppon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/include_card_notoppen"
+            layout="@layout/activity_shoppingcard_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/include_errorview"
+            layout="@layout/library_module_load_error2"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_jd_name_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="name   phone"
+        android:textColor="@color/color_333"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_jd_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="70dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="address"
+        android:textColor="@color/color_666"
+        android:textSize="13dp" />
+
+    <View
+        style="@style/outerLineStyle"
+        android:layout_marginBottom="17dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_box_jd_default_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:button="@drawable/selector_jd_default_address"
+            android:paddingLeft="10dp"
+            android:text="默认地址"
+            android:textColor="@color/color_666"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_edit_jd_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_jd_edit_address"
+            android:drawablePadding="10dp"
+            android:text="编辑"
+            android:textColor="@color/color_666"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_delete_jd_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_jd_address_delete"
+            android:drawablePadding="10dp"
+            android:text="删除"
+            android:textColor="@color/color_666"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+</LinearLayout>

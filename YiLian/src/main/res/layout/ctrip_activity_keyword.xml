@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_15dp"
+            android:paddingRight="@dimen/padding_5dp"
+            android:src="@mipmap/back" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ctrip_keyword_search"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_6dp"
+            android:paddingLeft="@dimen/padding_10dp"
+            android:paddingTop="@dimen/padding_6dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/ctrip_keyword_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:text="关键字/位置/品牌/酒店名"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vary_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="@dimen/padding_6dp"
+                                android:layout_marginLeft="@dimen/padding_10dp"
+                                android:layout_marginTop="@dimen/padding_6dp"
+                                android:src="@mipmap/ctrip_keyword_record" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/color_999"
+                                android:textSize="@dimen/textSize_13dp"
+                                android:text="搜索历史" />
+
+                            <TextView
+                                android:id="@+id/tv_clear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/margin_10dp"
+                                android:paddingRight="@dimen/margin_10dp"
+                                android:text="清空"
+                                android:textColor="@color/color_4289FF"
+                                android:textSize="@dimen/textSize_13dp" />
+                        </LinearLayout>
+
+                        <View style="@style/line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="@dimen/padding_6dp"
+                                android:layout_marginLeft="@dimen/padding_10dp"
+                                android:layout_marginTop="@dimen/padding_6dp"
+                                android:src="@mipmap/ctrip_keyword_brand" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/color_999"
+                                android:textSize="@dimen/textSize_13dp"
+                                android:text="品牌" />
+
+
+                            <ImageView
+                                android:id="@+id/iv_brand_more"
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="@dimen/margin_10dp"
+                                android:paddingRight="@dimen/margin_10dp"
+                                android:src="@mipmap/ctrip_keyword_more" />
+                        </LinearLayout>
+
+                        <View style="@style/line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="@dimen/padding_6dp"
+                                android:layout_marginLeft="@dimen/padding_10dp"
+                                android:layout_marginTop="@dimen/padding_6dp"
+                                android:src="@mipmap/ctrip_keyword_zone" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/color_999"
+                                android:textSize="@dimen/textSize_13dp"
+                                android:text="商业区" />
+
+
+                            <ImageView
+                                android:id="@+id/iv_zone_more"
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="@dimen/margin_10dp"
+                                android:paddingRight="@dimen/margin_10dp"
+                                android:src="@mipmap/ctrip_keyword_more" />
+                        </LinearLayout>
+
+                        <View style="@style/line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_zone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="@dimen/padding_6dp"
+                                android:layout_marginLeft="@dimen/padding_10dp"
+                                android:layout_marginTop="@dimen/padding_6dp"
+                                android:src="@mipmap/ctrip_keyword_location" />
+
+                            <TextView
+                                android:id="@+id/tv_type"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/color_999"
+                                android:textSize="@dimen/textSize_13dp"
+                                android:text="行政区" />
+
+
+                            <ImageView
+                                android:id="@+id/iv_location_more"
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="@dimen/margin_10dp"
+                                android:paddingRight="@dimen/margin_10dp"
+                                android:src="@mipmap/ctrip_keyword_more" />
+                        </LinearLayout>
+
+                        <View style="@style/line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

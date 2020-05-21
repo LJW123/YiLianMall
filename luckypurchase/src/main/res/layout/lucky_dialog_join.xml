@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/lucky_bg_white_10_radious">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lucky_margin20"
+            android:textSize="@dimen/lucky_size18"
+            android:textColor="@color/lucky_color_333"
+            android:text="活动参与次数"/>
+
+        <com.yilian.luckypurchase.widget.NumberAddSubView
+            android:id="@+id/numberView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lucky_margin30"
+            android:layout_marginRight="@dimen/lucky_margin30"
+            android:layout_marginTop="@dimen/lucky_margin30"
+            app:lucky_lefenlayout="@layout/lucky_widet_num_add_sub"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lucky_margin30"
+            android:layout_marginRight="@dimen/lucky_margin30"
+            android:layout_marginTop="@dimen/lucky_margin20"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/lucky_padding5"
+                android:paddingBottom="@dimen/lucky_padding5"
+                android:gravity="center"
+                android:background="@drawable/lucky_choose_number"
+                android:textSize="@dimen/lucky_size15"
+                android:textColor="@color/lucky_color_333"
+                android:text="5"/>
+
+            <View
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/lucky_padding5"
+                android:paddingBottom="@dimen/lucky_padding5"
+                android:gravity="center"
+                android:background="@drawable/lucky_choose_number"
+                android:textSize="@dimen/lucky_size15"
+                android:textColor="@color/lucky_color_333"
+                android:text="20"/>
+
+            <View
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/lucky_padding5"
+                android:paddingBottom="@dimen/lucky_padding5"
+                android:gravity="center"
+                android:background="@drawable/lucky_choose_number"
+                android:textSize="@dimen/lucky_size15"
+                android:textColor="@color/lucky_color_333"
+                android:text="50"/>
+
+            <View
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/lucky_padding5"
+                android:paddingBottom="@dimen/lucky_padding5"
+                android:gravity="center"
+                android:background="@drawable/lucky_choose_number"
+                android:textSize="@dimen/lucky_size15"
+                android:textColor="@color/lucky_color_333"
+                android:text="全部"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/lucky_margin30"
+            android:layout_marginRight="@dimen/lucky_margin30"
+            android:layout_marginTop="@dimen/lucky_margin30"
+            android:background="@color/lucky_color_lines"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lucky_margin20"
+            android:textSize="@dimen/lucky_size15"
+            android:text="共消耗"/>
+
+        <TextView
+            android:id="@+id/tv_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lucky_margin20"
+            android:paddingTop="@dimen/lucky_padding15"
+            android:paddingBottom="@dimen/lucky_padding15"
+            android:gravity="center"
+            android:background="@color/lucky_color_red"
+            android:textSize="@dimen/lucky_size18"
+            android:textColor="@color/lucky_white"
+            android:text="立即参加"/>
+    </LinearLayout>
+
+</LinearLayout>

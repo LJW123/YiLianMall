@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/lucky_v3_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@mipmap/lucky_bg_record_title">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/lucky_default_head_icon"/>
+
+        <TextView
+            android:id="@+id/tv_username_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="12dp"
+            android:textColor="@android:color/white"
+            android:text="暂无昵称\n手机号码"/>
+    </LinearLayout>
+
+    <com.yilian.mylibrary.widget.SlidingTabLayout
+        android:id="@+id/sliding_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tl:library_module_tl_divider_width="1dp"
+        tl:library_module_tl_indicator_color="@color/library_module_color_red"
+        tl:library_module_tl_tab_space_equal="true"
+        tl:library_module_tl_textAllCaps="false"
+        tl:library_module_tl_textBold="SELECT"
+        tl:library_module_tl_textSelectColor="@color/library_module_color_red"
+        tl:library_module_tl_textUnselectColor="@color/library_module_color_333"
+        tl:library_module_tl_underline_color="@color/library_module_color_lines"
+        tl:library_module_tl_underline_height="1px">
+
+    </com.yilian.mylibrary.widget.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

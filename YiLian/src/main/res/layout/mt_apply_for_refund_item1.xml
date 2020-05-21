@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+<!--该界面重复 已废弃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFDF4"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_refund"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mt_apply_for_refund_explain"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding15"
+        >
+
+        <ImageView
+            android:id="@+id/iv_package_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@mipmap/login_module_default_jp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_mt_package_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_toRightOf="@id/iv_package_icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/color_h1"
+            android:textSize="@dimen/size15"
+            />
+
+        <TextView
+            android:id="@+id/tv_mt_package_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mt_package_price"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_toRightOf="@id/iv_package_icon"
+            android:lines="2"
+            android:ellipsize="end"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12"
+            />
+
+        <TextView
+            android:id="@+id/tv_mt_package_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_package_icon"
+            android:layout_gravity="left"
+            android:layout_toRightOf="@id/iv_package_icon"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size13"
+            />
+        <TextView
+            android:id="@+id/tv_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/jpMoneyQuan"
+            android:text="@string/present"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_alignBottom="@id/iv_package_icon"
+            android:layout_toRightOf="@id/tv_mt_package_tag"
+            />
+        <TextView
+
+            android:id="@+id/tv_mt_package_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_package_icon"
+            android:layout_gravity="left"
+            android:layout_toRightOf="@id/tv_present"
+            android:text="@string/placeholder_text"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size13"
+            />
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

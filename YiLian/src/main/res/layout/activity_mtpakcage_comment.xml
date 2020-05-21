@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mtpakcage_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.MTPackageCommentActivity">
+    <!--添加ScrollView的目的是为了让Edittext获取焦点时，随着软键盘弹出而向上移动-->
+    <!--头部-->
+    <include layout="@layout/jp_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--评论说明-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="#FFFDF4"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:src="@mipmap/iv_refund" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/mt_package_comment_price_explain"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size12" />
+            </LinearLayout>
+            <!--总评分-->
+            <include
+
+                layout="@layout/mt_total_comment" />
+
+            <ImageView
+                android:id="@+id/iv_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@color/white"
+                android:src="@mipmap/mt_total_comment_start5" />
+            <!--环境评分-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding20"
+                android:paddingTop="@dimen/padding10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin30"
+                    android:text="@string/environment"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15" />
+
+                <!--<include layout="@layout/mt_sub_comment"/>-->
+                <RatingBar
+                    android:id="@+id/rating_bar_environment"
+                    style="@style/mt_sub_comment1" />
+
+                <TextView
+                    android:id="@+id/tv_mt_environment_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="@string/placeholder_text"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size12"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <!--服务评分-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin30"
+                    android:text="@string/service"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15" />
+
+                <!--<include layout="@layout/mt_sub_comment"/>-->
+
+                <RatingBar
+                    android:id="@+id/rating_bar_service"
+                    style="@style/mt_sub_comment1" />
+
+                <TextView
+                    android:id="@+id/tv_mt_service_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="@string/placeholder_text"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size12"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <!--为EditText添加父控件并声明 android:focusable="true"      android:focusableInTouchMode="true"属性 是为了让EditText不自动获取焦点-->
+            <!--评论内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_total_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin10"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:hint="@string/hint_mt_comment"
+                    android:padding="@dimen/padding18"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size13" />
+            </LinearLayout>
+
+            <!--评论图片-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:horizontalSpacing="10dp"
+                android:paddingLeft="10dp"
+                android:visibility="visible" />
+
+            <View style="@style/outerLineStyle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding15"
+                android:text="@string/commit_image_explain"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/size13"
+
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

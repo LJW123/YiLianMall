@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantAddressActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <TextView
+        android:id="@+id/merchant_textview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ADB2CA"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:text="注:所在区域只能设置一次，设置过之后将不可修改"
+        android:textColor="@color/merchant_color_white" />
+
+    <include
+        android:id="@+id/include_merchant_area"
+        layout="@layout/merchant_layout_text_value" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/merchant_size15"
+        android:text="门店详细地址" />
+
+    <EditText
+        android:id="@+id/et_merchant_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="请输入门店详细地址信息"
+        android:lines="3"
+        android:padding="@dimen/merchant_size15"
+        android:textSize="@dimen/merchant_size16" />
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_save_address"
+        style="@style/merchant_btnStyle_v1"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="保存地址" />
+</LinearLayout>

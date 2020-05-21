@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.FeedbackActivity" >
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18.3dp"
+        android:layout_marginTop="15dp"
+        android:text="选择反馈类型"
+        android:textColor="#ababab" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="18.3dp"
+        android:layout_marginRight="18.3dp"
+        android:layout_marginTop="7dp"
+        android:background="@mipmap/feedback_spinner"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18.3dp"
+        android:layout_marginTop="13dp"
+        android:text="反馈内容"
+        android:textColor="#ababab" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="158.6dp"
+        android:layout_marginLeft="18.3dp"
+        android:layout_marginRight="18.3dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/feedback_content_rectangle"
+        android:gravity="top"
+        android:lineSpacingExtra="4dp"
+        android:padding="10dp"
+        android:textColor="#ababab"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18.3dp"
+        android:layout_marginTop="13dp"
+        android:text="联系方式"
+        android:textColor="#ababab" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="18.3dp"
+        android:layout_marginRight="18.3dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/feedback_content_rectangle"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textColor="#ababab"
+        android:textSize="13sp" />
+
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="45.3dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/merchant_bg_btn_style_red"
+        android:onClick="pushOpinions"
+        android:text="提 交"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

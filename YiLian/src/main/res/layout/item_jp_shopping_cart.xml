@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/rl_shopping_cart_inner"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/padding15"
+              android:paddingRight="@dimen/padding15"
+              android:paddingTop="@dimen/padding15"
+    >
+
+    <CheckBox
+        android:id="@+id/chk_shopping_cart_goods_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:button="@null"
+        android:drawableLeft="@drawable/chk_shopping_cart_goods_list"
+        android:focusable="false"
+        android:padding="@dimen/padding15"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin10">
+
+        <com.yilian.mall.widgets.CircleImageView1
+            android:id="@+id/iv_item_shopping_cart"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/login_module_default_jp"/>
+
+        <com.yilian.mall.widgets.CircleImageView1
+            android:id="@+id/iv_goods_status"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="center"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_marginBottom="@dimen/margin5"
+            android:text=""
+            android:textColor="@color/color_h1"
+            android:textSize="14dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_lebi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/size18"/>
+
+                <TextView
+                    android:id="@+id/tv_lefen"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size14"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_goods_norms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text=""
+                android:textColor="@color/color_999"
+                android:textSize="12dp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/tv_xianjinquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/jp_bg_btn_red_all_radius"
+                    android:text="已经抵扣"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size10"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_gouwuquan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/placeholder_text"
+                        android:textColor="@color/color_red"
+                        android:textSize="@dimen/size18"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_gouwuquan_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:background="@drawable/bg_fen_photo"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="@string/linggouquan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size12"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <com.yilian.mall.widgets.NumberAddSubView
+                    android:id="@+id/number_add_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin10"
+
+                    android:focusable="false"
+
+                    android:gravity="center_vertical"
+                    app:lefenlayout="@layout/widet_num_add_sub_shopping_cart">
+
+                </com.yilian.mall.widgets.NumberAddSubView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goods_norms"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/iv_item_shopping_cart"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/ic_mall_shopping"
+        android:gravity="center"
+        android:lines="1"
+        android:text="6251"
+        android:textColor="#ff6823"
+        android:textSize="15dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mt_merchant_photo_album"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.MtMerchantPhotoAlbumActivity">
+
+    <include layout="@layout/v3_title" />
+
+    <com.yilian.mall.widgets.SlidingTabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inner_tab_height"
+        app:tl_indicator_color="@color/color_red"
+        app:tl_textBold="SELECT"
+        app:tl_tab_space_equal="true"
+        app:tl_textAllCaps="true"
+        app:tl_textSelectColor="@color/color_red"
+        app:tl_textUnselectColor="@color/color_h1">
+
+    </com.yilian.mall.widgets.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

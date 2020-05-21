@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.WheelOfFortuneActivity">
+
+    <include layout="@layout/jp_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d63043">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg">
+
+            <ImageView
+                android:id="@+id/iv_network_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="refreshData"
+                android:src="@mipmap/network_error"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d63043"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/bg_wheel_header" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/line_wheel_head" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:background="@mipmap/line_wheel_head" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="100dp"
+                        android:background="@mipmap/bg_wheel_header_outer_frame"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/padding10">
+
+
+                            <include
+                                android:id="@+id/include1"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+
+                            <include
+                                android:id="@+id/include2"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+
+                            <include
+                                android:id="@+id/include3"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <include
+                                android:id="@+id/include8"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+
+                            <ImageButton
+                                android:id="@+id/btn_start"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/padding5"
+                                android:layout_weight="1"
+                                android:background="@mipmap/btn_wheel_start"
+                                />
+
+
+                            <include
+                                android:id="@+id/include4"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/padding10">
+
+                            <include
+                                android:id="@+id/include7"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+
+                            <include
+                                android:id="@+id/include6"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+
+                            <include
+                                android:id="@+id/include5"
+                                layout="@layout/wheel_prize_view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin5"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_cost"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom|center_horizontal"
+                            android:paddingBottom="@dimen/padding20"
+                            android:paddingTop="@dimen/padding20"
+                            android:text="每次抽奖消耗50零购券"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:src="@mipmap/btn_bg_wheel_rule" />
+
+                    <ImageButton
+                        android:id="@+id/btn_my_prize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:src="@mipmap/btn_bg_wheel_prize" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/view1"
+                    layout="@layout/line_text_line" />
+
+                <include
+                    android:id="@+id/include_prize_title"
+                    layout="@layout/item_wheel_of_fortune_award_list_title" />
+
+                <ListView
+                    android:id="@+id/listview_prize_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:divider="@null"
+                    android:paddingLeft="@dimen/padding20"
+                    android:paddingRight="@dimen/padding20"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:layout_marginTop="@dimen/margin30"
+                    android:background="#fc3658"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding15"
+                    android:paddingTop="@dimen/padding15">
+
+                    <include
+                        android:id="@+id/view2"
+                        layout="@layout/line_text_line" />
+
+                    <com.yilian.mall.widgets.NoScrollListView
+                        android:id="@+id/listview_rule"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:divider="@null">
+
+                    </com.yilian.mall.widgets.NoScrollListView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

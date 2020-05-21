@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/v3_title" />
+
+    <com.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="197dp"
+                    android:background="#f7f7f7" />
+
+                <LinearLayout
+                    android:id="@+id/ll_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginRight="0dp"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_content_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin15"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/near_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="2dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1" />
+
+                    <TextView
+                        android:id="@+id/tv_content_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ratingBar_grade"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="0dp"
+                        android:text="@string/grade"
+                        android:textColor="@color/color_999"
+                        android:textSize="@dimen/size12" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separate_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding15">
+
+                    <TextView
+                        android:id="@+id/tv_content_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/merchant_dingwei"
+                        android:drawablePadding="@dimen/padding10"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text=""
+                        android:textColor="@color/color_h1"
+                        android:textSize="@dimen/size13" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/main_icon_drawable_padding"
+                        android:layout_marginTop="@dimen/main_icon_drawable_padding"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:layout_marginRight="@dimen/margin15"
+                        android:background="@color/separate_line" />
+
+                    <ImageView
+                        android:id="@+id/iv_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding15"
+                        android:paddingRight="@dimen/padding15"
+                        android:src="@mipmap/merchant_tel" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separate_line" />
+
+                <TextView
+                    android:id="@+id/tv_content_time"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/merchant_time_2"
+                    android:drawablePadding="@dimen/padding10"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding15"
+                    android:text=""
+                    android:textColor="@color/color_h1"
+                    android:textSize="@dimen/size13" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin20"
+                    android:background="@color/color_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin15"
+                    android:text="分店介绍"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separate_line" />
+
+                <TextView
+                    android:id="@+id/tv_content_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin15"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text=""
+                    android:textColor="@color/color_h1"
+                    android:textSize="@dimen/size12" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

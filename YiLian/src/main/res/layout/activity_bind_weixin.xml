@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="#fcfdfd"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/bluejiantou"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="onBack"
+        android:paddingLeft="15dp"
+        android:text="绑定领奖励用户"
+        android:textColor="#7a7a7c"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:onClick="bindWeChat"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/img_weixin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="27dp"
+            android:src="@mipmap/weixin_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_weixin"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的微信"
+                android:textColor="#5e5e5e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_nike_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:text="未绑定"
+                android:textColor="#a7a4a4"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/user_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line" />
+
+</LinearLayout>

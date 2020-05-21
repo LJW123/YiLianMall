@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantMoneyRecordActivity2">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <com.yilian.mylibrary.widget.MySwipeRefreshLayout
+        android:id="@+id/my_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/expandable_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:groupIndicator="@drawable/merchant_expandablearrwo">
+
+        </ListView>
+
+
+
+
+
+    </com.yilian.mylibrary.widget.MySwipeRefreshLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/merchant_nothing"
+        android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

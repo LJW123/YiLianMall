@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_corner_gray"
+            android:gravity="top"
+            android:hint=" 采访你一下，中奖的心情怎么样啊？"
+            android:maxLength="1000"
+            android:padding="6dp"
+            android:text=""
+            android:textColor="#929292"
+            android:textSize="13sp" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="19dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+                <!--<ImageButton-->
+                    <!--android:id="@+id/img1"-->
+                    <!--style="@style/shareImageButton"-->
+                    <!--android:onClick="openCamara"-->
+                    <!--android:src="@mipmap/xiangji" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_cha1"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:src="@mipmap/library_module_ic_del"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:clickable="true"-->
+                    <!--android:onClick="toClear"/>-->
+            <!--</FrameLayout>-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/img2"-->
+                    <!--style="@style/shareImageButton"-->
+                    <!--android:onClick="openCamara" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_cha2"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:src="@mipmap/library_module_ic_del"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:clickable="true"-->
+                    <!--android:onClick="toClear"/>-->
+            <!--</FrameLayout>-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/img3"-->
+                    <!--style="@style/shareImageButton"-->
+                    <!--android:onClick="openCamara" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_cha3"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:src="@mipmap/library_module_ic_del"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:clickable="true"-->
+                    <!--android:onClick="toClear"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="19dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="19dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+                <!--<ImageButton-->
+                    <!--android:id="@+id/img4"-->
+                    <!--style="@style/shareImageButton"-->
+                    <!--android:onClick="openCamara"-->
+                     <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_cha4"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:src="@mipmap/library_module_ic_del"-->
+                    <!--android:clickable="true"-->
+                    <!--android:onClick="toClear"/>-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+                <!--<ImageButton-->
+                    <!--android:id="@+id/img5"-->
+                    <!--style="@style/shareImageButton"-->
+                    <!--android:onClick="openCamara" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_cha5"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:src="@mipmap/library_module_ic_del"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:clickable="true"-->
+                    <!--android:onClick="toClear"/>-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+                <!--<ImageButton-->
+                    <!--android:id="@+id/img6"-->
+                    <!--style="@style/shareImageButton"-->
+                    <!--android:onClick="openCamara" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_cha6"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:src="@mipmap/library_module_ic_del"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:clickable="true"-->
+                    <!--android:onClick="toClear"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+    <com.yilian.mall.widgets.NoScrollGridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout"
+        android:paddingTop="13dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="8dp"
+        android:numColumns="3"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" >
+    </com.yilian.mall.widgets.NoScrollGridView>
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_sure_pay_blue"
+        android:onClick="sureShare"
+        android:text="提交"
+        android:textColor="@color/white" />
+</RelativeLayout>

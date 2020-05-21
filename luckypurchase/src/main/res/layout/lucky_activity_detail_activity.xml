@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lucky_white">
+
+    <RelativeLayout
+        android:id="@+id/layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="none"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:background="@color/transparent_color">
+
+            <ImageView
+                android:id="@+id/iv_back_black"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="17dp"
+                android:paddingRight="@dimen/lucky_padding10"
+                android:src="@mipmap/lucky_v3back"/>
+
+            <ImageView
+                android:id="@+id/iv_back_white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/lucky_padding10"
+                android:paddingRight="@dimen/lucky_padding10"
+                android:src="@mipmap/lucky_v3_back_top"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/lucky_size18"
+                android:textColor="@color/transparent_color"
+                android:text="活动详情"/>
+
+            <ImageView
+                android:id="@+id/iv_more_white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/lucky_padding10"
+                android:paddingRight="@dimen/lucky_padding10"
+                android:src="@mipmap/lucky_v3_more_white"/>
+
+            <ImageView
+                android:id="@+id/iv_more_black"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/lucky_padding10"
+                android:paddingRight="16dp"
+                android:src="@mipmap/lucky_v3_more_black"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lucky_color_lines"/>
+
+        <TextView
+            android:id="@+id/tv_join_now"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/lucky_color_red"
+            android:textSize="@dimen/lucky_size18"
+            android:textColor="@color/lucky_white"
+            android:text="立即参加"/>
+
+        <LinearLayout
+            android:id="@+id/layout_join_next"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/lucky_white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="@dimen/lucky_size15"
+                android:textColor="@color/lucky_color_999"
+                android:text="新一期夺宝正在火热进行中...."/>
+
+            <TextView
+                android:id="@+id/tv_join_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/lucky_join_bg"
+                android:textSize="@dimen/lucky_size18"
+                android:textColor="@color/lucky_white"
+                android:text="立即参加"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

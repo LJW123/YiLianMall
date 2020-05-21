@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mtsearch_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yilian.mall.ui.MTSearchAddressActivity">
+
+    <include layout="@layout/jp_title"/>
+    <include layout="@layout/mt_title_search_address"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lv_search_address"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+</LinearLayout>

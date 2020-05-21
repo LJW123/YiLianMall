@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/activity_title" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="乐分宝奖励 :"
+            android:textColor="#798291"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_user_money"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/c247df7"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@mipmap/zhuanzengbg"
+        android:paddingLeft="20dp"
+        android:paddingTop="38dp"
+        android:text="输入你要转出的奖励数额："
+        android:textColor="@color/c247df7"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line"/>
+    <EditText
+        android:id="@+id/et_lebi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:hint="本次最多可转出奖励"
+        android:numeric="decimal"
+        android:paddingLeft="20dp"
+        android:singleLine="true"
+        android:textColor="#b4b2b2"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="22dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="11dp"
+        android:text="转出到您账户的奖励中"
+        android:textColor="#798291"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/btn_login_not_phone_login"
+            android:clickable="false"
+            android:gravity="center"
+            android:onClick="sureOut"
+            android:text="确定转出"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_account_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="预计增值到账时间"
+        android:textColor="#89898f"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/al_address_distance"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_address_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:text="11111"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/sp_14"
+            android:drawableLeft="@mipmap/iv_circle"
+            android:drawablePadding="@dimen/margin_2dp"
+            />
+
+        <!--<ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_4dp"
+            android:src="@mipmap/iv_circle"
+            android:visibility="visible" />-->
+
+    </RelativeLayout>
+</LinearLayout>

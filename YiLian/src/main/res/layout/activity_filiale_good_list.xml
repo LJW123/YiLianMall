@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.FilialeGoodListActivity">
+
+    <include layout="@layout/activity_title" />
+
+    <RadioGroup
+        android:id="@+id/rg_good_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/bac_color"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_legou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/line_blue"
+            android:drawablePadding="@dimen/default_padding"
+            android:gravity="center"
+            android:text="@string/legou_region"
+            android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+            android:textSize="15.0sp" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:background="@color/separate_line" />
+
+        <RadioButton
+            android:id="@+id/rb_lehuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="@dimen/default_padding"
+            android:gravity="center"
+            android:text="@string/lehuan_region"
+            android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+            android:textSize="15.0sp" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:background="@color/separate_line" />
+
+        <RadioButton
+            android:id="@+id/rb_lexuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="@dimen/default_padding"
+            android:gravity="center"
+            android:text="乐选区"
+            android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+            android:textSize="15.0sp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_good_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

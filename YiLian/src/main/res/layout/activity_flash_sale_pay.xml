@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_flash_sale_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+
+    tools:context="com.yilian.mall.ui.FlashSalePayActivity">
+
+    <include layout="@layout/jp_title"/>
+
+    <include
+        android:layout_marginTop="@dimen/margin10"
+        layout="@layout/content_flash_sale"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:padding="@dimen/padding15"
+        android:id="@+id/tv_get_ling_gou_quan"
+        android:text="@string/placeholder_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/btnStyle"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_flash_sale_pay"
+            android:text="@string/affirm_pay"
+            />
+    </RelativeLayout>
+</LinearLayout>

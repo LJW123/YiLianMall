@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_common_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--首页搜索-->
+        <include layout="@layout/jd_layout_home_page_search" />
+        <!--首页banner-->
+        <include layout="@layout/jd_home_page_banner" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/head_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--首页广告位-->
+        <ImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher" />
+
+        <include layout="@layout/jd_item_home_page_goods_title" />
+    </LinearLayout>
+
+</FrameLayout>

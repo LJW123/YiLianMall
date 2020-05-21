@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merchant_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="上传身份证正面"
+                android:textColor="@color/library_module_color_333"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_id_card_front"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/library_module_color_333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="上传身份证反面"
+                android:textColor="@color/library_module_color_333"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_id_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/library_module_color_333" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="上传手持身份证证件"
+            android:textColor="@color/library_module_color_333"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_body"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/library_module_color_333" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:text="1.各项信息清晰无遮挡\n2.手持身份证拍摄时，确保五冠和照片基本一致，不要遮挡面部，如果女生头发比较长，可以用橡筋扎起来。"
+        android:textColor="@color/merchant_color_999"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CEA76E"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</LinearLayout>

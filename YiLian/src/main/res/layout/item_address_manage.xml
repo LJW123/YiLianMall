@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_address_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/address_duigou_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/address_duigou_icon"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp">
+
+            <TextView
+                android:id="@+id/name_texview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="49dp"
+                android:text="张三"
+                android:textSize="15sp"
+                android:textColor="@color/address_manage_item_name_color"/>
+            <TextView
+                android:id="@+id/phone_texview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000000000"
+                android:textSize="17sp"
+                android:textColor="@color/address_manage_item_phone_color"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/addres_texview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="南河南河南河南河南河南河南南"
+            android:textSize="16sp"
+            android:textColor="@color/address_manage_item_name_color"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/edit_address_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="13dp"
+        android:src="@mipmap/edit_address_blue_icon"
+        android:clickable="true" />
+
+</LinearLayout>

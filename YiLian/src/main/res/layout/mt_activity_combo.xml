@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <include layout="@layout/v3_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <com.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/sv_pull_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/details_viewpager_base_top" />
+
+                    <include layout="@layout/mt_combo_base_info" />
+
+                    <include layout="@layout/mt_combo_all_evaluate" />
+
+                    <include
+                        android:id="@+id/include_store_detail"
+                        layout="@layout/mt_order_detail_shop"
+                        android:clickable="true" />
+
+                    <include layout="@layout/mt_order_detail_combo" />
+
+                    <include layout="@layout/mt_combo_buy_needknow" />
+
+                    <LinearLayout
+                        android:id="@+id/eva_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin15"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/row_height40"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginLeft="@dimen/margin15"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="评价"
+                                android:textColor="@color/color_333"
+                                android:textSize="@dimen/size15" />
+
+                            <View style="@style/innerLineStyle" />
+                        </LinearLayout>
+
+                        <com.yilian.mall.widgets.NoScrollListView
+                            android:id="@+id/lv_evaluate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="@android:color/transparent"
+                            android:divider="@color/color_lines"
+                            android:dividerHeight="1px"
+                            android:focusable="false"
+                            android:listSelector="@android:color/transparent"
+                            android:scrollbars="none">
+
+                        </com.yilian.mall.widgets.NoScrollListView>
+                    </LinearLayout>
+
+                    <include layout="@layout/mt_near_merchant_recommend" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </com.pulltorefresh.library.PullToRefreshScrollView>
+
+        <include layout="@layout/mt_details_head" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/library_module_load_error"
+        android:visibility="gone" />
+</LinearLayout>

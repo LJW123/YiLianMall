@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cffffffff">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_yellow" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:layout_marginRight="@dimen/margin_25dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/padding_15dp">
+
+        <RelativeLayout
+            android:id="@+id/fl_card_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_below="@+id/include_v3title"
+            android:background="@mipmap/bg_card_black"
+            android:paddingBottom="@dimen/margin10">
+
+            <TextView
+                android:id="@+id/tv_card_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:text=""
+                android:textColor="#fff8e7e1"
+                android:textSize="13sp"
+                tools:text="Mr.zhang" />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:layout_marginTop="25dp"
+                android:text=""
+                android:textColor="#fff8e7e1"
+                android:textSize="16sp"
+                tools:text="¥ 7200.00" />
+
+            <LinearLayout
+                android:id="@+id/ll_limit_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_card_username"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_current_month_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="当月可用额度"
+                    android:textColor="#fff8e7e1"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_card_current_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_toRightOf="@+id/tv_current_month_limit"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#fff8e7e1"
+                    android:textSize="17sp"
+                    tools:text="¥ 700.00" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_validfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_limit_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="VALID FROM"
+                android:textColor="#fff8e7e1"
+                android:textSize="7sp" />
+
+            <TextView
+                android:id="@+id/tv_card_createat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_validfrom"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text=""
+                android:textColor="#fff8e7e1"
+                android:textSize="11sp"
+                tools:text="2018/11/1" />
+
+            <TextView
+                android:id="@+id/tv_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text=""
+                android:textColor="#ffa79994"
+                android:textSize="11sp"
+                tools:text="NO.0000001" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/cardview"
+        android:layout_marginTop="35dp"
+        android:background="#ffe7e7e7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_card_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line1"
+        android:paddingBottom="17dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="17dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/card_icon_shopping_record"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:text="明细"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/arrows_right_gray" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_card_detail"
+        android:background="#ffe7e7e7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_card_topup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line2"
+        android:paddingBottom="17dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="17dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/card_icon_shopping_top_up"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:text="转换购物卡"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/arrows_right_gray" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_card_topup"
+        android:background="#ffe7e7e7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line3"
+        android:paddingBottom="17dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="17dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/card_icon_shopping_top_up"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:text="所在区域"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_oppcard_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:text=""
+            android:textColor="#fffb934a"
+            tools:text="河南省 郑州市 金水区" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_content3"
+        android:background="#ffe7e7e7" />
+</RelativeLayout>

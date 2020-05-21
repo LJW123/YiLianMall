@@ -1,0 +1,398 @@
+[
+    {
+        "industry_id": "2",
+        "industry_name": "全部行业",
+        "industry_desp": "全部行业分类",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "3",
+        "industry_name": "美食",
+        "industry_desp": "中餐、西餐、日韩料理、甜点饮品、咖啡酒吧等",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "4",
+        "industry_name": "休闲娱乐",
+        "industry_desp": "KTV、运动健身、足疗按摩、演出赛事、桌游/电玩、电影院、儿童乐园等",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "5",
+        "industry_name": "酒店住宿",
+        "industry_desp": "各种住宿相关服务业",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "6",
+        "industry_name": "生活服务",
+        "industry_desp": "生活服务相关行业",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "7",
+        "industry_name": "美容美体",
+        "industry_desp": "美发、美容、美容美体、瑜伽/舞蹈",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "8",
+        "industry_name": "百货商超",
+        "industry_desp": "品牌服饰、男装专卖、运动户外等",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "9",
+        "industry_name": "家具、房产",
+        "industry_desp": "新房、二手房、家具广场、装修建材等",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "10",
+        "industry_name": "教育培训",
+        "industry_desp": "外语、美术、舞蹈、武术、驾校等",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "11",
+        "industry_name": "爱车",
+        "industry_desp": "加油站、洗车、4S店等",
+        "industry_parent": "0"
+    },
+    {
+        "industry_id": "12",
+        "industry_name": "其他行业",
+        "industry_desp": "其他个别行业",
+        "industry_parent": "0"
+    },
+     {
+        "industry_id": "0",
+        "industry_name": "全部美食",
+        "industry_desp": "",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "13",
+        "industry_name": "火锅",
+        "industry_desp": "各种火锅",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "14",
+        "industry_name": "自助餐",
+        "industry_desp": "各种自助餐",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "15",
+        "industry_name": "小吃快餐",
+        "industry_desp": "小吃快餐",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "16",
+        "industry_name": "烧烤、海鲜",
+        "industry_desp": "烧烤、海鲜",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "17",
+        "industry_name": "面包甜点",
+        "industry_desp": "面包甜点",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "18",
+        "industry_name": "西餐",
+        "industry_desp": "西餐",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "19",
+        "industry_name": "日韩料理",
+        "industry_desp": "日韩料理",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "20",
+        "industry_name": "中国菜",
+        "industry_desp": "豫菜、江浙菜、粤菜、川菜、湘菜、北京菜",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "21",
+        "industry_name": "清真美食",
+        "industry_desp": "新疆菜、清真菜",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "22",
+        "industry_name": "咖啡、酒吧",
+        "industry_desp": "咖啡、酒吧",
+        "industry_parent": "3"
+    },
+    {
+        "industry_id": "0",
+        "industry_name": "全部休闲娱乐",
+        "industry_desp": "",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "23",
+        "industry_name": "KTV",
+        "industry_desp": "KTV",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "24",
+        "industry_name": "电影院",
+        "industry_desp": "电影院",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "25",
+        "industry_name": "足疗按摩",
+        "industry_desp": "足疗按摩",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "26",
+        "industry_name": "洗浴、温泉",
+        "industry_desp": "洗浴、温泉",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "27",
+        "industry_name": "网吧、电玩",
+        "industry_desp": "网吧、网咖、电玩",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "28",
+        "industry_name": "运动健身",
+        "industry_desp": "运动健身",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "29",
+        "industry_name": "桌球、棋牌",
+        "industry_desp": "桌球、棋牌",
+        "industry_parent": "4"
+    },
+    {
+        "industry_id": "0",
+        "industry_name": "全部酒店住宿",
+        "industry_desp": "",
+        "industry_parent": "5"
+    },
+    {
+        "industry_id": "31",
+        "industry_name": "经济型酒店",
+        "industry_desp": "经济型酒店、青年旅舍、客栈旅舍",
+        "industry_parent": "5"
+    },
+    {
+        "industry_id": "32",
+        "industry_name": "精品酒店",
+        "industry_desp": "精品酒店、公寓式酒店",
+        "industry_parent": "5"
+    },
+    {
+        "industry_id": "33",
+        "industry_name": "星级酒店",
+        "industry_desp": "星级酒店",
+        "industry_parent": "5"
+    },
+    {
+        "industry_id": "34",
+        "industry_name": "度假村",
+        "industry_desp": "度假村",
+        "industry_parent": "5"
+    },
+     {
+        "industry_id": "0",
+        "industry_name": "全部美容美体",
+        "industry_desp": "",
+        "industry_parent": "7"
+    },
+    {
+        "industry_id": "35",
+        "industry_name": "美容、美发",
+        "industry_desp": "美容、美发",
+        "industry_parent": "7"
+    },
+    {
+        "industry_id": "36",
+        "industry_name": "美容/SPA",
+        "industry_desp": "美容/SPA",
+        "industry_parent": "7"
+    },
+    {
+        "industry_id": "37",
+        "industry_name": "美甲",
+        "industry_desp": "美甲",
+        "industry_parent": "7"
+    },
+ 	{
+        "industry_id": "0",
+        "industry_name": "全部生活服务",
+        "industry_desp": "",
+        "industry_parent": "6"
+    },    
+    {
+        "industry_id": "38",
+        "industry_name": "洗衣、干洗",
+        "industry_desp": "洗衣、干洗",
+        "industry_parent": "6"
+    },
+    {
+        "industry_id": "39",
+        "industry_name": "家政服务",
+        "industry_desp": "家政服务",
+        "industry_parent": "6"
+    },
+    {
+        "industry_id": "40",
+        "industry_name": "医院、药店",
+        "industry_desp": "医院、药店",
+        "industry_parent": "6"
+    },
+    {
+        "industry_id": "0",
+        "industry_name": "全部百货商超",
+        "industry_desp": "",
+        "industry_parent": "8"
+    },
+    {
+        "industry_id": "41",
+        "industry_name": "品牌专卖",
+        "industry_desp": "品牌专卖店",
+        "industry_parent": "8"
+    },
+    {
+        "industry_id": "42",
+        "industry_name": "服饰广场",
+        "industry_desp": "服饰广场",
+        "industry_parent": "8"
+    },
+    {
+        "industry_id": "43",
+        "industry_name": "家用电器",
+        "industry_desp": "家用电器",
+        "industry_parent": "8"
+    },
+    {
+        "industry_id": "44",
+        "industry_name": "手机、数码",
+        "industry_desp": "手机、数码",
+        "industry_parent": "8"
+    },
+    {
+        "industry_id": "0",
+        "industry_name": "全部家具房产",
+        "industry_desp": "",
+        "industry_parent": "9"
+    },
+    {
+        "industry_id": "45",
+        "industry_name": "家具广场",
+        "industry_desp": "家具广场",
+        "industry_parent": "9"
+    },
+    {
+        "industry_id": "46",
+        "industry_name": "建材市场",
+        "industry_desp": "建材市场",
+        "industry_parent": "9"
+    },
+    {
+        "industry_id": "47",
+        "industry_name": "装潢、装修",
+        "industry_desp": "装潢、装修",
+        "industry_parent": "9"
+    },
+    {
+        "industry_id": "48",
+        "industry_name": "房产销售",
+        "industry_desp": "新房、二手房销售",
+        "industry_parent": "9"
+    },
+    {
+        "industry_id": "0",
+        "industry_name": "全部教育培训",
+        "industry_desp": "",
+        "industry_parent": "10"
+    },
+    {
+        "industry_id": "49",
+        "industry_name": "外语培训",
+        "industry_desp": "外语培训",
+        "industry_parent": "10"
+    },
+    {
+        "industry_id": "50",
+        "industry_name": "升学辅导",
+        "industry_desp": "升学辅导",
+        "industry_parent": "10"
+    },
+    {
+        "industry_id": "51",
+        "industry_name": "艺术培训",
+        "industry_desp": "音乐、舞蹈、美术",
+        "industry_parent": "10"
+    },
+    {
+        "industry_id": "52",
+        "industry_name": "职业技术",
+        "industry_desp": "职业、技术相关培训",
+        "industry_parent": "10"
+    },
+    {
+        "industry_id": "53",
+        "industry_name": "教育院校",
+        "industry_desp": "教育院校",
+        "industry_parent": "10"
+    },
+    {
+        "industry_id": "0",
+        "industry_name": "全部爱车",
+        "industry_desp": "",
+        "industry_parent": "11"
+    },
+    {
+        "industry_id": "54",
+        "industry_name": "洗车、美容",
+        "industry_desp": "洗车、美容",
+        "industry_parent": "11"
+    },
+    {
+        "industry_id": "55",
+        "industry_name": "4S新车销售",
+        "industry_desp": "新车销售",
+        "industry_parent": "11"
+    },
+    {
+        "industry_id": "56",
+        "industry_name": "维修保养",
+        "industry_desp": "维修保养",
+        "industry_parent": "11"
+    },
+    {
+        "industry_id": "57",
+        "industry_name": "汽车租赁",
+        "industry_desp": "汽车租赁",
+        "industry_parent": "11"
+    },
+    {
+        "industry_id": "58",
+        "industry_name": "汽车保险",
+        "industry_desp": "汽车保险",
+        "industry_parent": "11"
+    },
+    {
+        "industry_id": "59",
+        "industry_name": "其他",
+        "industry_desp": "其他稀少行业",
+        "industry_parent": "12"
+    }
+]

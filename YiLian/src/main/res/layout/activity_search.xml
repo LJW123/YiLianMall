@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/index_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_title_height"
+        android:background="@color/tab_title_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawableRight="@mipmap/left_sanjiao"
+            android:gravity="center"
+            android:onClick="onBack"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/mall_in_search"
+            android:hint="输入您推荐伙伴的用户名/手机号"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textColorHint="#d2d2d9"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="find"
+            android:padding="10dp"
+            android:src="@mipmap/ic_mall_scanning"
+            android:text="搜索"
+            android:textColor="@color/tab_title_right_text_color" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"/>
+
+    <ImageView
+        android:id="@+id/iv_no_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:src="@mipmap/nothing"
+        android:visibility="gone" />
+
+</LinearLayout>

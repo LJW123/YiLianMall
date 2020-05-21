@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_third_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:minWidth="85dp"
+        android:background="@drawable/yuanjiao_solid_gray_stroke_white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxEms="6"
+        android:text=""
+        android:textColor="@color/main_black_text"
+        android:paddingLeft="@dimen/margin8"
+        android:paddingRight="@dimen/margin8"
+        android:textSize="@dimen/sp_12"
+        ></TextView>
+</LinearLayout>

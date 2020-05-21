@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yilian.mall.widgets.CustScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/white">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/ll_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding15">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text=""
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_red"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/tv_goods_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:gravity="bottom"
+                    android:text=""
+                    android:textColor="@color/color_666"
+                    android:textSize="@dimen/size12" />
+
+
+                <TextView
+                    android:id="@+id/tv_total_sell_group_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@color/color_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:gravity="center"
+                    android:text="抽奖玩法"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15" />
+
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_333" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sell_group_flow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding15"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/size10" />
+
+            <View
+                style="@style/innerLineStyle"
+                android:layout_marginLeft="@dimen/margin15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inner_tab_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tv_label1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/v3greencheck"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:text="精品推荐"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_label2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/v3greencheck"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:text="品质保障"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_label3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/v3greencheck"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:text="官方售后"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_label4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/v3greencheck"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:text="48小时发货"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_drawing_progress"
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/padding10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拼团抽奖流程"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/size13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="(若人数不足将自动退款)"
+                        android:textColor="@color/color_999"
+                        android:textSize="@dimen/size10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="查看详情"
+                        android:textColor="@color/color_999"
+                        android:textSize="@dimen/size12" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:src="@mipmap/icon_flash_sale_now" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/lucky_draw1" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/lucky_draw_jiantou" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/lucky_draw2" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/lucky_draw_jiantou" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/lucky_draw3" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/lucky_draw_jiantou" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/lucky_draw4" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#f5f5f5"
+                android:src="@mipmap/tuodongck" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.yilian.mall.widgets.CustScrollView>

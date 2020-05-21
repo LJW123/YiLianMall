@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_10dp"
+    android:layout_marginTop="@dimen/margin_15dp"
+    android:orientation="vertical">
+
+    <!--预定日期-->
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ctrip_order_com_header_date_bg"
+        android:paddingBottom="@dimen/padding_3dp"
+        android:paddingLeft="@dimen/padding_10dp"
+        android:paddingRight="@dimen/padding_10dp"
+        android:paddingTop="@dimen/padding_3dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_11sp"
+        tool:text="预订日期：07-09" />
+</LinearLayout>

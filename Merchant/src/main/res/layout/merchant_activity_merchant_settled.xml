@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merchant_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="— 商家权益 —"
+                android:textColor="@color/merchant_color_333"
+                android:textSize="@dimen/merchant_size16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/merchant_padding15"
+                android:layout_marginLeft="@dimen/merchant_padding15"
+                android:layout_marginRight="@dimen/merchant_padding15"
+                android:background="@mipmap/merchant_bg_merchant_interests"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/merchant_padding20"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/merchant_icon_interests_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/merchant_margin30"
+                    android:text="比VIP会员更高比例的奖券发奖励"
+                    android:textColor="@color/merchant_color_333"
+                    android:textSize="@dimen/merchant_size14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/merchant_padding15"
+                android:layout_marginLeft="@dimen/merchant_padding15"
+                android:layout_marginRight="@dimen/merchant_padding15"
+                android:background="@mipmap/merchant_bg_merchant_interests"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/merchant_padding20"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/merchant_icon_interests_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/merchant_margin30"
+                    android:text="自身销售让利额奖券发奖励"
+                    android:textColor="@color/merchant_color_333"
+                    android:textSize="@dimen/merchant_size14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/merchant_padding15"
+                android:layout_marginLeft="@dimen/merchant_padding15"
+                android:layout_marginRight="@dimen/merchant_padding15"
+                android:background="@mipmap/merchant_bg_merchant_interests"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/merchant_padding20"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/merchant_icon_interests_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/merchant_margin30"
+                    android:text="提高自身知名度，线上+线下多渠道拓 展业务"
+                    android:textColor="@color/merchant_color_333"
+                    android:textSize="@dimen/merchant_size14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/merchant_padding15"
+                android:layout_marginLeft="@dimen/merchant_padding15"
+                android:layout_marginRight="@dimen/merchant_padding15"
+                android:background="@mipmap/merchant_bg_merchant_interests"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/merchant_padding20"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/merchant_icon_interests_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/merchant_margin30"
+                    android:text="锁定人脉、跨界领奖励"
+                    android:textColor="@color/merchant_color_333"
+                    android:textSize="@dimen/merchant_size14" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="—商家入驻流程—"
+                android:textColor="@color/merchant_color_333"
+                android:textSize="@dimen/merchant_size14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/merchant_margin15"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/merchant_margin15"
+                    android:layout_marginRight="@dimen/merchant_margin10"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@mipmap/merchant_bg_merchant_enter_flow"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/merchant_padding15"
+                        android:paddingRight="@dimen/library_module_padding15"
+                        android:text="缴纳一年以上平台运营费,实体商家999元/年。个体商家升级为实体商家需要重新交每年999元的平台运营费,请慎重选择商家类型"
+                        android:textColor="#EFBD78"
+                        android:textSize="@dimen/merchant_size13" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/merchant_icon_store_type_01" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/merchant_margin15"
+                    android:layout_marginRight="@dimen/merchant_margin10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@mipmap/merchant_bg_merchant_enter_flow"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/merchant_padding20"
+                        android:paddingRight="@dimen/merchant_padding20"
+                        android:text="资质合同 等认证资料等待审核"
+                        android:textColor="#EFBD78"
+                        android:textSize="@dimen/merchant_size13" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/merchant_icon_store_type_02" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/merchant_margin15"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/merchant_margin15"
+                    android:layout_marginRight="@dimen/merchant_margin10"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@mipmap/merchant_bg_merchant_enter_flow"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/merchant_padding20"
+                        android:paddingRight="@dimen/merchant_padding20"
+                        android:text="审核通过后，线下商 家即可正常收款，还 可以设置自身店面相 关信息便于将店面信 息展示到APP中"
+                        android:textColor="#EFBD78"
+                        android:textSize="@dimen/merchant_size13" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/merchant_icon_store_type_03" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/merchant_margin15"
+                    android:layout_marginRight="@dimen/merchant_margin10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@mipmap/merchant_bg_merchant_enter_flow"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/merchant_padding20"
+                        android:paddingRight="@dimen/merchant_padding20"
+                        android:text="审核通过后，线上商 家可以登录商城旗舰 店后台录入自己可以 供货的产品，开启线 上商城旗舰店"
+                        android:textColor="#EFBD78"
+                        android:textSize="@dimen/merchant_size13" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/merchant_icon_store_type_04" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="—选择商铺类型—"
+                android:textColor="@color/merchant_color_333"
+                android:textSize="@dimen/merchant_size14" />
+
+            <LinearLayout
+                android:id="@+id/ll_store_personage"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@mipmap/merchant_bg_store_type"
+                android:gravity="center_vertical"
+                android:padding="@dimen/merchant_padding15">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/merchant_icon_store_personage" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/merchant_padding15">
+
+                    <TextView
+                        android:id="@+id/tv_personage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/merchant_color_333"
+                        android:textSize="@dimen/merchant_size13"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_personage_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/merchant_margin20"
+                        android:textColor="@color/merchant_color_666"
+                        android:textSize="@dimen/merchant_size13"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@mipmap/merchant_jiantou2"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_store_brand"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginBottom="@dimen/library_module_margin10"
+                android:background="@mipmap/merchant_bg_store_type"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/library_module_padding10"
+                android:paddingLeft="@dimen/library_module_padding15"
+                android:paddingRight="@dimen/library_module_padding15"
+                android:paddingTop="@dimen/library_module_padding10">
+
+                <ImageView
+                    android:id="@+id/merchant_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/merchant_icon_store_trademark" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/merchant_padding15">
+
+                    <TextView
+                        android:id="@+id/tv_entity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingRight="@dimen/merchant_padding5"
+                        android:text=""
+                        android:textColor="@color/merchant_color_333"
+                        android:textSize="@dimen/merchant_size13" />
+
+
+                    <TextView
+
+                        android:id="@+id/tv_entity_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="8dp"
+                        android:text=""
+                        android:textColor="@color/merchant_color_666"
+                        android:textSize="@dimen/merchant_size13" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@mipmap/merchant_jiantou2" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!--   商家分类右侧popup的item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/popup_near_area_lv_radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/near_store_class_popup_stores"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:textColor="@drawable/near_textcolor_radio" 
+        android:textSize="14.0sp" />
+<!--    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d1d1d1"/>
+ -->
+    
+
+</LinearLayout>

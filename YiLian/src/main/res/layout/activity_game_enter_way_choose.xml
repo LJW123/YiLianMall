@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yilian.mall.ui.GameEnterWayChooseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/merchant_bg_btn_white_radious3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="36dp"
+            android:paddingTop="36dp"
+            android:text="请选择进入方式"
+            android:textColor="@color/color_333"
+            android:textSize="18dp" />
+
+        <View style="@style/outerLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_enter_h5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="进入网页游戏"
+            android:textColor="@color/color_red"
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/view1"
+            style="@style/outerLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_enter_apk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="下载APP"
+            android:textColor="@color/color_red"
+            android:textSize="18dp" />
+
+        <View style="@style/outerLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="取消"
+            android:textColor="@color/color_333"
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>

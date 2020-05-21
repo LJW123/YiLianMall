@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="vertical"
+    android:background="@color/library_module_color_white">
+
+    <FrameLayout
+        android:id="@+id/v3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center_vertical"
+        android:background="@color/library_module_color_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/v3Left"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/library_module_padding10"
+                android:paddingRight="@dimen/library_module_padding10"
+                android:src="@mipmap/library_module_login_back"/>
+
+            <TextView
+                android:id="@+id/v3Title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="@dimen/library_module_size18"
+                android:textColor="@color/library_module_color_333"
+                android:text=""/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/library_module_padding10"
+                android:paddingRight="@dimen/library_module_padding10"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="@dimen/library_module_size15"
+                android:src="@mipmap/library_module_v3_cart_bottom"/>
+
+            <ImageView
+                android:id="@+id/v3Shop"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/library_module_padding10"
+                android:paddingRight="@dimen/library_module_padding10"
+                android:src="@mipmap/library_module_v3_cart_bottom"/>
+
+            <ImageView
+                android:id="@+id/v3Share"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/library_module_padding10"
+                android:paddingRight="@dimen/library_module_padding15"
+                android:src="@mipmap/library_module_v3share"/>
+
+            <TextView
+                android:id="@+id/tv_right2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/library_module_padding10"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="@dimen/library_module_size15"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/v3Back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/library_module_padding10"
+            android:paddingRight="@dimen/library_module_padding10"
+            android:clickable="true"
+            android:src="@mipmap/library_module_v3back_v2"/>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/library_module_color_lines"/>
+
+</LinearLayout>

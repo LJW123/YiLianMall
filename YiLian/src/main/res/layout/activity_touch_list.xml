@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    tools:context="com.yilian.mall.ui.ActTouchListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title_guess"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="48dp"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/iv_back_guess"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:src="@mipmap/iv_back_guess" />
+
+            <TextView
+                android:id="@+id/tv_title_guess"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:text="猜价格成功"
+                android:gravity="center"
+                android:textColor="@color/color_guess_tv2"
+                android:textSize="@dimen/size18" />
+
+            <TextView
+                android:id="@+id/tv_right_guess"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:text="我的战绩"
+                android:textColor="@color/color_guess_tv2"
+                android:textSize="@dimen/size15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title_touch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/iv_back_touch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:src="@mipmap/ic_back_white" />
+
+            <TextView
+                android:id="@+id/tv_title_touch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:text="碰运气成功"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size18" />
+
+            <TextView
+                android:id="@+id/tv_right_touch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:text="我的战绩"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size15" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

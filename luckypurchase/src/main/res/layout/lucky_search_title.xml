@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/index_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#fcfdfd">
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:drawableRight="@mipmap/library_module_v3back_v2"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"/>
+
+
+        <EditText
+            android:id="@+id/ed_keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:background="@mipmap/library_module_find_eidt_bg"
+            android:inputType="text"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:textSize="14sp"
+            android:textColorHint="@color/lucky_color_999"
+            android:textColor="@color/lucky_color_666"
+            android:hint="输入活动名称"/>
+
+        <TextView
+            android:id="@+id/tv_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:gravity="center"
+            android:background="@null"
+            android:clickable="true"
+            android:textColor="#7b7d80"
+            android:text="搜索"/>
+    </LinearLayout>
+</LinearLayout>

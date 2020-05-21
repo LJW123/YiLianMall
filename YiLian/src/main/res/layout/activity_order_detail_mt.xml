@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/v3_title" />
+
+    <com.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/mt_order_detail_goods" />
+
+            <include
+                android:id="@+id/ticket_layout"
+                layout="@layout/mt_order_detail_ticket" />
+            <!--配送信息-->
+            <include
+                android:id="@+id/include_delivery_info"
+                layout="@layout/mt_order_detail_delivery_info" />
+
+            <include
+                android:id="@+id/shop_layout"
+                layout="@layout/mt_order_detail_shop" />
+
+            <include layout="@layout/mt_order_detail_combo" />
+
+            <include layout="@layout/mt_order_detail_order" />
+
+            <RelativeLayout
+                android:id="@+id/rl_service_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_service_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/order_phone"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/color_333" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/icon25"
+                android:id="@+id/rl_receipt"
+                android:visibility="gone"
+                android:paddingTop="@dimen/icon25"
+                android:background="@android:color/white">
+
+                <Button
+                    android:id="@+id/btn_receipt"
+                    style="@style/btnCircleStyle"
+                    android:text="确认已送达"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size18"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include
+        layout="@layout/library_module_load_error"
+        android:visibility="gone" />
+
+</LinearLayout>

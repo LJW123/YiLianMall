@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:paddingTop="@dimen/padding_10dp">
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="日期"
+            android:textColor="@color/main_black_text"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <TextView
+            android:id="@+id/earnings_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="万份收益"
+            android:textColor="@color/main_black_text"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/range_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:singleLine="true"
+                android:text="日涨跌幅"
+                android:textColor="@color/price"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <ImageView
+                android:id="@+id/index_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:src="@mipmap/index_up" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lucky_white"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/rl_banner_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:indicator_drawable_selected="@mipmap/lucky_icon_indicator_select"
+            app:indicator_drawable_unselected="@mipmap/lucky_icon_indicator_unselect"
+            app:indicator_height="8dp"
+            app:indicator_margin="5dp"
+            app:indicator_width="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_flutter"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:layout_marginRight="@dimen/lucky_margin15"
+        android:layout_marginTop="@dimen/lucky_margin15"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/lucky_color_333"
+        android:textSize="@dimen/lucky_size16" />
+
+    <TextView
+        android:id="@+id/tv_activity_title_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:layout_marginRight="@dimen/lucky_margin15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text=""
+        android:textColor="@color/lucky_color_red"
+        android:textSize="@dimen/lucky_size14" />
+
+    <LinearLayout
+        android:id="@+id/ll_le_bean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:layout_marginRight="@dimen/lucky_margin15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/ic_hashrate" />
+
+        <TextView
+            android:id="@+id/tv_le_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="送益豆"
+            android:textColor="#FF385D"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/progesss_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="2dp"
+            android:background="@mipmap/percentage"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="0%"
+            android:textColor="#FF385D"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:max="100"
+            android:progressDrawable="@drawable/lucky_color_progressbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lucky_margin5"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:layout_marginRight="@dimen/lucky_margin15"
+        android:layout_marginTop="@dimen/lucky_margin5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_activity_issue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/lucky_color_666"
+            android:textSize="@dimen/lucky_size13" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_activity_status"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:paddingLeft="@dimen/lucky_padding5"-->
+        <!--android:paddingRight="@dimen/lucky_padding5"-->
+        <!--android:paddingTop="2dp"-->
+        <!--android:paddingBottom="2dp"-->
+        <!--android:background="@drawable/lucky_btn_going"-->
+        <!--android:textSize="@dimen/lucky_size11"-->
+        <!--android:textColor="@color/lucky_color_white"-->
+        <!--android:text="进行中"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lucky_margin15"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:layout_marginRight="@dimen/lucky_margin15"
+        android:layout_marginTop="@dimen/lucky_margin5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_activity_need_people"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="总需人次："
+            android:textColor="@color/lucky_color_999"
+            android:textSize="@dimen/lucky_size11" />
+
+        <TextView
+            android:id="@+id/tv_activity_left_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余人次："
+            android:textColor="@color/lucky_color_red"
+            android:textSize="@dimen/lucky_size11" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:layout_marginRight="@dimen/lucky_margin15"
+        android:background="@color/lucky_color_lines" />
+
+    <TextView
+        android:id="@+id/tv_activity_join_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/lucky_padding15"
+        android:paddingTop="@dimen/lucky_padding15"
+        android:text=""
+        android:textColor="@color/lucky_color_666"
+        android:textSize="@dimen/lucky_size14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lucky_icon10"
+        android:background="@color/lucky_color_bg" />
+
+    <include
+        android:id="@+id/layout_prize"
+        layout="@layout/lucky_part_activity_detail_has"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_down_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="34dp"
+        android:paddingTop="20dp"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_down_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lucky_icon10"
+        android:background="@color/lucky_color_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/lucky_padding15"
+            android:text="所属商家"
+            android:textColor="@color/lucky_color_666"
+            android:textSize="@dimen/lucky_size14" />
+
+        <TextView
+            android:id="@+id/tv_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/lucky_icon_di"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/lucky_user_jiantou"
+            android:padding="@dimen/lucky_padding15"
+            android:textColor="@color/lucky_color_red" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_merchant_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:background="@color/lucky_color_lines"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_info_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/lucky_user_jiantou"
+        android:padding="@dimen/lucky_padding15"
+        android:text="查看图文详情"
+        android:textColor="@color/lucky_color_666"
+        android:textSize="@dimen/lucky_size14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:background="@color/lucky_color_lines" />
+
+    <TextView
+        android:id="@+id/tv_info_unboxing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/lucky_user_jiantou"
+        android:padding="@dimen/lucky_padding15"
+        android:text="查看晒单"
+        android:textColor="@color/lucky_color_666"
+        android:textSize="@dimen/lucky_size14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/lucky_margin15"
+        android:background="@color/lucky_color_lines" />
+
+    <TextView
+        android:id="@+id/tv_info_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/lucky_user_jiantou"
+        android:padding="@dimen/lucky_padding15"
+        android:text="往期回顾"
+        android:textColor="@color/lucky_color_666"
+        android:textSize="@dimen/lucky_size14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lucky_icon10"
+        android:background="@color/lucky_color_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lucky_margin15"
+        android:layout_marginTop="@dimen/lucky_margin20"
+        android:background="@drawable/lucky_icon_part_record"
+        android:paddingLeft="@dimen/lucky_padding10"
+        android:paddingRight="@dimen/lucky_padding10"
+        android:text="本期参与记录"
+        android:textColor="@color/lucky_white"
+        android:textSize="@dimen/lucky_size15" />
+
+</LinearLayout>

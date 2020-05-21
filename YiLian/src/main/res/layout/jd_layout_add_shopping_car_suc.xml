@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jd_shap_light_gray_5"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_15dp">
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/jd_icon_right" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textSize_35dp"
+        android:layout_marginRight="@dimen/textSize_35dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:text="加入购物车成功"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_13dp" />
+</LinearLayout>

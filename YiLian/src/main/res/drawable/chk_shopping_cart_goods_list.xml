@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/merchant_big_is_select" android:state_checked="true"></item>
+    <item android:drawable="@mipmap/ic_chk_shopping_cart_goods_list_false" android:state_selected="true"></item>
+    <item android:drawable="@mipmap/ic_chk_shopping_cart_goods_list_false" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/ic_chk_shopping_cart_goods_list_false"></item>
+</selector>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_goods_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_commodity_detail_radio_drawable_red"
+            android:drawablePadding="@dimen/padding10"
+            android:gravity="center"
+            android:text="商品信息"
+            android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+            android:textSize="@dimen/size15" />
+
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_goods_parameter"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:button="@null"-->
+        <!--android:drawableBottom="@drawable/selector_commodity_detail_radio_drawable_red"-->
+        <!--android:drawablePadding="@dimen/padding10"-->
+        <!--android:gravity="center"-->
+        <!--android:text="商品参数"-->
+        <!--android:textColor="@drawable/selector_commodity_detail_radio_txt_color"-->
+        <!--android:textSize="@dimen/size15" />-->
+
+
+        <RadioButton
+            android:id="@+id/rb_goods_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_commodity_detail_radio_drawable_red"
+            android:drawablePadding="@dimen/padding10"
+            android:gravity="center"
+            android:text="买家评价"
+            android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+            android:textSize="@dimen/size15" />
+
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/sender_list_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/senderlist_header"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yilian.mall.widgets.CustWebView
+            android:id="@id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </com.yilian.mall.widgets.CustWebView>
+
+        <com.yilian.mall.widgets.CustListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </com.yilian.mall.widgets.CustListView>
+
+        <ImageView
+            android:id="@+id/iv_nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/nothing"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

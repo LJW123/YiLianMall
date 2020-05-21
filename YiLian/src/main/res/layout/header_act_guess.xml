@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_guess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/head_guess_bg">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_guess_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="420"
+                android:textSize="60dp"
+                android:textColor="@color/color_guess_tv2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人"
+                android:textSize="@dimen/size16"
+                android:textColor="@color/color_guess_tv2"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一价定音，免费商品收入囊中"
+            android:textSize="@dimen/size13"
+            android:textColor="@color/color_guess_tv2"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+    </FrameLayout>
+
+</LinearLayout>

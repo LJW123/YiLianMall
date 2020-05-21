@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/activity_title"
+
+        />
+
+    <View style="@style/ViewDividerDefault" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="你本次购买的商品需要支付"
+        android:textColor="#767676"
+        android:textSize="13dp" />
+
+    <View style="@style/ViewDividerDefault" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="23dp"
+        android:paddingTop="23dp">
+
+        <TextView
+            android:id="@+id/tv_buy_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@mipmap/ic_mall_vouchers_line"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:text="298.00"
+            android:textColor="#ff6823"
+            android:textSize="17dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/view_line" />
+
+        <TextView
+            android:id="@+id/tv_giving_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@mipmap/ic_mall_shopping_line"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:text="298.00"
+            android:textColor="#ff6823"
+            android:textSize="17dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/view_line" />
+
+        <TextView
+            android:id="@+id/tv_xianjinquan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@mipmap/ic_mall_xianjin_line"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:text="298.00"
+            android:textColor="#ff6823"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <View style="@style/ViewDividerDefault" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="19dp"
+        android:text="温馨提示：请您在三天之内完成支付"
+
+        android:textColor="#949494"
+        android:textSize="12dp" />
+
+    <View style="@style/ViewDividerDefault" />
+
+    <com.yilian.mall.widgets.NoScrollListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:divider="#f5f5f5"
+        android:dividerHeight="8dp">
+
+    </com.yilian.mall.widgets.NoScrollListView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_order_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="19dp"
+            android:paddingTop="12dp"
+            android:textColor="#4c5153"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0" />
+
+        <TextView
+            android:id="@+id/tv_order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="19dp"
+            android:paddingTop="8dp"
+            android:textColor="#797979"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#f5f5f5"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp">
+
+            <Button
+                android:id="@+id/btn_surePay"
+                android:layout_width="324dp"
+                android:layout_height="49dp"
+                android:background="@drawable/bg_sure_pay_blue"
+                android:gravity="center"
+                android:text="立即支付"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

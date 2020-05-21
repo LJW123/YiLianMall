@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color_bg"
+    android:id="@+id/ll_group_info"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_refund_explain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding15"
+            android:paddingRight="@dimen/padding15">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开团后邀请好友参加，人数不足自动退款"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/size12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/jiantou2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding15"
+            android:paddingRight="@dimen/padding15">
+
+
+            <TextView
+                android:id="@+id/tv_label1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/v3greencheck"
+                android:drawablePadding="@dimen/padding5"
+                android:text="精选品牌"
+                android:visibility="visible"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size12" />
+
+            <TextView
+                android:id="@+id/tv_label2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/v3greencheck"
+                android:drawablePadding="@dimen/padding5"
+                android:text="品质保障"
+                android:visibility="visible"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size12" />
+
+            <TextView
+                android:id="@+id/tv_label3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/v3greencheck"
+                android:drawablePadding="@dimen/padding5"
+                android:text="官方售后"
+                android:visibility="visible"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size12" />
+
+            <TextView
+                android:id="@+id/tv_label4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:drawableLeft="@mipmap/v3greencheck"
+                android:drawablePadding="@dimen/padding5"
+                android:text="48小时发货"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size12" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

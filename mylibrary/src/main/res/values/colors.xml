@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--线条颜色-->
+    <color name="library_module_color_lines">#e7e7e7</color>
+    <!--重要字体-->
+    <color name="library_module_color_333">#333333</color>
+    <!--次要字体-->
+    <color name="library_module_color_666">#666666</color>
+    <color name="library_module_color_orange">#FF801A</color>
+    <color name="library_module_color_999">#999999</color>
+    <color name="library_module_color_E1E1E1">#E1E1E1</color>
+    <color name="library_module_color_4a">#4a4a4a</color>
+    <!--主色调-->
+    <color name="library_module_color_red">#fe5062</color>
+    <color name="library_module_color_red_50">#88fe5062</color>
+    <color name="library_module_color_green">#22ac38</color>
+    <color name="library_module_color_new_green">#18C99D</color>
+    <!--背景色-->
+    <color name="library_module_color_bg">#f7f7f7</color>
+    <color name="library_module_color_white">#ffffff</color>
+    <color name="library_module_color_h1">#4a4a4a</color>
+    <color name="library_module_holo_gray_light">#ff6c6c6c</color>
+    <color name="library_module_bac_color">#f5f5f5</color>
+    <color name="library_module_18c99d">#18c99d</color>
+    <color name="library_module_pink">#fedfe5</color>
+    <color name="library_module_ff6471">#ff6471</color>
+    <color name="library_module_fff0db">#fff0db</color>
+    <color name="library_module_ffa82e">#ffa82e</color>
+    <color name="library_module_c6a874">#C6A874</color>
+    <color name="library_module_gray">#CCCCCC</color>
+    <color name="library_module_FBAB4A">#FBAB4A</color>
+
+
+    <color name="library_module_health_wave1">#8884feff</color>
+    <color name="library_module_health_wave2">#fbbb3f</color>
+
+    <!--黑色百分之40的透明度-->
+    <color name="library_module_forty_alpha_black">#66000000</color>
+
+
+</resources>

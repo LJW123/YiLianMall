@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.luckypurchase.activity.LuckyPrizeDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:paddingRight="@dimen/library_module_padding15"
+        android:paddingTop="5dp"
+        android:paddingBottom="@dimen/library_module_padding15"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/library_module_margin10"
+            android:gravity="center"
+            android:background="@drawable/library_module_bg_style_orange_empty_15"
+            android:textSize="@dimen/lucky_size14"
+            android:textColor="@color/lucky_color_orange"
+            android:text="分享"/>
+
+        <TextView
+            android:id="@+id/tv_show_line"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/library_module_bg_style_red_empty_15"
+            android:textSize="@dimen/lucky_size14"
+            android:textColor="@color/library_module_color_red"
+            android:text="晒单"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_address"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View style="@style/lucky_outerLineStyle10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="@dimen/library_module_padding15"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/library_module_size15"
+            android:textColor="@color/library_module_color_333"
+            android:text="收货地址"/>
+
+        <View style="@style/lucky_outerLineStyle1"/>
+
+        <TextView
+            android:id="@+id/tv_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_999"
+            android:text="收件人:"/>
+
+        <TextView
+            android:id="@+id/tv_address_location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_999"
+            android:text="配送至:"/>
+
+    </LinearLayout>
+
+    <View style="@style/lucky_outerLineStyle10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="@dimen/library_module_padding15"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/library_module_size15"
+            android:textColor="@color/library_module_color_333"
+            android:text="物流信息"/>
+
+        <TextView
+            android:id="@+id/tv_look_logistics"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/lucky_padding15"
+            android:gravity="center_vertical|right"
+            android:drawableRight="@mipmap/lucky_user_jiantou"
+            android:drawablePadding="@dimen/lucky_padding5"
+            android:text="查看物流"/>
+    </LinearLayout>
+
+    <View style="@style/lucky_outerLineStyle1"/>
+
+    <TextView
+        android:id="@+id/tv_logistics_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/library_module_size13"
+        android:textColor="@color/library_module_color_999"
+        android:text="物流公司:"/>
+
+    <View style="@style/lucky_outerLineStyle1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_logistics_number"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/library_module_size13"
+            android:textColor="@color/library_module_color_999"
+            android:text="运单单号："/>
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lucky_margin15"
+            android:paddingLeft="@dimen/lucky_padding10"
+            android:paddingRight="@dimen/lucky_padding10"
+            android:paddingTop="@dimen/lucky_padding5"
+            android:paddingBottom="@dimen/lucky_padding5"
+            android:gravity="center_vertical"
+            android:background="@drawable/lucky_border_ccc_line_corner3"
+            android:textSize="@dimen/lucky_size11"
+            android:textColor="@color/lucky_color_666"
+            android:text="复制"/>
+    </LinearLayout>
+
+    <View style="@style/lucky_outerLineStyle1"/>
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/library_module_size13"
+        android:textColor="@color/library_module_color_999"
+        android:text="备注信息:"/>
+
+    <View style="@style/lucky_outerLineStyle10"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/library_module_size15"
+        android:textColor="@color/library_module_color_333"
+        android:text="商品信息"/>
+
+    <include layout="@layout/lucky_include_item_goods_details"/>
+
+
+</LinearLayout>

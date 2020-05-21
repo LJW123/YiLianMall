@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!--android:background="@mipmap/alpha"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8" />
+
+    <ListView
+        android:id="@+id/lv_popup_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="39dp"
+        android:background="#ffffff"
+        android:scrollbars="none">
+    </ListView>
+
+    <!--
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alpha" />
+    -->
+
+</LinearLayout>

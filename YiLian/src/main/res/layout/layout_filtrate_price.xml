@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/price_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="￥0-850"
+            android:textColor="@color/theme_color" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_start_price"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="￥0"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_max_price"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="￥1000以上" />
+        <!--app:min="0"
+                    app:max="150"
+                    app:cells="5"-->
+        <!--app:rsb_indicator_drawable="@drawable/black_frame"-->
+        <com.yilian.mall.widgets.rangeSeekBar.RangeSeekBar
+            android:id="@+id/rsb"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_start_price"
+            android:layout_centerInParent="true"
+            app:rsb_indicator_drawable="@drawable/black_frame"
+            app:rsb_indicator_height="33dp"
+            app:rsb_indicator_padding_bottom="5dp"
+            app:rsb_indicator_show_mode="showWhenTouch"
+            app:rsb_indicator_text_color="#FFFFFF"
+            app:rsb_indicator_text_size="13sp"
+            app:rsb_indicator_width="40dp"
+            app:rsb_mode="range"
+            app:rsb_progress_color="@color/cFF4289FF"
+            app:rsb_progress_default_color="@color/cFFD9DEEA"
+            app:rsb_progress_height="3dp"
+            app:rsb_thumb_drawable="@drawable/iv_range_btn"
+            app:rsb_thumb_scale_ratio="1.2"
+            app:rsb_thumb_size="35dp"
+            app:rsb_tick_mark_mode="number" />
+
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/gv_filtrate_price"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:verticalSpacing="5dp"></GridView>
+</LinearLayout>

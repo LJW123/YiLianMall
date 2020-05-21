@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#9a000000"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.ActRefuseRewardDialogActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#10607B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="@dimen/size20"
+            android:paddingBottom="@dimen/size20"
+            android:layout_gravity="center_horizontal"
+            android:background="#10607B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="求赏被拒"
+            android:textColor="#fff7f7f7"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            />
+        <FrameLayout
+            android:background="#10607B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_title"
+                android:src="@mipmap/act_seek_reward_refused" />
+        </FrameLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:paddingTop="38dp"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:id="@+id/tv_come_integral"
+                android:layout_marginBottom="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很遗憾，你没有求赏成功，\n致富还需勤劳的双手，赶快参与\n打卡瓜分奖券"
+                android:textColor="@color/color_h1"
+                android:textSize="@dimen/size14"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

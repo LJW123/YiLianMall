@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/library_module_inner_tab_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:paddingRight="@dimen/library_module_padding15">
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/library_module_color_999"
+            android:textSize="@dimen/merchant_size14" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/library_module_color_red"
+            android:textSize="@dimen/merchant_size14" />
+
+    </LinearLayout>
+
+    <View style="@style/merchant_outerLineStyle10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/library_module_padding15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="@dimen/library_module_size15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/merchant_order_phone"
+                android:drawablePadding="@dimen/merchant_padding10"
+                android:text=""
+                android:textColor="@color/library_module_color_red"
+                android:textSize="@dimen/merchant_size14" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/library_module_margin10"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/library_module_color_333"
+            android:textSize="@dimen/library_module_size13" />
+
+    </LinearLayout>
+
+    <View style="@style/merchant_outerLineStyle" />
+
+    <TextView
+        android:id="@+id/tv_leave_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="@dimen/library_module_padding15"
+        android:text=""
+        android:textColor="@color/library_module_color_333"
+        android:textSize="@dimen/library_module_size13" />
+
+    <View style="@style/merchant_outerLineStyle10" />
+</LinearLayout>

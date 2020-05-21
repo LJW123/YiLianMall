@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ShopsPresentOrConsumeDetailActivity">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/activity_title"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/include_title"
+        android:background="#dcdcdc"
+        />
+
+    <com.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/ptrlv_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:background="@color/white"
+        android:divider="@null"
+        android:numColumns="1"
+        >
+
+    </com.pulltorefresh.library.PullToRefreshGridView>
+
+    <RelativeLayout
+        android:id="@+id/rl_shops_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/one_buy_no_record"
+            android:text="暂无记录"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

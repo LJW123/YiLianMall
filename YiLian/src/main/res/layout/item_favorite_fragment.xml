@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="center"
+            android:src="@mipmap/nothing"
+            android:visibility="gone" />
+
+        <com.yilian.mall.widgets.XlistView.XListView
+                android:id="@+id/lv_favorite_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/color_lines"
+                android:dividerHeight="1px"
+                android:focusableInTouchMode="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/bg_btn_rect"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <CheckBox
+                android:id="@+id/tv_all_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin15"
+                android:text="全选"
+                android:textSize="@dimen/size12"
+                android:padding="@dimen/padding10"
+                android:textColor="@color/color_h1"
+                android:button="@drawable/btn_big_select"
+                android:onClick="allSelect"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height"
+            android:layout_weight="2"
+            android:background="@color/color_red"
+            android:onClick="cancle"
+            android:text="取消收藏"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/ylyj_defaut_toolbar_layout" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bank_card_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="45dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/margin_5dp"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/icon_jiahao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="添加银行卡" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

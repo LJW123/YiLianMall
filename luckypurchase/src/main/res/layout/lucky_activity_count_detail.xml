@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lucky_color_bg">
+
+    <include layout="@layout/lucky_v3_title"/>
+
+    <ScrollView
+        android:id="@+id/layout_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/lucky_margin15"
+                android:padding="@dimen/lucky_padding10"
+                android:orientation="vertical"
+                android:background="@drawable/lucky_bg_red_solid_corner3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/library_module_size15"
+                    android:textColor="@color/aliwx_bg_color_white"
+                    android:text="计算公式"/>
+
+
+                <TextView
+                    android:id="@+id/tv_calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:textSize="@dimen/library_module_size13"
+                    android:textColor="@color/lucky_color_white"
+                    android:text="[(数值A)÷商品所需人次]取余数+"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/library_module_padding15"
+                android:orientation="vertical"
+                android:background="@color/library_module_color_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/library_module_size15"
+                    android:textColor="@color/library_module_color_333"
+                    android:text="数值A"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/library_module_margin10"
+                    android:textSize="@dimen/library_module_size13"
+                    android:textColor="@color/library_module_color_999"
+                    android:text="= 截止该商品最后夺宝时间最后50条全站参与记录"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/library_module_margin10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/lucky_size13"
+                        android:textColor="@color/lucky_color_666"
+                        android:text="= "/>
+
+                    <TextView
+                        android:id="@+id/tv_number_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/library_module_size13"
+                        android:textColor="@color/library_module_color_red"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/tv_go_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@drawable/lucky_border_red_line_corner3"
+                        android:textSize="@dimen/lucky_size11"
+                        android:textColor="@color/lucky_color_red"
+                        android:text="查看详情"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lucky_margin15"
+                android:padding="@dimen/library_module_padding15"
+                android:orientation="vertical"
+                android:background="@color/lucky_color_white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/lucky_size15"
+                    android:textColor="@color/lucky_color_333"
+                    android:text="计算结果"/>
+
+                <TextView
+                    android:id="@+id/tv_lucky_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/lucky_margin10"
+                    android:textSize="@dimen/lucky_size15"
+                    android:text="幸运号码："/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_net_error"
+        android:visibility="gone"
+        layout="@layout/library_module_load_error"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_box_goods_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@drawable/chk_shopping_cart_goods_list"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:focusable="false"
+            android:padding="@dimen/size12"
+            android:text="全选" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin5"
+            android:text="合计：0.00"
+            android:textColor="@color/c333333"
+            android:textSize="@dimen/textSize_16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tv_go_to_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/color_red"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="去结算(0)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size18" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/margin7"
+        android:background="@drawable/jd_stroke_rectangle_gray"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size20"
+        android:paddingRight="@dimen/padding_20dp"
+        android:text="删除"
+        android:textSize="@dimen/textSize_16dp"
+        android:visibility="gone" />
+</LinearLayout>

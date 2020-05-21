@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10">
+
+        <ImageView
+            android:id="@+id/iv_xuanzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/near_area_popup_button"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/icon75"
+            android:layout_height="@dimen/icon75"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_toRightOf="@id/iv_xuanzhong"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView"
+            android:lines="1"
+            android:text="水星家纺 时尚爱家系列四件套.."
+            android:textColor="@color/color_h1"
+            android:textSize="@dimen/size15" />
+
+
+        <TextView
+            android:id="@+id/tv_cost_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_name"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_toRightOf="@id/imageView"
+            android:text="¥ 583"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size15" />
+
+        <TextView
+            android:id="@+id/tv_market_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_cost_price"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toRightOf="@id/tv_cost_price"
+            android:text="¥ 79"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size14" />
+
+
+        <TextView
+            android:id="@+id/tv_use_quan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cost_price"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_toRightOf="@id/imageView"
+            android:text="可使用 30 "
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12" />
+
+
+        <TextView
+            android:id="@+id/tv_quan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_use_quan"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_use_quan"
+            android:background="@drawable/bg_quan_photo"
+            android:padding="3dp"
+            android:text="券"
+            android:textColor="#fff1ec"
+            android:textSize="@dimen/size10" />
+
+
+        <TextView
+            android:id="@+id/tv_juli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_use_quan"
+            android:layout_alignParentRight="true"
+            android:text="0.3km"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/a5a5a5" />
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_10dp"
+                android:paddingRight="@dimen/padding_10dp"
+                android:paddingTop="@dimen/padding_20dp">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_2dp"
+                    android:src="@mipmap/ctrip_order_ic_normal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_17dp"
+                        android:textStyle="bold"
+                        tools:text="郑州海赋国际精品酒店" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/color_666"
+                        android:textSize="@dimen/textSize_14dp"
+                        tools:text="商都路与中兴南路向北200米凯利国际" />
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/color_666"
+                        android:textSize="@dimen/textSize_14dp"
+                        tools:text="07-16至07-20 4晚/1间" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#FF4E0E"
+                            android:textSize="@dimen/textSize_18dp"
+                            tools:text="¥678" />
+
+                        <TextView
+                            android:id="@+id/tv_has_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_15dp"
+                            android:background="@drawable/ctrip_order_bean_bg"
+                            android:drawablePadding="@dimen/padding_5dp"
+                            android:drawableRight="@mipmap/ic_yidou_orange"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_4dp"
+                            android:textColor="#FF4E0E"
+                            android:textSize="@dimen/textSize_10dp"
+                            tools:text="送300.00" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2dp"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/textSize_13dp"
+                    tools:text="未提交" />
+
+
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_10dp"
+                android:paddingTop="@dimen/padding_20dp">
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/ctrip_order_bt_bg_grey_solid"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:text="分享"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/textSize_13dp" />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/ctrip_order_bt_bg_grey_solid"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:text="删除"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/textSize_13dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/ctrip_order_bt_bg_grey_solid"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:text="再次预订"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/textSize_13dp" />
+                <TextView
+                    android:id="@+id/tv_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/ctrip_order_bt_bg_orange_solid"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:text="催确认"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_13dp" />
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/ctrip_order_bt_bg_orange_solid"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:text="继续提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_13dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

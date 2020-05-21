@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/lucky_padding15"
+        android:paddingRight="@dimen/lucky_padding15"
+        android:paddingTop="@dimen/lucky_padding10"
+        android:paddingBottom="@dimen/lucky_padding10"
+        android:gravity="center_vertical"
+        android:background="@color/lucky_color_bg">
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/lucky_size12"
+            android:textColor="@color/lucky_color_666"/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lucky_size12"
+            android:textColor="@color/lucky_color_red"/>
+    </LinearLayout>
+
+    <com.yilian.luckypurchase.widget.NoScrollGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lucky_color_white"
+        android:scrollbars="none"
+        android:numColumns="4"/>
+
+</LinearLayout>

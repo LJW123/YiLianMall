@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="每间需填1人姓名"
+        android:paddingTop="@dimen/padding_15dp"
+        android:paddingBottom="@dimen/padding_15dp"
+        android:singleLine="true"
+        android:background="@null"
+        android:textColor="@color/color_333"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"/>
+</LinearLayout>

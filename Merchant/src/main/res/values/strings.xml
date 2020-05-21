@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="merchant_app_name">Merchant</string>
+    <string name="merchant_system_busy">系统繁忙 3-10秒后重试</string>
+    <string name="merchant_login_failure">登录状态失效，请重新登录</string>
+    <string name="merchant_no_more_data">没有更多数据了</string>
+    <string name="merchant_remind_location_permission">请进入"设置"--"应用权限"--"权限管理"打开所需权限</string>
+    <string name="merchant_phone_number_not_legal">手机格式不正确,请重新输入</string>
+    <string name="merchant_img_number_not_legal">请输入正确的图形验证码</string>
+    <string name="merchant_sms_number_not_legal">请输入正确的短信验证码</string>
+    <string name="merchant_module_service_exception">服务器繁忙,请稍后再试</string>
+    <string name="merchant_shop_cant_show">商品未审核或审核未通过，无法查看</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="merchant_hello_blank_fragment">Hello blank fragment</string>
+    <string name="merchant_express_number">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM
+    </string>
+    <string name="merchant_text_switch_mode">切换至赠送益豆</string>
+    <string name="merchant_text_notice_scan">注:由于公司商业模式全面升级，扫码支付不再赠送奖券，改为赠送益豆。</string>
+    <string name="merchant_text_to_payer_donation">付款人获得益豆：</string>
+    <string name="merchant_text_to_payee_donations">收款人获得益豆：</string>
+    <string name="merchant_text_setting_qr_code">注：总部开通后，商家可以设置扫码收款赠送益豆的二维码。若无法设置，请联系您的客户经理。</string>
+    <string name="merchant_text_scan_qr_code">设置好折扣之后，消费者扫码完成支付后，可获得相应的益豆。例 : 商家设置折扣为8折，消费扫描商家二维码， 成功支付100元后，将获得20益豆，商家同时获得80元，加2益豆。</string>
+    <string-array name="merchant_array">
+        <item>1万元</item>
+        <item>2万元</item>
+        <item>3万元</item>
+        <item>4万元</item>
+        <item>5万元</item>
+    </string-array>
+</resources>

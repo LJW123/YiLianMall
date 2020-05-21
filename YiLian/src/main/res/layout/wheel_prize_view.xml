@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_wheel_prize"
+    android:gravity="center"
+    android:paddingBottom="7dp"
+    android:paddingLeft="2dp"
+    android:paddingTop="2dp"
+    android:paddingRight="2dp"
+    android:id="@+id/fl_prize"
+    >
+
+
+    <com.yilian.mall.widgets.CircleImageView3
+        android:id="@+id/iv_prize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:radious="30" />
+
+    <ImageView
+        android:id="@+id/iv_now_prize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_wheel_prize_black" />
+</FrameLayout>

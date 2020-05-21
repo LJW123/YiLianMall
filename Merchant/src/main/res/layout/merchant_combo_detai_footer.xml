@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/include_combo_order_number"
+        layout="@layout/merchant_layout_text_value_1" />
+
+    <include
+        android:id="@+id/include_combo_order_phone"
+        layout="@layout/merchant_layout_text_value_1" />
+
+    <include
+        android:id="@+id/include_combo_order_time"
+        layout="@layout/merchant_layout_text_value_1" />
+
+    <include
+        android:id="@+id/include_combo_order_count"
+        layout="@layout/merchant_layout_text_value_1" />
+
+    <include
+        android:id="@+id/include_combo_order_freight"
+        layout="@layout/merchant_layout_text_value_1" />
+
+    <include
+        android:id="@+id/include_combo_order_money"
+        layout="@layout/merchant_layout_text_value_1" />
+    <include
+        android:id="@+id/include_combo_order_integral"
+        layout="@layout/merchant_layout_text_value_1" />
+</LinearLayout>

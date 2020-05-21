@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/v3_title"/>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/margin10">
+
+                <LinearLayout
+                    android:id="@+id/ll_choice_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingTop="@dimen/padding15"
+                    android:paddingBottom="@dimen/padding15"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开户银行"
+                        android:textSize="@dimen/size13"
+                        android:textColor="@color/color_999"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/padding15"
+                        android:gravity="bottom">
+                        <TextView
+                            android:id="@+id/tv_bank_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:hint="请选择银行"
+                            android:textColorHint="@color/color_999"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@color/color_333"/>
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:src="@mipmap/ic_prize_radio_off"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_lines"
+                    android:layout_marginLeft="@dimen/margin30"
+                    android:layout_marginRight="@dimen/margin30"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_choice_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding15"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingBottom="@dimen/padding15"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开户省市"
+                        android:textSize="@dimen/size13"
+                        android:textColor="@color/color_999"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/padding15"
+                        android:gravity="bottom">
+                        <TextView
+                            android:id="@+id/tv_bank_branch1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:hint="请选择省"
+                            android:textColorHint="@color/color_999"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@color/color_333"/>
+
+                        <TextView
+                            android:id="@+id/tv_bank_branch2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:hint="请选择市"
+                            android:textColorHint="@color/color_999"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@color/color_333"/>
+
+                        <TextView
+                            android:id="@+id/tv_bank_branch3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:hint="请选择区"
+                            android:textColorHint="@color/color_999"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@color/color_333"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:src="@mipmap/ic_prize_radio_off"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_lines"
+                    android:layout_marginLeft="@dimen/margin30"
+                    android:layout_marginRight="@dimen/margin30"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_choice_branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding15"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开户支行名称"
+                        android:textColor="@color/color_999"
+                        android:textSize="@dimen/size13"
+                        android:paddingLeft="@dimen/padding30"
+                        android:paddingRight="@dimen/padding30" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <com.yilian.mylibrary.widget.ClearEditText
+                            android:id="@+id/et_address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="请选择支行"
+                            android:textColorHint="@color/color_999"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@color/color_333"
+                            android:background="@null"
+                            android:paddingTop="@dimen/padding15"
+                            android:paddingLeft="@dimen/padding30"
+                            android:paddingRight="@dimen/padding30"
+                            android:paddingBottom="@dimen/padding15"
+                            android:singleLine="true"/>
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:src="@mipmap/ic_prize_radio_off"
+                            android:layout_marginRight="@dimen/margin30"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.yilian.mall.widgets.ScrollListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:divider="@null"
+                    android:paddingBottom="@dimen/padding15"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_lines"
+                    android:layout_marginLeft="@dimen/margin30"
+                    android:layout_marginRight="@dimen/margin30"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="持卡人姓名"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/color_999"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingTop="@dimen/padding15"/>
+
+                <EditText
+                    android:id="@+id/et_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入持卡人姓名"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:paddingTop="@dimen/padding15"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingBottom="@dimen/padding15"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_lines"
+                    android:layout_marginLeft="@dimen/margin30"
+                    android:layout_marginRight="@dimen/margin30"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银行卡号"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/color_999"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingTop="@dimen/padding15"/>
+
+                <EditText
+                    android:id="@+id/et_bank_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入银行卡号"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="@color/color_333"
+                    android:paddingTop="@dimen/padding15"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingBottom="@dimen/padding15"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_lines"
+                    android:layout_marginLeft="@dimen/margin30"
+                    android:layout_marginRight="@dimen/margin30"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="再次输入银行卡号"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/color_999"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingTop="@dimen/padding15"/>
+
+                <EditText
+                    android:id="@+id/et_bank_num2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入银行卡号"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="@color/color_333"
+                    android:paddingTop="@dimen/padding15"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:paddingBottom="@dimen/padding15"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下一步"
+                android:textSize="@dimen/size20"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/margin20"
+                android:background="@drawable/bg_solid_red_90"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

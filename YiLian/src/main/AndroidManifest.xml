@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yilian.mall">
+
+    <!-- 8.0打开系统安装apk界面权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 百度语音合成 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 读取数据的权限- -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="anddroid.harware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 个推SDK权限配置开始 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 向SD卡写入数据的权限- -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 在SD卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- ibeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.yilian.mall" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- 摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission
+        android:name="getui.permission.GetuiService.com.yilian.mall"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 个推SDK权限配置结束 -->
+
+
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="access_fine_loca" />
+
+    <!-- 友盟统计 -->
+
+
+    <!-- 支付宝 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Bugly -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@mipmap/yilianlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme.LauncherTheme"
+        tools:replace="android:icon,android:theme,android:label">
+        <activity
+            android:name=".ui.StartActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.i1170.com"
+                    android:pathPrefix="/com.yilian.mall.ui.StartActivity"
+                    android:scheme="yilian" />
+            </intent-filter>
+        </activity>
+        <!-- 手机快速 Activity -->
+        <!-- 找回密码 Activity -->
+        <activity
+            android:name=".ui.RetrievePasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- 常见问题 -->
+        <activity
+            android:name=".ui.FAQActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 我猜过的数字 -->
+        <activity
+            android:name=".ui.GuessedListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+
+        <!-- 消费奖券 Activity -->
+        <!-- 扫描二维码 Activity -->
+        <activity
+            android:name=".ui.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 更多 -->
+        <activity
+            android:name=".ui.MoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_more"
+            android:launchMode="standard" />
+        <!-- 设置 -->
+        <activity
+            android:name=".ui.SettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_setting"
+            android:launchMode="standard" />
+        <!-- 账号安全 -->
+        <activity
+            android:name=".ui.AccountSecurityActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_account_security" />
+
+        <!-- 修改绑定手机 -->
+        <activity
+            android:name=".ui.EditPhoneActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 个人信息 -->
+        <activity
+            android:name=".ui.UserInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_account_details" />
+
+        <!-- 我的二维码 -->
+        <activity
+            android:name=".ui.MyQRCodeActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name=".ui.DaZhuanPanDetailActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 自定义调用相册 -->
+        <activity
+            android:name=".ui.DialogImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MonitoredActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 首次设置支付密码的提示 -->
+        <activity
+            android:name=".ui.InitialPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_initial_pay"
+            android:launchMode="standard" />
+        <!-- 设置支付密码时的身份验证 -->
+        <activity
+            android:name=".ui.AuthenticationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_authentication"
+            android:launchMode="standard" />
+        <!-- 设置支付密码 -->
+        <activity
+            android:name=".ui.PhonePayPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_phone_pay_password"
+            android:launchMode="standard" />
+        <!-- 修改密码 -->
+        <activity
+            android:name=".ui.ChangePasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:launchMode="standard"
+            android:value="true"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".ui.FeedbackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_feedback"
+            android:launchMode="standard" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".ui.VersionUpdateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 修改用户信息 -->
+        <activity
+            android:name=".ui.AmendUserinfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 实名认证 -->
+        <!-- 地区选择 -->
+        <activity
+            android:name=".ui.AreaSelectionActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 地区城市选择 -->
+        <activity
+            android:name=".ui.AreaCitySelectionAcitivty"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 导航 -->
+        <activity
+            android:name=".ui.SimpleNaviActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 摇一摇 -->
+        <activity
+            android:name=".ui.YaoYiYaoActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 活动 List -->
+        <activity
+            android:name=".ui.ListActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".ui.GuaGuaKaActivity" />
+        <activity
+            android:name=".ui.BindWeiXinActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 乐币支付记录 List -->
+        <!-- 商家详情 -->
+        <activity
+            android:name=".ui.MerchantActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 大转盘详情 -->
+        <activity
+            android:name=".ui.LotteryFreeActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 乐信 -->
+        <!-- 搜索 -->
+        <activity
+            android:name=".ui.FindActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 大家猜活动列表 -->
+
+
+        <!-- 支付成功 -->
+        <activity
+            android:name=".ui.PayOKActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 奖品列表 -->
+        <activity
+            android:name=".ui.PrizeListActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 获奖凭证详情 -->
+        <activity
+            android:name=".ui.PrizeVoucherDetailActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 兑换凭证 -->
+        <activity
+            android:name=".ui.PrizeVoucherListActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 邀请有奖 -->
+        <activity
+            android:name=".ui.InvatePrizeActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 乐分宝转入 -->
+        <activity
+            android:name=".ui.BankRollOutActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 乐分宝转入成功 -->
+        <activity
+            android:name=".ui.BankRollOutSuccessActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 会员及领奖励 -->
+        <activity
+            android:name=".ui.MembersDetails"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 全部会员及领奖励 -->
+        <activity
+            android:name=".ui.MembersAndGains"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 一级会员 -->
+        <activity
+            android:name=".ui.MembersLevel1"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 二级会员 -->
+        <activity
+            android:name=".ui.MembersLevel2"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 三级会员 -->
+        <activity
+            android:name=".ui.MembersLevel3"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
+
+        <!-- 我的会员跳转会员详情 -->
+        <activity
+            android:name=".ui.DetailsActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!--  -->
+        <!-- 我的夺宝记录 -->
+        <!-- 搜索推荐人 -->
+        <activity
+            android:name=".ui.SearchActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 会员充值 -->
+        <!-- 充值成功 -->
+        <activity
+            android:name=".ui.ChargeSuccessActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 会员领奖励 -->
+        <activity
+            android:name=".ui.MembersCash"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 会员领奖励成功 -->
+        <activity
+            android:name=".ui.CashApplySuccess"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 领奖励记录 -->
+        <activity
+            android:name=".ui.CashRecordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 转赠 -->
+        <!-- 绑定微信界面 -->
+        <!-- 首次进入引导页 -->
+        <activity
+            android:name=".ui.GuideActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 商品详情页 -->
+
+
+        <!-- 商城 -->
+
+
+        <!-- 乐币支付 -->
+        <!-- 兑换中心支付 -->
+        <activity
+            android:name=".ui.ExchangCenterPaymentActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 兑换中心列表 -->
+
+
+        <!-- 中奖结果列表 -->
+        <activity
+            android:name=".ui.PrizeWinnerListActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 中奖结果列表 -->
+        <activity
+            android:name=".ui.FilialeGoodListActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 新闻详情html界面 -->
+
+
+        <!-- 地址列表界面 -->
+        <activity
+            android:name=".ui.AddressManageActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 地址编辑界面 -->
+        <activity
+            android:name=".ui.AddressEditActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 我的订单界面 -->
+        <activity
+            android:name=".ui.MyMallOrderListActivity2"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 待支付订单界面 -->
+
+
+        <!-- 已取消订单界面 -->
+        <activity
+            android:name=".ui.OrderCanceledActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 提交快递单号 -->
+        <activity
+            android:name=".ui.CommitExpressNumActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <!-- 选择快递公司 -->
+        <activity
+            android:name=".ui.SelectExpressComActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 支付订单 -->
+        <!-- 现金充值 -->
+        <!-- 待支付订单 -->
+        <!-- 售后服务 -->
+        <activity
+            android:name=".ui.AfterSaleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        />
+        <!-- 幸运夺宝 -->
+        <!-- 我的夺宝记录 -->
+        <!-- 夺宝商品详情 -->
+
+
+        <!-- 成功夺宝 -->
+        <!-- 成功夺宝中item详情 -->
+
+
+        <!-- 往期回顾 -->
+        <!-- 新版会员夺宝记录 -->
+        <!-- 新版支付结果界面 -->
+
+
+        <!-- 选择充值方式 -->
+
+
+        <!-- 新版中奖详情界面 -->
+
+
+        <!-- 新版充值界面 -->
+        <activity
+            android:name=".ui.NMemberChargeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 晒单记录界面 -->
+        <!-- 晒单相册界面 -->
+
+
+        <!-- 本地商城 -->
+        <activity
+            android:name=".ui.JPLeFenHomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 本地旗舰店列表 -->
+        <activity
+            android:name=".ui.JPFlagshipListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 本地旗舰店 -->
+        <activity
+            android:name=".ui.JPFlagshipActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
+        <!-- 店铺简介 -->
+        <activity android:name=".ui.StoreIntroductionActivity" />
+        <!-- 新商品详情 -->
+        <!-- 本地活动 -->
+        <activity
+            android:name=".ui.JPLocationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 乐分分店 -->
+        <activity
+            android:name=".ui.JPLeFenShopActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 签到 -->
+        <activity
+            android:name=".ui.JPSignActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- new商品详情 -->
+        <activity
+            android:name=".ui.JPNewCommDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 活动商品详情 -->
+        <activity
+            android:name=".ui.ActivityDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 评价列表 -->
+        <activity
+            android:name=".ui.JPAllEvaListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- new评价列表 -->
+        <activity
+            android:name=".ui.JPOrderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- 商品评价图片 -->
+        <activity
+            android:name=".ui.ImagePagerActivity"
+            android:theme="@style/AppTheme.NoTitleBar" />
+
+        <!-- MT订单列表 -->
+        <activity
+            android:name=".ui.MTOrderListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- MT订单详情 -->
+        <activity
+            android:name=".ui.MTOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+        <!-- MT申请退款 -->
+        <activity
+            android:name=".ui.MTRefundActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- MT申请退款2 -->
+        <activity
+            android:name=".ui.MTRefundActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- MT退款详情 -->
+        <activity
+            android:name=".ui.MTRefundStateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name=".alipay.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 微信 -->
+        <activity android:name=".wxapi.GetFromWXActivity" />
+
+        <!-- 首页传关键字显示搜索结果界面 -->
+        <activity
+            android:name=".ui.MallListKyeWordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity android:name=".alipay.PayDemoActivity" />
+        <!-- 下载更新服务 -->
+        <service android:name=".service.UpdateService" />
+        <!-- 融云APP KEY -->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="sfci50a7cc3pi" />
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="${GETUI_APP_ID}" />
+        <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="${GETUI_APP_KEY}" />
+        <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="${GETUI_APP_SECRET}" />
+        <!-- 替换为第三方应用的APPSECRET -->
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 个推 -->
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.${applicationId}"
+            android:exported="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name=".service.GetuiPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service
+            android:name=".service.PushIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.F4eA5fjhF7AW6lOfHlxZP2" />
+            </intent-filter>
+        </service>
+
+        <!-- 个推SDK配置结束 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <service android:name=".service.DownloadGameService" />
+
+        <!-- 高德SDK配置开始 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${A_MAP_KEY}" />
+
+        <!-- 微信支付 -->
+
+
+        <!-- 友盟分享 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <!-- <data android:scheme="tencent100424468"/> -->
+                <!-- 确保QQ空间分享回调成功，使用自己的APP ID  该字段如果错误，会在选择分享QQ时提示“取消分享” -->
+                <data android:scheme="tencent1106230726" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="594a1e39717c1923660004eb">
+
+            <!-- android:value="5626ec3f67e58e5fef0000c2" > -->
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="594a1e39717c1923660004eb" />
+
+        <activity
+            android:name=".ui.ApplyAfterSaleActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.AfterSaleDetailsActivity"
+            android:label="@string/title_activity_after_sale_details" />
+        <activity
+            android:name=".ui.OrderRoutingActivity"
+            android:label="@string/title_activity_order_routing" />
+        <activity android:name=".ui.EvaluateListActivity" />
+        <activity
+            android:name=".ui.EvaluateActivity"
+            android:label="@string/title_activity_evaluate"
+            android:parentActivityName=".BaseActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yilian.mall.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".ui.ApplyAfterSaleSuccessActivity"
+            android:label="@string/title_activity_apply_after_sale_success" />
+        <activity
+            android:name=".ui.AfterSaleOneActivity"
+            android:label="@string/title_activity_after_sale_one" />
+        <activity
+            android:name=".ui.AfterSaleThreeActivity"
+            android:label="@string/title_activity_after_sale_three" />
+        <activity
+            android:name=".ui.AfterSaleRouteActivity"
+            android:label="@string/title_activity_after_sale_route" />
+        <activity
+            android:name=".ui.CitySelectionActivity"
+            android:label="@string/title_activity_city_selection" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity android:name=".ui.BankActivity" />
+        <activity android:name=".ui.BankProfitActivity" />
+        <activity android:name=".ui.ShopsPresentOrConsumeDetailActivity" />
+        <activity android:name=".ui.ADActivity" />
+
+        <!-- 聚合会话列表页面 -->
+        <!-- 会话界面 -->
+        <activity android:name=".ui.CashDeskActivity" />
+        <activity android:name=".ui.NOrderPaySuccessActivity" />
+        <activity android:name=".ui.MallFindActivity" />
+        <activity android:name=".ui.RecommendAppActivity" />
+        <activity android:name=".ui.JPGoodsClassfiyActivity" />
+        <activity
+            android:name=".ui.JPMainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.VersionUpdateDialog"
+            android:launchMode="singleInstance"
+            android:theme="@style/version_dialog" />
+        <activity android:name=".ui.JPMyFavoriteActivity" />
+        <activity android:name=".ui.JPNativeRecommendActivity" />
+        <activity android:name=".ui.JPleFenGoodsActivity" />
+        <activity android:name=".ui.JPFindActivity" />
+        <activity
+            android:name=".ui.JPCommitOrderActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.JPRegisterTwoActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".ui.JPInvitePrizeActivity" />
+        <activity android:name=".ui.MTRefundSucceedActivity" />
+        <activity android:name=".ui.MTCommentSuccessActivity" />
+        <activity android:name=".ui.MTPackageCommentListActivity" />
+        <activity android:name=".ui.MTStoreConsumeActivity" />
+        <activity android:name=".ui.MTPackageTicketActivity" />
+        <activity android:name=".ui.MTSubmitOrderActivity" />
+        <activity android:name=".ui.MTComboDetailsActivity" />
+        <activity android:name=".ui.MTMerchantDetailActivity" />
+        <activity android:name=".ui.MTNearActivity" />
+        <activity android:name=".ui.MTPhotoTextMoreActivity" />
+        <activity android:name=".ui.MTFindActivity" />
+        <activity android:name=".ui.MTApplyForRefundActivity" />
+        <activity android:name=".ui.MTChooseAddressActivity" />
+        <activity android:name=".ui.MTSearchAddressActivity" />
+        <activity android:name=".ui.MTPackageCommentActivity" />
+        <activity android:name=".ui.MTMerchantPackageSearchActivity" />
+        <activity android:name=".ui.MTPackagePayForSuccess" />
+        <activity android:name=".ui.MTPayForStoreResult" />
+        <activity android:name=".ui.SettingReferrerActivity" />
+        <activity android:name=".ui.BindPhoneActivity" />
+        <activity android:name=".ui.ConsigneeIdCardInformationActivity" />
+        <activity android:name=".ui.NearbyGoodsActivity" />
+        <activity android:name=".ui.FlashSaleListActivity" />
+        <activity android:name=".ui.FlashSaleDetailsActivity" />
+        <activity android:name=".ui.MerchantSearchActivity" />
+        <!-- 商品搜索 -->
+        <activity android:name=".ui.SearchCommodityActivity" />
+        <activity android:name=".ui.FlashSalePayActivity" />
+        <activity android:name=".ui.MallFlashSaleDetailActivity" />
+        <activity android:name=".ui.OfflineTransferActivity" />
+        <activity
+            android:name=".ui.OfflineTransferVoucherActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ui.OfflineTransferRecordActivity" />
+        <activity android:name=".ui.OfflineTransferRecordDetailActivity" />
+        <activity android:name=".ui.ParadiseActivity" />
+        <activity android:name=".ui.NewGuessListActivity" />
+        <activity android:name=".ui.NewGuessDetailActivity" />
+        <activity android:name=".ui.WheelOfFortuneActivity" />
+        <activity
+            android:name=".ui.WheelOfFortuneDialogActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".ui.PrizeGoodsListActivity" />
+        <activity
+            android:name=".ui.PrizeObtainActicity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.CounversionSucceedActivity" />
+        <activity android:name=".ui.MtMerchantPhotoAlbumActivity" />
+        <activity
+            android:name=".ui.TakeOutFlashSalePayActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity android:name=".ui.SpellGroupListActiviy" />
+        <activity android:name=".ui.SpellGroupDetailsActivity" />
+        <activity android:name=".ui.SpellGroupResultStatusActivity" />
+        <activity android:name=".ui.MySpellGroupActivity" />
+        <activity android:name=".ui.SpellGroupOrderActivity" />
+
+        <!-- 奖券转赠 -->
+        <activity
+            android:name=".ui.V3MemberGiftActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <!-- 转赠奖券 -->
+        <activity
+            android:name=".ui.IntegralGiveAwayActivity"
+            android:windowSoftInputMode="stateUnspecified" />
+        <!-- 转赠奖券成功 -->
+        <activity
+            android:name=".ui.IntegralSuccessActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <!-- 收付款码 -->
+        <activity
+            android:name=".ui.ApplyAgentDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity android:name=".ui.JTakeCashActivity" />
+        <activity
+            android:name=".ui.JBindCardActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.JBindCardCodeActivity" />
+        <activity android:name=".ui.JBindCardSuccessActivity" />
+        <activity android:name=".ui.JTakeCashSuccessActivity" />
+        <activity android:name=".ui.BalanceDetailActivity" />
+        <activity android:name=".ui.BalanceScreenActivity" />
+        <activity android:name=".ui.BalanceScreenActivity1" />
+        <activity android:name=".ui.NoticeListActivity" />
+        <activity android:name=".ui.TeamDetailActivity" />
+        <activity android:name=".ui.PerformanceActivity" />
+        <activity
+            android:name=".ui.MallMainActivity"
+            android:launchMode="singleTask" />
+        <!-- <activity android:name=".ui.MyMallOrderListActivity2" /> -->
+        <activity android:name=".ui.FavoriteActivity" />
+        <activity android:name=".ui.GameHomePageActivity" />
+        <activity android:name=".ui.GameHistoryListActivity" />
+        <activity
+            android:name=".ui.GameEnterWayChooseActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".ui.InformationActivity" />
+        <activity android:name=".ui.ActInvitationFriendActivity" />
+        <activity android:name=".ui.ActHomeActivity" />
+        <activity android:name=".ui.NewEvaluateActivity" />
+        <activity
+            android:name=".ui.ActTouchListActivity"
+            android:label="@string/title_activity_touch_list"
+            android:theme="@style/AppTheme.LauncherTheme" />
+        <activity android:name=".ui.ActMyCombatGainsActivity" />
+        <activity android:name=".ui.ActFriendListActivity" />
+        <activity android:name=".ui.ActClockInTopTenActivity" />
+        <activity android:name=".ui.ActRewardRecorderActivity" />
+        <activity
+            android:name=".ui.ActClockInActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.ActBetTopicSuccessActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.ActBetTopicActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.ChargeRuleDialog"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".ui.RedPacketDialog"
+            android:launchMode="singleTask"
+            android:theme="@style/version_dialog" />
+        <activity
+            android:name=".ui.RedIndexDialog"
+            android:theme="@style/version_dialog" />
+        <activity
+            android:name=".ui.RedExplainDialog"
+            android:theme="@style/version_dialog" />
+        <activity
+            android:name=".ui.RedPacketDialog2"
+            android:theme="@style/version_dialog" />
+        <activity android:name=".ui.ActMyRecordActivity" />
+        <activity
+            android:name=".ui.ActRuleDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity android:name=".ui.ActClockInChallengeSuccessActivity" />
+        <activity
+            android:name=".ui.ActSignInSuccessDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.ActClockInSuccessDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.ActClockRuleDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.ActSeekRewardDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.ActRefuseRewardDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.ActPassRewardDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity
+            android:name=".ui.BarCodeNoticeDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity android:name=".ui.ActMyClockInResultActivity" />
+        <activity android:name=".ui.ActClockRankActivity" />
+        <activity
+            android:name=".ui.ActLookCommentsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ActAskRewardDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity android:name=".ui.ActClockInTopTenPersonRecordActivity" />
+        <activity
+            android:name=".ui.ActClockInFailedDialogActivity"
+            android:theme="@style/NoTitleTranslucentThemeV7" />
+        <activity android:name=".ui.ActEvaDetailActivity" />
+        <activity
+            android:name=".ui.ActCashGuaranteeActivity"
+            android:theme="@style/version_dialog" />
+        <activity
+            android:name=".ui.ActEvaluateActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 偷奖励页面 -->
+        <activity
+            android:name=".ui.StealRedPackgetActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <!-- 被偷奖励详情 -->
+        <activity
+            android:name=".ui.StealRedPackgDetailsActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <!-- 查看更多状态 -->
+        <activity
+            android:name=".ui.StealRedPackgeTrendsActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity android:name=".ui.V3MoneyActivity" />
+        <!-- 代购券 -->
+        <activity android:name=".ui.DaiGouTicketActivity" />
+        <!-- 兑换券 -->
+        <activity android:name=".ui.ExchangeTicketActivity" />
+        <activity android:name=".ui.AllFunctionActivity" />
+        <activity
+            android:name=".ui.LoadingActivity"
+            android:theme="@style/version_dialog" />
+        <activity
+            android:name=".ui.LoadingShopCarActivity"
+            android:theme="@style/version_dialog" />
+        <activity android:name=".ui.RechargeActivity" />
+        <activity android:name=".ui.LookExpressActivity" />
+        <activity android:name=".ui.V3MoneyDetailActivity" />
+        <activity android:name=".ui.V3MoneyListActivity" />
+        <!-- 明细列表 -->
+        <activity android:name=".ui.RecordListActivity" />
+        <!--兑换券明细列表 详情-->
+        <activity android:name=".ui.RecordDetailsActivity" />
+        <activity android:name=".ui.V3MoneyDetailActivity_With_Draw" />
+        <activity android:name=".ui.V3MoneyDealingsActivity" />
+        <activity android:name=".ui.ActInvitationFriendListActivity" />
+        <activity android:name=".ui.V5MerchantDetailActivity" />
+        <activity android:name=".ui.V5PaySuccessActivity" />
+        <activity android:name=".ui.V5EvaActivity" />
+        <activity android:name=".ui.mvp.view.EditUserNameViewImplActivity" />
+        <activity android:name=".ui.mvp.view.BasicInfomationViewImplActivity" />
+        <activity android:name=".ui.mvp.view.ProfessionViewImplActivity" />
+        <activity android:name=".ui.mvp.view.LocationViewImplActivity" />
+        <activity android:name=".ui.mvp.view.CertificationViewImplActivity" />
+        <activity android:name=".ui.TakeLedouActivity" />
+        <activity android:name=".ui.TakeLedouSuccessActivity" />
+        <activity
+            android:name=".ui.mvp.view.SmsCodeViewImplActivity"
+            android:theme="@style/DialogActivityX" />
+        <activity
+            android:name=".ui.mvp.view.CertificationResultImplViewActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.mvp.view.UploadIdCardViewImplActivity" />
+        <activity android:name=".ui.mvp.view.SupportBankListViewImplActivity" />
+        <activity android:name=".ui.mvp.view.LeDouHomePageViewImplActivity" />
+        <activity android:name=".ui.mvp.view.SpecialLeDouViewImplActivity" />
+        <!--区块益豆明细页面-->
+        <activity android:name=".ui.BeansListActivity" />
+        <activity
+            android:name=".ui.V5NavigationActivity"
+            android:theme="@style/version_dialog" />
+        <activity android:name=".ui.ExtractLeTaoAngleActivity" />
+        <!-- 提取益豆到钱包页面 -->
+        <activity android:name=".ui.ExtractLeDouToPurseActivity" />
+        <activity android:name=".ui.OpenRedPackageActivity" />
+        <!-- 商品分类列表页面 -->
+        <activity android:name=".ui.OnlineMallGoodsSortListActivity" />
+        <!-- 线上商城商品小类列表页面 -->
+        <activity android:name=".ui.OnLineMallGoodsListActivity" />
+
+        <!-- 京东首页 -->
+        <activity
+            android:name=".jd.activity.JdHomePageActivity"
+            android:launchMode="singleTask" />
+        <!-- 京东品牌商品列表 -->
+        <activity android:name=".jd.activity.JdBrandGoodsListActivity" />
+        <!-- 京东第三级分类尚品列表 -->
+        <activity android:name=".jd.activity.JdThirdClassifyGoodsListActivity" />
+        <!-- 京东商品搜索页面 -->
+        <activity android:name=".jd.activity.JdGoodsSearchActivity" />
+        <!--京东商品详情-->
+        <activity android:name=".jd.activity.goodsdetail.JDGoodsDetailActivity" />
+        <!-- 问题反馈 -->
+        <activity
+            android:name=".jd.activity.JDGoodsFeedbackActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--京东改版编辑收货地址界面-->
+        <activity android:name=".jd.activity.JDEditShippingAddressActivity" />
+        <!--京东收货地址管理-->
+        <activity android:name=".jd.activity.JDEditShippingAddressListActivity" />
+        <!-- 京东订单详情 -->
+        <activity android:name=".jd.activity.JDOrderDetailsActivity" />
+        <!-- 确认收货成功 -->
+        <activity android:name=".jd.activity.JDOrderReceivingSuccessActivity" />
+        <!-- 京东订单物流 -->
+        <activity android:name=".jd.activity.JDOrderLogisticsActivity" />
+        <!--京东提交订单-->
+        <activity android:name=".jd.activity.JDCommitOrderActivity" />
+        <activity android:name=".jd.activity.JDPaySuccessActivity" />
+        <!-- 京东售后申请 申请页面 -->
+        <activity android:name=".jd.activity.JDAfterSaleApplyForActivity" />
+        <!-- 京东售后申请 详情页 -->
+        <activity android:name=".jd.activity.JDAfterSaleDetailsActivity" />
+        <!-- 京东售后申请 服务单追踪 -->
+        <activity android:name=".jd.activity.JDAfterSaleTrackActivity" />
+        <activity android:name=".jd.activity.JDCashDeskActivity2" />
+        <activity android:name=".ui.CashDeskActivity2" />
+        <activity android:name=".suning.activity.goodsdetail.SnGoodsDetailActivity" />
+        <activity android:name=".suning.activity.SnCommitOrderActivity" />
+
+        <!-- ********************* 苏宁 *************** 苏宁 ************************* 苏宁 ********************** -->
+        <!-- 苏宁首页 -->
+        <activity
+            android:name=".suning.activity.SnHomePageActivity"
+            android:launchMode="singleTask" />
+        <!-- 京东第三级分类尚品列表 -->
+        <activity android:name=".suning.activity.SnThirdClassifyGoodsListActivity" />
+        <!-- 苏宁商品搜索页面 -->
+        <activity android:name=".suning.activity.SnGoodsSearchActivity" />
+        <activity android:name=".suning.activity.shippingaddress.SnShippingAddressListActivity" />
+        <activity android:name=".suning.activity.shippingaddress.SnEditShippingAddressActivity" />
+        <!-- 苏宁政企品牌商品列表 -->
+        <activity android:name=".suning.activity.SnBrandGoodsListActivity" />
+        <!-- 苏宁订单详情 -->
+        <activity android:name=".suning.activity.SnOrderDetailsActivity" />
+        <!-- 苏宁收银台 -->
+        <activity android:name=".suning.activity.SnCashDeskActivity" />
+        <!-- 苏宁订单物流信息 -->
+        <activity android:name=".suning.activity.SnOrderLogisticsActivity" />
+        <!-- 苏宁服务订单详情 -->
+        <activity android:name=".suning.activity.SnAfterSaleDetailsActivity" />
+        <activity
+            android:name=".suning.activity.SnAfterSaleSearchActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 苏宁申请售后 -->
+        <activity android:name=".suning.activity.SnAfterSaleApplyForActivity" />
+        <activity android:name=".suning.activity.SnCommitOrderMultiGoodsList" />
+        <activity android:name=".ui.PayExchangeToMerchantActivity" />
+        <activity android:name=".ui.PayExchangeToMerchantSuccessActivity" />
+        <activity android:name=".ui.ExchangeCashDeskActivity" />
+        <activity android:name=".ui.transfer.TransferAccountActivity" />
+        <activity android:name=".ui.transfer.TransferActivity" />
+        <activity android:name=".ui.transfer.TransferSuccessActivity"></activity>
+
+        <!-- ********************* 携程 *************** 携程 ************************* 携程 ********************** -->
+        <!-- 携程首页 -->
+        <activity
+            android:name=".ctrip.activity.CtripHomePageActivity"
+            android:launchMode="singleTask" />
+        <!-- 携程 城市列表 -->
+        <activity android:name=".ctrip.activity.CtripSiteCityActivity" />
+        <!-- 携程 区县列表 -->
+        <activity android:name=".ctrip.activity.CtripSiteCityByDistrictsActivity" />
+        <!-- 酒店详情 -->
+        <activity
+            android:name=".ctrip.activity.CtripHotelDetailActivity"
+            android:launchMode="singleTask" />
+        <!-- 携程 区县列表 搜索 -->
+        <activity android:name=".ctrip.activity.CtripSiteCityBySearchActivity" />
+        <!-- 携程 酒店查询页面 -->
+        <activity android:name=".ctrip.activity.HotelQueryActivity" />
+        <!-- 携程 关键字 -->
+        <activity android:name=".ctrip.activity.CtripKeywordActivity" />
+        <!-- 携程 关键字 搜索 -->
+        <activity android:name=".ctrip.activity.CtripKeywordBySearchActivity" />
+        <!-- 携程 地图查看附近酒店 -->
+        <activity android:name=".ctrip.activity.ActivityMapSearch" />
+        <!-- 携程 订单详情 -->
+        <activity android:name=".ctrip.activity.CtripCommitOrderActivity" />
+        <!-- 携程 收银台 -->
+        <activity android:name=".ctrip.activity.CtripOrderPaymentActivity"></activity>
+        <activity android:name=".ctrip.activity.CtripOrderPaySuccessActivity"></activity>
+        <!-- 携程 订单详情-->
+        <activity android:name=".ctrip.activity.CtripOrderDetailsActivity" />
+        <!-- 携程 订单进度-->
+        <activity android:name=".ctrip.activity.CtripOrderProgressActivity" />
+        <!-- 携程 入住凭证-->
+        <activity android:name=".ctrip.activity.CtripVoucherActivity" />
+        <!--携程 取消订单-->
+        <activity android:name=".ctrip.activity.CtripOrderCancelActivity" />
+        <activity android:name=".ctrip.activity.CtripOrderCancelSuccessfulActivity" />
+        <!--携程 订单分享-->
+        <activity android:name=".ctrip.activity.CtripOrderShareActivity" />
+        <!--设施详情-->
+        <activity android:name=".ctrip.activity.ActivityFacilityDeail" />
+        <!--地图查询酒店信息-->
+        <activity android:name="com.yilian.mall.ctrip.activity.MapSearchHotelInfoActivity" />
+        <!-- ********************* 购物卡 *************** 购物卡 ************************* 购物卡 ********************** -->
+        <!--购物卡首页-->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardHomePageActivity" />
+        <!--购物卡京东商品列表-->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardJdGoodsListActivity" />
+        <!--购物卡 京东品牌列表 -->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardJdBrandListActivity" />
+        <!--购物卡 京东品牌商品列表 -->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardJdBrandGoodsListActivity" />
+        <!--购物卡 京东购物清单 -->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardJdShoppingListActivity" />
+        <!--购物卡 京东商品 收银台 -->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardJdCashDeskActivity" />
+
+        <!--我的购物卡-->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardMyShoppingCardActivity" />
+        <!--我的购物卡  已开卡-->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardMyCardActivity" />
+        <!--购物卡  明细页面-->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardDetailActivity" />
+        <!--购物卡类型筛选-->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardTypeFiltrateActivity" />
+        <!--购物卡商品详情-->
+        <activity android:name="com.yilian.mall.shoppingcard.activity.CardCommodityDetailActivity" />
+
+    </application>
+
+</manifest>

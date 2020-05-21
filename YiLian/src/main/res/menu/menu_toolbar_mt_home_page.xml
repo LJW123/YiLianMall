@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mt_home_page_location"
+        android:title=""
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/mt_home_page_search"
+        app:actionViewClass="android.widget.TextView"
+        android:title=""
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/mt_home_page_qr_code"
+        android:icon="@mipmap/icon_qr_code_scan"
+        android:title="二维码扫描"
+        android:actionViewClass="android.widget.ImageView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/mt_home_page_message"
+        android:icon="@mipmap/icon_message"
+        android:title="二维码扫描"
+        android:actionViewClass="android.widget.ImageView"
+        app:showAsAction="always"/>
+</menu>

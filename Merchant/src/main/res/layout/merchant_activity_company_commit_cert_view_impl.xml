@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merchant_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        tl:tl_iconHeight="23dp"
+        tl:tl_iconWidth="23dp"
+        tl:tl_indicator_color="#2C97DE"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="#2C97DE"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_textsize="12sp"
+        tl:tl_underline_color="#CEA76E"
+        tl:tl_underline_height="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="类　　型"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="企业入驻"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="经营范围"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/et_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="请填写您的经营范围"
+                    android:padding="15dp"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="企业法人"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/et_owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="请填写经营者姓名"
+                    android:padding="15dp"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="身份证号码"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/et_id_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="请输入身份证号码"
+                    android:padding="15dp"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="身份证证件照"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_id_card_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:onClick="uploadCert"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="未上传"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="开户银行账户"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_bank_card_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:onClick="uploadCert"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="未绑定"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="三证合一"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/three_to_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="否"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="企业营业执照"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_business_card_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:onClick="uploadCert"
+                    android:padding="15dp"
+                    android:text="必填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/three_cert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="税务登记证"
+                        android:textColor="@color/library_module_color_333"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_tax_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:onClick="uploadCert"
+                        android:drawableRight="@mipmap/merchant_right_back_gray"
+                        android:gravity="right"
+                        android:padding="15dp"
+                        android:text="必填"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="组织机构代码证"
+                        android:textColor="@color/library_module_color_333"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_organization_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:drawableRight="@mipmap/merchant_right_back_gray"
+                        android:gravity="right"
+                        android:onClick="uploadCert"
+                        android:padding="15dp"
+                        android:text="必填"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View style="@style/merchant_outerLineStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="纳税人资格证"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_tax_qualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:onClick="uploadCert"
+                    android:padding="15dp"
+                    android:text="必填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="银行开户许可证"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_open_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="uploadCert"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="必填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="商标注册证/商标受理通知书"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="uploadCert"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="必填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="安全认证证书"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:onClick="uploadCert"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="选填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="授权书"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:onClick="uploadCert"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="选填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="质检、检疫、检验报告"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:onClick="uploadCert"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="选填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/ll_cert_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="报关单"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_declaration"
+                    android:layout_width="match_parent"
+                    android:onClick="uploadCert"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="必填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_cert_declaration"
+                style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="生产许可证"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_production"
+                    android:layout_width="match_parent"
+                    android:onClick="uploadCert"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="选填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="质检报告/CQC认证证书"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_cqc"
+                    android:layout_width="match_parent"
+                    android:onClick="uploadCert"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="必填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="其他资质"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_cert_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="uploadCert"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/merchant_right_back_gray"
+                    android:gravity="right"
+                    android:padding="15dp"
+                    android:text="选填"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/merchant_outerLineStyle" />
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="#CEA76E"
+                android:text="提交资质"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

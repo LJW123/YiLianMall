@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <View style="@style/merchant_outerLineStyle" />
+
+    <FrameLayout
+        android:id="@+id/fl_change"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/merchant_outerLineStyle" />
+    <!--<com.yilianmall.merchant.CommonTabLayout-->
+        <!--android:id="@+id/tl_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#FFFFFF"-->
+        <!--tl:tl_iconHeight="23dp"-->
+        <!--tl:tl_iconWidth="23dp"-->
+        <!--tl:tl_indicator_color="#D7AE5C"-->
+        <!--tl:tl_indicator_height="0dp"-->
+        <!--tl:tl_textSelectColor="#D7AE5C"-->
+        <!--tl:tl_textUnselectColor="#333333"-->
+        <!--tl:tl_textsize="10sp"-->
+        <!--tl:tl_underline_color="#333333"-->
+        <!--tl:tl_underline_height="0dp" />-->
+
+</LinearLayout>

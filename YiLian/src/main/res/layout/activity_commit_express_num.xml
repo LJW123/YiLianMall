@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="21dp"
+            android:gravity="center_vertical"
+            android:text="快递公司"
+            android:textColor="@color/b3b3b3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_express_com"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/express_num_edit_bg"
+            android:clickable="true"
+            android:drawableRight="@mipmap/user_jiantou"
+            android:gravity="center_vertical"
+            android:hint="请选择您的快递公司"
+            android:onClick="selcetExpressCom"
+            android:paddingLeft="15dp"
+            android:paddingRight="14dp"
+            android:textColor="@color/b3b3b3"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="17dp"
+            android:text="快递单号"
+            android:textColor="@color/b3b3b3"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/ed_express_num"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/express_num_edit_bg"
+            android:hint="请输入您的快递单号"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:textColor="@color/b3b3b3"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="319dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/selector_btn_jp_all_screen"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="commit"
+        android:text="提 交"
+        android:textColor="#ffffff"
+        android:textSize="19sp" />
+
+
+</LinearLayout>

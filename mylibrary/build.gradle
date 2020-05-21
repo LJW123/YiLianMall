@@ -1,0 +1,135 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.1'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    resourcePrefix "library_module"//该module的所有资源文件都应该以该字符开头，防止与依赖该module的项目产生资源冲突
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.orhanobut:logger:1.8'
+    compile files('libs/libammsdk.jar')
+    //    RxTools库中有支付宝SDKjar包
+    //    compile files('libs/alipaySdk-20170309.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    https://github.com/Bigkoo/Android-PickerView
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    compile files('libs/android-async-http-1.4.6.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/nineoldandroids.jar')
+    compile files('libs/SocialSDK_QQZone_1.jar')
+    compile files('libs/SocialSDK_QQZone_2.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_tencentWB_1.jar')
+    compile files('libs/SocialSDK_tencentWB_2.jar')
+    compile files('libs/SocialSDK_tencentWB_3.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/umeng-analytics-v5.6.1.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
+    //    RxTools库中有Zxing SDKjar包
+    //    compile files('libs/zxing.jar')
+    compile files('libs/AMap_Search_V3.2.1_20160308.jar.jar')
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofit_version"
+    compile files('libs/AMap_2DMap_V2.8.1_20160202.jar')
+    compile project(':IMCore-2.0.2')
+    compile project(':IMKit-2.0.2')
+    compile "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'com.orhanobut:logger:1.8'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.tencent.bugly:crashreport:2.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile "com.squareup.retrofit2:retrofit:$retrofit_version"
+    compile 'com.amap.api:location:3.4.1'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    // If you want to use the GPU Filters
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
+    //    compile 'com.jaeger.statusbarutil:library:1.4.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    compile 'com.robinhood.ticker:ticker:1.2.2'
+    compile "com.google.guava:guava:$rootProject.guavaVersion"
+    compile files('libs/AMap3DMap_5.6.0_AMapNavi_5.5.0_20171130.jar')
+    /**
+     *   安卓强大的工具类
+     */
+    compile 'com.github.vondear:RxTools:v1.7.6.4'
+    /**
+     *   popupwindow
+     *   https://github.com/razerdp/BasePopup
+     */
+    compile 'com.github.razerdp:BasePopup:1.8.6.1'
+    /**
+     *   仿苹果选择器
+     *   https://github.com/Carbs0126/NumberPickerView
+     */
+    compile 'cn.carbswang.android:NumberPickerView:1.1.1'
+    /** `
+     *   viewpager下方过度小点
+     */
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    /**
+     *   创建支付密码
+     */
+    compile 'com.jungly:gridPasswordView:0.3'
+    compile 'com.github.Blincheng:AddressSelector:v1.0.4'
+    /**
+     *   仿苹果togglebutton
+     */
+    compile 'com.zcw:togglebutton-library:1.0.0'
+    /**
+     *  BaseRecyclerViewAdapterHelper
+     *  https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+     */
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    compile 'top.zibin:Luban:1.1.3'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation files('libs/Msc.jar')
+    /**
+     * PhotoView
+     * https://github.com/chrisbanes/PhotoView
+     */
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+//  下拉popuWindow
+//    compile 'com.github.dongjunkun:DropDownMenu:1.0.3'
+    api ('com.gyf.immersionbar:immersionbar:2.3.1'){
+        exclude group: 'com.android.support'
+    }
+
+
+}

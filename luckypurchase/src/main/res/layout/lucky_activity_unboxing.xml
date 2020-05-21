@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lucky_white"
+    tools:context="com.yilian.luckypurchase.activity.LuckyUnboxingActivity">
+
+    <include layout="@layout/lucky_v3_title"/>
+
+    <ScrollView
+        android:id="@+id/layout_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/lucky_color_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lucky_margin10"
+                android:orientation="vertical"
+                android:background="@drawable/lucky_bg_white_10_radious">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lucky_margin15"
+                    android:layout_marginRight="@dimen/lucky_margin15"
+                    android:layout_marginTop="@dimen/lucky_margin10"
+                    android:layout_marginBottom="@dimen/lucky_margin10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@mipmap/lucky_default_head_icon"/>
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/lucky_margin10"
+                        android:textSize="@dimen/lucky_size15"
+                        android:textColor="@color/lucky_color_333"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/lucky_size13"
+                        android:textColor="@color/lucky_color_999"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lucky_margin15"
+                    android:layout_marginRight="@dimen/lucky_margin15"
+                    android:padding="@dimen/lucky_padding15"
+                    android:orientation="vertical"
+                    android:background="@drawable/lucky_bg_bg_solid_radius_3">
+                    <TextView
+                        android:id="@+id/tv_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/lucky_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail_issue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/lucky_margin10"
+                        android:singleLine="true"
+                        android:textSize="@dimen/lucky_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/lucky_margin10"
+                        android:singleLine="true"
+                        android:textSize="@dimen/lucky_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/lucky_margin10"
+                        android:singleLine="true"
+                        android:textSize="@dimen/lucky_size14"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/lucky_margin10"
+                        android:singleLine="true"
+                        android:textSize="@dimen/lucky_size14"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lucky_margin15"
+                    android:layout_marginRight="@dimen/lucky_margin15"
+                    android:layout_marginTop="@dimen/lucky_margin20"
+                    android:textSize="@dimen/lucky_size13"
+                    android:textColor="@color/lucky_color_999"/>
+
+                <com.yilian.luckypurchase.widget.NoScrollRecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lucky_margin15"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_net_error"
+        android:visibility="gone"
+        layout="@layout/library_module_load_error"/>
+
+</LinearLayout>

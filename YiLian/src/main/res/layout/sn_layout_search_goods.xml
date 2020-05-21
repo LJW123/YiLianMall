@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_5dp"
+    android:paddingLeft="@dimen/padding_15dp"
+    android:paddingRight="@dimen/padding_15dp"
+    android:paddingTop="@dimen/padding_5dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/jd_bg_gray_corner"
+        android:drawableLeft="@mipmap/iv_search_home_title_black"
+        android:drawablePadding="@dimen/margin_7dp"
+        android:gravity="center_vertical"
+        android:hint="请输入商品名称"
+        android:paddingLeft="@dimen/padding15"
+        android:textColor="#ffadadad"
+        android:textSize="@dimen/textSize_14dp"
+        tools:text="佐卡伊 项链 吊坠" />
+
+    <TextView
+        android:id="@+id/sn_tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="9dp"
+        android:text="搜索"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/textSize_15dp"
+        android:visibility="gone" />
+
+</LinearLayout>

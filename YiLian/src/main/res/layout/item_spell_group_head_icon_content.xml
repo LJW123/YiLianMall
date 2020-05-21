@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_head_ioon"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.yilian.mall.widgets.NoScrollGridView
+        android:id="@+id/grid_view_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin15"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="8dp"
+        android:numColumns="5"
+        android:verticalSpacing="8dp">
+
+    </com.yilian.mall.widgets.NoScrollGridView>
+
+
+    <View
+        style="@style/outerLineStyle"
+        android:layout_marginLeft="@dimen/margin15" />
+
+    <LinearLayout
+        android:id="@+id/ll_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="商品名称"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size12" />
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin8"
+            android:src="@mipmap/jiantou2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_group_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin10"
+            android:text="开团时间"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size12" />
+
+        <TextView
+            android:id="@+id/open_group_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:lines="1"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size12" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_once_again"
+        style="@style/btnStyle"
+        android:layout_marginBottom="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin30"
+        android:gravity="center"
+        android:text="看看其他拼团"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/login_module_color_login_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_module_padding18"
+            android:background="@mipmap/login_module_register_back"
+            android:clickable="true"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:padding="@dimen/login_module_padding10"
+            android:src="@mipmap/login_module_register_cancel"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/login_module_margin20"
+        android:layout_marginBottom="@dimen/login_module_margin20"
+        android:text="益联益家"
+        android:textColor="@color/login_module_white"
+        android:textSize="@dimen/login_module_size20"/>
+    <!--登录界面修改，账号登录界面独立出去，此处只保留验证码快捷登录，隐藏RadioGroup，并在代码中默认选择快捷登录-->
+    <RadioGroup
+        android:id="@+id/rg_login_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <RadioButton
+            android:id="@+id/sortcut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:onClick="shortCut"
+            android:padding="@dimen/login_module_padding10"
+            android:text="快捷登录"
+            android:textColor="@color/login_module_color_shorcut_login"
+            android:textSize="@dimen/login_module_size15"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_module_margin20"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/select_phone"
+            android:layout_toRightOf="@+id/select_phone"
+            android:background="@null"
+            android:focusable="true"
+            android:textSize="@dimen/login_module_size15"
+            android:maxLength="11"
+            android:focusableInTouchMode="true"
+            android:hint="请输入您的手机号"
+            android:inputType="phone"
+            android:paddingTop="@dimen/login_module_padding10"
+            android:paddingRight="@dimen/login_module_padding10"
+            android:paddingBottom="@dimen/login_module_padding10"
+            android:textColor="@color/login_module_white"
+            android:textColorHint="@color/login_module_white"/>
+
+        <TextView
+            android:id="@+id/select_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="23dp"
+            android:background="@mipmap/login_module_register_select"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_module_margin10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/select_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="23dp"
+            android:background="@mipmap/login_module_register_select"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/et_register_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/select_code"
+            android:layout_alignBottom="@+id/select_code"
+            android:layout_toEndOf="@+id/select_code"
+            android:layout_toRightOf="@+id/select_code"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingTop="@dimen/login_module_padding10"
+            android:paddingRight="@dimen/login_module_padding10"
+            android:paddingBottom="@dimen/login_module_padding10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/login_module_login_pwd"
+            android:textSize="@dimen/login_module_size15"/>
+
+
+        <Button
+            android:id="@+id/tv_obtina_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@color/login_module_color_red"
+            android:onClick="getCode"
+            android:text="获取验证码"
+            android:textColor="@color/login_module_login_pwd"
+            android:textSize="@dimen/login_module_size13"
+            style="?android:attr/borderlessButtonStyle"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_referrer_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/login_module_margin10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_referrer_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/select_referrer"
+            android:layout_toRightOf="@+id/select_referrer"
+            android:background="@null"
+            android:focusable="true"
+            android:maxLength="11"
+            android:textSize="@dimen/login_module_size15"
+            android:focusableInTouchMode="true"
+            android:hint="请填写推荐人手机号(选填)"
+            android:inputType="phone"
+            android:padding="@dimen/login_module_padding10"
+            android:textColor="@color/login_module_white"
+            android:textColorHint="@color/login_module_white"/>
+
+        <TextView
+            android:id="@+id/select_referrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/login_module_register_select"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_complete"
+        style="@style/login_module_btnStyle_Login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_module_btn_loging_select"
+        android:text="登  录"
+        android:textColor="@color/login_module_color_red"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_module_transparent"
+        >
+
+        <TextView
+            android:id="@+id/tv_account_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:paddingTop="@dimen/login_module_padding10"
+            android:background="@color/login_module_transparent"
+            android:text="账号登录"
+            android:textColor="@color/login_module_white"
+            android:paddingRight="42dp"
+            android:textSize="@dimen/login_module_size15"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

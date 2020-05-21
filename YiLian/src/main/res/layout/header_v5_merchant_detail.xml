@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <com.youth.banner.Banner
+            android:id="@+id/banner_top"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/tv_banner_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/size12"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn_161616"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginBottom="12.5dp"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding5"
+            android:paddingBottom="@dimen/padding5"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/padding15">
+            <TextView
+                android:id="@+id/tv_merchant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/size18"
+                android:textColor="@color/color_333"/>
+
+            <TextView
+                android:id="@+id/tv_merchant_renqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/size14"
+                android:textColor="@color/color_red"
+                android:layout_marginTop="@dimen/margin10"
+                android:drawableRight="@mipmap/v5_fire"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginBottom="@dimen/margin15"
+            android:gravity="center_horizontal"
+            android:background="#F64D5F">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让利"
+                android:textSize="@dimen/size12"
+                android:textColor="@color/white"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"/>
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="1px"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/margin5"/>
+
+            <TextView
+                android:id="@+id/tv_merchant_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size19"
+                android:padding="7.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/part_v5_head_merchant_detail_shop"/>
+
+    <include layout="@layout/part_v5_head_merchant_detail_product"
+        android:id="@+id/layout_product"/>
+
+    <include layout="@layout/part_v5_head_merchant_detail_combo"
+        android:id="@+id/layout_combo"/>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner_adv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <include layout="@layout/part_v5_head_merchant_detail_evalue"/>
+
+    <include layout="@layout/part_v5_head_merchant_detail_desc"
+        android:id="@+id/layout_desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="推荐店铺"
+            android:textSize="@dimen/size15"
+            android:textColor="@color/color_333"
+            android:padding="@dimen/padding15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_lines"
+            android:layout_marginLeft="@dimen/margin15"/>
+    </LinearLayout>
+
+</LinearLayout>

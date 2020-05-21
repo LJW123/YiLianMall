@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/outerLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_filtrate_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_filtrate_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@drawable/bg_gray_radius_90"
+            android:drawableRight="@mipmap/iv_filtrate_close"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_10dp"
+            android:paddingTop="@dimen/padding5"
+            android:text="筛选"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size12" />
+
+    </LinearLayout>
+
+    <View style="@style/outerLineStyle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_filtrate_listdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin_10dp"
+        android:paddingTop="@dimen/padding_20dp"
+        android:paddingBottom="@dimen/padding_20dp"
+        ></android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/layout_filtrate_buttom" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.PrizeGoodsListActivity">
+
+    <include layout="@layout/v3_title" />
+
+    <com.yilian.mall.widgets.SlidingTabLayout
+        android:id="@+id/slidingTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inner_tab_height"
+        app:tl_indicator_color="@color/color_red"
+        app:tl_tab_space_equal="true"
+        app:tl_textAllCaps="true"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/color_red"
+        app:tl_textUnselectColor="@color/color_333"
+        app:tl_textsize="@dimen/size16"
+        app:tl_underline_color="@color/color_lines"
+        app:tl_underline_height="1px" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

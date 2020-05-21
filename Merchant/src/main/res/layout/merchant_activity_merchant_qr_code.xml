@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1BA4F"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantQrCodeActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/merchant_padding20"
+                android:background="@drawable/merchant_bg_btn_white_radious8"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/include_merchant_detail"
+                    layout="@layout/merchant_layout_merchant1" />
+
+                <ImageView
+                    android:id="@+id/iv_qr_code"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="#E1BA4F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="@dimen/merchant_margin10"
+                    android:text="可使用益联商城APP扫码付款"
+                    android:textColor="@color/merchant_color_999" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save_qr_code"
+                style="@style/merchant_btnStyle_v1"
+                android:background="@drawable/merchant_bg_btn_white_radious"
+                android:gravity="center"
+                android:text="保存收款二维码到手机"
+                android:textColor="#E1BA4F"
+                android:textSize="@dimen/merchant_size16" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/merchant_margin15"
+                android:layout_marginTop="@dimen/merchant_margin15"
+                android:paddingLeft="@dimen/merchant_margin20"
+                android:paddingRight="@dimen/merchant_margin20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/merchant_text_notice_scan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/merchant_size12"/>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_change_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/arrow_right_white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/merchant_text_switch_mode"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

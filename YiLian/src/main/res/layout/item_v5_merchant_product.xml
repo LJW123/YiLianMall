@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/library_module_default_jp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/size13"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_161616"
+        android:layout_gravity="bottom"
+        android:paddingTop="@dimen/padding5"
+        android:paddingBottom="@dimen/padding5"/>
+
+</FrameLayout>

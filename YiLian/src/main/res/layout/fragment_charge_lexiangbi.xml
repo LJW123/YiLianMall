@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="21dp"
+                android:text="选择充值金额"
+                android:textColor="@color/color_333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin15"
+                android:background="@drawable/bg_btn_red50_solid_corner10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding5"
+                android:text="充值规则"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/size11" />
+        </LinearLayout>
+
+        <com.yilian.mall.widgets.RadioGroup
+            android:id="@+id/rg_charge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_50"
+                    style="@style/charge_radioButton"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/rb_100"
+                    style="@style/charge_radioButton"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/rb_200"
+                    style="@style/charge_radioButton"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="11dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_500"
+                    style="@style/charge_radioButton"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/rb_1000"
+                    style="@style/charge_radioButton"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/rb_else"
+                    style="@style/charge_radioButtonEdit"
+                    android:clickable="true"
+                    android:hint="其他金额"
+                    android:numeric="integer"
+                    android:textColorHint="@color/color_red" />
+            </LinearLayout>
+        </com.yilian.mall.widgets.RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="21dp"
+            android:text="选择充值方式"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="#bbe4e2e0" />
+
+        <com.yilian.mall.widgets.NoScrollListView
+            android:id="@+id/lv_pay_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/view_line">
+
+        </com.yilian.mall.widgets.NoScrollListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="@color/view_line"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_surePay"
+                style="@style/btnCircleStyle"
+                android:layout_width="324dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="确认支付"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

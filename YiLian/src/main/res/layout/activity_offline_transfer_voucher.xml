@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v4_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding15"
+                    android:text="充值账号："
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/merchant_size15" />
+
+                <TextView
+                    android:id="@+id/tv_user_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="奖励："
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/size13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转账金额：¥"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size13" />
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入线下转账金额"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备        注：  "
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size13" />
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="可添加备注信息（50字以内）"
+                    android:maxLength="50"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg"
+                android:padding="@dimen/padding15"
+                android:text="注：以下为线下转账的转账方信息"
+                android:textColor="#F76D02"
+                android:textSize="@dimen/size12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转账卡主："
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size13" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入转账卡主姓名"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15" />
+
+                <ImageView
+                    android:id="@+id/iv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/padding15"
+                    android:paddingRight="@dimen/padding15"
+                    android:src="@mipmap/offline_transfer_history" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转账卡号："
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size13" />
+
+                <EditText
+                    android:id="@+id/et_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入线下转账卡号"
+                    android:inputType="number"
+                    android:maxLength="25"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所属银行："
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size13" />
+
+                <EditText
+                    android:id="@+id/et_bank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入银行名称"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="@dimen/size15" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin15"
+                android:src="@mipmap/offline_transfer_img" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding15"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:text="*如有多次转账，请以每次提交一次转账记录的形式多次提交"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/size12" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding10">
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@style/btnCircleStyle"
+            android:text="提交" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

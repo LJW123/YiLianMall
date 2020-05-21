@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="#47abff"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/library_module_register_back"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="onBack"
+        android:paddingLeft="15dp"
+        android:text="邀请好友"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#47abff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:gravity="center"
+                android:text="当前会员人数"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <com.yilian.mall.widgets.RiseNumberTextView
+                android:id="@+id/tv_invate_prize_members_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/money" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:text="我们的领奖励全部来自商家让利，平台会员的人\n数决定了商家让利的程度。你邀请的会员越多，领奖励越高！"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/round_corner_white"
+                android:gravity="center"
+                android:onClick="share"
+                android:text="邀请好友"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="9dp"
+                    android:text="邀请说明"
+                    android:textColor="#545454"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginTop="9dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="1、邀请好友成功注册益联益家就会成为您的乐友。\n
+2、邀请的好友越多，乐友、从友和众友越多，领奖励越高。\n
+3、您的领奖励来源于您的乐友、从友或者众友的消费。\n
+4、消费成功后你的领奖励实时到账。\n
+5、领奖励以现金的方式存入您的奖励账户，领奖励奖励大于100元后可领奖励。\n"
+                    android:textColor="#949494"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

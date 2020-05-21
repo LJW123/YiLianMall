@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--新版商城 二级分类页面 二级分类按钮布局（该Gridview的条目布局暂时还没有写）-->
+    <GridView
+        android:id="@+id/gv_jp_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5">
+
+    </GridView>
+</LinearLayout>

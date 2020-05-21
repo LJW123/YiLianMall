@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="600dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/merchant_bg_overdue_top"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="a"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/merchant_size15" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/merchant_bg_white_radious1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_renew"
+            style="@style/merchant_btnStyle_v1"
+            android:layout_marginBottom="@dimen/merchant_size10"
+            android:gravity="center"
+            android:text="我要交平台运营费" />
+
+        <Button
+            android:id="@+id/btn_jump_to_member_center"
+            style="@style/merchant_btnStyle_v1"
+            android:background="@drawable/merchant_bg_btn_black_radious"
+            android:gravity="center"
+            android:text="返回我的" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000" >
+
+    <LinearLayout
+        android:id="@+id/ll_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sign_result_jp"/>
+
+            <TextView
+                android:id="@+id/tv_result_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="50sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+        </FrameLayout>
+        
+        <TextView 
+            android:id="@+id/tv_result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size18"
+            android:layout_marginTop="-120dp"/>
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机兑换买单，直抵现金"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size14"
+            android:layout_marginTop="@dimen/margin20"/>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#d2b68e"
+            android:textSize="@dimen/size14"
+            android:layout_marginTop="@dimen/margin20"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sign_ok_jp"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

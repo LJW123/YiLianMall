@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/v3_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFDF4"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="15dp"
+                android:paddingRight="30dp"
+                android:paddingTop="@dimen/padding10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@mipmap/iv_refund" />
+
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size12" />
+
+            </LinearLayout>
+
+            <include layout="@layout/mt_order_detail_goods" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单券码"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15" />
+                <!--2017年8月21日11:41:53 应UI要求 取消该提示-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（可多选）"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size13"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.yilian.mall.widgets.NoScrollListView
+                android:id="@+id/ticketListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@color/white"
+                android:padding="@dimen/padding15"
+                android:text="退款项"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin15"
+                android:background="@color/color_lines" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="奖励："
+                    android:textColor="@color/color_h1"
+                    android:textSize="@dimen/size13" />
+
+                <TextView
+                    android:id="@+id/tv_refund_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_h1"
+                    android:textSize="@dimen/size13" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@color/white"
+                android:padding="@dimen/padding15"
+                android:text="退款方式"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/size15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin15"
+                android:background="@color/color_lines" />
+
+            <com.yilian.mall.widgets.NoScrollListView
+                android:id="@+id/styleListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退款原因"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（请至少选1项）"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size13" />
+            </LinearLayout>
+
+            <com.yilian.mall.widgets.NoScrollListView
+                android:id="@+id/reasonListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding15"
+                android:text="还有不爽？"
+                android:textColor="@color/color_h1"
+                android:textSize="@dimen/size13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/padding15"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15">
+
+                <EditText
+                    android:id="@+id/et"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/bg_evaluate_content"
+                    android:gravity="top"
+                    android:hint="领导，讲两句吧..."
+                    android:padding="8dp"
+                    android:textColorHint="#929292"
+                    android:textSize="@dimen/size13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:background="@color/color_lines" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding15"
+                android:text="请确认该套餐尚未消费，再申请退款,否则您的申请可能不成功"
+                android:textColor="#929292"
+                android:textSize="@dimen/size12" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/btnCircleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/icon25"
+                android:layout_marginLeft="@dimen/margin18"
+                android:layout_marginRight="@dimen/margin18"
+                android:layout_marginTop="@dimen/icon25"
+                android:text="申请退款"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size18" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

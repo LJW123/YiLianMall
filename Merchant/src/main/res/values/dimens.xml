@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--头部字号,一般只用于头部-->
+    <dimen name="merchant_size18">18dp</dimen>
+    <!--商品详情标题字号 商品标题-->
+    <dimen name="merchant_size15">15dp</dimen>
+    <!--分类标题 标头-->
+    <dimen name="merchant_size14">14dp</dimen>
+    <!--列表标题 页面主要字号-->
+    <dimen name="merchant_size13">13dp</dimen>
+    <!--辅助字体 辅助型字号-->
+    <dimen name="merchant_size12">12dp</dimen>
+    <!--标签字体 标签提示字号-->
+    <dimen name="merchant_size10">10dp</dimen>
+    <dimen name="merchant_tab_title_height">48dp</dimen>
+
+    <!--上下间距-->
+    <dimen name="merchant_padding10">10dp</dimen>
+    <dimen name="merchant_margin10">10dp</dimen>
+    <dimen name="merchant_padding15">15dp</dimen>
+    <dimen name="merchant_padding5">5dp</dimen>
+    <dimen name="merchant_margin15">15dp</dimen>
+
+    <!--左右内间距 列表-->
+    <dimen name="merchant_padding18">18dp</dimen>
+    <!--左右外间距 列表-->
+    <dimen name="merchant_margin5">5dp</dimen>
+    <dimen name="merchant_margin18">18dp</dimen>
+
+    <dimen name="merchant_padding20">20dp</dimen>
+    <dimen name="merchant_padding30">30dp</dimen>
+    <dimen name="merchant_margin20">20dp</dimen>
+    <dimen name="merchant_margin30">30dp</dimen>
+
+    <!--内部tab的高度-->
+    <dimen name="merchant_inner_tab_height">40dp</dimen>
+
+    <!--按钮高度-->
+    <dimen name="merchant_btn_height">45dp</dimen>
+
+    <!--list的上下左右内部间距-->
+    <dimen name="merchant_list_divider_height">4dp</dimen>
+
+    <!--行高-->
+    <dimen name="merchant_row_height50">50dp</dimen>
+    <dimen name="merchant_row_height40">40dp</dimen>
+
+    <!--二级分类界面图标-->
+    <dimen name="merchant_icon50">50dp</dimen>
+    <!--首页图标 一排4个的图标-->
+    <dimen name="merchant_icon44">44dp</dimen>
+    <!--功能图标 比较复杂的图标-->
+    <dimen name="merchant_icon25">25dp</dimen>
+    <!--头部图标 一般的图标尺寸-->
+    <dimen name="merchant_icon20">20dp</dimen>
+    <!--提示性图标宽高-->
+    <dimen name="merchant_icon15">15dp</dimen>
+    <!--最小号图标  最小图标尺寸-->
+    <dimen name="merchant_icon10">10dp</dimen>
+
+    <!--头部图标距离屏幕左右边距-->
+    <dimen name="merchant_head_icon_padding">15dp</dimen>
+    <!--按钮圆角-->
+    <dimen name="merchant_radius">3dp</dimen>
+
+    <dimen name="merchant_linesdp">0.5dp</dimen>
+    <dimen name="merchant_icon75">75dp</dimen>
+    <dimen name="merchant_size20">20dp</dimen>
+    <dimen name="merchant_size30">30dp</dimen>
+    <dimen name="merchant_btn_width">290dp</dimen>
+    <dimen name="merchant_size16">16dp</dimen>
+    <dimen name="merchant_size19">19dp</dimen>
+    <dimen name="merchant_margin8">8dp</dimen>
+    <dimen name="merchant_size11">11dp</dimen>
+    <dimen name="merchant_header_height">60dp</dimen>
+    <dimen name="merchant_footer_height">90dp</dimen>
+    <dimen name="merchant_footer_padding">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="merchant_activity_horizontal_margin">16dp</dimen>
+    <dimen name="merchant_activity_vertical_margin">16dp</dimen>
+    <dimen name="merchant_text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+</resources>

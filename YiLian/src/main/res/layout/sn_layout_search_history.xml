@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common_color"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:text="历史搜索"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size14"
+            android:textStyle="bold" />
+
+        <View style="@style/line_horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/jd_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_clear_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin15"
+            android:paddingTop="13dp"
+            android:text="清空历史搜索"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+</FrameLayout>

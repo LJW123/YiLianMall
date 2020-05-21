@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <!-- view背景色 -->
+            <solid android:color="@color/white" />
+            <!-- 边框颜色 宽度 -->
+            <stroke android:width="1dp" android:color="@color/merchant_color_lines" />
+            <!-- 边框圆角 -->
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <!-- view背景色 -->
+            <solid android:color="@color/white" />
+            <!-- 边框颜色 宽度 -->
+            <stroke android:width="1dp" android:color="@color/merchant_color_dark_yellow" />
+            <!-- 边框圆角 -->
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e4e3eb"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.6dp"
+            android:background="#f0eff4"
+            android:orientation="horizontal"
+            android:paddingTop="1dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp" >
+
+            <Button
+                android:id="@+id/key_one"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/key_two"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="36"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/key_three"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp" >
+
+            <Button
+                android:id="@+id/key_four"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/key_five"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="36"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/key_six"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp" >
+
+            <Button
+                android:id="@+id/key_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/key_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="36"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/key_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp" >
+
+            <Button
+                android:id="@+id/key_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key_two"
+                android:gravity="center"
+                android:text="完成" />
+
+            <Button
+                android:id="@+id/key_zero"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="36"
+                android:background="@drawable/btn_keyboard_key"
+                android:gravity="center"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/key_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="32"
+                android:background="@drawable/btn_keyboard_key_two"
+                android:gravity="center"
+                android:text="删除" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

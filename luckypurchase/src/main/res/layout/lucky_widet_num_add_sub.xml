@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:background="@drawable/lucky_bg_btn_style_white">
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:textSize="30dp"
+        android:textColor="@color/lucky_color_999"
+        android:text="-"/>
+
+    <EditText
+        android:id="@+id/etxt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/lucky_bg_btn_style_white"
+        android:focusable="true"
+        android:textSize="@dimen/lucky_size18"
+        android:textColor="@color/lucky_color_333"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:textSize="30dp"
+        android:textColor="@color/lucky_color_red"
+        android:text="+"/>
+
+</LinearLayout>

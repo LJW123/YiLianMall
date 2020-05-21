@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/library_module_color_bg">
+
+    <include layout="@layout/library_module_v4_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/library_module_merchant_margin15">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称        "
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <com.yilian.mylibrary.widget.ClearEditText
+                    android:id="@+id/et_company_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="公司名称"
+                    android:textColorHint="@color/color_999"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/size15"
+                    android:background="@null"
+                    android:padding="@dimen/padding15"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_lines"
+                android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="税号        "
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <com.yilian.mylibrary.widget.ClearEditText
+                    android:id="@+id/et_tax_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="15-20（企业报销时必填）"
+                    android:textSize="@dimen/size15"
+                    android:textColorHint="@color/color_999"
+                    android:textColor="@color/color_333"
+                    android:background="@null"
+                    android:padding="@dimen/padding15"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_lines"
+                android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开户银行"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:padding="@dimen/padding15"
+                    android:drawableRight="@mipmap/arrows_down_gray"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_lines"
+                android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开户省市"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <TextView
+                    android:id="@+id/tv_pro_and_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:padding="@dimen/padding15"
+                    android:drawableRight="@mipmap/arrows_down_gray"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/comm_back"
+                android:paddingLeft="10dp"
+                android:text="（*下拉列表未含有时请手动输入）"
+                android:textColor="#F22424"
+                android:textSize="10sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开户支行"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <com.yilian.mylibrary.widget.ClearEditText
+                    android:id="@+id/et_sub_bank_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请选择支行"
+                    android:textSize="@dimen/size15"
+                    android:textColorHint="@color/color_999"
+                    android:textColor="@color/color_333"
+                    android:background="@null"
+                    android:padding="@dimen/padding15"/>
+
+                <ImageView
+                    android:id="@+id/iv_sub_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrows_down_gray"
+                    android:padding="@dimen/padding15"/>
+            </LinearLayout>
+
+            <com.yilian.mall.widgets.ScrollListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:divider="@null"
+                android:paddingBottom="@dimen/padding15"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_lines"
+                android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银行账户"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <com.yilian.mylibrary.widget.ClearEditText
+                    android:id="@+id/et_bank_user"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="银行账户"
+                    android:textSize="@dimen/size15"
+                    android:inputType="number"
+                    android:textColorHint="@color/color_999"
+                    android:textColor="@color/color_333"
+                    android:background="@null"
+                    android:padding="@dimen/padding15"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_lines"
+                android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话号码"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <com.yilian.mylibrary.widget.ClearEditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="手机号"
+                    android:textSize="@dimen/size15"
+                    android:inputType="number"
+                    android:textColorHint="@color/color_999"
+                    android:textColor="@color/color_333"
+                    android:background="@null"
+                    android:padding="@dimen/padding15"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/library_module_color_lines"
+                android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                android:layout_marginRight="@dimen/library_module_merchant_margin15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单位地址"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/color_333"
+                    android:layout_marginLeft="@dimen/library_module_merchant_margin15"/>
+
+                <com.yilian.mylibrary.widget.ClearEditText
+                    android:id="@+id/et_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="公司住址"
+                    android:textSize="@dimen/size15"
+                    android:textColorHint="@color/color_999"
+                    android:textColor="@color/color_333"
+                    android:background="@null"
+                    android:padding="@dimen/padding15"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:horizontalSpacing="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开户许可证"
+                android:textSize="@dimen/size13"
+                android:textColor="@color/color_333"
+                android:layout_marginLeft="25dp"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/margin20"
+                android:background="@drawable/bg_solid_ccc"
+                android:onClick="Submit"
+                android:text="同意绑定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/library_module_size18" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

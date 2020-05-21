@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:background="@drawable/library_module_bg_warn_common"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="65dp">
+
+            <TextView
+                android:id="@+id/tv_remind_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:textColor="#333333"
+                android:textSize="15dp"
+                tools:text="您好，您的店铺即将到期" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_remind_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="15dp"
+                    tools:text=" 剩余：" />
+
+                <TextView
+                    android:id="@+id/tv_remind_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#F22424"
+                    android:textSize="15dp"
+                    tools:text=" 5天 " />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_remind_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:textColor="#333333"
+                android:textSize="15dp"
+                tools:text="请及时续费，以免影响您的正常使用" />
+
+            <TextView
+                android:id="@+id/tv_renew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/merchant_bg_btn_expire_warn"
+                android:gravity="center"
+                android:text="16dp"
+                android:textColor="@color/white"
+                tools:text="续缴平台运营费" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                tools:text="暂不续费" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/merchant_ic_expire_warn_top" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_atc_ranking"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_people_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74dp"
+            android:text=""
+            android:textColor="@color/color_white"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:id="@+id/tv_carve_up"
+            style="@style/jpMoneyFen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="@dimen/margin15"
+            android:background="@drawable/bg_carve_up_integral_photo"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="4dp"
+            android:text="" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:paddingBottom="@dimen/padding15"
+        android:paddingLeft="@dimen/padding15"
+        android:text="2017年10月13日"
+        android:textColor="@color/ccccccc"
+        android:textSize="@dimen/size15" />
+
+</LinearLayout>

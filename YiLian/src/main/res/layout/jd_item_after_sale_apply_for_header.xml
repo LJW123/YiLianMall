@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EFF3F6"
+        android:orientation="horizontal" />
+    <!--订单信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_15dp">
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号：293210245"
+            android:textColor="#999999"
+            android:textSize="@dimen/textSize_13dp" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="下单时间：2017-02-01 12:00:00"
+            android:textColor="#999999"
+            android:textSize="@dimen/textSize_13dp" />
+    </LinearLayout>
+    <View style="@style/line_horizontal" />
+</LinearLayout>

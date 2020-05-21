@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--新版商城 主色调 两侧全圆角按钮的背景-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="3dp" />
+    <solid android:color="@color/login_module_color_red" />
+    <padding
+        android:left="10dp"
+        android:right="10dp" />
+</shape>

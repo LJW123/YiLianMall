@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/library_module_color_green"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:paddingRight="@dimen/library_module_padding15">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/merchant_recode_white_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+
+            <TextView
+                android:id="@+id/tv_merchant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="店铺名称"
+                android:textColor="@color/library_module_color_333"
+                android:textSize="@dimen/library_module_size18" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/library_module_padding20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/library_module_margin10"
+                    android:text="应付金额:"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="@dimen/library_module_size13" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/library_module_color_red"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_merchant_rqcode"
+                android:layout_width="183dp"
+                android:layout_height="183dp"
+                android:paddingBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/merchant_default_jp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/library_module_margin10"
+                android:text="可使用益联商城APP/微信扫码付款"
+                android:textColor="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size12" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/library_module_padding15"
+            android:background="@drawable/merchant_bg_btn_white_radious3">
+
+            <ImageView
+                android:id="@+id/iv_merchant"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/merchant_default_jp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

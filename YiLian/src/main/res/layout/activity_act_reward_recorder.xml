@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"/>
+
+    <com.yilian.mall.widgets.SlidingTabLayout
+        android:background="@color/white"
+        android:id="@+id/top_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tl_indicator_color="@color/white"
+        app:tl_tab_space_equal="true"
+        app:tl_divider_color="@color/color_lines"
+        app:tl_divider_width="1px"
+        app:tl_divider_padding="@dimen/icon10"
+        app:tl_underline_height="1px"
+        app:tl_textSelectColor="@color/color_my_combat_gains"
+        app:tl_textUnselectColor="@color/color_333"
+        app:tl_textsize="@dimen/title_text_size_first">
+
+    </com.yilian.mall.widgets.SlidingTabLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

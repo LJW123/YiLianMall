@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="#00000000"
+    android:gravity="bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/address_edit_delete_ensure_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f4f4">
+
+            <TextView
+                android:id="@+id/btn_myinfo_sure"
+                android:layout_width="77dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="确认"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_myinfo_cancel"
+                android:layout_width="77dip"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_toLeftOf="@+id/btn_myinfo_sure"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.yilian.mall.widgets.wheel.views.WheelView
+                android:id="@+id/wv_address_province"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <com.yilian.mall.widgets.wheel.views.WheelView
+                android:id="@+id/wv_address_city"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.yilian.mall.widgets.wheel.views.WheelView
+                android:id="@+id/wv_address_area"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

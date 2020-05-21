@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <RadioGroup
+        android:id="@+id/sn_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_bottom_lines"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding5">
+
+        <RadioButton
+            android:id="@+id/sn_radio_home_page"
+            style="@style/homePageBottomButton"
+            android:drawableTop="@mipmap/sn_tab_home_page"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/sn_radio_classify"
+            style="@style/homePageBottomButton"
+            android:drawableTop="@mipmap/sn_tab_classify"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/sn_radio_brand_selected"
+            style="@style/homePageBottomButton"
+            android:drawableTop="@mipmap/sn_tab_brand"
+            android:text="品牌精选" />
+        <RadioButton
+            android:id="@+id/sn_radio_shopping_car"
+            style="@style/homePageBottomButton"
+            android:drawableTop="@mipmap/sn_tab_shopping_car"
+            android:text="购物车" />
+        <RadioButton
+            android:id="@+id/sn_radio_order"
+            style="@style/homePageBottomButton"
+            android:drawableTop="@mipmap/sn_tab_order"
+            android:text="苏宁订单" />
+    </RadioGroup>
+</FrameLayout>

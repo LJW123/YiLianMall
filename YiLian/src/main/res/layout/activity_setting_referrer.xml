@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting_referrer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.SettingReferrerActivity">
+
+    <include layout="@layout/jp_title"/>
+
+    <EditText
+        android:id="@+id/et_referrer_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:maxLength="11"
+        android:background="@color/white"
+        android:hint="请输入推荐人手机号"
+        android:padding="@dimen/padding15"
+        android:inputType="phone"
+        />
+
+    <Button
+        android:id="@+id/btn_bind_referrer"
+        style="@style/btnStyle"
+        android:layout_marginTop="@dimen/margin20"
+        android:text="绑定"
+        />
+</LinearLayout>

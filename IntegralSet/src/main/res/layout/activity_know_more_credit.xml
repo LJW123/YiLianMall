@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/know_more_back_rl"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:background="@drawable/understand_credit_gradation_back">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/return_white_layout"></include>
+
+            <TextView
+                android:id="@+id/search_equip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="了解信用"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18sp" />
+
+            <ImageView
+                android:id="@+id/know_more_credit_share_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/act_share_black"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/know_more_credit_information_img"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/know_more_credit_information_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_tishi_ljxy"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/temporary_credit_tv"
+            android:layout_width="92dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12sp"
+            android:gravity="center"
+            android:background="@mipmap/icon_linshixinyong"
+            />
+        <com.leshan.ylyj.customview.CreditScoreView
+            android:id="@+id/know_more_credit_radar_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="————我的信用等级————"
+                    android:textColor="@color/blue_grade"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/range_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="较差"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@drawable/range_gradation_back" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/medium_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="中等"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@drawable/medium_gradation_back" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/well_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="良好"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@drawable/well_gradation_back" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/excellent_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="优秀"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@drawable/excellent_gradation_back" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/brilliant_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:text="卓越"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_horizontal"
+                             />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@drawable/outstanding_gradation_back" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/grade_one_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"
+                        android:textSize="8sp"
+                        android:layout_marginRight="46dp" />
+
+                    <TextView
+                        android:id="@+id/grade_two_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="450"
+                        android:textSize="8sp"
+                        android:layout_marginRight="46dp" />
+
+                    <TextView
+                        android:id="@+id/grade_three_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="600"
+                        android:textSize="8sp"
+                        android:layout_marginRight="46dp" />
+
+                    <TextView
+                        android:id="@+id/grade_four_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="750"
+                        android:textSize="8sp"
+                        android:layout_marginRight="46dp" />
+
+                    <TextView
+                        android:id="@+id/grade_five_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="900"
+                        android:textSize="8sp"
+                        android:layout_marginRight="46dp" />
+
+                    <TextView
+                        android:id="@+id/grade_six_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="8sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/credit_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v4.view.ViewPager>
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/credit_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    app:ci_drawable_unselected="@mipmap/icon_kong"
+                    app:ci_drawable="@mipmap/icon_shi"
+                    android:layout_marginBottom="6dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

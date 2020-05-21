@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!--大牌专属-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <com.yilian.mall.shoppingcard.widgets.gallery.SpeedRecyclerView
+        android:id="@+id/v_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp" />
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:text="健康果参与健康保障"
+            android:textColor="@color/comm_letters"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/x" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/comm_line"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"/>
+
+    <com.yilian.mylibrary.widget.MyRadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="1"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="2"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn5"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn10"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="10"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn20"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="20"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn50"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="50"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn100"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="100"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn200"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="200"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn500"
+                style="@style/exchange_radioButton"
+                android:layout_margin="10dp"
+                android:text="500"/>
+
+        </LinearLayout>
+
+    </com.yilian.mylibrary.widget.MyRadioGroup>
+
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:background="@drawable/health_dialog_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tv_web_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读并同意"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/library_module_size13"/>
+
+                <TextView
+                    android:id="@+id/tv_web_kids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《少儿健康计划条款》"
+                    android:textColor="#009ED8"
+                    android:textSize="@dimen/size13"
+                    android:paddingTop="@dimen/library_module_padding10"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_web_lover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《中青年健康计划条款》"
+                    android:textColor="#009ED8"
+                    android:textSize="@dimen/size13"
+                    android:paddingTop="@dimen/library_module_padding10"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_web_parents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《中老年健康计划条款》"
+                    android:textColor="#009ED8"
+                    android:textSize="@dimen/size13"
+                    android:paddingTop="@dimen/library_module_padding10"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_web_self_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《综合意外计划条款》"
+                    android:textColor="#009ED8"
+                    android:textSize="@dimen/library_module_size11"
+                    android:paddingTop="@dimen/library_module_padding10"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_web_self_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《人身保险伤残评定标准》"
+                    android:textColor="#009ED8"
+                    android:textSize="@dimen/library_module_size11"
+                    android:paddingTop="@dimen/library_module_padding10"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/library_module_margin30"
+                android:layout_marginRight="@dimen/library_module_margin30"
+                android:background="@drawable/health_btn_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即参与"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="未 来 的 健 康 保 障 从 今 天 开 始"
+                android:textColor="@color/library_module_color_999"
+                android:textSize="@dimen/library_module_size11"
+                android:layout_marginBottom="@dimen/library_module_margin10"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

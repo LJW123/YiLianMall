@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.jd.activity.JDCommitOrderActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/color_white">
+
+                <Button
+                    android:id="@+id/btn_add_jd_address"
+                    style="@style/btnStyle"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginRight="75dp"
+                    android:background="@drawable/bg_stroke_blue"
+                    android:text="+  请添加收货地址"
+                    android:textColor="#5D90F8" />
+
+                <include
+                    android:id="@+id/include_shipping_info"
+                    layout="@layout/activity_jdcommit_order_header_address"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/color_white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/bg_jd_order_view" />
+
+            <include
+                android:id="@+id/include_single_goods_info"
+                layout="@layout/include_jd_commit_order_goods_detail_info"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/include_multiple_goods_info"
+                layout="@layout/include_jd_commit_order_shopping_cart_goods_list_info" />
+            <!--daigouquan 2018年08月07日17:19:36 代购券业务隐藏-->
+            <LinearLayout
+                android:id="@+id/ll_dai_gou_quan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_box_user_dai_gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_check_box_commit_use_dai_gou"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="代购券最高可抵用"
+                    android:textColor="@color/color_333"
+                    android:textSize="15dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_money_dai_gou"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/color_red"
+                    tools:text="$23.32" />
+            </LinearLayout>
+
+            <include
+
+                layout="@layout/include_jd_commit_order_express_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/color_white"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_order_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_15dp"
+                    android:text="商品金额"
+                    android:textColor="@color/color_333"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_gave_power_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_order_price_title"
+                    android:layout_marginBottom="@dimen/margin_15dp"
+                    android:text="送益豆"
+                    android:textColor="@color/color_333"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_gave_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_order_gave_power_title"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_red"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_freight_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_order_gave_power_title"
+                    android:text="运费"
+                    android:textColor="@color/color_333"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_fregith"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_order_freight_title"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_red"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_order_price_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_red"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_commit_order"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_red"
+            android:text="提交订单"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+</LinearLayout>

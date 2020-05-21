@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!---头部轮播图-->
+    <com.youth.banner.Banner
+        android:id="@+id/banner_top"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"/>
+    <!--广告位-->
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/iv_advert_up"
+        android:layout_width="match_parent"
+        android:layout_height="115dp" />
+    <!--图标列表-->
+    <include
+        android:id="@+id/include_icons"
+        layout="@layout/include_icon_list_lefen" />
+    <!--广告位-->
+    <ImageView
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_below="@id/banner_top"
+        android:id="@+id/iv_advert_below"
+        android:layout_width="match_parent"
+        android:layout_height="115dp" />
+    <include
+        android:id="@+id/include_activity_prefecture"
+        layout="@layout/online_mall_activity_area"/>
+</LinearLayout>

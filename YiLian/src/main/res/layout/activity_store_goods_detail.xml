@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.yilian.mall.widgets.ScrollViewContainer
+            android:id="@+id/sv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.yilian.mall.widgets.AbScrollView
+                android:id="@+id/sv_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_commodity_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="235dp" >
+                        </android.support.v4.view.ViewPager>
+
+                        <com.yilian.mall.widgets.ScreenNumView
+                            android:id="@+id/pager_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="5dp" >
+                        </com.yilian.mall.widgets.ScreenNumView>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/default_padding"
+                        android:paddingTop="@dimen/default_padding" >
+
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="33dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:lineSpacingExtra="5dp"
+                            android:maxLines="2"
+                            android:textColor="#3f4447"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/default_padding" >
+
+                        <TextView
+                            android:id="@+id/tv_integral_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/price"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4.7dp"
+                            android:paddingRight="6.3dp"
+                            android:textColor="#ff6823"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ticket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@mipmap/quan_bg"
+                            android:gravity="center"
+                            android:text="券"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_goods_fill_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="需补差价"
+                            android:textColor="#848689"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+
+
+                <TextView
+                    android:id="@+id/tv_goods_market_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/padding_left"
+                    android:layout_marginTop="17dp"
+                    android:textColor="#848689"
+                    android:textSize="12sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/default_padding"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/default_padding"
+                        android:paddingTop="5dp" >
+
+                        <RatingBar
+                            android:id="@+id/ratingBar_grade"
+                            style="@style/near_ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="0.1" />
+
+                        <TextView
+                            android:id="@+id/tv_grade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ratingBar_grade"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="0dp"
+                            android:text="@string/grade"
+                            android:textColor="#f88c00"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_sales_volume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/sales_volume_month"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/separate_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="14.3dp"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="12.3dp"
+                            android:paddingRight="0dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/commodity_brand"
+                                android:textColor="#838383"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_commodity_brand"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:textColor="#999999"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12.7dp"
+                            android:layout_marginRight="12.7dp"
+                            android:background="@color/separate_line" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="@dimen/default_padding" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/commodity_number"
+                                android:textColor="#838383"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_commodity_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19.3dp"
+                                android:textColor="#999999"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/separate_line" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f5f5" />
+
+                    <com.yilian.mall.widgets.NoScrollListView
+                        android:id="@+id/lv_commodity_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:listSelector="@color/transparent" >
+                    </com.yilian.mall.widgets.NoScrollListView>
+
+                    <ImageView
+                        android:id="@+id/imgView_pull_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#f5f5f5"
+                        android:src="@mipmap/tuodongck" />
+                </LinearLayout>
+</com.yilian.mall.widgets.AbScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/separate_line" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_commodity_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/rb_img_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableBottom="@drawable/blue_underline"
+                            android:drawablePadding="@dimen/default_padding"
+                            android:gravity="center"
+                            android:text="图文详情"
+                            android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                            android:textSize="15.0sp" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:background="@color/separate_line" />
+
+                        <RadioButton
+                            android:id="@+id/rb_commodity_param"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawablePadding="@dimen/default_padding"
+                            android:gravity="center"
+                            android:text="产品参数"
+                            android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                            android:textSize="15.0sp" />
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/separate_line" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f5f5" />
+
+                    <com.yilian.mall.widgets.NoScrollListView
+                        android:id="@+id/lv_img_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:divider="#ededed"
+                        android:dividerHeight="7dp"
+                        android:listSelector="@color/transparent" >
+                    </com.yilian.mall.widgets.NoScrollListView>
+
+                    <LinearLayout
+                        android:id="@+id/layout_no_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:src="@mipmap/little_person" />
+
+                        <TextView
+                            android:id="@+id/tv_no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#999999"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.yilian.mall.widgets.ScrollViewContainer>
+
+        <ImageView
+            android:id="@+id/imgView_go_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/fanhuidb"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/rg_commodity_detail_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/rb_img_text_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/blue_underline"
+                android:drawablePadding="@dimen/default_padding"
+                android:gravity="center"
+                android:text="图文详情"
+                android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:background="@color/separate_line" />
+
+            <RadioButton
+                android:id="@+id/rb_commodity_param_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/default_padding"
+                android:gravity="center"
+                android:text="产品参数"
+                android:textColor="@drawable/selector_commodity_detail_radio_txt_color"
+                android:textSize="15.0sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

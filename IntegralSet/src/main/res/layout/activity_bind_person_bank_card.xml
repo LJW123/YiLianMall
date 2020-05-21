@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical"
+    tools:context="com.leshan.ylyj.view.activity.bankmodel.BindPersonBankCardActivity">
+
+    <include
+        layout="@layout/library_module_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp" />
+
+    <include
+        android:id="@+id/include_bank_card_number"
+        layout="@layout/integral_combo_text_edit" />
+
+    <LinearLayout
+        android:id="@+id/ll_bank_card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/include_bank_name"
+            layout="@layout/integral_combo_text_edit" />
+
+        <include
+            android:id="@+id/include_bank_city"
+            layout="@layout/integral_combo_text_edit" />
+
+        <include
+            android:id="@+id/include_branch_bank_name"
+            layout="@layout/integral_combo_text_edit" />
+
+        <com.leshan.ylyj.customview.ScrollListView
+            android:id="@+id/mistView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:divider="@null"
+            android:paddingBottom="@dimen/padding15"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include_bank_phone"
+        layout="@layout/integral_combo_text_edit" />
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:clickable="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/integral_jp_bg_btn_gray_all_radius1"
+        android:text="同意绑定"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+</LinearLayout>

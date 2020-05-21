@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.ExchangeCashDeskActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="兑换券可用数量："
+            android:textColor="@color/color_333" />
+
+        <TextView
+            android:id="@+id/tv_user_can_use_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_cashier_desk_ticket"
+            android:drawablePadding="6dp"
+            android:textColor="@color/color_red"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="奖励支付："
+            android:textColor="@color/color_333" />
+
+        <TextView
+            android:id="@+id/tv_amount_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="营收额支付："
+            android:textColor="@color/color_333" />
+
+        <TextView
+            android:id="@+id/tv_amount_merchant_income"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp" />
+
+        <ImageView
+            android:id="@+id/iv_whether_use_merchant_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/library_module_cash_desk_on" />
+    </LinearLayout>
+
+    <View style="@style/outerLineStyle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="15dp"
+        android:text="选择支付方式"
+        android:textSize="13dp" />
+
+    <View style="@style/innerLineStyle" />
+
+    <include layout="@layout/item_pay_fragment_adapter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="共需兑换券"
+            android:textColor="@color/color_666" />
+
+        <TextView
+            android:id="@+id/tv_order_total_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_cashier_desk_ticket"
+            android:drawablePadding="6dp"
+            android:textColor="@color/color_red"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View style="@style/innerLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="需付运费"
+            android:textColor="@color/color_666" />
+
+        <TextView
+            android:id="@+id/tv_order_freight_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pay"
+        style="@style/btnStyle" />
+</LinearLayout>

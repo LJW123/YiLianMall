@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:text="最新物流"
+    android:orientation="vertical"
+    android:padding="@dimen/library_module_padding15"
+    android:textColor="@color/library_module_color_333"
+    android:layout_marginTop="@dimen/margin10"
+    android:textSize="@dimen/library_module_size15"
+    android:id="@+id/tv_just_tv">
+
+</TextView>

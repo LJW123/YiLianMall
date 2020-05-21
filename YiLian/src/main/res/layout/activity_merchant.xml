@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fcfdfd">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:onClick="onBack"
+            android:scaleType="centerInside"
+            android:src="@mipmap/bluejiantou" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/share_blue_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e0e0e0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="兑换中心"
+            android:textColor="#7a7a7c"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:src="@mipmap/duihuancenter_wushuju"
+        android:visibility="gone" />
+
+    <com.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="203dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="203dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/lls_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginRight="0dp"
+                    android:orientation="horizontal"></LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_merchant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#1d1d26"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingBar_grade"
+                    style="@style/comboRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/tv_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ratingBar_grade"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="0dp"
+                    android:textColor="#f88c00"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/ViewDividerDefault"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_merchant_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@mipmap/merchant_dingwei"
+                android:drawablePadding="11dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:textColor="#737373"
+                android:textSize="12sp" />
+
+            <View
+                style="@style/ViewDividerDefault"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="14dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_shopping_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@mipmap/merchant_time_2"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <View
+                style="@style/ViewDividerDefault"
+                android:layout_marginTop="15dp" />
+
+            <View
+                style="@style/ViewDividerDefault"
+                android:layout_marginBottom="15dp"
+                android:layout_height="14dp"
+                android:background="#f5f5f5"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@mipmap/merchant_detail"
+                android:drawablePadding="10dp"
+                android:text="兑换中心介绍"
+                android:textColor="#484d51"
+                android:textSize="13sp" />
+
+            <View
+                style="@style/ViewDividerDefault"
+                android:layout_marginBottom="14dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_shop_desp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:maxLines="3"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#656565" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="17dp"
+                android:background="#f5f5f5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="在售商品"
+                android:textColor="#484d51"
+                android:textSize="13sp" />
+
+            <View style="@style/ViewDividerDefault" />
+
+            <com.yilian.mall.widgets.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp">
+
+            </com.yilian.mall.widgets.NoScrollListView>
+
+            <View style="@style/ViewDividerDefault" />
+        </LinearLayout>
+    </com.pulltorefresh.library.PullToRefreshScrollView>
+
+    <View style="@style/ViewDividerDefault" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_filiale_to"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="goTo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/filiale_to_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="到这去"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/ll_filiale_tel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callTel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/filiale_tel_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="电话"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

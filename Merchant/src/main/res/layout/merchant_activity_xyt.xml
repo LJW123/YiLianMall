@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/merchant_v4_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/black">
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/library_module_default_jp_circle"
+                    android:layout_margin="@dimen/library_module_merchant_margin15"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="艾瑞尔旗舰店"
+                            android:textSize="@dimen/library_module_size14"
+                            android:textColor="@color/merchant_color_xyt_tv"
+                            android:layout_marginTop="@dimen/library_module_merchant_margin15"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务中心"
+                            android:textSize="@dimen/merchant_size10"
+                            android:textColor="@color/merchant_color_xyt_tv"
+                            android:layout_marginRight="@dimen/merchant_margin15"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/library_module_merchant_margin5">
+                        <ImageView
+                            android:id="@+id/iv_flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/library_module_merchant_margin5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个人信用通店铺"
+                            android:textSize="@dimen/library_module_size12"
+                            android:textColor="@color/merchant_color_xyt_tv"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="    有效期：2018-12-24"
+                            android:textSize="@dimen/library_module_size12"
+                            android:textColor="@color/merchant_color_xyt_tv"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/library_module_merchant_margin5">
+                        <TextView
+                            android:id="@+id/tv_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2年"
+                            android:textSize="@dimen/library_module_size12"
+                            android:textColor="@color/merchant_color_xyt_tv"/>
+
+                        <TextView
+                            android:id="@+id/tv_renew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   管理自动续费>>"
+                            android:textSize="@dimen/library_module_size12"
+                            android:textColor="@color/merchant_color_xyt_tv"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/library_module_merchant_margin15"
+                android:layout_marginRight="@dimen/library_module_merchant_margin15">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/library_module_margin20">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017年"
+                        android:textColor="#D7AE5C"
+                        android:textSize="@dimen/library_module_size14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"
+                        android:layout_gravity="center"
+                        android:textColor="#88D7AE5C"
+                        android:textSize="@dimen/library_module_size12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_progress_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"
+                        android:background="@drawable/library_module_bg_solid_d7ae5c"
+                        android:paddingLeft="@dimen/library_module_padding15"
+                        android:paddingRight="@dimen/library_module_padding15"
+                        android:paddingTop="@dimen/library_module_padding5"
+                        android:paddingBottom="@dimen/library_module_padding5"
+                        android:textSize="@dimen/library_module_size13"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/library_module_merchant_margin5"
+                        android:layout_marginBottom="@dimen/library_module_merchant_margin5"
+                        android:layout_marginLeft="50dp"/>
+
+                    <ProgressBar
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:id="@+id/progressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="7.5dp"
+                        android:layout_marginRight="7.5dp"
+                        android:layout_gravity="center"
+                        android:progressDrawable="@drawable/merchant_color_progressbar"
+                        android:max="1000"
+                        android:progress="300"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/library_module_margin20"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2018年"
+                        android:textColor="#D7AE5C"
+                        android:textSize="@dimen/library_module_size14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:layout_gravity="center"
+                        android:textColor="#88D7AE5C"
+                        android:textSize="@dimen/library_module_size12"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.yilianmall.merchant.widget.NoScrollGridView
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:scrollbars="none"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/library_module_margin10"
+                android:background="@color/merchant_color_bg"/>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/library_module_margin10"
+                android:background="@color/merchant_color_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="信用通"
+                    android:textSize="@dimen/library_module_size15"
+                    android:textColor="@color/library_module_color_333"
+                    android:paddingLeft="@dimen/library_module_padding15"
+                    android:paddingTop="@dimen/library_module_padding20"/>
+
+                <TextView
+                    android:id="@+id/tv_renew_xyt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动续费"
+                    android:textSize="@dimen/library_module_size13"
+                    android:textColor="#D7AE5C"
+                    android:drawablePadding="@dimen/library_module_padding10"
+                    android:drawableRight="@mipmap/merchant_icon_xyt_right_sanjiao"
+                    android:paddingLeft="@dimen/library_module_padding15"
+                    android:paddingRight="@dimen/library_module_padding15"
+                    android:paddingTop="@dimen/library_module_padding20"
+                    android:paddingBottom="@dimen/library_module_padding20"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_xyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/library_module_margin10"
+                android:background="@color/merchant_color_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="信用通特权"
+                android:textSize="@dimen/library_module_size15"
+                android:paddingLeft="@dimen/library_module_padding15"
+                android:paddingTop="@dimen/library_module_padding20"
+                android:textColor="@color/library_module_color_333"/>
+
+            <com.yilian.mylibrary.widget.CustomViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_dot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/library_module_margin10"
+                android:background="@color/merchant_color_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="店铺技术服务费"
+                    android:textSize="@dimen/library_module_size15"
+                    android:textColor="@color/library_module_color_333"
+                    android:paddingLeft="@dimen/library_module_padding15"
+                    android:paddingTop="@dimen/library_module_padding20"/>
+
+                <TextView
+                    android:id="@+id/tv_renew_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动续费"
+                    android:textSize="@dimen/library_module_size13"
+                    android:textColor="#D7AE5C"
+                    android:drawablePadding="@dimen/library_module_padding10"
+                    android:drawableRight="@mipmap/merchant_icon_xyt_right_sanjiao"
+                    android:paddingLeft="@dimen/library_module_padding15"
+                    android:paddingRight="@dimen/library_module_padding15"
+                    android:paddingTop="@dimen/library_module_padding20"
+                    android:paddingBottom="@dimen/library_module_padding20"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/library_module_margin10"
+                android:background="@color/merchant_color_bg"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7AE5C"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_bottom_cloud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="我的云图"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/merchant_icon_xyt_cloud"
+                android:drawablePadding="@dimen/merchant_padding5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/library_module_size14"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="电话咨询"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/merchant_icon_xyt_call"
+                android:drawablePadding="@dimen/merchant_padding5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/library_module_size14"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_online"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="在线咨询"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/merchant_icon_xyt_message"
+                android:drawablePadding="@dimen/merchant_padding5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/library_module_size14"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

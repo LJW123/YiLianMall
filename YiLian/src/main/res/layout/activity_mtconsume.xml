@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mtconsume"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.MTStoreConsumeActivity">
+
+    <include
+        layout="@layout/jp_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding20"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_cost"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size16"
+            />
+
+        <EditText
+            android:id="@+id/te_pay_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:gravity="right"
+            android:hint="@string/ask_waiter"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size13"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding20"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/award"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size16"
+            />
+
+        <TextView
+            android:id="@+id/tv_award_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/award_count"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size13"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_pay"
+        style="@style/btnStyleUnClick"
+        android:layout_marginTop="@dimen/margin15"
+        android:text="@string/affirm_pay"
+        />
+</LinearLayout>

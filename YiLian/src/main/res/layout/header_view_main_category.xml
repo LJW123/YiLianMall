@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.yilian.mall.widgets.InnerViewPager
+        android:id="@+id/vp_jp_local_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/default_jp_banner" />
+
+    <LinearLayout
+        android:id="@+id/ll_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon10"
+        android:layout_alignBottom="@id/vp_jp_local_fragment"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+    <com.yilian.mall.widgets.NoScrollGridView
+        android:id="@+id/gv_activity_5"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:numColumns="4" />
+
+</LinearLayout>

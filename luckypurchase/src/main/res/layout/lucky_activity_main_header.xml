@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        tl:indicator_height="5dp"
+        tl:indicator_width="5dp"
+        tl:indicator_drawable_selected="@drawable/library_module_bg_style_red_circle"/>
+
+    <include
+        android:id="@+id/include_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        layout="@layout/library_module__icon_list"/>
+
+    <LinearLayout
+        android:id="@+id/ll_notice_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/library_module_bg_white_2_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lucky_margin10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_lefen_letters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="4dp"
+                android:src="@mipmap/lucky_icon_news_notice1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/lucky_margin15"
+                android:gravity="right"
+                android:textSize="@dimen/lucky_size15"
+                android:drawableRight="@mipmap/library_module_gray_arrow"
+                android:drawablePadding="@dimen/lucky_padding5"
+                android:textColor="@color/lucky_color_333"
+                android:text="更多"/>
+        </LinearLayout>
+
+        <com.yilian.mylibrary.widget.NoticeView2
+            android:id="@+id/notice_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lucky_margin15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_notice_news2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/library_module_bg_white_2_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lucky_margin10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_lefen_letters2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="4dp"
+                android:src="@mipmap/lucky_icon_news_notice2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/lucky_margin15"
+                android:gravity="right"
+                android:textSize="@dimen/lucky_size15"
+                android:drawableRight="@mipmap/library_module_gray_arrow"
+                android:drawablePadding="@dimen/lucky_padding5"
+                android:textColor="@color/lucky_color_333"
+                android:text="更多"/>
+        </LinearLayout>
+
+        <com.yilian.mylibrary.widget.NoticeView2
+            android:id="@+id/notice_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lucky_margin15"/>
+    </LinearLayout>
+
+    <com.yilian.mylibrary.widget.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/lucky_bg_white_2_radius"
+        tl:library_module_tl_indicator_color="@color/library_module_color_red"
+        tl:library_module_tl_tab_space_equal="true"
+        tl:library_module_tl_textAllCaps="true"
+        tl:library_module_tl_textBold="SELECT"
+        tl:library_module_tl_textSelectColor="@color/library_module_color_red"
+        tl:library_module_tl_textUnselectColor="@color/library_module_color_333"
+        tl:library_module_tl_underline_color="@color/library_module_color_lines"
+        tl:library_module_tl_underline_height="1px"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

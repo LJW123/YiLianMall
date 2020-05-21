@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <com.yilian.mall.widgets.SlidingTabLayout
+        android:background="@color/color_status_redpackget"
+        android:id="@+id/top_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tl_indicator_color="@color/white"
+        app:tl_tab_space_equal="true"
+        app:tl_textBold="SELECT"
+        app:tl_underline_height="1px"
+        app:tl_textSelectColor="@color/white"
+        app:tl_textUnselectColor="@color/unselected_tab_redpackget"
+        app:tl_textsize="@dimen/title_text_size_first">
+
+    </com.yilian.mall.widgets.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

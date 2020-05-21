@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#9a000000"
+    android:paddingTop="90dp"
+    tools:context="com.yilian.mall.ui.ActClockInSuccessDialogActivity">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_color_blue_shade"
+        android:paddingTop="90dp"
+        android:src="@mipmap/bg_clock_in_success" />
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="打卡成功"
+        android:textColor="@android:color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="每日打卡时间5:00-8:00"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_title"
+        android:layout_alignRight="@id/iv_title"
+        android:layout_below="@id/iv_title"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="48dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="40dp"
+        android:text="你的早起奖励金将于今日"
+        android:textColor="@color/color_h1"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_title"
+        android:layout_alignRight="@id/iv_title"
+        android:layout_below="@id/tv_remind"
+        android:background="@android:color/white"
+        android:paddingBottom="28dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <Button
+            android:id="@+id/btn_close1"
+            style="@style/btnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#FE8019"
+            android:text="继续坚持一天" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_close2"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/rl_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/icon_clock_success_white_close" />
+</RelativeLayout>

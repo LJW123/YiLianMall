@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merchant_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="101dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="@dimen/merchant_margin30"
+            android:src="@mipmap/merchant_icon_extract_sus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/merchant_margin20"
+            android:text="提取营收申请已提交"
+            android:textColor="@color/merchant_c333333"
+            android:textSize="@dimen/merchant_size15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/merchant_margin15"
+            android:layout_marginTop="@dimen/merchant_margin10"
+            android:text="具体到账时间以银行处理为准"
+            android:textColor="@color/merchant_color_999"
+            android:textSize="@dimen/merchant_size12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/merchant_padding15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="银行卡"
+                android:textColor="@color/merchant_c333333"
+                android:textSize="@dimen/merchant_size12" />
+
+            <TextView
+                android:id="@+id/tv_card_nameandnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/merchant_c333333"
+                android:textSize="@dimen/merchant_size12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/merchant_margin20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="提取营收时间"
+                android:textColor="@color/merchant_c333333"
+                android:textSize="@dimen/merchant_size12" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/merchant_c333333"
+                android:textSize="@dimen/merchant_size12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/merchant_margin20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="提取营收金额"
+                android:textColor="@color/merchant_c333333"
+                android:textSize="@dimen/merchant_size12" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/merchant_c333333"
+                android:textSize="@dimen/merchant_size12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/merchant_margin20"
+        android:background="@drawable/merchant_bg_solid_red_90"
+        android:text="完 成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/merchant_margin20" />
+
+</LinearLayout>

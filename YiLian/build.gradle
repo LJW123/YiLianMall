@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.1'
+    defaultConfig {
+        applicationId "com.yilian.mall"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 56
+        versionName '2.2.8'
+//        方法已经超过65536
+        multiDexEnabled true
+//       ndk {
+//            abiFilters "armeabi"
+//        }
+
+//        resConfigs "zh"//只支持中文，用于减小包的大小
+        // 个推更新之后配置
+//正式Key
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "F4eA5fjhF7AW6lOfHlxZP2",
+                GETUI_APP_KEY   : "op2r3LNeK08NBv5A1EjFv9",
+                GETUI_APP_SECRET: "akLNkB8JuH69eOgP7m1tH2"
+        ]
+//测试Key
+//        manifestPlaceholders = [
+//                GETUI_APP_ID    : "3QWzQRhbc7AEcwtiLTU0G1",
+//                GETUI_APP_KEY   : "Y7xF1q7IyR8iz6UbHVQriA",
+//                GETUI_APP_SECRET: "Myz61FQuMU7SEyda5d3sx6"
+//        ]
+    }
+    signingConfigs {
+        debug {
+            storeFile file("yilian_debug.jks")
+            storePassword 'yilian'
+            keyAlias 'yilian'
+            keyPassword 'yilian'
+        }
+
+    }
+    buildTypes {
+
+        release {
+            resValue("string", "app_name", "益联益家")
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [
+                    A_MAP_KEY: "89864a4766846c587be04e6887fc1dba"
+            ]
+        }
+        debug {
+            resValue("string", "app_name", "益联益家debug")
+            applicationIdSuffix ".debug"
+            manifestPlaceholders = [
+                    A_MAP_KEY: "010295bf726829ce8588687abbc52917"
+            ]
+
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    useLibrary 'org.apache.http.legacy'
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:26.1.0'
+    compile project(':PullToRefreshListview')
+    compile project(':networkingmodule')
+    compile project(':loginmodule')
+    compile project(':Merchant')
+    compile project(':luckypurchase')
+    compile 'com.getui:sdk:2.11.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+//    compile files('libs/com.baidu.tts_2.3.1.20170808_e39ea89.jar')
+//    compile project(':IntegralSet')
+}
+repositories {
+    mavenCentral()
+}

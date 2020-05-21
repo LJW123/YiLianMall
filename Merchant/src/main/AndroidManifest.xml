@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yilianmall.merchant">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity android:name=".activity.MerchantSettledActivity" />
+        <activity
+            android:name=".activity.MerchantCertificateActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".activity.MerchantCenterActivity" />
+        <activity android:name=".activity.MerchantQrCodeActivity" />
+        <activity
+            android:name=".activity.MerchantOffLineDealActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.MerchantAuditActivity" />
+        <activity android:name=".activity.MerchantEditInformationActivity" />
+        <activity android:name=".activity.MerchantAddressActivity" />
+        <activity android:name=".activity.MerchantMoneyRecordActivity2" />
+        <activity android:name=".activity.MerchantChangeDiscountActivity" />
+        <activity android:name=".activity.MerchantDiscountChangeRecordActivity" />
+        <activity android:name=".activity.MerchantAgreementActivity" />
+        <activity
+            android:name=".activity.MerchantScoreExponentActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activity.MerchantApplyAgentCenterActivity" />
+        <activity android:name=".activity.MerchantResaleActivity" />
+        <activity android:name=".activity.MerchantCollectionRqcodeActivity" />
+        <activity android:name=".activity.MerchantResalePayActivity" />
+        <activity android:name=".activity.MerchantPayActivity" />
+        <activity android:name=".activity.MerchantComboManageActivity" />
+        <activity android:name=".activity.MerchantComboOrderDetailActivity2" />
+        <activity
+            android:name=".activity.MerchantInputBarCodeSearchActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.MerchantBarcodeTransactionRecodeActivity" />
+        <activity
+            android:name=".activity.BarCodeScanGoodResultActivity"
+            android:theme="@style/merchant_dialog_activity" />
+        <activity android:name=".activity.MerchantShopActivity" />
+        <activity
+            android:name=".activity.MerchantChooseDealTypeActivity"
+            android:theme="@style/merchant_dialog_activity" />
+        <activity
+            android:name=".activity.MerchantManagerActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".activity.MerchantManagerDetailActivity" />
+        <!-- 提取营收页面 -->
+        <activity android:name=".activity.MerchantExtractRevenueActivity" />
+        <!-- 提取营收成功页面 -->
+        <activity android:name=".activity.MerchantExtractSucActivity" />
+        <!-- 我的营收页面 -->
+        <activity android:name=".activity.MerchantMyRevenueActivity" />
+        <!-- 营收选择绑定银行卡页面 -->
+        <activity android:name=".activity.MerchantRevenueBindCardActivity" />
+        <activity
+            android:name=".activity.MerchantChooseDialogActivity"
+            android:theme="@style/merchant_dialog_activity" />
+        <activity android:name=".activity.MerchantOrderListActivity" />
+        <activity android:name=".activity.MerchantOrderDetailsActivity" />
+        <activity
+            android:name=".activity.MerchantExpressSelectActivity"
+            android:theme="@style/merchant_Theme.Translucent" />
+        <activity android:name=".activity.MerchantAfterSaleListActivity" />
+        <activity android:name=".activity.MerchantAfterSaleDetailsActivity" />
+        <activity
+            android:name=".activity.MerchantAfterSaleRefuseDialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activity.MerchantResalePaySuccessActivity" />
+        <activity android:name=".activity.MerchantSendRedPackgeActivity" />
+        <activity android:name=".activity.MerchantStealedPackgeDetialsActivity" />
+        <activity android:name=".activity.MerchantThrowedRecorderActivity" />
+        <activity android:name=".activity.MerchantSendPackgeRecorderActivity" />
+        <!-- 商家查看二维码 2018-2-5 -->
+        <activity android:name=".activity.centermodel.MerchantInfoQrCodeActivity" />
+        <activity android:name=".activity.MerchantChooseQrCodeActivity" />
+        <activity android:name=".activity.MerchantExchangeQrCodeActivity"></activity>
+        <!--待核销兑换券-->
+        <activity android:name=".activity.MerchantTicketActivity" />
+    </application>
+
+</manifest>

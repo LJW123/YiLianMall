@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_marginLeft="@dimen/size15"
+        android:layout_marginRight="@dimen/size15"
+        android:padding="@dimen/size15"
+        android:background="@drawable/bg_white_coner_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="@dimen/size18"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加备注"/>
+        <EditText
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLength="12"
+            android:textSize="@dimen/size15"
+            android:textColor="@color/color_333"
+            android:id="@+id/et_input_mark"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/none_color"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_lines"/>
+        <TextView
+            android:layout_marginTop="@dimen/size10"
+            android:textColor="@color/color_999"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最多输入12个字"/>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_calcel"
+                android:textSize="@dimen/size18"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_999"
+                android:text="取消"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_sure"
+                android:textSize="@dimen/size18"
+                android:gravity="center_horizontal"
+                android:textColor="@color/red_stasus_color"
+                android:text="确认"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

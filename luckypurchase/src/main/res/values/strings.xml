@@ -1,0 +1,8 @@
+<resources>
+    <string name="lucky_app_name">luckypurchase</string>
+    <string name="lucky_system_busy">系统繁忙，请稍后再试</string>
+    <string name="lucky_show_no_tv">请您讲两句吧</string>
+    <string name="lucky_show_much_tv">请最多200字哦</string>
+    <string name="lucky_show_no_img">中奖了怎么能没有图片呢~</string>
+    <string name="lucky_user_no_name">暂无昵称</string>
+</resources>

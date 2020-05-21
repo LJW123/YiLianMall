@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/bluejiantou"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="onBack"
+        android:paddingLeft="15dp"
+        android:text="领奖励记录"
+        android:textSize="15sp"
+        android:textColor="#7a7a7c" />
+    <com.yilian.mall.widgets.NoScrollListView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.yilian.mall.widgets.NoScrollListView>
+
+</LinearLayout>

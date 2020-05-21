@@ -1,0 +1,8 @@
+<com.pulltorefresh.library.PullToRefreshListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ptrlv_mt_package_comment_list"
+    tools:context="com.yilian.mall.ui.fragment.MTPackageCommentListAllFragment">
+</com.pulltorefresh.library.PullToRefreshListView>

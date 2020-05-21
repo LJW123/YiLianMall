@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/merchant_color_white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/v3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/merchant_color_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/merchant_padding15"
+            android:text="取消"
+            android:textColor="@color/merchant_color_333"
+            android:textSize="@dimen/merchant_size15"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/v3Left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/merchant_padding10"
+                android:paddingRight="@dimen/merchant_padding10"
+                android:src="@mipmap/merchant_v3back"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/v3Title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/merchant_color_333"
+                android:textSize="@dimen/merchant_size18" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/merchant_padding10"
+                android:paddingRight="@dimen/merchant_padding10"
+                android:src="@mipmap/merchant_v3_cart_bottom"
+                android:textSize="@dimen/merchant_size15" />
+
+            <ImageView
+                android:id="@+id/v3Shop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/merchant_padding10"
+                android:paddingRight="@dimen/merchant_padding10"
+                android:src="@mipmap/merchant_v3_cart_bottom"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/v3Share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/merchant_padding10"
+                android:paddingRight="@dimen/merchant_padding15"
+                android:src="@mipmap/merchant_v3share"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingRight="@dimen/merchant_padding15"
+                android:textSize="@dimen/merchant_size15"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/v3Back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="@dimen/merchant_padding10"
+            android:paddingRight="@dimen/merchant_padding10"
+            android:src="@mipmap/merchant_v3back" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/merchant_color_lines" />
+</LinearLayout>

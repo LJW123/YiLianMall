@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/merchant_v4_title"/>
+
+    <com.yilian.mylibrary.widget.ClearEditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/library_module_size14"
+        android:textColor="@color/library_module_color_333"
+        android:hint="请填写店铺名称"
+        android:layout_marginLeft="@dimen/merchant_margin15"
+        android:layout_marginRight="@dimen/merchant_margin15"
+        android:layout_marginTop="@dimen/merchant_margin15"
+        android:paddingTop="@dimen/merchant_padding15"
+        android:theme="@style/merchant_MyEditText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更改店铺名称后必须经过平台审核才能通过"
+        android:textSize="@dimen/library_module_size12"
+        android:textColor="@color/library_module_color_999"
+        android:layout_marginTop="@dimen/merchant_margin10"
+        android:layout_marginLeft="@dimen/merchant_margin15"
+        android:layout_marginRight="@dimen/merchant_margin15"/>
+
+</LinearLayout>

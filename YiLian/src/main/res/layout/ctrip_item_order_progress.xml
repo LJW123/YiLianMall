@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_15dp"
+    android:paddingRight="60dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_14dp"
+            tools:text="07-04" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_12dp"
+            tools:text="15:16" />
+    </LinearLayout>
+    <!--末尾显示样式-->
+    <RelativeLayout
+        android:id="@+id/rl_end"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <View
+            style="@style/line_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25dp" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:background="@mipmap/ctrip_order_progress_end" />
+    </RelativeLayout>
+    <!--中间显示样式-->
+    <RelativeLayout
+        android:id="@+id/rl_middle"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <View
+            style="@style/line_vertical"
+            android:layout_centerInParent="true" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@mipmap/ctrip_order_progress_head" />
+    </RelativeLayout>
+    <!--头部显示样式-->
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <View
+            style="@style/line_vertical"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:background="@mipmap/ctrip_order_progress_head" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/textSize_14dp"
+        tools:text="内容"/>
+</LinearLayout>

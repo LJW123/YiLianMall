@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9a000000"
+    android:paddingTop="140dp"
+    tools:context="com.yilian.mall.ui.ActClockRuleDialogActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="256dp"
+        android:layout_height="344dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_clock_in_rule"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_clock_in_rule_title" />
+
+        <ImageView
+            android:id="@+id/iv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_title1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:src="@mipmap/icon_clock_in_rule_title2" />
+
+        <TextView
+            android:id="@+id/tv_open_rewardnotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_title2"
+            android:layout_marginTop="26dp"
+            android:text="1.每天1奖券参与挑战\n\n2.早上5:00-8:00打卡\n\n3.按时间打卡，可随机瓜分当日全部奖励金"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_show_detail_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:clickable="true"
+            android:text="@string/clock_in_rule"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_close2"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/rl_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/icon_clock_success_white_close" />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/lucky_white">
+
+    <include layout="@layout/lucky_include_item_goods_details"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/library_module_margin10"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:paddingRight="@dimen/library_module_padding15"
+        android:paddingBottom="@dimen/lucky_padding15"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/library_module_margin10"
+            android:gravity="center"
+            android:background="@drawable/library_module_bg_style_orange_empty_15"
+            android:textSize="@dimen/lucky_size14"
+            android:textColor="@color/lucky_color_orange"
+            android:text="分享"/>
+
+        <TextView
+            android:id="@+id/tv_show_line"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/library_module_bg_style_red_empty_15"
+            android:textSize="@dimen/lucky_size14"
+            android:textColor="@color/library_module_color_red"
+            android:text="晒单"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/lucky_color_bg"/>
+
+</LinearLayout>

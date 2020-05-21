@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin15"
+            android:src="@mipmap/shop_logo" />
+
+        <TextView
+            android:id="@+id/tv_shop_name1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size15" />
+
+        <TextView
+            android:id="@+id/order_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin15"
+            android:text=""
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <com.yilian.mall.widgets.NoScrollListView
+        android:id="@+id/goods_order_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding15">
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="实付："
+            android:textColor="@color/color_h1"
+            android:textSize="@dimen/size12" />
+
+        <TextView
+            android:id="@+id/goods_money1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size15" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/goods_integral"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="@color/color_green"-->
+        <!--android:textSize="@dimen/size15" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_score"-->
+        <!--style="@style/jpMoneyFen"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:paddingLeft="3dp"-->
+        <!--android:paddingRight="3dp"-->
+        <!--android:text="分"-->
+        <!--android:textSize="@dimen/size12"-->
+        <!--android:visibility="gone" />-->
+
+        <TextView
+            android:id="@+id/tv_goods_beans"
+            style="@style/jpLeDou"
+            android:drawablePadding="3dp"
+            android:drawableRight="@mipmap/icon_ledou"
+            android:visibility="gone"
+            tools:text="送 5351.12" />
+
+        <TextView
+            android:id="@+id/tv_icon_integral"
+            style="@style/jpMoneyQuan"
+            android:layout_gravity="center_vertical"
+            android:text="券"
+            android:textSize="@dimen/size12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_wheel_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="兑奖订单"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size15"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_buy"
+                style="@style/jpMoneyFen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/padding15"
+                android:paddingRight="@dimen/padding15"
+                android:paddingTop="5dp"
+                android:text="去支付"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size12"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

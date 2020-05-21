@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="merchant_value" format="integer|reference"/>
+    <attr name="merchant_minValue" format="integer|reference"/>
+    <attr name="merchant_maxValue" format="integer|reference"/>
+    <attr name="merchant_lefenlayout" format="reference"/>
+    <attr name="merchant_editBackground" format="reference"/>
+    <attr name="merchant_buttonAddBackgroud" format="reference"/>
+    <attr name="merchant_buttonSubBackgroud" format="reference"/>
+
+    
+    <declare-styleable name="MerchantNumberAddSubView">
+
+        <attr name="merchant_lefenlayout"/>
+        <attr name="merchant_value"/>
+        <attr name="merchant_minValue"/>
+        <attr name="merchant_maxValue"/>
+        <attr name="merchant_editBackground"/>
+        <attr name="merchant_buttonAddBackgroud"/>
+        <attr name="merchant_buttonSubBackgroud"/>
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_filtrate_four_left"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:background="@color/btn_key_off"
+            ></ListView>
+
+        <ListView
+            android:id="@+id/lv_filtrate_four_right"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            ></ListView>
+    </LinearLayout>
+
+    <include layout="@layout/layout_filtrate_buttom" />
+
+</LinearLayout>

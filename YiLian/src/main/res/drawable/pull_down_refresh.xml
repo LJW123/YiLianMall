@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    <item android:drawable="@mipmap/xiaoleone" android:duration="150"></item>
+    <item android:drawable="@mipmap/xiaoletwo" android:duration="150"></item>
+    <item android:drawable="@mipmap/xiaolethree" android:duration="150"></item>
+    <item android:drawable="@mipmap/xiaolefour" android:duration="150"></item>
+    <item android:drawable="@mipmap/xiaolefive" android:duration="150"></item>
+    <item android:drawable="@mipmap/xiaolesix" android:duration="150"></item>
+    <item android:drawable="@mipmap/xiaoleseven" android:duration="150"></item>
+
+</animation-list>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- A light Holo shade of 6c6c6c -->
+    <color name="merchant_holo_gray_light">#ff6c6c6c</color>
+    <color name="merchant_result_view">#b0000000</color>
+    <color name="merchant_viewfinder_mask">#60000000</color>
+    <color name="merchant_possible_result_points">#c0ffff00</color>
+    <color name="merchant_b3b3b3">#b3b3b3</color>
+    <color name="merchant_c333333">#333333</color>
+    <color name="merchant_white">#ffffff</color>
+    <color name="merchant_black">#000000</color>
+    <color name="merchant_white_alpha">#88ffffff</color>
+    <color name="merchant_v3_title_bg">#FCFDFD</color>
+    <color name="merchant_near_background_radio">#fcfcfc</color>
+    <color name="merchant_near_area_lv_background_two">#f8f8f8</color>
+    <color name="merchant_view_line">#bbe4e2e0</color>
+    <!--主色调-->
+    <color name="merchant_color_red">#fe5062</color>
+    <color name="merchant_color_red_50">#88FE5062</color>
+    <!--警示辅助色-->
+    <color name="merchant_color_orange">#ff7701</color>
+    <color name="merchant_myinfo_red_bg">#F35951</color>
+    <!--背景色-->
+    <color name="merchant_color_bg">#f7f7f7</color>
+    <color name="merchant_color_white">#ffffff</color>
+    <!--线条颜色-->
+    <color name="merchant_color_lines">#e7e7e7</color>
+
+    <color name="merchant_upright_line">#D5D5D5</color>
+    <!--重要字体-->
+    <color name="merchant_color_333">#333333</color>
+    <!--次要字体-->
+    <color name="merchant_color_666">#666666</color>
+    <color name="merchant_color_555">#5a5a5a</color>
+    <!--辅助字体-->
+    <color name="merchant_color_999">#999999</color>
+    <color name="merchant_color_888">#888888</color>
+    <color name="merchant_color_a8">#A8A8AA</color>
+    <color name="merchant_bac_color">#f5f5f5</color>
+    <!--一级标题-->
+    <color name="merchant_color_h1">#4a4a4a</color>
+    <color name="merchant_tab_title_bg_color">#fcfdfd</color>
+
+
+    <color name="merchant_btn_click">#D7AE5C</color>
+
+    <!--按钮点击时的颜色-->
+    <color name="merchant_btn_clicking">#d84d47</color>
+
+    <!--按钮不可点击时的颜色  #bbbbbb-->
+    <color name="merchant_btn_unclick">#bbbbbb</color>
+    <!--按钮不可点击时的颜色  #bbbbbb-->
+    <color name="merchant_invite_friend_bg">#fe4256</color>
+
+    <color name="merchant_color_tint_yellow">#E5B369</color>
+
+    <color name="merchant_color_item_yellow">#CEA76E</color>
+    <color name="merchant_color_gray">#EFEFEF</color>
+    <color name="merchant_color_dark_yellow">#E7BB6D</color>
+    <color name="merchant_color_blue">#5B9DFF</color>
+    <color name="merchant_color_pink">#EB61AC</color>
+    <color name="merchant_color_green">#00C989</color>
+    <color name="merchant_color_register">#5EAC8E</color>
+    <color name="merchant_regist_code">#6DCBA7</color>
+    <color name="merchant_color_login_bg">#F75A53</color>
+    <color name="merchant_color_shorcut_login">#FF9E9A</color>
+    <color name="merchant_login_pwd">#FF9E9A</color>
+    <color name="merchant_swipeLoadstart">#FF8C87</color>
+    <color name="merchant_swipeLoadend">#ff3232</color>
+    <color name="merchant_color_forget_pwd_bg">#4F83CB</color>
+    <color name="merchant_forget_pwd_code">#79A5E2</color>
+    <color name="merchant_text_icon">#E5BF86</color>
+    <color name="merchant_wx_login">#31D94C</color>
+    <color name="merchant_wx_login_click">#9931D94C</color>
+    <color name="merchant_fen_bg">#F5586A</color>
+    <color name="merchant_colorPrimary">#1CAF9A</color>
+    <color name="merchant_colorPrimaryDark">#1CAF9A</color>
+    <color name="merchant_colorAccent">#FF4081</color>
+    <color name="merchant_color_downTimebg">#404040</color>
+    <color name="merchant_color_residue">#F19149</color>
+    <color name="merchant_color_now_get">#FFC155</color>
+    <color name="merchant_color_lose_efficacy">#7E91A4</color>
+    <color name="merchant_color_fff8c9">#fff8c9</color>
+    <color name="merchant_color_243352">#243352</color>
+    <color name="merchant_color_my_bule">#50A2FE</color>
+    <color name="merchant_color_66ffffff">#66000000</color>
+    <color name="merchant_color_yellow_bg">#fff5e7</color>
+    <color name="merchant_color_yellow">#feb44d</color>
+    <color name="merchant_color_yellow_50">#88feb44d</color>
+    <color name="merchant_color_ccc">#cccccc</color>
+
+    <color name="merchant_color_bg_blue">#359DF4</color>
+    <color name="merchant_color_goods_normal">#188AED</color>
+    <color name="merchant_color_goods_normal_bg">#E5F6FF</color>
+    <color name="merchant_color_goods_yhs">#14C99C</color>
+    <color name="merchant_color_goods_yhs_bg">#E4FFF8</color>
+    <color name="merchant_color_goods_jfg">#FF801A</color>
+    <color name="merchant_color_goods_jfg_bg">#FFEFE2</color>
+
+    <!-- 分割线颜色 -->
+    <color name="merchant_separate_line">#dedede</color>
+    <color name="merchant_color_99000000">#99000000</color>
+
+    <color name="merchant_color_status_redpackget">#ffde554d</color>
+    <color name="merchant_color_xyt_tv">#FFFEFE</color>
+    <color name="merchant_color_transparent">#00000000</color>
+    <color name="merchant_color_d7ae5c">#d7ae5c</color>
+    <color name="merchant_color_C59651">#C59651</color>
+
+
+    <color name="merchant_color_FFD7AE5C">#FFD7AE5C</color>
+    <color name="merchant_color_CDCAC8">#CDCAC8</color>
+
+    <color name="merchant_color_FF542B">#FF542B</color>
+    <color name="merchant_color_282828">#282828</color>
+    <color name="merchant_color_108ee9">#108ee9</color>
+</resources>

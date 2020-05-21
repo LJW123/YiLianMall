@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/v3_title"
+        android:id="@+id/v3_title"/>
+
+    <com.yilian.mall.widgets.NoScrollRecyclerView
+        android:id="@+id/rv_card_filtrate_list"
+        android:layout_below="@+id/v3_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15dp"
+        >
+    </com.yilian.mall.widgets.NoScrollRecyclerView>
+
+
+    <Button
+        android:id="@+id/tv_query"
+        android:layout_below="@+id/rv_card_filtrate_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="查询"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        android:gravity="center"
+        style="@style/redbg_radiu23_margin15"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lucky_margin30"
+        android:layout_marginBottom="@dimen/lucky_margin10"
+        android:src="@mipmap/lucky_barcode_nothing"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lucky_margin30"
+        android:textSize="@dimen/library_module_size15"
+        android:textColor="@color/library_module_color_999"
+        android:text="本次活动尚未有人参与，快来参加吧！"/>
+
+</LinearLayout>

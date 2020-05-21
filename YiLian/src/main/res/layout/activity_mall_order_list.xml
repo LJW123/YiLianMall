@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/v3_title"/>
+
+    <RadioGroup
+        android:id="@+id/mall_order_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mall_order_first_rb"
+            style="@style/orderRadioButton"
+            android:checked="true"
+            android:drawableBottom="@drawable/line_red2dp"
+            android:drawablePadding="@dimen/default_padding"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:text="全部" />
+
+        <RadioButton
+            android:id="@+id/mall_order_second_rb"
+            style="@style/orderRadioButton"
+            android:drawableBottom="@color/white"
+            android:drawablePadding="@dimen/default_padding"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:text="待付款"/>
+
+        <RadioButton
+            android:id="@+id/mall_order_third_rb"
+            style="@style/orderRadioButton"
+            android:drawableBottom="@color/white"
+            android:drawablePadding="@dimen/default_padding"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:text="待收货"/>
+
+        <RadioButton
+            android:id="@+id/mall_order_four_rb"
+            style="@style/orderRadioButton"
+            android:drawableBottom="@color/white"
+            android:drawablePadding="@dimen/default_padding"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:text="已完成"/>
+
+        <RadioButton
+            android:id="@+id/mall_order_evaluate_rb"
+            style="@style/orderRadioButton"
+            android:drawableBottom="@color/white"
+            android:drawablePadding="@dimen/default_padding"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:text="待评价"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_mall_order_list_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

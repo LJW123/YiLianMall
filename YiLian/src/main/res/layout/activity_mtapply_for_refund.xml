@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mtapply_for_refund"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.MTApplyForRefundActivity">
+<!--该界面重复 已废弃-->
+    <include layout="@layout/jp_title"/>
+
+    <com.yilian.mall.widgets.NoScrollListView
+        android:layout_width="match_parent"
+        android:id="@+id/nslv_apply_refund_content"
+        android:layout_height="match_parent">
+
+    </com.yilian.mall.widgets.NoScrollListView>
+
+    <Button
+        style="@style/btnStyle"
+        android:text="@string/apply_for_refund"
+        />
+</LinearLayout>

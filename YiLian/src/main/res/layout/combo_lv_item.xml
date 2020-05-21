@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/view_include_merchant_head"
+            layout="@layout/mt_item_merchant_head"/>
+
+
+        <com.yilian.mall.widgets.NoScrollListView
+            android:id="@+id/lv_combo_item"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.yilian.mall.widgets.NoScrollListView>
+
+        <TextView
+            android:id="@+id/tv_look_more"
+            android:text="查看更多套餐"
+            android:textSize="@dimen/size12"
+            android:textColor="@color/color_h1"
+            android:gravity="center"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

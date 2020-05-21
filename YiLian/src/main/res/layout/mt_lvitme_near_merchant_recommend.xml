@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding10">
+
+    <ImageView
+        android:id="@+id/iv_near_merchant_icon"
+        android:layout_width="105dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/margin10"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_module_default_jp"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <LinearLayout
+        android:id="@+id/ll_near_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_near_merchant_icon"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_near_merchant_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/size15"
+            android:paddingTop="@dimen/padding10"/>
+
+        <TextView
+            android:id="@+id/tv_privilege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin15"
+            android:background="@mipmap/privilege"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="@dimen/padding5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size12"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_merchan_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@id/ll_near_merchant"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_toRightOf="@id/iv_near_merchant_icon"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/merchant_ratingBar"
+            style="@style/comboRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_graded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:text=""
+            android:textColor="#ffb96d"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="4dp"
+            android:src="@mipmap/ic_shops_praise_off" />
+
+        <TextView
+            android:id="@+id/tv_presence_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_merchan_rating"
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_toRightOf="@id/iv_near_merchant_icon">
+
+        <TextView
+            android:id="@+id/tv_merchant_categroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/size13" />
+
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin15"
+            android:text=""
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/size13" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"
+        android:layout_below="@id/iv_near_merchant_icon"
+        android:layout_marginTop="@dimen/margin10"/>
+
+</RelativeLayout>

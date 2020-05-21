@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/library_module_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/merchant_icon_tanhao" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺信息未提交"
+                    android:textColor="@color/library_module_color_333"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我们会在提交后3-5个工作日给出审核结果,如有信息不符等问题请联系客服"
+                    android:textColor="@color/library_module_color_999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="30dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:id="@+id/iv_status_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/merchant_icon_yi" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/iv_status_1"
+                android:layout_marginLeft="10dp"
+                android:background="@color/library_module_color_lines" />
+
+            <ImageView
+                android:id="@+id/iv_status_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:src="@mipmap/merchant_icon_er" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/iv_status_2"
+                android:layout_marginLeft="10dp"
+                android:background="@color/library_module_color_lines" />
+
+            <ImageView
+                android:id="@+id/iv_status_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:src="@mipmap/merchant_icon_san" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/iv_status_3"
+                android:layout_marginLeft="10dp"
+                android:background="@color/library_module_color_lines" />
+
+            <ImageView
+                android:id="@+id/iv_status_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view3"
+                android:src="@mipmap/merchant_icon_si" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_status_1"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/iv_status_1"
+                android:text="提交店铺信息"
+                android:textColor="@color/library_module_color_333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_status_2"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/iv_status_2"
+                android:text="提交资质审核"
+                android:textColor="@color/library_module_color_333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_status_3"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/iv_status_3"
+                android:text="技术服务费"
+                android:textColor="@color/library_module_color_333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_status_4"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/iv_status_4"
+                android:text="等待审核"
+                android:textColor="@color/library_module_color_333"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_merchant_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ECECEC"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="店铺信息"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="店铺名称"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_merchant_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="2"
+                        android:text="aaa" />
+                </LinearLayout>
+
+                <View style="@style/library_module_innerLineStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="店铺地址"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_merchant_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="2"
+                        android:text="aaa" />
+                </LinearLayout>
+
+                <View style="@style/library_module_innerLineStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="店铺属性"
+                        android:textColor="@color/library_module_color_999"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_merchant_attribute"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="2"
+                        android:text="aaa" />
+                </LinearLayout>
+
+                <View style="@style/library_module_innerLineStyle" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_commit_enter"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="#CEA76E"
+                android:text="提交资质"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding15"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/default_head_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_head_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/size12"
+                    android:textColor="@color/color_333"/>
+
+                <TextView
+                    android:id="@+id/tv_head_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/act_zan_off"
+                    android:drawablePadding="@dimen/padding5"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_head_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="9"
+                android:textSize="@dimen/size13"
+                android:textColor="@color/color_333"
+                android:layout_marginTop="@dimen/margin20"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin20">
+                <TextView
+                    android:id="@+id/tv_head_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/size10"
+                    android:textColor="@color/ccccccc"/>
+
+                <TextView
+                    android:id="@+id/tv_head_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/ccccccc"
+                    android:textSize="@dimen/size11" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_lines"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部评论"
+        android:textColor="@color/color_h1"
+        android:textSize="@dimen/size13"
+        android:padding="@dimen/padding15"/>
+
+</LinearLayout>

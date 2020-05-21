@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:orientation="vertical"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证短信验证码"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <View style="@style/line_horizontal"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/verification_phone_tail_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入手机尾号5277接收到的短信验证码"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/verification_identifying_code_et"
+                android:layout_width="115dp"
+                android:layout_height="55dp"
+                android:hint="短信验证码"
+                android:background="@drawable/verification_code_gray_side_line"
+                android:textSize="12sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/verification_count_down_tv"
+                android:layout_width="115dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:text="发送验证码"
+                android:gravity="center"
+                android:background="@drawable/verification_code_gray_side_line" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_horizontal"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/verification_cancel_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="#999999" />
+
+        <View style="@style/line_vertical"></View>
+
+        <TextView
+            android:id="@+id/verification_confirm_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:gravity="center"
+            android:textColor="#f93a06"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

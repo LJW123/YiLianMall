@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.SettingActivity">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_on_off_voice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:drawableRight="@mipmap/cash_desk_on"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="语音播报"
+        android:textColor="#828282"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="versionUpdate"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:textColor="#828282"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right_sanjiao"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:drawableRight="@mipmap/right_sanjiao"
+        android:gravity="center_vertical"
+        android:onClick="checkUpdata"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="检查更新"
+        android:textColor="#828282"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:drawableRight="@mipmap/right_sanjiao"
+        android:gravity="center_vertical"
+        android:onClick="question"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="常见问题"
+        android:textColor="#828282"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:drawableRight="@mipmap/right_sanjiao"
+        android:gravity="center_vertical"
+        android:onClick="feedback"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="意见反馈"
+        android:textColor="#828282"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:drawableRight="@mipmap/right_sanjiao"
+        android:gravity="center_vertical"
+        android:onClick="goAppStore"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="去评分"
+        android:textColor="#828282"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:drawableRight="@mipmap/right_sanjiao"
+        android:gravity="center_vertical"
+        android:onClick="recommendApp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="推荐应用"
+        android:textColor="#828282"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="15dp"
+        android:background="#d8d8d8"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:textColor="#828282"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/clear_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right_sanjiao"
+            android:gravity="center_vertical"
+            android:onClick="clearCache"
+            android:text="暂无缓存"
+            android:textColor="#828282"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#d8d8d8" />
+</LinearLayout>

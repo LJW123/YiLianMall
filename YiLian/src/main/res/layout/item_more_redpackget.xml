@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:toos="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/fab_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="79dp">
+
+        <ImageView
+            android:src="@mipmap/library_module_default_jp"
+            android:id="@+id/shop_imge"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="暂无昵称"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/title_text_size_first" />
+
+            <LinearLayout
+                android:layout_marginTop="6.5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离:  "
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/time_textsize" />
+
+                <TextView
+                    android:id="@+id/instance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/time_textsize" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="right"
+            android:paddingRight="16dp"
+            android:id="@+id/rl_counts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:singleLine="true"
+                android:gravity="left|center"
+                android:drawablePadding="5dp"
+                android:text="暂无奖励"
+                android:drawableLeft="@mipmap/icon_red_packges"
+                android:id="@+id/redpackgers_counts"
+                android:layout_centerVertical="true"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ccccccc"
+                android:textSize="@dimen/time_title_textsize" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

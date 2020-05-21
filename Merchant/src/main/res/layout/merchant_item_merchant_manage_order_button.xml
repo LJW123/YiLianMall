@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_buttons"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/merchant_padding15"
+        android:paddingRight="@dimen/library_module_padding15"
+        android:paddingTop="@dimen/merchant_padding10">
+
+        <TextView
+            android:id="@+id/tv_gray"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/library_module_bg_solid_999999_90"
+            android:gravity="center"
+            android:text="查看物流"
+            android:textColor="@color/library_module_color_h1"
+            android:textSize="@dimen/library_module_size15" />
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/merchant_margin15"
+            android:background="@drawable/library_module_bg_style_red_empty_90"
+            android:gravity="center"
+            android:text="修改物流"
+            android:textColor="@color/merchant_color_red"
+            android:textSize="@dimen/library_module_size15"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/merchant_outerLineStyle"
+        android:layout_marginLeft="@dimen/merchant_margin15"
+        android:layout_marginRight="@dimen/merchant_margin15" />
+</LinearLayout>

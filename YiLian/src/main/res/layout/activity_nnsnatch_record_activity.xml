@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@mipmap/huiyuanjilu_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.yilian.mall.widgets.CircleImageView1
+            android:id="@+id/img_photo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="18dp"
+            android:src="@mipmap/login_module_default_jp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="6dp"
+                android:text="唯一ID："
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_record"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_one"
+            style="@style/balanceRadioButton"
+            android:checked="true"
+            android:drawableBottom="@drawable/line_red2dp"
+            android:drawablePadding="@dimen/default_padding"
+            android:text="中奖记录" />
+
+        <RadioButton
+            android:id="@+id/rb_two"
+            style="@style/balanceRadioButton"
+            android:drawablePadding="@dimen/default_padding"
+            android:text="参与记录" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/white">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

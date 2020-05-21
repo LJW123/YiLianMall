@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.AuthenticationActivity">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="15dp"
+        android:text="为了您的账户安全请先进行身份验证！"
+        android:textColor="#8f8f8f"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="14dp"
+        android:background="@mipmap/border"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etphonecode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入您收到的短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="14sp">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_sendphonecode"
+            android:layout_width="81.3dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/merchant_bg_btn_style_red"
+            android:enabled="true"
+            android:onClick="sendPhoneCode"
+            android:text="发送验证码"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="@dimen/margin8"
+        android:onClick="Next"
+        style="@style/btnCircleStyle"
+        android:layout_marginLeft="@dimen/margin30"
+        android:layout_marginRight="@dimen/margin30"
+        android:text="下一步" />
+
+</LinearLayout>

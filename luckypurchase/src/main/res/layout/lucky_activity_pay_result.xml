@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lucky_white"
+    tools:context="com.yilian.luckypurchase.activity.LuckyPayResultActivity">
+
+    <include layout="@layout/lucky_v3_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/lucky_margin30"
+                android:src="@mipmap/lucky_icon_pay_success"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/lucky_margin15"
+                android:textSize="@dimen/lucky_size15"
+                android:textColor="@color/lucky_color_333"
+                android:text="参与夺宝成功"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/lucky_margin10"
+                android:textSize="@dimen/lucky_size14"
+                android:textColor="@color/lucky_color_999"
+                android:text="请耐心等待开奖结果，祝您好运！"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginTop="@dimen/lucky_margin20"
+                android:layout_marginBottom="@dimen/lucky_margin20"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_btn_again"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/lucky_padding10"
+                    android:paddingBottom="@dimen/lucky_padding10"
+                    android:gravity="center"
+                    android:background="@drawable/lucky_bg_red_solid_corner3"
+                    android:textSize="@dimen/lucky_size15"
+                    android:textColor="@color/lucky_color_white"
+                    android:text="继续夺宝"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tv_btn_record"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/lucky_padding10"
+                    android:paddingBottom="@dimen/lucky_padding10"
+                    android:gravity="center"
+                    android:background="@drawable/lucky_border_999_line_corner3"
+                    android:textSize="@dimen/lucky_size15"
+                    android:textColor="@color/lucky_color_333"
+                    android:text="夺宝记录"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/lucky_color_bg"/>
+
+            <TextView
+                android:id="@+id/tv_join_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/lucky_padding15"
+                android:textSize="@dimen/lucky_size16"
+                android:textColor="@color/lucky_color_333"
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/lucky_margin15"
+                android:background="@color/lucky_color_lines"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/lucky_padding15"
+                android:src="@mipmap/lucky_icon_pay_success_tv"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/lucky_padding15"
+                android:paddingRight="@dimen/lucky_padding15"
+                android:paddingBottom="@dimen/lucky_padding15"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/iv_activity_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/library_module_default_jp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lucky_margin15"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_activity_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/lucky_size15"
+                        android:singleLine="true"
+                        android:textColor="@color/lucky_color_333"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/tv_activity_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/lucky_margin10"
+                        android:textSize="@dimen/lucky_size13"
+                        android:textColor="@color/lucky_color_999"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/lucky_color_bg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_look_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/lucky_padding15"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/lucky_size16"
+                    android:textColor="@color/lucky_color_333"
+                    android:text="夺宝号码"/>
+
+                <TextView
+                    android:id="@+id/tv_look_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/lucky_size14"
+                    android:drawablePadding="@dimen/lucky_padding10"
+                    android:drawableRight="@mipmap/lucky_user_jiantou"
+                    android:textColor="@color/lucky_color_999"
+                    android:text="查看全部"/>
+            </LinearLayout>
+
+            <com.yilian.luckypurchase.widget.NoScrollGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:scrollbars="none"
+                android:numColumns="4"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

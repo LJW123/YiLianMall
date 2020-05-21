@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="60dp"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:background="@color/color_red" />
+
+    <TextView
+        android:id="@+id/tv_goods_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_alignRight="@id/iv_goods"
+        android:layout_alignBottom="@id/iv_goods"
+        android:background="@drawable/bg_sn_commit_order_goods_count"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/color_main_suning"
+        android:textSize="13dp"
+        tools:text="2件" />
+</RelativeLayout>

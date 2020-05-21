@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/merchant_color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/library_module_margin10"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/library_module_padding15"
+        android:paddingRight="@dimen/library_module_padding20"
+        android:paddingBottom="@dimen/library_module_padding10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/library_module_padding10">
+
+            <TextView style="@style/merchant_ViewSell" />
+
+            <TextView
+                android:id="@+id/tv_total_sell_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/merchant_margin20"
+                android:text=""
+                android:textColor="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size13" />
+
+            <TextView style="@style/merchant_ViewConsume" />
+
+            <TextView
+                android:id="@+id/tv_total_consume_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/merchant_color_999"
+                android:textSize="@dimen/library_module_size13" />
+
+
+            <TextView
+                android:id="@+id/tv_total_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/merchant_color_999"
+                android:textSize="@dimen/merchant_size14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计: "
+                android:textColor="@color/library_module_color_333"
+                android:textSize="@dimen/library_module_size13" />
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/merchant_margin15"
+                android:text=""
+                android:textColor="@color/library_module_color_red"
+                android:textSize="@dimen/library_module_size18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让利:   "
+                android:textColor="@color/library_module_color_333"
+                android:textSize="@dimen/library_module_size12" />
+
+            <TextView
+                android:id="@+id/tv_profit_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/library_module_color_red"
+                android:textSize="@dimen/library_module_size12" />
+
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/library_module_bg_style_red_3"
+                android:paddingBottom="4dp"
+                android:paddingLeft="@dimen/library_module_padding15"
+                android:paddingRight="@dimen/library_module_padding15"
+                android:paddingTop="4dp"
+                android:text="去支付"
+                android:textColor="@color/merchant_color_white"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

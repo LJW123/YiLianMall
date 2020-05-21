@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/library_module_color_white">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/library_module_padding10"
+        android:paddingRight="@dimen/library_module_padding10"
+        android:src="@mipmap/library_module_v3back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textColor="@color/library_module_color_333"
+        android:textSize="@dimen/library_module_size18" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/library_module_padding10"
+        android:paddingRight="@dimen/library_module_padding10"
+        android:text=""
+        android:textColor="@color/library_module_color_333"
+        android:textSize="@dimen/library_module_size15" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/library_module_padding10"
+        android:paddingRight="@dimen/library_module_padding10"
+        android:src="@mipmap/library_module_v3_more_bottom"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/library_module_color_lines"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

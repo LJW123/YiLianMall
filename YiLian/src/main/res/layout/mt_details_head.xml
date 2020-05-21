@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- 添加店内消费的头布局-->
+    <LinearLayout
+        android:id="@+id/ll_merchant_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/jpMoneyQuan"
+                android:text="赠" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dikouquan"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/size13" />
+
+            <TextView
+                style="@style/jpMoneyFen"
+                android:text="赠" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零购券"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/size13" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_store_consumer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/btn_bg_srote_consumer"
+            android:paddingLeft="@dimen/padding15"
+            android:paddingRight="@dimen/padding15"
+            android:text="店内消费"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size15" />
+    </LinearLayout>
+
+    <!--立即抢购的头布局-->
+    <LinearLayout
+        android:id="@+id/ll_combo_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_combo_price_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin5"
+                android:textColor="@color/color_red"
+                android:textSize="25dp"
+                android:text=""/>
+
+            <TextView
+                style="@style/jpMoneyFen"
+                android:text="赠" />
+
+            <TextView
+                android:id="@+id/tv_integral_gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/size13" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_promptly_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/btn_bg_srote_consumer"
+            android:paddingLeft="@dimen/padding15"
+            android:paddingRight="@dimen/padding15"
+            android:text="立即抢购"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size18" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="8dp" />
+
+    <solid android:color="@color/library_module_color_red" />
+    <padding
+    android:bottom="1dp"
+    android:left="3dp"
+    android:right="3dp"
+    android:top="-1dp" />
+
+</shape>

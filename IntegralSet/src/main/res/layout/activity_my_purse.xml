@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <include layout="@layout/ylyj_defaut_toolbar_right_layout" />
+    </RelativeLayout>
+
+    <View style="@style/line_horizontal"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#39393B"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/my_integration_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_20dp">
+
+            <TextView
+                android:id="@+id/integral_tv"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="奖券"
+                android:textColor="#A2A2A3"
+                android:textSize="@dimen/textSize_15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/balance_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_20dp">
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="奖励"
+                android:textColor="#A2A2A3"
+                android:textSize="@dimen/textSize_15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_bank_cards_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_20dp">
+
+            <TextView
+                android:id="@+id/card_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="银行卡"
+                android:textColor="#A2A2A3"
+                android:textSize="@dimen/textSize_15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

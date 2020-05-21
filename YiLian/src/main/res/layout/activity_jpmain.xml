@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jpmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.yilian.mylibrary.widget.NoScrollViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/main_bottom_lines"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding5">
+
+                <RadioButton
+                    android:id="@+id/radio_mt_home_page"
+                    style="@style/homePageBottomButton"
+                    android:drawableTop="@mipmap/icon_bot_home_off"
+                    android:text="首页" />
+
+                <RadioButton
+                    android:id="@+id/radio_di_kou"
+                    style="@style/homePageBottomButton"
+                    android:drawableTop="@mipmap/icon_bot_mall_off"
+                    android:text="@string/jifenmall" />
+
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/radio_profit_record"
+                    style="@style/homePageBottomButton"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@mipmap/icon_bot_red_and_bg"
+                    android:paddingTop="16dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="奖励" />
+
+                <RadioButton
+                    android:id="@+id/radio_shopping_car"
+                    style="@style/homePageBottomButton"
+                    android:drawableTop="@mipmap/icon_bot_shop_off"
+                    android:text="购物车" />
+
+                <RadioButton
+                    android:id="@+id/radio_personal_center"
+                    style="@style/homePageBottomButton"
+                    android:drawableTop="@mipmap/icon_bot_user_off"
+                    android:text="我的" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main_adv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:paddingBottom="80dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_main_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/iv_close_main_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_main_ad"
+            android:layout_marginTop="-40dp"
+            android:clickable="true"
+            android:padding="@dimen/margin10"
+            android:src="@mipmap/icon_close_register_present" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_force_notice"
+        layout="@layout/library_module_force_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

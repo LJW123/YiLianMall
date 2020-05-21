@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/size10">
+    <!--新版商城 专场活动 下方专场文字介绍-->
+    <TextView
+        android:id="@+id/tv_activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size10"
+        android:lines="1"
+        android:text="活动名称"
+        android:textStyle="bold"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/size13" />
+
+    <TextView
+        android:id="@+id/tv_shop_name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="专场名称"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/size10" />
+</LinearLayout>

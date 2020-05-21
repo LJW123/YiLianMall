@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.suning.activity.SnCommitOrderActivity">
+
+    <include layout="@layout/merchant_v3_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_no_shipping_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableEnd="@mipmap/arrows_right_gray"
+                android:drawableRight="@mipmap/arrows_right_gray"
+                android:gravity="center"
+                android:paddingBottom="23dp"
+                android:paddingEnd="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="23dp"
+                android:text="您的收货地址为空，点此添加收货地址"
+                android:textColor="@color/color_333"
+                android:textSize="14dp"
+                android:visibility="gone"
+                tools:ignore="RtlSymmetry"
+                tools:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rl_shipping_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/huojiang_location" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_name_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_toEndOf="@id/iv_icon"
+
+                    android:layout_toRightOf="@id/iv_icon"
+                    android:textStyle="bold"
+                    tools:text="收货人:某某 13000000000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_shipping_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name_phone"
+                    android:layout_marginRight="40dp"
+                    android:layout_toEndOf="@id/iv_icon"
+                    android:layout_toRightOf="@id/iv_icon"
+                    tools:text="建正东方中心建正东方中心建正东方中心建正东方中心建正东方中心" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrows_right_gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/line_sn_shipping_address" />
+
+            <RelativeLayout
+                android:id="@+id/rl_one_goods_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:padding="15dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_one"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    tools:background="@color/red" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_one_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_one"
+                    android:layout_marginRight="40dp"
+                    android:layout_toRightOf="@id/iv_one"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    tools:text="商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_one_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_one"
+                    android:layout_toRightOf="@id/iv_one"
+                    android:lines="1"
+                    android:textColor="@color/color_main_suning"
+                    tools:text="$23.23" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_one_goods_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_one"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    tools:text="*1" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrows_right_gray" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_multi_goods_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_multi_goods_imgs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_more_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_sn_more_goods" />
+
+                <TextView
+                    android:id="@+id/tv_multi_goods_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/arrows_right_gray"
+                    tools:text="共5件"
+
+                    />
+            </LinearLayout>
+
+            <View style="@style/innerLineStyle" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:padding="15dp"
+                android:text="苏宁配送，支付完成后尽快为您发货"
+                android:textColor="@color/color_333"
+                android:textSize="14dp" />
+            <View style="@style/outerLineStyle" />
+            <!--DaiGouQuan 2018年08月07日16:11:03代购券业务隐藏-->
+            <LinearLayout
+                android:id="@+id/ll_dai_gou_quan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_box_user_dai_gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_check_box_commit_use_dai_gou"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="代购券最高可抵用"
+                    android:textColor="@color/color_333"
+                    android:textSize="15dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_money_dai_gou"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/color_red"
+                    tools:text="$23.32" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:padding="15dp"
+                android:text="支付方式：在线支付"
+                android:textColor="@color/color_333"
+                android:textSize="14dp" />
+
+            <View style="@style/outerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="商品总额"
+                    android:textColor="@color/color_333"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_order_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_main_suning"
+                    tools:text="$23.23" />
+            </LinearLayout>
+
+            <View style="@style/innerLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="运费"
+                    android:textColor="@color/color_333"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_freight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_main_suning"
+                    tools:text="$23.23" />
+            </LinearLayout>
+
+            <View style="@style/innerLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/ll_return_bean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="赠送益豆"
+                    android:textColor="@color/color_333"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_order_gave_bean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_main_suning"
+                    tools:text="$23.23" />
+            </LinearLayout>
+
+            <View style="@style/innerLineStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_order_total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="15dp"
+            tools:text="实付金额:$33.23" />
+
+        <Button
+            android:id="@+id/btn_su_ning_commit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/color_main_suning"
+            android:paddingLeft="23dp"
+            android:gravity="center"
+            android:paddingRight="23dp"
+            android:text="提交订单"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

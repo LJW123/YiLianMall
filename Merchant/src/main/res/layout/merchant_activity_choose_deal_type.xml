@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.yilianmall.merchant.activity.MerchantChooseDealTypeActivity">
+
+    <TextView
+        android:id="@+id/tv_barcode_deal"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/merchant_btn_bg_red_10"
+        android:clickable="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_whole_order_deal"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/merchant_btn_bg_red_10"
+        android:clickable="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <View style="@style/merchant_outerLineStyle" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="16dp"
+        android:text="取消"
+        android:textColor="@color/library_module_color_333"
+        android:textSize="18dp" />
+</LinearLayout>

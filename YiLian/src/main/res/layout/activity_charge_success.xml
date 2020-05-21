@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.ChargeSuccessActivity">
+
+    <RelativeLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fcfdfd"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="onBack"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/left_sanjiao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="会员充值成功"
+            android:textColor="#7a7a7c"
+            android:textSize="@dimen/title_text_size_first" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_apply_after_sales"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="23dp"
+            android:src="@mipmap/ic_apply_after_sales" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="9dp"
+            android:text="你已充值成功!"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:lineSpacingExtra="9dp"
+            android:text="当前等级："
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="34dp"
+            android:visibility="gone"
+            android:layout_marginBottom="21dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/round_corner_white"
+            android:gravity="center"
+            android:onClick="jumpToRecord"
+            android:text="查看充值记录"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:text="本次充值金额："
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_charge_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:background="#bbe4e2e0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="20dp"
+        android:text="温馨提示：充值后奖励会有相应变化，具体以到账时间为准。您可以回到我的页面查看！"
+        android:textColor="#b7b7b7"
+        android:textSize="12sp" />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_marginLeft="14dp"-->
+    <!--android:background="#bbe4e2e0" />-->
+
+    <!--V3版只能充值现金，且是1:1的 充值获得金额和充值消耗金额相同，所以此处隐藏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="21dp"
+            android:paddingTop="18dp"
+            android:text="获得券 ："
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="45dp">
+
+            <TextView
+                android:id="@+id/tv_lefen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:drawableRight="@mipmap/ic_mall_shopping"
+                android:gravity="right"
+                android:paddingTop="13dp"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_lexiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:paddingTop="13dp"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_marginLeft="14dp"-->
+    <!--android:background="#bbe4e2e0" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#f5f5f5"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="jumpToRule"
+        android:text="查看现金转换乐分币和奖励规则"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        style="@style/btnStyle"
+        android:layout_marginTop="30dp"
+        android:onClick="surePay"
+        android:text="完成支付" />
+</LinearLayout>

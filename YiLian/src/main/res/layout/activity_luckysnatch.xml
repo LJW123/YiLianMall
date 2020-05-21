@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#fcfdfd">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/left_sanjiao"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:onClick="onBack"
+            android:paddingLeft="15dp"
+            android:text="天天夺宝"
+            android:textColor="#7b7d80"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="right|center"
+            android:onClick="jumpToRule"
+            android:paddingRight="15dp"
+            android:text="夺宝说明"
+            android:textColor="#247df7"
+             />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/lucky_snatch_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/lucky_snatch_going_rb"
+                style="@style/orderRadioButton"
+                android:checked="true"
+                android:text="夺宝中" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/separate_line" />
+
+            <RadioButton
+                android:id="@+id/lucky_snatch_over_rb"
+                style="@style/orderRadioButton"
+                android:text="已揭晓" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/separate_line" />
+
+            <RadioButton
+                android:id="@+id/lucky_snatch_mypart_rb"
+                style="@style/orderRadioButton"
+                android:drawablePadding="@dimen/default_padding"
+                android:text="我参与的" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_shape_my_part"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/shap_circle"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/view_line" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/lucky_snatch_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

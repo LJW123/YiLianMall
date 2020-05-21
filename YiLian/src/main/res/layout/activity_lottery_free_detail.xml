@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f4b945"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/dazhuanpan_upbg"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:paddingTop="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/dazhuanpan_shadow"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="14dp"
+                    android:paddingBottom="34dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/bg_lottery_free" />
+
+                    <ImageView
+                        android:id="@+id/imgView_dial_pointer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:src="@mipmap/dazhuanpan_btn" />
+                </RelativeLayout>
+                
+                    <TextView
+                        android:id="@+id/txt_count"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_btn_style_fe564d"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/rl1"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:text="暂无抽奖次数"
+                        android:textColor="#f8fdff"
+                        android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="13dp"
+                android:src="@mipmap/dazhuanpan_downbg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F55257"
+                android:paddingLeft="28dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:text="抽奖规则"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="30dp"
+                    android:lineSpacingExtra="13dp"
+                    android:text="1.每位用户每天有一次免费抽奖机会\n2.如需继续抽奖，每次抽奖消耗20抵扣券\n3.每发必中，童叟无欺，100%中奖率\n4.多多分享朋友圈，是提高中奖率的不二法门\n5.如有任何问题请联系益联益家客服人员，请关注益联益家微信公众号：lefenshangcheng58\n6.本活动由益联益家举办，最终解释权归益联益家所有。"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

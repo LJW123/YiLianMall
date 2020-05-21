@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/home_page_title"
+        layout="@layout/ctrip_title_home_page" />
+
+    <LinearLayout
+        android:id="@+id/vary_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_15dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/ctrip_voucher_caution" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="请在办理时，向前台出示该凭证"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:padding="@dimen/padding_15dp"
+                    android:text="订单明细内提及的房费和各项费用请您在离店时支付至酒店前台。其他未提及的费用也将由酒店收取。请在酒店前台报订单入住人姓名并出示身份证办理入住。"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/textSize_13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="酒店"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_hotel_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            tools:text="中州国际饭店" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="入住人"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_person"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            tools:text="张振" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="入住"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_check_in_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            tools:text="2018-07-30" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="离店"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_check_out_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            tools:text="2018-07-31" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="房型"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_house_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            tools:text="商务标间(当日18:00到次日14:00)" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="房间数"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:id="@+id/tc_room_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            tools:text="1间" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="餐食份数"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_meals_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            tools:text="0份" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="支付方式"
+                            android:textColor="@color/color_999"
+                            android:textSize="@dimen/textSize_15dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/textSize_15dp"
+                            android:text="预付益联益家，由益联益家汇款给酒店" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.EditPhoneActivity">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_retrievepassword_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#55c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="0.1dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColorHint="#b3b3b3"
+                android:textSize="14sp">
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/bt_send_code"
+                android:layout_width="wrap_content"
+                android:layout_height="24.6dp"
+                android:background="@drawable/bg_empty_red"
+                android:enabled="false"
+                android:onClick="sendPhoneCode"
+                android:text="点击发送验证码"
+                android:textColorHint="#d9d9d9"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:hint="请输入您的短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#b3b3b3"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#c8c8c8" />
+
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_login_not_phone_login"
+        android:onClick="retrievePassword"
+        android:text="验 证"
+        android:textColor="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="11dp"
+        android:clickable="true"
+        android:onClick="serviceTel"
+        android:text=""
+        android:textColor="#b7b7b7" />
+
+</LinearLayout>

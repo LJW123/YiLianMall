@@ -1,0 +1,422 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation" tools:locale="it">
+
+    <array name="ItemArray">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+    <string name="login_first">请先登录</string>
+    <string name="login_failure">登录状态失效,请重新登录</string>
+    <string name="ensure">确定</string>
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="no_phone">亲,这家太懒了,没留电话哦!</string>
+    <string name="net_work_busy">网络繁忙</string>
+    <string name="net_work_not_available">网络连接失败,请检查网络</string>
+    <string name="net_work_not_available_zan">点赞失败,请检查网络</string>
+    <string name="appshare">[益联益家] 消费新主张，花钱拿红利，尽在益联益家!</string>
+    <string name="onebuysharetitle">我在益联益家1元购成功夺了——
+ </string>
+    <string name="onebuysharecontent">1元购就是花费1块钱就有可能获得心仪的商品.益联益家1元购商品丰富，夺宝中奖率高，快来试试吧!
+</string>
+    <string name="app_name_resource">益联益家</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_registered">RegisteredActivity</string>
+    <string name="title_activity_agreement">AgreementActivity</string>
+    <string name="title_activity_phone_login">PhoneLoginActivity</string>
+    <string name="title_activity_retrieve_password">RetrievePasswordActivity</string>
+    <string name="scan_text">将二维码/条码放入扫描框内, 即可自动扫描</string>
+    <string name="scan_failure">扫描失败!</string>
+    <string name="without_activity_go_to_other_activities">没有该活动，去看看其他活动吧</string>
+    <string name="network_connection_failed_obtain_integral_failure">网络连接失败，获取奖券失败</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <!-- JazzyViewPager -->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string-array name="feedback_sp">
+        <item>软件优化</item>
+        <item>商家信息纠错</item>
+        <item>其他纠结</item>
+    </string-array>
+
+    <string name="title_activity_user_infor">UserInforActivity</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_account_security">AccountSecurityActivity</string>
+    <string name="title_activity_account_details">AccountDetailsActivity</string>
+    <string name="title_activity_initial_pay">InitialPayActivity</string>
+    <string name="title_activity_authentication">AuthenticationActivity</string>
+    <string name="title_activity_phone_pay_password">PhonePayPasswordActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+
+    <string name="obtain_jifen_record_title">乐分币获得记录明细</string>
+    <string name="exchange_jifen_record_title">乐分币兑换记录明细</string>
+    <string name="paticipate_activity_record_title">活动参与记录明细</string>
+
+    <string name="prize_level1">一等奖</string>
+    <string name="prize_level2">二等奖</string>
+    <string name="prize_level3">三等奖</string>
+    <string name="prize_level4">四等奖</string>
+    <string name="prize_level5">五等奖</string>
+
+    <string name="turntable_notes1">1.获得奖品后请尽快在%1$s个工作日内到兑换中心领取，过期作废！每次抽奖消耗奖券%2$s乐分币</string>
+    <string name="turntable_notes2">2.本次活动负责人(%1$s)</string>
+    <string name="turntable_notes3">"3.联系人电话: %1$s"</string>
+    <string name="turntable_notes4">"4.兑换中心客服电话: %1$s  %2$s"</string>
+    <string name="turntable_notes5">"5.兑换中心地址: %1$s"</string>
+
+    <string name="prize_hole_count">(%1$s个名额哦！)</string>
+
+    <string name="download_update_notification_text">"正在下载益联益家，已完成%1$s"</string>
+    <string name="download_game_notification_text">",已完成%1$s"</string>
+
+    <string name="share">分享</string>
+    <string name="collect">收藏</string>
+    <string name="click_collect">点击收藏</string>
+    <string name="collected">已收藏</string>
+    <string name="put_cart">加入购物车</string>
+    <string name="buy_immediately">立即购买</string>
+    <string name="price">售价</string>
+    <string name="grade">%1$s分</string>
+    <string name="evaluation_count">%1$s人评价</string>
+    <string name="sales_volume_month">月销量%1$s笔</string>
+    <string name="sales_volume">已有%1$s人购买</string>
+    <string name="sales_volume2">已售%1$s件</string>
+    <string name="commodity_brand">商品品牌:</string>
+    <string name="commodity_number">商品货号:</string>
+    <string name="commodity_colors">该商品提供的颜色</string>
+    <string name="commodity_sizes">该商品提供的尺码大小</string>
+    <string name="select">选择</string>
+    <string name="commodity_details">商品详情</string>
+
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+
+    <string name="lebi">奖励</string>
+    <string name="lebi_pay">奖励支付</string>
+    <string name="FAQ">常见问题</string>
+    <string name="please_input_lebi">请输入您要支付的奖励</string>
+
+    <string name="please_input_city_name">请输入您要查找的城市名</string>
+
+    <string name="send_verification_code">发送验证码</string>
+
+    <string name="send_success">发送成功</string>
+    <string name="phone_number_not_legal">手机号不合法</string>
+    <string name="phone_number_or_password_not_legal">手机号或密码不合法</string>
+    <string name="password_not_consistent">两次密码不一致</string>
+    <string name="password_format">密码应是6-18位数字加字母组合</string>
+    <string name="password_retrieve_success">找回/重置密码成功，请登录</string>
+    <string name="password_not_conform_rules">密码不符合规则</string>
+    <string name="phone_number_unregistered">该手机号尚未注册,请注册后登录</string>
+    <string name="password_authentication_failed">登录密码验证失败</string>
+    <string name="verification_code_verification_failed">验证码验证失败</string>
+    <string name="network_exception_check_network_relogin">网络异常，请检查网络后重新登录</string>
+    <string name="account_has_registered">该账号已注册</string>
+
+    <string name="activity_not_started">（活动未开始）</string>
+    <string name="activity_ended">（活动已结束）</string>
+    <string name="activity_in_process">（正在进行中）</string>
+
+    <string name="activity_rule">活动规则</string>
+    <string name="problem_details">问题详情</string>
+    <string name="how_to_obtain_lefen">如何获取乐分币</string>
+    <string name="pay_cash">现金支付</string>
+    <string name="use_help">使用帮助</string>
+    <string name="use_protocol">用户协议</string>
+
+    <string name="legou_region">乐购区</string>
+    <string name="lehuan_region">乐换区</string>
+    <string name="lexuan_region">乐选区</string>
+
+
+    <string name="qr_code_prompt">拿起手机，扫一扫</string>
+    <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
+
+
+    <string name="title_shopping_card">购物车(%1$d)</string>
+
+    <!--订单-->
+    <string name="no_payed">待支付</string>
+    <string name="order_number">订单号:</string>
+    <string name="order_time">下单时间</string>
+    <string name="title_activity_after_sale">AfterSaleActivity</string>
+    <string name="title_activity_apply_after_sale">ApplyAfterSaleActivity</string>
+    <string name="title_activity_after_sale_details">AfterSaleDetailsActivity</string>
+    <string name="title_activity_order_pay_success">OrderPaySuccessActivity</string>
+    <string name="title_activity_order_routing">OrderRoutingActivity</string>
+    <string name="title_activity_goods_list_acitivty">GoodsListAcitivty</string>
+    <string name="title_activity_balance">Balance</string>
+    <!--微信-->
+    <string name="app_tip">提示</string>
+    <string name="receive">从微信接收</string>
+    <string name="share_text_to_weixin">回应文本到微信</string>
+    <string name="share_text_default">这段文字回应自微信SDK示例程序</string>
+    <string name="share_url_to_weixin">回应URL到微信</string>
+    <string name="share_pic_to_weixin">回应图片到微信</string>
+    <string name="share_music_to_weixin">回应音乐到微信</string>
+    <string name="share_video_to_weixin">回应视频到微信</string>
+    <string name="share_appdata_to_weixin">回应app消息到微信</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="comment_success">恭喜您获得:</string>
+    <string name="comment_failed">很遗憾，您这次什么都没获得哦</string>
+
+    <string name="pay_by_wx_title">通过微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="title_activity_evaluate">EvaluateActivity</string>
+    <string name="title_activity_apply_after_sale_success">ApplyAfterSaleSuccessActivity</string>
+    <string name="title_activity_after_sale_one">AfterSaleOneActivity</string>
+    <string name="title_activity_after_sale_three">AfterSaleThreeActivity</string>
+    <string name="title_activity_after_sale_route">AfterSaleRouteActivity</string>
+    <string name="title_activity_submit_express_id">SubmitExpressIdActivity</string>
+    <string name="title_activity_mall">MallActivity</string>
+
+    <string name="title_activity_scan_transfer">扫码转赠</string>
+    <string name="level_up_now_front">每日转赠额度用完了？</string>
+    <string name="level_up_now">立即升级</string>
+    <string name="level_up_now_behind">获取更高转赠额度</string>
+    <string name="show_everyday_limit">查看每日转赠额度</string>
+    <string name="title_activity_city_selection">CitySelectionActivity</string>
+    <string name="title_activity_one_buy">OneBuyActivity</string>
+
+    <string name="no_data">暂无数据</string>
+    <string name="no_more_data">没有更多数据了!</string>
+    <string name="system_busy">系统繁忙 3-10秒后重试</string>
+    <string name="use_succeed">使用成功</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="im_connect_failed">连接聊天服务器失败</string>
+    <string name="im_token_failed">获取融云token失败</string>
+
+    <string name="defult">默认</string>
+
+    <!--订单相关提示-->
+    <string name="beyond_express_range">收货地址不在配送区域，无法购买</string>
+    <string name="price_1">价格</string>
+    <string name="number">销量</string>
+    <string name="only_look_has_goods">只看有货</string>
+    <string name="sixty_time_one">30秒内只能发送一次验证码哦，请稍后重试！</string>
+    <string name="xlistview_header_hint_normal">放开以刷新</string>
+    <string name="xlistview_header_hint_ready">下拉刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载中</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+
+    <string name="placeholder_text">占位字</string>
+    <string name="already_sign">已经签到过了</string>
+    <string name="mt_refund_succeed">退款成功</string>
+    <string name="mt_refund_time">退款金额将在1-7个工作日内返还到您的奖励余额中，请注意查看奖励变更</string>
+    <string name="mt_back_order">返回订单</string>
+    <string name="mt_local_package">本地套餐</string>
+    <string name="mt_local_package_icon">MEAL</string>
+    <string name="mt_comment_share">分享给朋友圈好友，领取返利</string>
+    <string name="mt_thanks_comment">感谢您的评价!</string>
+    <string name="mt_share_get_reward">分享领返利</string>
+    <string name="apply_for_refund">申请退款</string>
+    <string name="for_the_shipping">要求配送</string>
+    <string name="cancle_the_shipping">取消配送</string>
+    <string name="go_to_evaluate">去评价</string>
+    <string name="evaluate_get_award">评价得返利</string>
+    <string name="total_comment">总体评价</string>
+    <string name="total_cost">消费总额</string>
+    <string name="award">赠送</string>
+    <string name="award1">赠送:</string>
+    <string name="ask_waiter">询问服务员后输入</string>
+    <string name="award_count">0.00抵扣券</string>
+    <string name="affirm_pay">确认支付</string>
+    <string name="online_pay">在线支付</string>
+    <string name="pay_result">支付结果</string>
+    <string name="award_quan_explain">送券说明</string>
+    <string name="mt_apply_for_refund_explain">申请退款成功后，若使用现金支付的，将为您退还等额的乐 享币，可在奖励中查看；赠送的抵扣券将收回。</string>
+    <string name="present">赠</string>
+    <string name="input_buildings">请输入小区/大厦/学校等进行搜索</string>
+    <string name="mt_package_comment_price_explain">消费后15天内评价，赢取1奖券；晒图评价，赢取2奖券； 在商城购物，奖券1:1抵现金使用。</string>
+    <string name="hint_mt_comment">洋洋洒洒15字，晒出心得</string>
+    <string name="environment">环境</string>
+    <string name="service">服务</string>
+    <string name="commit_image_explain">添加图片：钱花了，不如晒几张图~</string>
+    <string name="show_total_qr_code">向商家出示以上券码/二维码即可消费</string>
+    <string name="show_order_detail">查看订单详情</string>
+    <string name="ending_time">有效期：</string>
+    <string name="ending_time1">有效期：</string>
+    <string name="package_mt_qr_code">套餐券</string>
+    <string name="qr_code">券码:</string>
+    <string name="buy_success">恭喜！购买成功</string>
+    <string name="pay_success">支付成功</string>
+    <string name="share_get_prize">分享领返利</string>
+    <string name="remind_bind_phone">新老用户均可绑定手机号：\n1、新用户（非乐分会员）则可直接绑定，绑定成功后，
+        则会创建一个新账户，老用户（乐分会员）绑定成功后，多个相关联账户信息则会同步到所绑定手机账户中\n2、老用户绑定成功后，多个账户奖励以及领奖励奖励，均可同步</string>
+    <string name="linggouquan">零购券</string>
+    <string name="linggouqu">零购商城</string>
+    <string name="dikouquan">抵扣券</string>
+    <string name="dikouqu">抵扣商城</string>
+    <string name="jifenmall">本地生活</string>
+    <string name="global_total_price_overflow">亲,购物车内包含全球购商品,政策规定单笔订单购买多件全球购商品总价不能超过2000元,请您分多次提交结算!</string>
+
+    <string name="consignee_idcard_hint">注: \n正面(带国徽一面)、反面(带头像一面)\n1、点击图片上传身份证，请按照正反面顺序上传
+        \n2、图像底色为白色，端正，不歪斜，不竖立，图片内容清晰\n3、如果识别错误的话，请重新上传身份证信息\n4、身份证清关时有效
+    </string>
+    <string name="shoppingcart_data_exception">购物车列表数据获取异常,请刷新重试</string>
+    <string name="shoppingcart_recommend_data_exception">购物车推荐信息获取失败,请检查网络后刷新重试</string>
+    <string name="after_sale_number">售后编号：</string>
+    <string name="ali_connect_failed">客服系统连接失败,可尝试退出账号重新登录</string>
+    <string name="contact_customer_service">联系客服</string>
+    <string name="delete_order_success">订单删除成功</string>
+    <string name="delete_order_failure">订单删除失败</string>
+    <string name="img_code_error">*验证码输入错误或已过期</string>
+    <string name="img_from_number">*验证码为纯数字</string>
+    <string name="load_success">加载成功</string>
+    <string name="commit_order">提交订单</string>
+    <string name="service_exception">服务器繁忙,请稍后再试</string>
+    <string name="initialize">正在初始化</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开立即刷新</string>
+    <string name="header_hint_refresh_loading">Refreshing&#8230;</string>
+    <string name="header_hint_refresh_time">时间：</string>
+    <string name="footer_hint_load_normal">上拉加载更多</string>
+    <string name="footer_hint_load_ready">松开加载</string>
+    <string name="spell_group_open_group_info">选择心仪商品支付开团并邀请好友参加。</string>
+    <string name="spell_group_join_group_info">进入朋友分享的页面，点击“立即参团”按钮，付款后即参团成功。</string>
+    <string name="spell_group_open_prize_info">抽奖商品开奖后，您可以在“我的拼团”内查看中奖名单。系统将生成中奖用户订单，有商家安排发货。您可以在“我的订单”内查看订单发货进度。</string>
+    <string name="spell_group_open_group_error_info">团长开团后，在规定的时间内为未达指定人数，则拼团失败，将退还支付款项</string>
+    <string name="spell_group_refund_info">拼团退款将在1-12个工作日内日安排，退至原支付的账户/奖励，具体到账时间以（乐发奖励包/微信/支付宝/银行）为准，请注意查收。退款进度可在“我的拼团”内查看</string>
+    <string name="spell_group_refund">退款将在1-12个工作日退至奖励</string>
+
+
+    <!--//益联益家有关-->
+    <string name="please_complete_info_first">请先完善信息</string>
+    <string name="please_write_number">请输入领奖励金额</string>
+    <string name="cash_not_enough">领奖励金额不足</string>
+    <string name="cash_not_100">领奖励金额不是100的倍数</string>
+    <string name="try_again">系统异常,请稍后再试</string>
+    <string name="please_write_right_num">请输入正确的卡号</string>
+    <string name="twice_write_num_no_same">两次输入的卡号不同，请保持一致</string>
+
+
+    <string name="yhs">易划算</string>
+    <string name="integral">奖券</string>
+    <string name="jfg">奖券购</string>
+    <string name="can_not_buy">您所选的商品中包含已抢光或已下架商品，请重新选择</string>
+    <string name="take_out">外卖</string>
+    <string name="combo">套餐</string>
+
+    <string name="score">可得奖券</string>
+    <string name="back_score">可得奖券</string>
+    <string name="xiaofeijifen">可得奖券</string>
+    <string name="ledou">可得益豆</string>
+    <string name="consume_jifen">消费奖券</string>
+    <string name="recharge_1">500</string>
+    <string name="recharge_2">1000</string>
+    <string name="recharge_3">2000</string>
+    <string name="recharge_4">3000</string>
+    <string name="recharge_5">5000</string>
+    <string name="expand">展开</string>
+    <string name="shrink">收缩</string>
+    <!--个推绑定使用字符串-->
+    <string name="no_clientid">(none)</string>
+    <string name="start">已启动</string>
+    <string name="clientid">clientid&#160;=&#160;</string>
+    <string name="stop">已停止</string>
+    <string name="clear">清除日志</string>
+    <string name="enablelog">开启debug日志</string>
+    <string name="bindcell">绑定手机号</string>
+    <string name="pmsg">透传测试</string>
+    <string name="psmsg">通知栏测试</string>
+    <string name="transmit">透传内容</string>
+    <string name="begin">开始(h)</string>
+    <string name="end">结束</string>
+    <string name="duration">持续时间(h)</string>
+    <string name="set_heartbeat">心跳间隔(s)</string>
+    <string name="send_msg">发送消息</string>
+    <string name="bind_alias">绑定别名</string>
+    <string name="bind_alias_unknown_exception">绑定别名失败，未知异常</string>
+    <string name="bind_alias_success">绑定别名成功</string>
+    <string name="bind_alias_error_frequency">绑定别名失败，请求频次超限</string>
+    <string name="bind_alias_error_param_error">绑定别名失败，参数错误</string>
+    <string name="bind_alias_error_request_filter">绑定别名失败，请求被过滤</string>
+    <string name="bind_alias_error_cid_lost">绑定别名失败，未获取到cid</string>
+    <string name="bind_alias_error_connect_lost">绑定别名失败，网络错误</string>
+    <string name="bind_alias_error_alias_invalid">绑定别名失败，别名无效</string>
+    <string name="bind_alias_error_sn_invalid">绑定别名失败，sn无效</string>
+    <string name="unbind_alias">解绑别名</string>
+    <string name="unbind_alias_unknown_exception">取消绑定别名失败，未知异常</string>
+    <string name="unbind_alias_success">取消绑定别名成功</string>
+    <string name="unbind_alias_error_frequency">取消绑定别名失败，请求频次超限</string>
+    <string name="unbind_alias_error_param_error">取消绑定别名失败，参数错误</string>
+    <string name="unbind_alias_error_request_filter">取消绑定别名失败，请求被过滤</string>
+    <string name="unbind_alias_error_cid_lost">取消绑定别名失败，未获取到cid</string>
+    <string name="unbind_alias_error_connect_lost">取消绑定别名失败，网络
+        错误</string>
+    <string name="unbind_alias_error_alias_invalid">取消绑定别名失败，别名无效</string>
+    <string name="unbind_alias_error_sn_invalid">取消绑定别名失败，sn无效</string>
+    <string name="add_tag">添加标签</string>
+    <string name="add_tag_unknown_exception">设置标签失败，未知异常</string>
+    <string name="add_tag_success">接口调用成功</string>
+
+
+    <string name="please_complete_money_first">请输入正确的转账金额</string>
+    <string name="please_complete_name_first">请输入转账卡主</string>
+    <string name="please_complete_card_first">请输入转账卡号</string>
+    <string name="please_complete_bank_first">请输入转账银行</string>
+    <string name="please_complete_voucher_first">请上传转账凭证</string>
+    <string name="merchant_no_reply">商家尚未答复~</string>
+    <string name="please_write_question">请输入您关心的问题吧~</string>
+    <string name="title_activity_touch_list">TouchListActivity</string>
+    <string name="clock_in_rule"><u>查看详细规则</u></string>
+    <string name="act_clock_in_record_detail"><b>记录明细</b> 每日11:00前奖券到账</string>
+
+    <string name="please_write_comment">请输入您的评论</string>
+    <string name="get_rule_failed">获取规则失败</string>
+    <string name="hint_hashrate">可转赠益豆</string>
+    <string name="text_extract_donation_number">益豆提取数量</string>
+    <string name="text_notice_extract_success">1.成功提交后，您的益联账户内的益豆将以1.88:1的比例，提取至您的乐淘天使账号内。</string>
+    <string name="text_notice_extract_input">2.请正确填写您的乐淘天使的账号，以免提取账号错误或者提取失败的情况发生。</string>
+    <string name="text_extract_operate">3.因用户误操作而造成的财产损失，益联益家无赔偿义务，请谨慎操作。</string>
+    <string name="text_get_donation">可得益豆：</string>
+    <string name="text_donation">赠送益豆</string>
+    <string name="text_notice_platform_donations">平台加赠益豆:</string>
+    <string name="text_donate_le_dou">送益豆</string>
+    <string name="add_address">请添加地址</string>
+    <!--酒店查询空页面-->
+    <string name="hotel_null">没有找到符合条件的房型信息，请选择其他酒店进行预订或者修改日期间数重新查询</string>
+
+</resources>

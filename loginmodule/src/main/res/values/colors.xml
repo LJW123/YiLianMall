@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //wheel背景颜色
+    <color name="login_module_province_line_border">#D0D0D0</color>
+
+    <color name="login_module_btn_key_on">#ffe4e3eb</color>
+    <color name="login_module_btn_key_off">#fff0eff4</color>
+    <color name="login_module_btn_key_off_two">#ffd5dade</color>
+    <color name="login_module_key_background">#ffcfcfcf</color>
+    <color name="login_module_theme_color">#548AE0</color>
+    <color name="login_module_rise_number_text_color">#ff780c</color>
+
+    <color name="login_module_zhuijia">#0079e5</color>
+    <color name="login_module_none_color">#00000000</color>
+
+    <!-- 商家分类popup左侧item点击的背景颜色 -->
+    <color name="login_module_near_store_class_popup_store_classs_on">#f3f3f3</color>
+    <!-- 商家分类popup左侧item默认的背景颜色 -->
+    <color name="login_module_near_store_class_popup_store_classs_off">#ffffff</color>
+
+    <!-- 商家分类popup右侧侧item点击的背景颜色 -->
+    <color name="login_module_near_store_class_popup_store_on">#eeeeee</color>
+    <!-- 商家分类popup右侧item默认的背景颜色 -->
+    <color name="login_module_near_store_class_popup_store_off">#f3f3f3</color>
+    <color name="login_module_btn_login">#3287e7</color>
+    <color name="login_module_btn_login_two">#3283df</color>
+    <color name="login_module_near_textcolor_radio_on">#548adf</color>
+    <color name="login_module_near_textcolor_radio_off">#848484</color>
+    <!-- A light Holo shade of 6c6c6c -->
+    <color name="login_module_holo_gray_light">#ff6c6c6c</color>
+    <color name="login_module_result_view">#b0000000</color>
+    <color name="login_module_viewfinder_mask">#60000000</color>
+    <color name="login_module_possible_result_points">#c0ffff00</color>
+    <color name="login_module_b3b3b3">#b3b3b3</color>
+    <color name="login_module_c333333">#333333</color>
+    <color name="login_module_white">#ffffff</color>
+    <color name="login_module_white_alpha">#88ffffff</color>
+    <color name="login_module_v3_title_bg">#FCFDFD</color>
+    <color name="login_module_near_background_radio">#fcfcfc</color>
+    <color name="login_module_near_area_lv_background_two">#f8f8f8</color>
+    <color name="login_module_view_line">#bbe4e2e0</color>
+
+
+    <color name="login_module_navpage">#FFE1E8EB</color>
+    <!-- 白色 -->
+    <color name="login_module_ivory">#fffff0</color>
+    <!-- 象牙色 -->
+    <color name="login_module_lightyellow">#ffffe0</color>
+    <!-- 亮黄色 -->
+    <color name="login_module_yellow">#ffff00</color>
+    <!-- 黄色 -->
+    <color name="login_module_snow">#fffafa</color>
+    <!-- 雪白色 -->
+    <color name="login_module_floralwhite">#fffaf0</color>
+    <!-- 花白色 -->
+    <color name="login_module_lemonchiffon">#fffacd</color>
+    <!-- 柠檬绸色 -->
+    <color name="login_module_cornk">#fff8dc</color>
+    <!-- 米绸色 -->
+    <color name="login_module_seaShell">#fff5ee</color>
+    <!-- 海贝色 -->
+    <color name="login_module_lavenderblush">#fff0f5</color>
+    <!-- 淡紫红 -->
+    <color name="login_module_papayawhip">#ffefd5</color>
+    <!-- 番木色 -->
+    <color name="login_module_blanchedalmond">#ffebcd</color>
+    <!-- 白杏色 -->
+    <color name="login_module_mistyrose">#ffe4e1</color>
+    <!-- 浅玫瑰色 -->
+    <color name="login_module_bisque">#ffe4c4</color>
+    <!-- 桔黄色 -->
+    <color name="login_module_moccasin">#ffe4b5</color>
+    <!-- 鹿皮色 -->
+    <color name="login_module_navajowhite">#ffdead</color>
+    <!-- 纳瓦白 -->
+    <color name="login_module_peachpuff">#ffdab9</color>
+    <!-- 桃色 -->
+    <color name="login_module_gold">#ffd700</color>
+    <!-- 金色 -->
+    <color name="login_module_pink">#ffc0cb</color>
+    <!-- 粉红色 -->
+    <color name="login_module_lightpink">#ffb6c1</color>
+    <!-- 亮粉红色 -->
+    <color name="login_module_orange">#ffa500</color>
+    <!-- 橙色 -->
+    <color name="login_module_lightsalmon">#ffa07a</color>
+    <!-- 亮肉色 -->
+    <color name="login_module_darkorange">#ff8c00</color>
+    <!-- 暗桔黄色 -->
+    <color name="login_module_coral">#ff7f50</color>
+    <!-- 珊瑚色 -->
+    <color name="login_module_hotpink">#ff69b4</color>
+    <!-- 热粉红色 -->
+    <color name="login_module_tomato">#ff6347</color>
+    <!-- 西红柿色 -->
+    <color name="login_module_orangered">#ff4500</color>
+    <!-- 红橙色 -->
+    <color name="login_module_deeppink">#ff1493</color>
+    <!-- 深粉红色 -->
+    <color name="login_module_fuchsia">#ff00ff</color>
+    <!-- 紫红色 -->
+    <color name="login_module_magenta">#ff00ff</color>
+    <!-- 红紫色 -->
+    <color name="login_module_red">#ff0000</color>
+    <!-- 红色 -->
+    <color name="login_module_oldlace">#fdf5e6</color>
+    <!-- 老花色 -->
+    <color name="login_module_lightgoldenrodyellow">#fafad2</color>
+    <!-- 亮金黄色 -->
+    <color name="login_module_linen">#faf0e6</color>
+    <!-- 亚麻色 -->
+    <color name="login_module_antiquewhite">#faebd7</color>
+    <!-- 古董白 -->
+    <color name="login_module_salmon">#fa8072</color>
+    <!-- 鲜肉色 -->
+    <color name="login_module_ghostwhite">#f8f8ff</color>
+    <!-- 幽灵白 -->
+    <color name="login_module_mintcream">#f5fffa</color>
+    <color name="login_module_line">#C8C7CC</color>
+    <!-- 线条颜色 -->
+    <!-- 薄荷色 -->
+    <color name="login_module_whitesmoke">#f5f5f5</color>
+    <!-- 烟白色 -->
+    <color name="login_module_beige">#f5f5dc</color>
+    <!-- 米色 -->
+    <color name="login_module_wheat">#f5deb3</color>
+    <!-- 浅黄色 -->
+    <color name="login_module_sandybrown">#f4a460</color>
+    <!-- 沙褐色 -->
+    <color name="login_module_azure">#f0ffff</color>
+    <!-- 天蓝色 -->
+    <color name="login_module_honeydew">#f0fff0</color>
+    <!-- 蜜色 -->
+    <color name="login_module_aliceblue">#f0f8ff</color>
+    <!-- 艾利斯兰 -->
+    <color name="login_module_khaki">#f0e68c</color>
+    <!-- 黄褐色 -->
+    <color name="login_module_lightcoral">#f08080</color>
+    <!-- 亮珊瑚色 -->
+    <color name="login_module_palegoldenrod">#eee8aa</color>
+    <!-- 苍麒麟色 -->
+    <color name="login_module_violet">#ee82ee</color>
+    <!-- 紫罗兰色 -->
+    <color name="login_module_darksalmon">#e9967a</color>
+    <!-- 暗肉色 -->
+    <color name="login_module_lavender">#e6e6fa</color>
+    <!-- 淡紫色 -->
+    <color name="login_module_lightcyan">#e0ffff</color>
+    <!-- 亮青色 -->
+    <color name="login_module_burlywood">#deb887</color>
+    <!-- 实木色 -->
+    <color name="login_module_plum">#dda0dd</color>
+    <!-- 洋李色 -->
+    <color name="login_module_gainsboro">#dcdcdc</color>
+    <!-- 淡灰色 -->
+    <color name="login_module_crimson">#dc143c</color>
+    <!-- 暗深红色 -->
+    <color name="login_module_palevioletred">#db7093</color>
+    <!-- 苍紫罗兰色 -->
+    <color name="login_module_goldenrod">#daa520</color>
+    <!-- 金麒麟色 -->
+    <color name="login_module_orchid">#da70d6</color>
+    <!-- 淡紫色 -->
+    <color name="login_module_thistle">#d8bfd8</color>
+    <!-- 蓟色 -->
+    <color name="login_module_lightgray">#d3d3d3</color>
+    <!-- 亮灰色 -->
+    <color name="login_module_lightgrey">#d3d3d3</color>
+    <!-- 亮灰色 -->
+    <color name="login_module_tan">#d2b48c</color>
+    <!-- 茶色 -->
+    <color name="login_module_chocolate">#d2691e</color>
+    <!-- 巧可力色 -->
+    <color name="login_module_peru">#cd853f</color>
+    <!-- 秘鲁色 -->
+    <color name="login_module_indianred">#cd5c5c</color>
+    <!-- 印第安红 -->
+    <color name="login_module_mediumvioletred">#c71585</color>
+    <!-- 中紫罗兰色 -->
+    <color name="login_module_silver">#c0c0c0</color>
+    <!-- 银色 -->
+    <color name="login_module_darkkhaki">#bdb76b</color>
+    <!-- 暗黄褐色 -->
+    <color name="login_module_rosybrown">#bc8f8f</color>
+    <!-- 褐玫瑰红 -->
+    <color name="login_module_mediumorchid">#ba55d3</color>
+    <!-- 中粉紫色 -->
+    <color name="login_module_darkgoldenrod">#b8860b</color>
+    <!-- 暗金黄色 -->
+    <color name="login_module_firebrick">#b22222</color>
+    <!-- 火砖色 -->
+    <color name="login_module_powderblue">#b0e0e6</color>
+    <!-- 粉蓝色 -->
+    <color name="login_module_lightsteelblue">#b0c4de</color>
+    <!-- 亮钢兰色 -->
+    <color name="login_module_paleturquoise">#afeeee</color>
+    <!-- 苍宝石绿 -->
+    <color name="login_module_greenyellow">#adff2f</color>
+    <!-- 黄绿色 -->
+    <color name="login_module_lightblue">#add8e6</color>
+    <!-- 亮蓝色 -->
+    <color name="login_module_darkgray">#a9a9a9</color>
+    <!-- 暗灰色 -->
+    <color name="login_module_darkgrey">#a9a9a9</color>
+    <!-- 暗灰色 -->
+    <color name="login_module_brown">#a52a2a</color>
+    <!-- 褐色 -->
+    <color name="login_module_sienna">#a0522d</color>
+    <!-- 赭色 -->
+    <color name="login_module_darkorchid">#9932cc</color>
+    <!-- 暗紫色 -->
+    <color name="login_module_palegreen">#98fb98</color>
+    <!-- 苍绿色 -->
+    <color name="login_module_darkviolet">#9400d3</color>
+    <!-- 暗紫罗兰色 -->
+    <color name="login_module_mediumpurple">#9370db</color>
+    <!-- 中紫色 -->
+    <color name="login_module_lightgreen">#90ee90</color>
+    <!-- 亮绿色 -->
+    <color name="login_module_darkseagreen">#8fbc8f</color>
+    <!-- 暗海兰色 -->
+    <color name="login_module_saddlebrown">#8b4513</color>
+    <!-- 重褐色 -->
+    <color name="login_module_darkmagenta">#8b008b</color>
+    <!-- 暗洋红 -->
+    <color name="login_module_darkred">#8b0000</color>
+    <!-- 暗红色 -->
+    <color name="login_module_blueviolet">#8a2be2</color>
+    <!-- 紫罗兰蓝色 -->
+    <color name="login_module_lightskyblue">#87cefa</color>
+    <!-- 亮天蓝色 -->
+    <color name="login_module_skyblue">#87ceeb</color>
+    <!-- 天蓝色 -->
+    <color name="login_module_gray">#808080</color>
+    <!-- 灰色 -->
+    <color name="login_module_grey">#808080</color>
+    <!-- 灰色 -->
+    <color name="login_module_olive">#808000</color>
+    <!-- 橄榄色 -->
+    <color name="login_module_purple">#800080</color>
+    <!-- 紫色 -->
+    <color name="login_module_maroon">#800000</color>
+    <!-- 粟色 -->
+    <color name="login_module_aquamarine">#7fffd4</color>
+    <!-- 碧绿色 -->
+    <color name="login_module_chartreuse">#7fff00</color>
+    <!-- 黄绿色 -->
+    <color name="login_module_lawngreen">#7cfc00</color>
+    <!-- 草绿色 -->
+    <color name="login_module_mediumslateblue">#7b68ee</color>
+    <!-- 中暗蓝色 -->
+    <color name="login_module_lightslategray">#778899</color>
+    <!-- 亮蓝灰 -->
+    <color name="login_module_lightslategrey">#778899</color>
+    <!-- 亮蓝灰 -->
+    <color name="login_module_slategray">#708090</color>
+    <!-- 灰石色 -->
+    <color name="login_module_slategrey">#708090</color>
+    <!-- 灰石色 -->
+    <color name="login_module_olivedrab">#6b8e23</color>
+    <!-- 深绿褐色 -->
+    <color name="login_module_slateblue">#6a5acd</color>
+    <!-- 石蓝色 -->
+    <color name="login_module_dimgray">#696969</color>
+    <!-- 暗灰色 -->
+    <color name="login_module_dimgrey">#696969</color>
+    <!-- 暗灰色 -->
+    <color name="login_module_mediumaquamarine">#66cdaa</color>
+    <!-- 中绿色 -->
+    <color name="login_module_cornflowerblue">#6495ed</color>
+    <!-- 菊兰色 -->
+    <color name="login_module_cadetblue">#5f9ea0</color>
+    <!-- 军兰色 -->
+    <color name="login_module_darkolivegreen">#556b2f</color>
+    <!-- 暗橄榄绿 -->
+    <color name="login_module_indigo">#4b0082</color>
+    <!-- 靛青色 -->
+    <color name="login_module_mediumturquoise">#48d1cc</color>
+    <!-- 中绿宝石 -->
+    <color name="login_module_darkslateblue">#483d8b</color>
+    <!-- 暗灰蓝色 -->
+    <color name="login_module_steelblue">#4682b4</color>
+    <!-- 钢兰色 -->
+    <color name="login_module_royalblue">#4169e1</color>
+    <!-- 皇家蓝 -->
+    <color name="login_module_turquoise">#40e0d0</color>
+    <!-- 青绿色 -->
+    <color name="login_module_mediumseagreen">#3cb371</color>
+    <!-- 中海蓝 -->
+    <color name="login_module_limegreen">#32cd32</color>
+    <!-- 橙绿色 -->
+    <color name="login_module_darkslategray">#2f4f4f</color>
+    <!-- 暗瓦灰色 -->
+    <color name="login_module_darkslategrey">#2f4f4f</color>
+    <!-- 暗瓦灰色 -->
+    <color name="login_module_seagreen">#2e8b57</color>
+    <!-- 海绿色 -->
+    <color name="login_module_forestgreen">#228b22</color>
+    <!-- 森林绿 -->
+    <color name="login_module_lightseagreen">#20b2aa</color>
+    <!-- 亮海蓝色 -->
+    <color name="login_module_dodgerblue">#1e90ff</color>
+    <!-- 闪兰色 -->
+    <color name="login_module_midnightblue">#191970</color>
+    <!-- 中灰兰色 -->
+    <color name="login_module_aqua">#00ffff</color>
+    <!-- 浅绿色 -->
+    <color name="login_module_cyan">#00ffff</color>
+    <!-- 青色 -->
+    <color name="login_module_springgreen">#00ff7f</color>
+    <!-- 春绿色 -->
+    <color name="login_module_lime">#00ff00</color>
+    <!-- 酸橙色 -->
+    <color name="login_module_mediumspringgreen">#00fa9a</color>
+    <!-- 中春绿色 -->
+    <color name="login_module_darkturquoise">#00ced1</color>
+    <!-- 暗宝石绿 -->
+    <color name="login_module_deepskyblue">#00bfff</color>
+    <!-- 深天蓝色 -->
+    <color name="login_module_darkcyan">#008b8b</color>
+    <!-- 暗青色 -->
+    <color name="login_module_teal">#008080</color>
+    <!-- 水鸭色 -->
+    <color name="login_module_green">#008000</color>
+    <!-- 绿色 -->
+    <color name="login_module_darkgreen">#006400</color>
+    <!-- 暗绿色 -->
+    <color name="login_module_blue">#0000ff</color>
+    <!-- 蓝色 -->
+    <color name="login_module_mediumblue">#0000cd</color>
+    <!-- 中兰色 -->
+    <color name="login_module_darkblue">#00008b</color>
+    <!-- 暗蓝色 -->
+    <color name="login_module_navy">#000080</color>
+    <!-- 海军色 -->
+    <color name="login_module_black">#ff000000</color>
+    <!-- 黑色 -->
+    <color name="login_module_transparent">#00ffffff</color>
+    <!-- 透明 -->
+    <color name="login_module_transparent50">#50000000</color>
+
+    <color name="login_module_bac_color">#f5f5f5</color>
+    <color name="login_module_limit_buy_border_bg">#ffd4bc77</color>
+    <color name="login_module_search_toolbar_bg">#ff484B50</color>
+    <color name="login_module_toast_color">#ff2E76B9</color>
+    <color name="login_module_login_button">#ff775025</color>
+
+    <!-- 奖券记录 -->
+
+    <color name="login_module_jifenrecord_background_color">#F5F5F5</color>
+    <color name="login_module_jifenrecord_head_background_color">#548AE0</color>
+    <color name="login_module_jifenrecord_head_titleText_color">#FFFFFF</color>
+    <color name="login_module_jifenrecord_textcolor1">#6f758b</color>
+    <color name="login_module_jifenrecord_textcolor2">#797979</color>
+    <color name="login_module_jifenrecord_textcolor3">#f48067</color>
+    <color name="login_module_jifenrecord_textcolor4">#bbbbbb</color>
+
+    <!-- 分割线颜色 -->
+    <color name="login_module_separate_line">#dedede</color>
+    <!-- 商城 -->
+    <color name="login_module_gray_color">#f2f5f5</color>
+    <color name="login_module_white_color">#ffffff</color>
+    <color name="login_module_black_color">#1d201f</color>
+    <color name="login_module_blue_color">#4881d9</color>
+    <color name="login_module_blue_line_color">#548ce0</color>
+    <color name="login_module_bg_text_color">#f3f4f6</color>
+    <color name="login_module_listview_city_county_bg_color">#f2f2f2</color>
+    <color name="login_module_zuijin_textview_color">#696969</color>
+    <color name="login_module_find_city_text_color_hint">#b7b7b7</color>
+    
+    <!-- 项目title -->
+    <color name="login_module_tab_title_bg_color">#fcfdfd</color>
+    <color name="login_module_tab_title_text_color">#303030</color>
+    <color name="login_module_tab_title_right_text_color">#7b7d80</color>
+    <color name="login_module_tab_title_bottom_line_color">#dfdfdf</color>
+    
+    <color name="login_module_guessed_num_text_color">#68a1ff</color>
+    
+    <color name="login_module_mall_goodslist_text_gray_color">#848484</color>
+    <color name="login_module_mall_goodslist_text_blue_color">#548adf</color>
+    
+    <color name="login_module_phone_login_edittext_color">#3e4a6e</color>
+    <color name="login_module_phone_login_edittext_hint_color">#c8c8cc</color>
+    <color name="login_module_phone_login_sms_btn_blue_color">#498ee5</color>
+    <color name="login_module_btn_sms_gray_text_color">#d0d0d0</color>
+
+    <color name="login_module_lexin_news_tv_green_color">#6cba55</color>
+    <color name="login_module_lexin_news_tv_red_color">#ff8413</color>
+    <color name="login_module_lexin_news_tv_blue_color">#548adf</color>
+
+    <color name="login_module_regist_sendcode_color">#3287e7</color>
+
+
+    <color name="login_module_merchant_detailed_text">#696969</color>
+    <color name="login_module_address_default_item_bg_color">#548ce0</color>
+
+    <color name="login_module_address_manage_item_name_color">#575757</color>
+    <color name="login_module_address_manage_item_phone_color">#575757</color>
+    <color name="login_module_express_com_item_selected_color">#616874</color>
+
+    <color name="login_module_c247df7">#247df7</color>
+    <color name="login_module_a5a5a5">#a5a5a5</color>
+    <color name="login_module_c686868">#686868</color>
+    <color name="login_module_c404548">#404548</color>
+    <color name="login_module_c959595">#959595</color>
+    <color name="login_module_c3f4447">#3f4447</color>
+    <color name="login_module_c999999">#999999</color>
+    <color name="login_module_cdadada">#dadada</color>
+    <color name="login_module_cf8f8fc">#f8f8fc</color>
+
+    <color name="login_module_c46aaff">#46aaff</color>
+    <color name="login_module_c5c5c77">#5c5c77</color>
+    <color name="login_module_ce0e0e0">#e0e0e0</color>
+    <color name="login_module_ccccccc">#cccccc</color>
+    <color name="login_module_cfe9c29">#fe9c29</color>
+    <color name="login_module_ccdd0d3">#cdd0d3</color>
+    <color name="login_module_cac69f1">#ac69f1</color>
+    <color name="login_module_cea1a39">#ea1a39</color>
+    <color name="login_module_cf7f7f7">#F7F7F7</color>
+
+
+    <color name="login_module_color_good_evaluate">#FFB033</color>
+
+    <!--主色调-->
+    <color name="login_module_color_red">#fe5062</color>
+    <!--警示辅助色-->
+    <color name="login_module_myinfo_red_bg">#F35951</color>
+    <!--背景色-->
+    <color name="login_module_color_bg">#f7f7f7</color>
+    <!--线条颜色-->
+    <color name="login_module_color_lines">#e7e7e7</color>
+    <!--重要字体-->
+    <color name="login_module_color_333">#333333</color>
+    <!--次要字体-->
+    <color name="login_module_color_666">#666666</color>
+    <!--辅助字体-->
+    <color name="login_module_color_999">#999999</color>
+    <!--一级标题-->
+    <color name="login_module_color_h1">#4a4a4a</color>
+
+    <!--按钮点击时的颜色-->
+    <color name="login_module_btn_clicking">#d84d47</color>
+
+    <!--按钮不可点击时的颜色  #bbbbbb-->
+    <color name="login_module_btn_unclick">#bbbbbb</color>
+    <!--按钮不可点击时的颜色  #bbbbbb-->
+    <color name="login_module_invite_friend_bg">#fe4256</color>
+
+    <color name="login_module_color_register">#5EAC8E</color>
+    <color name="login_module_regist_code">#6DCBA7</color>
+    <color name="login_module_color_login_bg">#F75A53</color>
+    <color name="login_module_color_shorcut_login">#FF9E9A</color>
+    <color name="login_module_login_pwd">#FF9E9A</color>
+    <color name="login_module_swipeLoadstart">#fe8784</color>
+    <color name="login_module_swipeLoadend">#ff3232</color>
+    <color name="login_module_color_forget_pwd_bg">#4F83CB</color>
+    <color name="login_module_forget_pwd_code">#79A5E2</color>
+    <color name="login_module_text_icon">#E5BF86</color>
+    <color name="login_module_wx_login">#31D94C</color>
+    <color name="login_module_wx_login_click">#9931D94C</color>
+    <color name="login_module_fen_bg">#f5586a</color>
+    <color name="login_module_colorPrimary">#1CAF9A</color>
+    <color name="login_module_colorPrimaryDark">#1CAF9A</color>
+    <color name="login_module_colorAccent">#FF4081</color>
+    <color name="login_module_app_color">#fe5062</color>
+    <color name="login_module_app_color_2">#ff6682</color>
+    <color name="login_module_A8A8AA">#A8A8AA</color>
+</resources>

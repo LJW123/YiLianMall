@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merchant_color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/merchant_title_transparent_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_to_edit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/merchant_margin15"
+                android:background="@drawable/shape_round_white"
+                android:elevation="1dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/merchant_padding20">
+
+                <ImageView
+                    android:id="@+id/iv_logo_bank"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:scaleType="fitXY"
+                    tools:src="@mipmap/merchant_icon_tanhao" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/merchant_margin15"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="对公卡"
+                        android:textColor="@color/black_333333"
+                        android:textSize="@dimen/merchant_size15" />
+
+                    <TextView
+                        android:id="@+id/tv_card_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:textColor="@color/black_333333"
+                        android:textSize="@dimen/merchant_size15"
+                        tools:text="中国建设银行尾号0452" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/merchant_margin15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="领取金额"
+                    android:textColor="@color/black_333333"
+                    android:textSize="@dimen/merchant_size16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/black_333333"
+                        android:textSize="28dp" />
+
+                    <EditText
+                        android:textCursorDrawable="@drawable/merchant_edit_color_cursor"
+                        android:id="@+id/et_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:paddingBottom="@dimen/merchant_margin20"
+                        android:textColor="@color/black_333333"
+                        android:textSize="28dp"
+                        android:theme="@style/merchant_extract_revenue" />
+                </LinearLayout>
+
+                <View
+                    style="@style/merchant_outerLineStyle"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="@dimen/merchant_margin20"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/merchant_margin15">
+
+                    <TextView
+                        android:id="@+id/tv_max_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/merchant_color_999"
+                        android:textSize="@dimen/merchant_size13"
+                        tools:text="可提金额￥888" />
+
+                    <TextView
+                        android:id="@+id/tv_all_extract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:text="全部领取"
+                        android:textColor="#fff22424"
+                        android:textSize="@dimen/merchant_size13" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/merchant_margin15"
+                android:layout_marginTop="@dimen/merchant_margin15"
+                android:text="提现营收说明："
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/merchant_size13" />
+            <!--提取营收说明-->
+            <LinearLayout
+                android:id="@+id/ll_extract_revenue_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/merchant_size15"
+                android:layout_marginRight="@dimen/merchant_size15"
+                android:layout_marginTop="@dimen/merchant_size15"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/merchant_size15"
+                android:text="到账时间："
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/merchant_size13" />
+            <!--到账时间-->
+            <LinearLayout
+                android:id="@+id/ll_account_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/merchant_size15"
+                android:layout_marginRight="@dimen/merchant_size15"
+                android:layout_marginTop="@dimen/merchant_size15"
+                android:orientation="vertical" />
+
+            <TextView
+                android:clickable="false"
+                android:id="@+id/tv_extract_revenue"
+                style="@style/merchant_btnStyle"
+                android:layout_margin="@dimen/merchant_size15"
+                android:gravity="center"
+                android:text="提取营收"
+                android:textColor="@color/white"
+                android:textSize="@dimen/merchant_size18"
+                android:theme="@style/merchant_extract_revenue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

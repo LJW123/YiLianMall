@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding15"
+    android:paddingRight="@dimen/padding15">
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:text="10-22"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin18"
+        android:textSize="@dimen/size12" />
+
+    <TextView
+        android:id="@+id/clock_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="打卡成功"
+        android:textColor="@color/color_new_orange" />
+
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-100"
+        android:textColor="@color/color_new_orange" />
+
+</LinearLayout>

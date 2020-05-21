@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="bottom"
+    android:id="@+id/check_correct_car_license_ll">
+
+    <TextView
+        android:id="@+id/check_car_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="编辑信息"
+        android:gravity="center" />
+
+    <View style="@style/line_horizontal" />
+
+    <TextView
+        android:id="@+id/check_car_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="删除"
+        android:gravity="center"
+        android:textColor="@color/red" />
+
+    <View style="@style/thick_line_horizontal" />
+
+    <TextView
+        android:id="@+id/check_car_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="取消"
+        android:gravity="center" />
+
+</LinearLayout>

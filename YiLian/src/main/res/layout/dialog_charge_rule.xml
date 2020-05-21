@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_50"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值规则"
+                android:textSize="24dp"
+                android:textColor="@color/color_333"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_lines"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size19"
+                android:textColor="@color/color_333"
+                android:text="实际到账金额" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="充值实际到账金额是扣除千分之六交易手续费后的金额(例如: 充值1000，实际增加994奖励余额)。"
+                android:textSize="@dimen/size19"
+                android:textColor="@color/color_666"
+                android:layout_marginTop="@dimen/margin15"
+                android:lineSpacingExtra="7.5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size19"
+                android:textColor="@color/color_333"
+                android:text="功能应用说明"
+                android:layout_marginTop="@dimen/margin30" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="此功能主要用于辅助商户大额现金交易功能，不建议消费者和普通商户使用(可直接通过各种支付渠道完成支付)。"
+                android:textSize="@dimen/size19"
+                android:textColor="@color/color_666"
+                android:layout_marginTop="@dimen/margin15"
+                android:lineSpacingExtra="7.5dp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/icon_charge_x"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

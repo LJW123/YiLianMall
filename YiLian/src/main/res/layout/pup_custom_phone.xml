@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000">
+
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_service_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/icon_service_phone"
+        android:drawablePadding="@dimen/padding10"
+        android:paddingBottom="23dp"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingTop="23dp"
+        android:text="客服电话132-0000-0000"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/textSize_15dp" />
+
+
+</FrameLayout>

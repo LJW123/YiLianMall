@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg_total_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:paddingTop="@dimen/padding20"
+    android:paddingBottom="@dimen/padding20"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_total_comment_score1"
+        style="@style/mt_total_comment"
+        android:drawableBottom="@drawable/selector_v5_comment_score1" />
+
+    <RadioButton
+        android:id="@+id/rb_total_comment_score2"
+        style="@style/mt_total_comment"
+        android:drawableBottom="@drawable/selector_v5_comment_score2" />
+
+    <RadioButton
+        android:id="@+id/rb_total_comment_score3"
+        style="@style/mt_total_comment"
+        android:drawableBottom="@drawable/selector_v5_comment_score3" />
+
+    <RadioButton
+        android:id="@+id/rb_total_comment_score4"
+        style="@style/mt_total_comment"
+        android:drawableBottom="@drawable/selector_v5_comment_score4" />
+
+</RadioGroup>

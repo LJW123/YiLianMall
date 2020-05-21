@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_shopping_cart_inner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="13dp">
+
+    <CheckBox
+        android:id="@+id/chk_shopping_cart_goods_list"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:button="@null"
+        android:drawableLeft="@drawable/chk_shopping_cart_goods_list"
+        android:focusable="false"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp" />
+
+    <com.yilian.mall.widgets.CircleImageView1
+        android:id="@+id/iv_item_shopping_cart"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/chk_shopping_cart_goods_list"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_module_default_jp" />
+
+    <ImageView
+        android:id="@+id/iv_goods_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/chk_shopping_cart_goods_list"
+        android:src="@mipmap/ic_goods_giving" />
+
+    <com.yilian.mall.widgets.CircleImageView1
+        android:id="@+id/iv_goods_status"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/chk_shopping_cart_goods_list"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="center"
+        android:src="@null"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/iv_item_shopping_cart"
+        android:lines="2"
+        android:text="高跟鞋高筒靴 细跟长靴尖头后高跟鞋高筒靴 细跟长靴尖头后高跟鞋高筒靴 细跟长靴尖头后"
+        android:textColor="#3f4447"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_goods_norms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goods_name"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/iv_item_shopping_cart"
+        android:lines="1"
+        android:text="颜色分类:红色"
+        android:textColor="#b0afaf"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goods_norms"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/iv_item_shopping_cart"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/ic_mall_shopping"
+        android:gravity="center"
+        android:lines="1"
+        android:text="6251"
+        android:textColor="#ff6823"
+        android:textSize="15dp" />
+
+    <com.yilian.mall.widgets.NumberAddSubView
+        android:id="@+id/number_add_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_goods_norms"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        app:lefenlayout="@layout/widet_num_add_sub_shopping_cart">
+
+    </com.yilian.mall.widgets.NumberAddSubView>
+
+</RelativeLayout>

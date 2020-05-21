@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#9a000000"
+    android:orientation="vertical"
+    tools:context="com.yilian.mall.ui.ActSeekRewardDialogActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#10607B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="@dimen/icon20"
+            android:paddingBottom="@dimen/icon20"
+            android:layout_gravity="center_horizontal"
+            android:background="#10607B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有人求赏"
+            android:textColor="#fff7f7f7"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            />
+        <FrameLayout
+            android:background="#10607B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_title"
+                android:src="@mipmap/act_seek_reward_notice" />
+        </FrameLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:paddingTop="@dimen/icon20"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_seek_man"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="用户 风轻云淡 认为 "
+                android:textColor="@color/color_h1"
+                android:textSize="@dimen/size14"
+                />
+
+            <TextView
+                android:id="@+id/tv_carve_integral"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你是一个有魄力的人，并希望 "
+                android:textColor="@color/color_h1"
+                android:textSize="@dimen/size14"
+                />
+            <TextView
+                android:id="@+id/tv_seek_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="你能打赏1.00奖券"
+                android:textColor="@color/color_h1"
+                android:textSize="@dimen/size14"
+                />
+            <Button
+                android:id="@+id/bnt_reward"
+                android:layout_marginTop="@dimen/icon20"
+                android:textColor="@color/color_white"
+                android:text="心情不错，顺手赏了"
+                android:layout_width="235dp"
+                android:layout_height="50dp"
+                android:background="#fffe8019"
+                />
+            <Button
+                android:id="@+id/bnt_refuse"
+                android:layout_marginBottom="@dimen/icon20"
+                android:layout_marginTop="@dimen/size15"
+                android:textColor="@color/color_666"
+                android:text="没有余粮，坚决不给"
+                android:layout_width="235dp"
+                android:layout_height="50dp"
+                android:background="@drawable/act_bg_btn_stroke_gray"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_close3"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/icon20"
+        android:background="@mipmap/icon_clock_success_white_close" />
+
+</LinearLayout>
